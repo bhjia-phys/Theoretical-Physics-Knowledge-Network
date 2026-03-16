@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Open Physics KB Unit",
+  "title": "Theoretical Physics Knowledge Network Unit",
   "type": "object",
   "required": [
     "id",

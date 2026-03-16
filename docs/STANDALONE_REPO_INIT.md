@@ -1,6 +1,6 @@
 # Standalone Repo Init
 
-This document describes how to turn `open-physics-kb` into an independent public repository and keep it maintainable after the split.
+This document describes how to turn `theoretical-physics-knowledge-network` into an independent public repository and keep it maintainable after the split.
 
 ## Target Role
 
@@ -18,7 +18,7 @@ From this directory:
 ```bash
 git init
 git add .
-git commit -m "Initial public skeleton for open-physics-kb"
+git commit -m "Initial public skeleton for theoretical-physics-knowledge-network"
 git branch -M main
 git remote add origin <your-public-repo-url>
 git push -u origin main

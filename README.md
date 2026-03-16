@@ -1,6 +1,6 @@
-# Open Physics KB
+# Theoretical Physics Knowledge Network
 
-Open Physics KB is a protocol-first, schema-backed theoretical-physics knowledge base.
+Theoretical Physics Knowledge Network is a protocol-first, schema-backed theoretical-physics knowledge base.
 
 This public skeleton is built around one core architectural split:
 
@@ -34,7 +34,7 @@ Read these first:
 ## Repository Layout
 
 ```text
-open-physics-kb/
+theoretical-physics-knowledge-network/
 ├── docs/            # contracts and design notes
 ├── schema/          # JSON Schemas for canonical objects
 ├── sources/         # source manifests

@@ -1,6 +1,6 @@
 # Protocols
 
-This file is the normative contract for `open-physics-kb`.
+This file is the normative contract for `theoretical-physics-knowledge-network`.
 
 See also `docs/L2_RETRIEVAL_PROTOCOL.md` for the concrete retrieval-facing surface.
 

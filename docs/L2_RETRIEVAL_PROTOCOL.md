@@ -1,6 +1,6 @@
 # L2 Retrieval Protocol
 
-This document states how `open-physics-kb` is meant to be queried as an `L2`-compatible backend.
+This document states how `theoretical-physics-knowledge-network` is meant to be queried as an `L2`-compatible backend.
 
 For write-back from `L2` into this repository, see `docs/L2_BRIDGE_PROTOCOL.md`.
 
@@ -58,7 +58,7 @@ Human-facing notes under `human-mirror/` are mirrors, not the `L2` store.
 The intended repository rule is:
 
 - `human-mirror/` should be authored as a human-facing surface that stays structurally compatible with `L2`;
-- `open-physics-kb` remains the canonical typed backend and retrieval source.
+- `theoretical-physics-knowledge-network` remains the canonical typed backend and retrieval source.
 
 Structural compatibility means:
 

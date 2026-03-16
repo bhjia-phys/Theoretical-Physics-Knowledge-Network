@@ -603,7 +603,9 @@ def command_build() -> int:
 
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Protocol checker and deterministic builder for open-physics-kb.")
+    parser = argparse.ArgumentParser(
+        description="Protocol checker and deterministic builder for theoretical-physics-knowledge-network."
+    )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     subparsers.add_parser("check", help="Validate canonical objects, anchors, and edges.")

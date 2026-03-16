@@ -1,6 +1,6 @@
 # L2 Bridge Protocol
 
-This document defines how AITP `L2` work should be written into `open-physics-kb`.
+This document defines how AITP `L2` work should be written into `theoretical-physics-knowledge-network`.
 
 `L2` is allowed to use this repository as an external knowledge kernel, but it must write into it through the repository protocol rather than by dumping runtime notes.
 
@@ -9,7 +9,7 @@ This document defines how AITP `L2` work should be written into `open-physics-kb
 Treat the layers as:
 
 - public sources: the ultimate evidence surface;
-- `open-physics-kb` canonical store: the durable promoted knowledge surface;
+- `theoretical-physics-knowledge-network` canonical store: the durable promoted knowledge surface;
 - generated `indexes/` and `portal/`: deterministic projections;
 - `human-mirror/`: explanatory mirror for people;
 - AITP `L2` runtime state: upstream working memory, not repository truth.

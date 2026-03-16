@@ -4,15 +4,15 @@ This directory is designed to be split into a standalone public repository.
 
 ## Recommended Name
 
-- `open-physics-kb`
+- `theoretical-physics-knowledge-network`
 
 ## Suggested First Publish Flow
 
 ```bash
-cd research/open-physics-kb-public
+cd /path/to/theoretical-physics-knowledge-network
 git init
 git add .
-git commit -m "Initial public skeleton for open-physics-kb"
+git commit -m "Initial public skeleton for theoretical-physics-knowledge-network"
 ```
 
 Then create a public remote on your hosting platform and push:
