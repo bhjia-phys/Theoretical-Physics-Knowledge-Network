@@ -1,0 +1,239 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Open Physics KB Unit",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "title",
+    "summary",
+    "domain",
+    "tags",
+    "aliases",
+    "assumptions",
+    "regime",
+    "scope",
+    "dependencies",
+    "related_units",
+    "source_anchors",
+    "formalization_status",
+    "validation_status",
+    "maturity",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z_]+:[a-z0-9-]+$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "concept",
+        "equation",
+        "quantity",
+        "claim",
+        "derivation",
+        "method",
+        "model",
+        "warning",
+        "bridge",
+        "source_map"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "domain": {
+      "type": "string"
+    },
+    "subdomain": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assumptions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "regime": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+:[a-z0-9-]+$"
+      }
+    },
+    "related_units": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+:[a-z0-9-]+$"
+      }
+    },
+    "source_anchors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/source_anchor"
+      }
+    },
+    "formalization_status": {
+      "type": "string",
+      "enum": [
+        "not_started",
+        "candidate",
+        "scaffolded",
+        "partial",
+        "reviewed"
+      ]
+    },
+    "validation_status": {
+      "type": "string",
+      "enum": [
+        "source-grounded",
+        "cross-checked",
+        "formalized",
+        "validated"
+      ]
+    },
+    "maturity": {
+      "type": "string",
+      "enum": [
+        "seed",
+        "working",
+        "stable"
+      ]
+    },
+    "symmetries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "representation": {
+      "type": "string"
+    },
+    "model_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "equation_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "quantity_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failure_modes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "formal_targets": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "retrieval_hints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "symbols": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/symbol_entry"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "$defs": {
+    "source_anchor": {
+      "type": "object",
+      "required": [
+        "source_id",
+        "section"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "equation_labels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "figure_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "symbol_entry": {
+      "type": "object",
+      "required": [
+        "symbol",
+        "meaning"
+      ],
+      "properties": {
+        "symbol": {
+          "type": "string"
+        },
+        "meaning": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

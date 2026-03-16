@@ -1,0 +1,69 @@
+{
+  "id": "equation:winding-number-as-s2-to-s2-degree",
+  "type": "equation",
+  "title": "Winding Number As The Degree Of S2 To S2",
+  "summary": "The topological charge of an isolated bad point is the degree of the map from a small enclosing sphere in momentum space to the target sphere of normalized b-vectors.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "topological-charge",
+  "tags": [
+    "winding-number",
+    "degree",
+    "s2-to-s2"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The crossing is isolated.",
+    "The enclosing sphere does not intersect any other bad point."
+  ],
+  "regime": "Topological classification of isolated point nodes.",
+  "scope": "Lecture One degree-theory formulation of Weyl-node charge.",
+  "dependencies": [
+    "quantity:winding-number",
+    "equation:two-band-hamiltonian-d-dot-sigma"
+  ],
+  "related_units": [
+    "concept:nielsen-ninomiya-theorem",
+    "derivation:stokes-theorem-implies-net-zero-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "nwn",
+        "wnn"
+      ],
+      "notes": "The integer is presented both as an integral density and as the pullback degree."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Integral formula for the degree of the normalized b-map.",
+  "equation_refs": [],
+  "quantity_refs": [
+    "quantity:winding-number"
+  ],
+  "symbols": [
+    {
+      "symbol": "w(S)",
+      "meaning": "winding number on the enclosing sphere"
+    },
+    {
+      "symbol": "n",
+      "meaning": "normalized vector b/|b|"
+    }
+  ],
+  "failure_modes": [
+    "If the sphere encloses multiple nodes, the integral returns the total charge rather than a single-node charge."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use for topological-charge calculations around a Weyl node."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

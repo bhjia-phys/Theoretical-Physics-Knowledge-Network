@@ -1,0 +1,17 @@
+{"symbol": "E_F", "meaning": "Fermi energy", "unit_id": "quantity:fermi-energy", "unit_title": "Fermi Energy", "unit_type": "quantity"}
+{"symbol": "F", "meaning": "Berry curvature two-form", "unit_id": "equation:berry-flux-topological-charge", "unit_title": "Berry Flux Equals Topological Charge", "unit_type": "equation"}
+{"symbol": "F", "meaning": "Berry curvature two-form", "unit_id": "quantity:berry-curvature-two-form", "unit_title": "Berry Curvature Two-Form", "unit_type": "quantity"}
+{"symbol": "a", "meaning": "tuning parameter in the example f(p3)=p3^2-a", "unit_id": "equation:two-band-weyl-model-with-tunable-pair", "unit_title": "Two-Band Weyl Model With A Tunable Pair", "unit_type": "equation"}
+{"symbol": "a(p)", "meaning": "scalar energy shift", "unit_id": "equation:two-band-hamiltonian-d-dot-sigma", "unit_title": "Two-Band Hamiltonian A Plus B Dot Sigma", "unit_type": "equation"}
+{"symbol": "b_i(p)", "meaning": "Pauli-vector coefficients controlling the crossing", "unit_id": "equation:two-band-hamiltonian-d-dot-sigma", "unit_title": "Two-Band Hamiltonian A Plus B Dot Sigma", "unit_type": "equation"}
+{"symbol": "f(p_3)", "meaning": "controls the location and multiplicity of Weyl points", "unit_id": "equation:two-band-weyl-model-with-tunable-pair", "unit_title": "Two-Band Weyl Model With A Tunable Pair", "unit_type": "equation"}
+{"symbol": "n", "meaning": "normalized vector b/|b|", "unit_id": "equation:winding-number-as-s2-to-s2-degree", "unit_title": "Winding Number As The Degree Of S2 To S2", "unit_type": "equation"}
+{"symbol": "p_0", "meaning": "momentum where the crossing occurs", "unit_id": "equation:linearized-dispersion-near-fermi-point", "unit_title": "Linearized Dispersion Near A Fermi Point", "unit_type": "equation"}
+{"symbol": "psi", "meaning": "continuum field for the low-energy branch", "unit_id": "equation:continuum-1d-chiral-fermion-hamiltonian", "unit_title": "Continuum 1D Chiral Fermion Hamiltonian", "unit_type": "equation"}
+{"symbol": "sign det(b_ij)", "meaning": "chirality sign of the Weyl node", "unit_id": "quantity:chirality-sign", "unit_title": "Chirality Sign", "unit_type": "quantity"}
+{"symbol": "v", "meaning": "branch velocity", "unit_id": "equation:continuum-1d-chiral-fermion-hamiltonian", "unit_title": "Continuum 1D Chiral Fermion Hamiltonian", "unit_type": "equation"}
+{"symbol": "v", "meaning": "Fermi velocity given by d epsilon / d p at p0", "unit_id": "equation:linearized-dispersion-near-fermi-point", "unit_title": "Linearized Dispersion Near A Fermi Point", "unit_type": "equation"}
+{"symbol": "v", "meaning": "Fermi velocity", "unit_id": "quantity:fermi-velocity", "unit_title": "Fermi Velocity", "unit_type": "quantity"}
+{"symbol": "w", "meaning": "integer winding number / node charge", "unit_id": "quantity:winding-number", "unit_title": "Winding Number", "unit_type": "quantity"}
+{"symbol": "w(S)", "meaning": "winding number on the enclosing sphere", "unit_id": "equation:winding-number-as-s2-to-s2-degree", "unit_title": "Winding Number As The Degree Of S2 To S2", "unit_type": "equation"}
+{"symbol": "w_alpha", "meaning": "integer charge of the bad point", "unit_id": "equation:berry-flux-topological-charge", "unit_title": "Berry Flux Equals Topological Charge", "unit_type": "equation"}

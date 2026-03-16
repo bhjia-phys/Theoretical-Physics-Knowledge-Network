@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  protocol-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Protocol check
+        run: python3 scripts/kb.py check
+
+      - name: Deterministic build
+        run: python3 scripts/kb.py build
+
+      - name: Ensure generated outputs are committed
+        run: git diff --exit-code -- indexes portal

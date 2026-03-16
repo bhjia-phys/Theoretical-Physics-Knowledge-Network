@@ -1,0 +1,61 @@
+{
+  "id": "quantity:berry-curvature-two-form",
+  "type": "quantity",
+  "title": "Berry Curvature Two-Form",
+  "summary": "The Berry curvature two-form F is the gauge-invariant curvature of the Berry connection and integrates to the first Chern number on closed surfaces.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "berry-geometry",
+  "tags": [
+    "berry-curvature",
+    "two-form",
+    "chern-number"
+  ],
+  "aliases": [
+    "F"
+  ],
+  "assumptions": [
+    "The relevant band bundle is smooth on the domain."
+  ],
+  "regime": "Regular momentum-space region or parameter-space surface.",
+  "scope": "Lecture One curvature two-form of the occupied-state line bundle.",
+  "dependencies": [
+    "concept:berry-connection"
+  ],
+  "related_units": [
+    "concept:berry-curvature",
+    "equation:berry-flux-topological-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "fc",
+        "wif"
+      ],
+      "notes": "Lecture One identifies F/2pi with the first Chern class and notes dF=0 away from singularities."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "stable",
+  "representation": "Gauge-invariant curvature two-form associated with Berry transport.",
+  "symbols": [
+    {
+      "symbol": "F",
+      "meaning": "Berry curvature two-form"
+    }
+  ],
+  "failure_modes": [
+    "At singular points the form is not globally regular."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for the geometric meaning of Berry curvature."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

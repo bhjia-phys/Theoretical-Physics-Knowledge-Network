@@ -1,0 +1,59 @@
+{
+  "id": "warning:local-weyl-description-does-not-fix-global-lattice-consistency",
+  "type": "warning",
+  "title": "Local Weyl Description Does Not Fix Global Lattice Consistency",
+  "summary": "A local Weyl cone only describes the neighborhood of one crossing; it does not by itself guarantee that a globally periodic lattice model exists with the same isolated chirality assignment.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "tags": [
+    "warning",
+    "local-vs-global",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "One starts from a local continuum Hamiltonian."
+  ],
+  "regime": "Comparing local continuum models with global lattice realizations.",
+  "scope": "Lecture One transition from local Weyl physics to Brillouin-zone constraints.",
+  "dependencies": [
+    "concept:weyl-node",
+    "concept:nielsen-ninomiya-theorem"
+  ],
+  "related_units": [
+    "claim:lattice-weyl-nodes-sum-to-zero-net-chirality",
+    "model:two-band-lattice-weyl-model"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "notes": "The theorem is precisely the obstruction to promoting a lone local chirality into a lattice theory."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/simple-examples-of-band-hamiltonians",
+      "equation_labels": [
+        "twof"
+      ],
+      "notes": "Explicit periodic models show multiple nodes rather than a single isolated chirality."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Misuse warning about extrapolating a local cone to a global lattice model.",
+  "equation_refs": [],
+  "quantity_refs": [],
+  "failure_modes": [
+    "Ignoring Brillouin-zone compactness leads to false expectations about isolated net chirality."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Return this whenever a local Weyl Hamiltonian is treated as a complete lattice model."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

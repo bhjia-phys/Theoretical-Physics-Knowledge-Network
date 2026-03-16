@@ -1,0 +1,209 @@
+{
+  "source_id": "paper:witten-topological-phases-1510.07698v2",
+  "title": "Three Lectures On Topological Phases Of Matter",
+  "authors": [
+    "Edward Witten"
+  ],
+  "version": "v2",
+  "submitted_date": "2015-10-26",
+  "updated_date": "2015-11-17",
+  "canonical_scope": "Lecture One only in the present repository version.",
+  "urls": {
+    "abs": "https://arxiv.org/abs/1510.07698v2",
+    "pdf": "https://arxiv.org/pdf/1510.07698v2",
+    "doi": "https://doi.org/10.48550/arXiv.1510.07698",
+    "source_archive": "https://arxiv.org/e-print/1510.07698v2",
+    "journal": "https://doi.org/10.1393/ncr/i2016-10125-3"
+  },
+  "section_map": [
+    {
+      "id": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Relativistic Dispersion In One Space Dimension",
+      "summary": "Linearization near a Fermi point yields chiral low-energy modes in 1D."
+    },
+    {
+      "id": "lecture-one/three-dimensions",
+      "title": "Three Dimensions",
+      "summary": "Generic isolated two-band crossings in 3D are locally Weyl points."
+    },
+    {
+      "id": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "The Nielsen-Ninomiya Theorem",
+      "summary": "The total topological charge of isolated Weyl nodes on a lattice vanishes."
+    },
+    {
+      "id": "lecture-one/the-berry-connection",
+      "title": "The Berry Connection",
+      "summary": "Occupied states define a line bundle whose curvature measures node charge."
+    },
+    {
+      "id": "lecture-one/some-examples",
+      "title": "Some Examples",
+      "summary": "Toy Hamiltonians create, move, split, and annihilate Weyl nodes."
+    },
+    {
+      "id": "lecture-one/band-crossing-at-the-fermi-energy",
+      "title": "Band Crossing At The Fermi Energy",
+      "summary": "A physically relevant semimetal requires the crossing to sit at the Fermi level."
+    },
+    {
+      "id": "lecture-one/including-spin",
+      "title": "Including Spin",
+      "summary": "Spin doubles bands and changes symmetry bookkeeping."
+    },
+    {
+      "id": "lecture-one/a-system-with-many-bands",
+      "title": "A System With Many Bands",
+      "summary": "Berry connections become non-abelian before projection to filled states."
+    },
+    {
+      "id": "lecture-one/two-dimensions",
+      "title": "Two Dimensions",
+      "summary": "Generic 2D Dirac crossings require special structure or symmetry."
+    },
+    {
+      "id": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Weyl Fermions And Fermi Arcs",
+      "summary": "Surface spectra terminate at the projections of bulk Weyl nodes."
+    },
+    {
+      "id": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "title": "Gapless Boundary Modes From Dirac Fermions",
+      "summary": "Mass-domain-wall intuition explains protected boundary-localized gapless modes."
+    },
+    {
+      "id": "lecture-one/discrete-lattice-symmetries-and-massless-dirac-fermions",
+      "title": "Discrete Lattice Symmetries and Massless Dirac Fermions",
+      "summary": "Massless Dirac points survive in lattices only when symmetry data enforce them."
+    },
+    {
+      "id": "lecture-one/simple-examples-of-band-hamiltonians",
+      "title": "Simple Examples Of Band Hamiltonians",
+      "summary": "Periodic lattice Hamiltonians exhibit fermion doubling in explicit models."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "dolz",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Linearized dispersion near a 1D Fermi point"
+    },
+    {
+      "label": "continuum",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Continuum Hamiltonian near a 1D Fermi point"
+    },
+    {
+      "label": "constantshift",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Constant density shift at the crossing point"
+    },
+    {
+      "label": "localexp",
+      "section": "lecture-one/three-dimensions",
+      "title": "Generic two-band Hamiltonian near a crossing"
+    },
+    {
+      "label": "xpa",
+      "section": "lecture-one/three-dimensions",
+      "title": "Linearized two-band Weyl Hamiltonian"
+    },
+    {
+      "label": "perd",
+      "section": "lecture-one/three-dimensions",
+      "title": "Chirality from the Jacobian determinant"
+    },
+    {
+      "label": "wn",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Notation for the winding number attached to a surrounding sphere"
+    },
+    {
+      "label": "nwn",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Integral formula for winding number"
+    },
+    {
+      "label": "weta",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Closed normalized area form on the target sphere"
+    },
+    {
+      "label": "wnn",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Winding number as a degree integral"
+    },
+    {
+      "label": "cl",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Stokes-theorem sum rule for total node charge"
+    },
+    {
+      "label": "zb",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Berry parallel-transport condition along a path"
+    },
+    {
+      "label": "fc",
+      "section": "lecture-one/the-berry-connection",
+      "title": "First Chern class matched with Berry curvature"
+    },
+    {
+      "label": "zif",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Topological charge as Berry-flux integral"
+    },
+    {
+      "label": "wif",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Closedness of Berry curvature away from singularities"
+    },
+    {
+      "label": "nna",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Nielsen-Ninomiya from Berry curvature"
+    },
+    {
+      "label": "terf",
+      "section": "lecture-one/some-examples",
+      "title": "Two-band Weyl model with tunable function f(p3)"
+    },
+    {
+      "label": "werf",
+      "section": "lecture-one/some-examples",
+      "title": "Pair creation and annihilation via f(p3)=p3^2-a"
+    },
+    {
+      "label": "twod",
+      "section": "lecture-one/two-dimensions",
+      "title": "Generic two-dimensional crossing discussion"
+    },
+    {
+      "label": "perf",
+      "section": "lecture-one/discrete-lattice-symmetries-and-massless-dirac-fermions",
+      "title": "Nonchiral massless Dirac Hamiltonian in block form"
+    },
+    {
+      "label": "twof",
+      "section": "lecture-one/simple-examples-of-band-hamiltonians",
+      "title": "Simple periodic Weyl Hamiltonian on a lattice"
+    },
+    {
+      "label": "ollof",
+      "section": "lecture-one/simple-examples-of-band-hamiltonians",
+      "title": "Periodic Dirac-like lattice regularization"
+    }
+  ],
+  "figure_map": [
+    {
+      "id": "two-crossing",
+      "section": "lecture-one/three-dimensions",
+      "title": "A pair of bands described by a chiral Dirac Hamiltonian"
+    },
+    {
+      "id": "berry-sphere",
+      "section": "lecture-one/the-berry-connection",
+      "title": "A sphere surrounding a bad point in the Brillouin zone"
+    }
+  ]
+}

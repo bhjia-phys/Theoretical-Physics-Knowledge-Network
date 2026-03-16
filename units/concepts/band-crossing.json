@@ -1,0 +1,68 @@
+{
+  "id": "concept:band-crossing",
+  "type": "concept",
+  "title": "Band Crossing",
+  "summary": "A band crossing is a momentum-space point where two energy bands become degenerate; in Lecture One it is the local seed from which Weyl and Dirac low-energy descriptions are extracted.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lecture-one",
+  "tags": [
+    "band-theory",
+    "degeneracy",
+    "topological-phases"
+  ],
+  "aliases": [
+    "band touching",
+    "gap crossing"
+  ],
+  "assumptions": [
+    "Bloch-band description is valid.",
+    "The crossing is analyzed in momentum space."
+  ],
+  "regime": "Noninteracting or effectively single-particle band theory.",
+  "scope": "Lecture One local crossing analysis in one, two, and three spatial dimensions.",
+  "dependencies": [],
+  "related_units": [
+    "concept:weyl-node",
+    "concept:dirac-point-in-2d",
+    "claim:isolated-3d-two-band-crossings-are-weyl-nodes"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp"
+      ],
+      "notes": "Generic two-band crossings are organized through H=a+b.sigma."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "symmetries": [
+    "Depends on symmetry class and dimension."
+  ],
+  "representation": "Degenerate point in a Bloch Hamiltonian family.",
+  "model_refs": [
+    "model:two-band-lattice-weyl-model"
+  ],
+  "equation_refs": [
+    "equation:two-band-hamiltonian-d-dot-sigma"
+  ],
+  "quantity_refs": [
+    "quantity:fermi-energy"
+  ],
+  "failure_modes": [
+    "Extended nodal lines or surfaces require different treatment.",
+    "Crossings away from the Fermi energy may not determine low-energy physics."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks what a Weyl or Dirac point is locally."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

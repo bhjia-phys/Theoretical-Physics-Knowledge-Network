@@ -1,0 +1,65 @@
+{
+  "id": "equation:continuum-1d-chiral-fermion-hamiltonian",
+  "type": "equation",
+  "title": "Continuum 1D Chiral Fermion Hamiltonian",
+  "summary": "After replacing p-p0 by -i d/dx, the linearized one-dimensional crossing becomes a continuum Hamiltonian H=v integral dx psi* (-i d/dx) psi up to an irrelevant constant shift.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lecture-one",
+  "tags": [
+    "chiral-fermion",
+    "continuum-hamiltonian",
+    "1d"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The constant energy shift can be dropped for low-energy dynamics."
+  ],
+  "regime": "Long-wavelength effective theory near a one-dimensional crossing.",
+  "scope": "Lecture One passage from band dispersion to a chiral continuum field.",
+  "dependencies": [
+    "equation:linearized-dispersion-near-fermi-point"
+  ],
+  "related_units": [
+    "derivation:linearization-gives-1d-chiral-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "equation_labels": [
+        "continuum",
+        "constantshift"
+      ],
+      "notes": "The constant term is identified as a removable density shift."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "stable",
+  "representation": "Effective continuum Hamiltonian for a single chiral branch.",
+  "equation_refs": [],
+  "quantity_refs": [
+    "quantity:fermi-velocity"
+  ],
+  "symbols": [
+    {
+      "symbol": "psi",
+      "meaning": "continuum field for the low-energy branch"
+    },
+    {
+      "symbol": "v",
+      "meaning": "branch velocity"
+    }
+  ],
+  "failure_modes": [
+    "A single chiral branch is only local; lattice realizations require balancing branches globally."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when connecting a Fermi crossing to a chiral field theory."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

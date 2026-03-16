@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Open Physics KB Source Manifest",
+  "type": "object",
+  "required": [
+    "source_id",
+    "title",
+    "authors",
+    "version",
+    "submitted_date",
+    "updated_date",
+    "canonical_scope",
+    "urls",
+    "section_map",
+    "equation_map",
+    "figure_map"
+  ],
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "version": {
+      "type": "string"
+    },
+    "submitted_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "canonical_scope": {
+      "type": "string"
+    },
+    "urls": {
+      "type": "object",
+      "required": [
+        "abs",
+        "pdf",
+        "doi"
+      ],
+      "properties": {
+        "abs": {
+          "type": "string"
+        },
+        "pdf": {
+          "type": "string"
+        },
+        "doi": {
+          "type": "string"
+        },
+        "source_archive": {
+          "type": "string"
+        },
+        "journal": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "section_map": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/section_entry"
+      }
+    },
+    "equation_map": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/equation_entry"
+      }
+    },
+    "figure_map": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/figure_entry"
+      }
+    }
+  },
+  "$defs": {
+    "section_entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "equation_entry": {
+      "type": "object",
+      "required": [
+        "label",
+        "section",
+        "title"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "figure_entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "section",
+        "title"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "section": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

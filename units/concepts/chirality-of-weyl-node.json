@@ -1,0 +1,77 @@
+{
+  "id": "concept:chirality-of-weyl-node",
+  "type": "concept",
+  "title": "Chirality Of A Weyl Node",
+  "summary": "The chirality of a Weyl node is the sign of the Jacobian relating momentum deviations to the Pauli-vector coefficients in the local Hamiltonian, equivalently the sign of its Berry-flux charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "weyl-semimetals",
+  "tags": [
+    "chirality",
+    "weyl-semimetal",
+    "topological-charge"
+  ],
+  "aliases": [
+    "handedness of a Weyl node"
+  ],
+  "assumptions": [
+    "The local crossing is simple and linear.",
+    "Orientation conventions are fixed consistently."
+  ],
+  "regime": "Local three-dimensional Weyl-point analysis.",
+  "scope": "Lecture One chirality sign from both local Hamiltonian and Berry-flux viewpoints.",
+  "dependencies": [
+    "concept:weyl-node",
+    "quantity:chirality-sign",
+    "quantity:winding-number"
+  ],
+  "related_units": [
+    "equation:berry-flux-topological-charge",
+    "equation:two-band-hamiltonian-d-dot-sigma",
+    "bridge:weyl-node-to-berry-monopole"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "perd"
+      ],
+      "notes": "The sign of the determinant is the local chirality label."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "zif"
+      ],
+      "notes": "Berry flux gives the same topological sign."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "symmetries": [],
+  "representation": "Orientation sign of the local Weyl map.",
+  "model_refs": [
+    "model:two-band-lattice-weyl-model"
+  ],
+  "equation_refs": [
+    "equation:berry-flux-topological-charge"
+  ],
+  "quantity_refs": [
+    "quantity:chirality-sign",
+    "quantity:winding-number"
+  ],
+  "failure_modes": [
+    "Mixed sign conventions can flip the reported chirality without changing the physics."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks how chirality is computed or interpreted."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

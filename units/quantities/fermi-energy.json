@@ -1,0 +1,52 @@
+{
+  "id": "quantity:fermi-energy",
+  "type": "quantity",
+  "title": "Fermi Energy",
+  "summary": "The Fermi energy is the reference energy that determines which band crossings control low-energy excitations; a crossing away from it does not automatically define a Weyl semimetal phase.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "low-energy-kinematics",
+  "tags": [
+    "fermi-energy",
+    "semimetal",
+    "low-energy-physics"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The filling and chemical potential are specified."
+  ],
+  "regime": "Band structures near half-filling or another chosen filling.",
+  "scope": "Lecture One criterion for which crossings matter physically.",
+  "dependencies": [],
+  "related_units": [
+    "warning:crossing-away-from-fermi-energy-is-not-yet-a-clean-weyl-semimetal",
+    "concept:band-crossing"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/band-crossing-at-the-fermi-energy",
+      "notes": "Lecture One distinguishes topological crossings from low-energy physical relevance at the Fermi level."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "stable",
+  "representation": "Energy reference that sets the active low-energy degrees of freedom.",
+  "symbols": [
+    {
+      "symbol": "E_F",
+      "meaning": "Fermi energy"
+    }
+  ],
+  "failure_modes": [
+    "A material can host Weyl-like crossings but still not realize a clean Weyl semimetal if the crossing lies far from E_F."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when deciding whether a crossing is physically relevant at low energy."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

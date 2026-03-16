@@ -1,0 +1,58 @@
+{
+  "id": "model:two-band-lattice-weyl-model",
+  "type": "model",
+  "title": "Two-Band Lattice Weyl Model",
+  "summary": "A simple periodic two-band lattice Hamiltonian provides an explicit realization of Weyl nodes on a Brillouin torus and makes the global doubling constraint visible.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "toy-models",
+  "tags": [
+    "lattice-model",
+    "weyl-semimetal",
+    "fermion-doubling"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Crystal momentum is periodic.",
+    "A minimal two-band effective description is sufficient."
+  ],
+  "regime": "Explicit lattice regularization of point-node band structure.",
+  "scope": "Lecture One simple examples of periodic band Hamiltonians.",
+  "dependencies": [
+    "concept:weyl-node",
+    "concept:nielsen-ninomiya-theorem"
+  ],
+  "related_units": [
+    "equation:two-band-weyl-model-with-tunable-pair",
+    "warning:local-weyl-description-does-not-fix-global-lattice-consistency"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/simple-examples-of-band-hamiltonians",
+      "equation_labels": [
+        "twof"
+      ],
+      "notes": "Lecture One gives an explicit periodic Weyl Hamiltonian on the lattice."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Periodic Bloch Hamiltonian on a Brillouin torus.",
+  "equation_refs": [
+    "equation:two-band-weyl-model-with-tunable-pair"
+  ],
+  "quantity_refs": [],
+  "failure_modes": [
+    "A local continuum toy model is not enough to see the torus-level doubling constraint."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when an explicit lattice regularization is needed."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

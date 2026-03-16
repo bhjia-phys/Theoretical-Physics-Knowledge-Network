@@ -1,0 +1,63 @@
+{
+  "id": "derivation:berry-flux-gives-node-charge",
+  "type": "derivation",
+  "title": "Berry Flux Gives Node Charge",
+  "summary": "Once the occupied states are organized into a line bundle, the flux of Berry curvature through a small sphere around a bad point yields the node's integer topological charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "berry-geometry",
+  "tags": [
+    "derivation",
+    "berry-flux",
+    "topological-charge"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The sphere encloses only one bad point.",
+    "The occupied bundle is regular on the punctured sphere."
+  ],
+  "regime": "Berry-geometric analysis of isolated Weyl nodes.",
+  "scope": "Lecture One curvature-based derivation of node charge.",
+  "dependencies": [
+    "concept:berry-connection",
+    "concept:berry-curvature",
+    "equation:berry-flux-topological-charge"
+  ],
+  "related_units": [
+    "bridge:weyl-node-to-berry-monopole",
+    "concept:chirality-of-weyl-node"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "fc",
+        "zif"
+      ],
+      "notes": "The derivation uses the Berry bundle and its curvature."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Geometric derivation from curvature flux to integer node charge.",
+  "equation_refs": [
+    "equation:berry-flux-topological-charge"
+  ],
+  "quantity_refs": [
+    "quantity:berry-curvature-two-form",
+    "quantity:winding-number"
+  ],
+  "failure_modes": [
+    "The abelian derivation needs modification for multiple occupied bands."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use for the geometric route from Berry data to Weyl-node charge."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

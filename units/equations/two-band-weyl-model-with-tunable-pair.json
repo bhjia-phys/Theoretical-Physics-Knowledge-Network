@@ -1,0 +1,65 @@
+{
+  "id": "equation:two-band-weyl-model-with-tunable-pair",
+  "type": "equation",
+  "title": "Two-Band Weyl Model With A Tunable Pair",
+  "summary": "The toy Hamiltonian with off-diagonal p1 plus or minus i p2 and diagonal plus or minus f(p3) realizes Weyl nodes whose creation, motion, and annihilation are controlled by the zeros of f.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "toy-models",
+  "tags": [
+    "toy-model",
+    "weyl-semimetal",
+    "pair-annihilation"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Only two bands are retained.",
+    "Zeros of f are simple unless one is studying node coalescence."
+  ],
+  "regime": "Continuum toy model for pairs of Weyl nodes.",
+  "scope": "Lecture One explicit example used to create or annihilate Weyl nodes.",
+  "dependencies": [
+    "concept:weyl-node"
+  ],
+  "related_units": [
+    "model:two-band-lattice-weyl-model",
+    "warning:local-weyl-description-does-not-fix-global-lattice-consistency"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/some-examples",
+      "equation_labels": [
+        "terf",
+        "werf"
+      ],
+      "notes": "The parameter a in f(p3)=p3^2-a controls pair creation and annihilation."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Explicit 2x2 toy Hamiltonian for a Weyl-node pair.",
+  "equation_refs": [],
+  "quantity_refs": [],
+  "symbols": [
+    {
+      "symbol": "f(p_3)",
+      "meaning": "controls the location and multiplicity of Weyl points"
+    },
+    {
+      "symbol": "a",
+      "meaning": "tuning parameter in the example f(p3)=p3^2-a"
+    }
+  ],
+  "failure_modes": [
+    "This model is local and does not by itself enforce lattice periodicity."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for an explicit Hamiltonian that creates Weyl-node pairs."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

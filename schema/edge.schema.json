@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Open Physics KB Edge",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "relation",
+    "target",
+    "summary",
+    "confidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^edge:[a-z0-9-]+$"
+    },
+    "source": {
+      "type": "string",
+      "pattern": "^[a-z_]+:[a-z0-9-]+$"
+    },
+    "relation": {
+      "type": "string",
+      "enum": [
+        "depends_on",
+        "defines",
+        "uses",
+        "explains",
+        "motivates",
+        "specializes",
+        "generalizes",
+        "contrasts_with",
+        "derived_from",
+        "supports",
+        "warned_by",
+        "bridges_to",
+        "formalizes_toward",
+        "anchored_in_source"
+      ]
+    },
+    "target": {
+      "type": "string",
+      "pattern": "^[a-z_]+:[a-z0-9-]+$"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "confidence": {
+      "type": "string",
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "source_anchors": {
+      "type": "array",
+      "items": {
+        "$ref": "unit.schema.json#/$defs/source_anchor"
+      }
+    }
+  },
+  "additionalProperties": false
+}

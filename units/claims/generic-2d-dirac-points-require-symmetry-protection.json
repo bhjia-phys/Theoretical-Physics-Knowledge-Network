@@ -1,0 +1,63 @@
+{
+  "id": "claim:generic-2d-dirac-points-require-symmetry-protection",
+  "type": "claim",
+  "title": "Generic 2D Dirac Points Require Symmetry Protection",
+  "summary": "Unlike isolated two-band crossings in three dimensions, two-dimensional Dirac points are generally not stable without extra symmetry or special structure.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "dirac-materials",
+  "tags": [
+    "2d-dirac",
+    "symmetry-protection",
+    "genericity"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The system is genuinely two-dimensional.",
+    "No extra protecting symmetry is built in unless stated."
+  ],
+  "regime": "Two-dimensional Bloch band structures.",
+  "scope": "Lecture One contrast between 2D and 3D node stability.",
+  "dependencies": [
+    "concept:dirac-point-in-2d",
+    "concept:band-crossing"
+  ],
+  "related_units": [
+    "claim:isolated-3d-two-band-crossings-are-weyl-nodes"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/two-dimensions",
+      "equation_labels": [
+        "twod"
+      ],
+      "notes": "Lecture One explains why 2D crossings are not generically protected in the same way."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/discrete-lattice-symmetries-and-massless-dirac-fermions",
+      "equation_labels": [
+        "perf"
+      ],
+      "notes": "Later examples emphasize the role of lattice symmetries in keeping Dirac points gapless."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Dimension-dependent genericity claim about linear band crossings.",
+  "model_refs": [],
+  "equation_refs": [],
+  "quantity_refs": [],
+  "failure_modes": [
+    "The claim changes once protective symmetries are imposed."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use for queries contrasting graphene-like Dirac points with Weyl nodes."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

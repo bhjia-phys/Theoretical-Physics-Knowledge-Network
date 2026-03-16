@@ -1,0 +1,55 @@
+{
+  "id": "claim:fermi-arcs-terminate-at-projected-weyl-nodes",
+  "type": "claim",
+  "title": "Fermi Arcs Terminate At Projected Weyl Nodes",
+  "summary": "The endpoints of a Fermi arc in the surface Brillouin zone are fixed by the projections of bulk Weyl nodes that source the changing topological data across momentum slices.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "boundary-phenomena",
+  "tags": [
+    "fermi-arc",
+    "bulk-boundary",
+    "weyl-semimetal"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "A boundary orientation is chosen.",
+    "Projected Weyl nodes remain distinguishable on the boundary."
+  ],
+  "regime": "Boundary spectrum of a Weyl semimetal.",
+  "scope": "Lecture One qualitative bulk-boundary statement for Fermi arcs.",
+  "dependencies": [
+    "concept:fermi-arc",
+    "concept:weyl-node",
+    "bridge:bulk-boundary-correspondence-to-fermi-arc"
+  ],
+  "related_units": [
+    "warning:crossing-away-from-fermi-energy-is-not-yet-a-clean-weyl-semimetal"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "notes": "Lecture One identifies Fermi arcs as boundary signatures tied to bulk Weyl nodes."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Boundary claim linking arc endpoints to projected bulk topology.",
+  "model_refs": [
+    "model:two-band-lattice-weyl-model"
+  ],
+  "equation_refs": [],
+  "quantity_refs": [],
+  "failure_modes": [
+    "Surface reconstructions or coincident projections can obscure the simple arc picture."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks how to read bulk Weyl nodes from boundary spectra."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

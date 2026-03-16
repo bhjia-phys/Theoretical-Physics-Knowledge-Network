@@ -1,0 +1,60 @@
+{
+  "id": "bridge:weyl-node-to-berry-monopole",
+  "type": "bridge",
+  "title": "Weyl Node To Berry Monopole",
+  "summary": "A Weyl node can be read either as a linearized band crossing or as a momentum-space monopole of Berry curvature whose flux equals the node charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "bridge-objects",
+  "tags": [
+    "bridge",
+    "weyl-node",
+    "berry-curvature"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The node is isolated and the occupied-state bundle is defined away from it."
+  ],
+  "regime": "Local Weyl-node analysis with Berry geometry.",
+  "scope": "Lecture One conceptual bridge between Hamiltonian and curvature pictures.",
+  "dependencies": [
+    "concept:weyl-node",
+    "concept:berry-curvature",
+    "equation:berry-flux-topological-charge"
+  ],
+  "related_units": [
+    "concept:chirality-of-weyl-node",
+    "method:berry-flux-diagnosis-of-node-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "zif"
+      ],
+      "notes": "The flux formula is the bridge between node and monopole viewpoints."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Cross-perspective bridge from local Hamiltonian data to geometric flux.",
+  "equation_refs": [
+    "equation:berry-flux-topological-charge"
+  ],
+  "quantity_refs": [
+    "quantity:berry-curvature-two-form",
+    "quantity:winding-number"
+  ],
+  "failure_modes": [
+    "The monopole language is only valid on the punctured region where the Berry bundle is defined."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when translating between band-crossing and Berry-curvature explanations."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}

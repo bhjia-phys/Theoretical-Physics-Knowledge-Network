@@ -1,0 +1,68 @@
+{
+  "id": "concept:berry-curvature",
+  "type": "concept",
+  "title": "Berry Curvature",
+  "summary": "Berry curvature is the curvature two-form of the Berry connection; in Lecture One its flux through a sphere around a bad point measures the node's topological charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "berry-geometry",
+  "tags": [
+    "berry-curvature",
+    "topological-charge",
+    "weyl-semimetal"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The occupied-state bundle is smooth on the punctured region.",
+    "Singular points are excised before computing dF=0."
+  ],
+  "regime": "Regular momentum-space region away from bad points.",
+  "scope": "Lecture One abelian curvature of a two-band occupied-state line bundle.",
+  "dependencies": [
+    "concept:berry-connection",
+    "quantity:berry-curvature-two-form"
+  ],
+  "related_units": [
+    "concept:weyl-node",
+    "quantity:winding-number",
+    "derivation:berry-flux-gives-node-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "fc",
+        "zif",
+        "wif"
+      ],
+      "notes": "The flux formula and dF=0 organize the topological analysis."
+    }
+  ],
+  "formalization_status": "not_started",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "symmetries": [
+    "Gauge-invariant as a curvature form."
+  ],
+  "representation": "Curvature two-form F=dA on the occupied-state bundle.",
+  "model_refs": [],
+  "equation_refs": [
+    "equation:berry-flux-topological-charge"
+  ],
+  "quantity_refs": [
+    "quantity:berry-curvature-two-form",
+    "quantity:winding-number"
+  ],
+  "failure_modes": [
+    "If the subspace is not isolated, the abelian description breaks down."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks how topology is seen from Berry data."
+  ],
+  "created_at": "2026-03-16",
+  "updated_at": "2026-03-16"
+}
