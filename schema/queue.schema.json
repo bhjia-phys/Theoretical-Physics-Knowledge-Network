@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Open Physics KB Queue Manifest",
+  "type": "object",
+  "required": [
+    "queue_id",
+    "title",
+    "topic",
+    "queue_kind",
+    "summary",
+    "items",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "queue_id": {
+      "type": "string",
+      "pattern": "^queue:[a-z0-9-]+$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "queue_kind": {
+      "type": "string",
+      "enum": [
+        "unresolved",
+        "prerequisite",
+        "promotion_candidate",
+        "future_buffer"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "unit_id",
+          "status",
+          "priority"
+        ],
+        "properties": {
+          "unit_id": {
+            "type": "string",
+            "pattern": "^[a-z_]+:[a-z0-9-]+$"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "open",
+              "in_progress",
+              "resolved",
+              "deferred"
+            ]
+          },
+          "priority": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "additionalProperties": false
+}

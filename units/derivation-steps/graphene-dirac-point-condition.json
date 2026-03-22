@@ -1,0 +1,76 @@
+{
+  "id": "derivation_step:graphene-dirac-point-condition",
+  "type": "derivation_step",
+  "title": "Graphene Dirac Points Solve 1 + e^{i alpha} + e^{i beta} = 0",
+  "summary": "The graphene band crossings occur exactly when the off-diagonal entry of the nearest-neighbor Hamiltonian vanishes, so 1+e^{i alpha}+e^{i beta}=0 and the two symmetry-related Dirac points follow immediately.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "haldane-model",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "derivation-step",
+    "graphene",
+    "haldane",
+    "dirac-point"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The starting point is the nearest-neighbor graphene Hamiltonian with no symmetry-breaking mass terms.",
+    "Band crossings are identified by the vanishing of the determinant of the traceless two-band Hamiltonian."
+  ],
+  "regime": "Honeycomb-lattice Dirac-point analysis prior to the Haldane perturbation.",
+  "scope": "Reusable derivation step that locates the two graphene Dirac points used in the Haldane bridge.",
+  "dependencies": [
+    "definition:graphene-nearest-neighbor-hamiltonian"
+  ],
+  "related_units": [
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "equation_labels": [
+        "theq",
+        "omeq"
+      ],
+      "notes": "Witten's explicit solution of the graphene band-touching condition."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Ordered lattice derivation step locating the two graphene Dirac points.",
+  "math_expressions": [
+    {
+      "latex": "1+e^{i\\alpha}+e^{i\\beta}=0",
+      "kind": "display",
+      "equation_label": "theq",
+      "notes": "Condition for the off-diagonal entry of the graphene Hamiltonian to vanish."
+    },
+    {
+      "latex": "e^{i\\alpha}=\\frac{1}{2}\\left(-1\\pm\\sqrt{-3}\\right)=e^{-i\\beta}",
+      "kind": "display",
+      "equation_label": "omeq",
+      "notes": "The two symmetry-related solutions locating the Dirac points."
+    }
+  ],
+  "step_inputs": [
+    "definition:graphene-nearest-neighbor-hamiltonian"
+  ],
+  "step_justification": [
+    "For a traceless two-band Hamiltonian, a band crossing occurs exactly when the off-diagonal hopping amplitude vanishes.",
+    "Setting 1+e^{i alpha}+e^{i beta} to zero gives a quadratic equation for e^{i alpha}.",
+    "The two resulting roots are exchanged by the honeycomb lattice symmetries and define the two Dirac points."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when the Haldane bridge needs the explicit derivation of where the graphene Dirac cones sit."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

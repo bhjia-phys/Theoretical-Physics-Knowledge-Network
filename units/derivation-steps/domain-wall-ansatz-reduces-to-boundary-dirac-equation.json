@@ -1,0 +1,115 @@
+{
+  "id": "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+  "type": "derivation_step",
+  "title": "Domain-Wall Ansatz Reduces To Boundary Dirac Equation",
+  "summary": "Insert the exponentially localized ansatz into the sign-changing-mass Dirac equation and separate the transverse profile from the tangential dynamics to obtain a 1+1-dimensional chiral boundary Dirac equation.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "derivation-step",
+    "jackiw-rebbi",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The mode is translationally invariant along the boundary directions up to a plane wave.",
+    "The wall profile depends only on the normal coordinate x_1."
+  ],
+  "regime": "Continuum Dirac analysis near a sign-changing mass wall.",
+  "scope": "Core derivation step in the Jackiw-Rebbi boundary-mode proof.",
+  "dependencies": [
+    "notation_map:lecture-three-edge-mode-symbols",
+    "definition:jackiw-rebbi-domain-wall-zero-mode"
+  ],
+  "related_units": [
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "Witten explicitly inserts the localized ansatz into the sign-changing-mass Dirac equation."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/main-result",
+      "notes": "Original zero-mode mechanism behind the wall ansatz."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Separation of variables between transverse wall profile and tangential boundary dynamics.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the Jackiw-Rebbi wall mode is not magic; it comes from inserting a very specific localized ansatz into the sign-changing-mass Dirac equation and separating transverse from tangential dynamics.",
+  "prerequisite_story": "Know the sign-changing-mass Dirac equation, the interpretation of x_1 as the wall-normal coordinate, and the projector condition on the surviving boundary spinor component.",
+  "local_context_story": "In the Lecture Three edge-mode proof, this is the central derivation step between writing the folded wall equation and obtaining the 1+1-dimensional chiral boundary Dirac equation.",
+  "forward_links_story": "After this reduction, the remaining question is normalizability: the wall profile decays on both sides only when the mass changes sign, producing the physical chiral edge excitation.",
+  "canonical_questions": [
+    "How does the exponential wall ansatz simplify the Dirac equation?",
+    "Why does the gamma_1 eigenvalue condition determine the boundary chirality?",
+    "Which part of the derivation still needs a separate normalizability argument?"
+  ],
+  "scope_boundaries": [
+    "This is the reduction step from the wall equation to the boundary equation; it does not by itself prove that the mode is normalizable.",
+    "The derivation is local to the continuum wall profile and does not yet include the bulk anomaly-cancellation interpretation."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\left(\\slashed{\\partial} - m\\,\\operatorname{sign}(x_1)\\right)\\psi = 0",
+      "kind": "display",
+      "equation_label": "gift",
+      "notes": "Starting sign-changing-mass Dirac equation."
+    },
+    {
+      "latex": "\\psi = e^{-m|x_1|}\\,\\psi_{\\parallel}",
+      "kind": "display",
+      "equation_label": "zoggg",
+      "notes": "Localized ansatz in the normal direction."
+    },
+    {
+      "latex": "\\gamma_1\\psi_{\\parallel} = -\\psi_{\\parallel},\\qquad \\slashed{\\partial}^{\\parallel}\\psi_{\\parallel}=0",
+      "kind": "display",
+      "equation_label": "trogg",
+      "notes": "Reduced chiral boundary Dirac equation."
+    }
+  ],
+  "step_inputs": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode"
+  ],
+  "step_justification": [
+    "The sign-changing mass fixes the decaying transverse profile.",
+    "After factoring out the wall profile, the remaining spinor obeys a reduced Dirac equation tangent to the boundary.",
+    "The gamma_1 eigenvalue condition fixes the boundary chirality."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "domain_wall_ansatz_reduces_to_boundary_dirac_equation",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work with the continuum sign-changing-mass Dirac equation and a separated wall ansatz.",
+    "Treat the gamma-matrix conventions as fixed by the local notation family rather than reproving representation independence inside the lemma."
+  ],
+  "lean_prerequisite_ids": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode"
+  ],
+  "formalization_blockers": [
+    "The current KB does not yet provide a reusable Lean-side abstraction for gamma-matrix manipulations in the domain-wall reduction.",
+    "Normalizability is still split into a neighboring lemma and is not encoded as a postcondition of this reduction step."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation answer must show how the wall ansatz actually produces the boundary Dirac equation."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

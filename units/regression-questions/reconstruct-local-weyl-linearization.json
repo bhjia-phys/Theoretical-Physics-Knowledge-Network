@@ -1,0 +1,60 @@
+{
+  "id": "regression_question:reconstruct-local-weyl-linearization",
+  "type": "regression_question",
+  "title": "Reconstruct The Local Weyl Linearization",
+  "summary": "Tests whether the topic can reconstruct the actual derivation from the generic local 2x2 Hamiltonian to the Weyl cone and its chirality.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "weyl-node"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer should expose explicit intermediate formulas, not only the endpoint."
+  ],
+  "regime": "Topic regression for the Witten Lecture One exemplar.",
+  "scope": "Flagship derivation question for the local Weyl-node branch.",
+  "dependencies": [
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "derivation_step:jacobian-sign-defines-local-chirality"
+  ],
+  "related_units": [
+    "question_oracle:reconstruct-local-weyl-linearization"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp",
+        "xpa",
+        "perd"
+      ],
+      "notes": "The derivation must expose the Taylor expansion, invertible linear map, and chirality sign."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Derivation-family regression prompt.",
+  "prompt": "Starting from the local 2x2 Hamiltonian near a bad point, reconstruct the derivation that gives the Weyl Hamiltonian and the chirality sign.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "derivation_step:jacobian-sign-defines-local-chirality"
+  ],
+  "pass_conditions": [
+    "The answer writes the Taylor expansion around the bad point.",
+    "The answer explains why an invertible Jacobian leads to a standard Weyl cone after a linear change of coordinates.",
+    "The answer identifies the determinant sign as the local chirality."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to test whether the KB can actually reconstruct the local Weyl derivation."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

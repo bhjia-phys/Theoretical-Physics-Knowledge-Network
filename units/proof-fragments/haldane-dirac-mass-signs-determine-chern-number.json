@@ -1,0 +1,107 @@
+{
+  "id": "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+  "type": "proof_fragment",
+  "title": "Haldane Dirac-Mass Signs Determine The Chern Number",
+  "summary": "In the Haldane honeycomb model, the two Dirac cones acquire masses m_K = M - 3 sqrt(3) t_2 sin(phi) and m_K prime = M + 3 sqrt(3) t_2 sin(phi); because the two valleys have opposite orientation, the total Chern number is one half of sgn(m_K prime) minus sgn(m_K).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-fragment",
+    "haldane",
+    "chern-insulator",
+    "dirac-mass"
+  ],
+  "aliases": [
+    "Haldane valley-mass criterion for the Chern number"
+  ],
+  "assumptions": [
+    "The low-energy description near the two honeycomb Dirac points is valid.",
+    "The system is half filled and the bulk remains gapped."
+  ],
+  "regime": "Low-energy Dirac analysis of the Haldane Chern insulator on the honeycomb lattice.",
+  "scope": "Model-specific lattice bridge showing how a concrete condensed-matter Hamiltonian realizes the Hall-response / Chern-number family without Landau levels.",
+  "dependencies": [
+    "concept:dirac-point-in-2d",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion"
+  ],
+  "related_units": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/dirac-mass-criterion",
+      "equation_labels": [
+        "dirac-mass-at-k-and-k-prime"
+      ],
+      "notes": "Archival low-energy mass criterion identifying the two valley masses."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Archival Chern-number formula showing how the valley mass signs determine the Hall phase."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "notes": "Witten states that Haldane's perturbation gives masses of the same sign to the Dirac modes and produces the quantum Hall phase."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Concrete Haldane-model bridge from lattice perturbations to the integer Hall Chern number.",
+  "math_expressions": [
+    {
+      "latex": "m_K = M-3\\sqrt{3}\\,t_2\\sin\\phi,\\qquad m_{K'} = M+3\\sqrt{3}\\,t_2\\sin\\phi",
+      "kind": "display",
+      "notes": "Effective Dirac masses at the two valleys from sublattice staggering M and complex next-nearest-neighbor hopping t_2 e^{i\\phi}."
+    },
+    {
+      "latex": "C = \\frac{1}{2}\\left(\\operatorname{sgn}(m_{K'})-\\operatorname{sgn}(m_K)\\right)",
+      "kind": "display",
+      "notes": "Total Chern number from the two valleys, whose kinetic terms have opposite orientation."
+    },
+    {
+      "latex": "M=0,\\ t_2\\sin\\phi\\neq 0\\qquad \\Longrightarrow\\qquad C=\\operatorname{sgn}(t_2\\sin\\phi)",
+      "kind": "display",
+      "notes": "Pure Haldane mass with no sublattice staggering gives the unit Chern-insulator phase."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "M",
+      "meaning": "sublattice-staggering (Semenoff) mass"
+    },
+    {
+      "symbol": "t_2 e^{i\\phi}",
+      "meaning": "complex next-nearest-neighbor hopping that breaks time reversal without net flux per unit cell"
+    },
+    {
+      "symbol": "C",
+      "meaning": "first Chern number of the occupied band"
+    }
+  ],
+  "step_justification": [
+    "Linearize the lattice model near K and K prime to identify two massive Dirac cones.",
+    "Use the opposite valley orientation to assign opposite geometric signs to the two half-Dirac contributions.",
+    "Sum the two valley contributions to obtain the Chern-number criterion in terms of the mass signs."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when an answer must explain the explicit Haldane-model bridge instead of mentioning Haldane only as a citation."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

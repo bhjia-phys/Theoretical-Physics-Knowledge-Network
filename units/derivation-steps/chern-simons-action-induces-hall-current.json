@@ -1,0 +1,109 @@
+{
+  "id": "derivation_step:chern-simons-action-induces-hall-current",
+  "type": "derivation_step",
+  "title": "Chern-Simons Action Induces Hall Current",
+  "summary": "Differentiate the integer-level Chern-Simons effective action with respect to the background gauge field to obtain the transverse Hall current J_2 = k E_1 / 2pi.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "derivation-step",
+    "hall-current",
+    "chern-simons"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The low-energy effective action is dominated by the Chern-Simons term.",
+    "The sample lies in the x_1-x_2 plane."
+  ],
+  "regime": "Macroscopic response theory of the integer quantum Hall effect.",
+  "scope": "Functional-derivative step from topological action to Hall current.",
+  "dependencies": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "related_units": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "equation_labels": [
+        "curr",
+        "zurr",
+        "murr"
+      ],
+      "notes": "Variation of the Chern-Simons action produces the quantized Hall current."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Functional derivative of the Chern-Simons action with respect to the background gauge field.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the Hall current is not postulated separately from the topological action. It is derived by varying the quantized Chern-Simons response with respect to the background gauge field.",
+  "prerequisite_story": "Know the integer-quantized Chern-Simons effective action and the response-theory rule J_i = -delta I_eff / delta A_i. Also keep track of the orientation conventions for the sample plane.",
+  "local_context_story": "In Witten Lecture Two, this derivation sits immediately after the large-gauge quantization step. It is the bridge from the abstract integer level k to the measurable conductivity relation J_2 = k E_1 / 2pi.",
+  "forward_links_story": "The same integer k is later compared with the TKNN band Chern number and with the many-body twist-angle Chern number, producing the full Hall-response equivalence theorem.",
+  "canonical_questions": [
+    "How does varying the Chern-Simons action produce a transverse current?",
+    "Where does the factor 1 / 2pi come from in the Hall conductivity formula?",
+    "Why does this derivation depend on the earlier integrality of k?"
+  ],
+  "scope_boundaries": [
+    "This is a low-energy response derivation inside the effective Chern-Simons description; it does not itself prove that k is quantized.",
+    "The orientation and sign conventions matter, so the formula must be read with the same epsilon-tensor conventions as the source."
+  ],
+  "math_expressions": [
+    {
+      "latex": "J_i = -\\frac{\\delta I_{\\mathrm{eff}}}{\\delta A_i}",
+      "kind": "display",
+      "equation_label": "curr",
+      "notes": "Definition of the induced current from the effective action."
+    },
+    {
+      "latex": "I_{\\mathrm{eff}} = k\\,\\mathcal I_{\\mathrm{CS}} = \\frac{k}{4\\pi}\\int_{M_3}\\epsilon^{ijk}A_i\\partial_jA_k",
+      "kind": "display",
+      "equation_label": "zurr",
+      "notes": "Effective topological response with integer level k."
+    },
+    {
+      "latex": "J_2 = \\frac{kF_{01}}{2\\pi} = \\frac{kE_1}{2\\pi}",
+      "kind": "display",
+      "equation_label": "murr",
+      "notes": "Transverse Hall current induced by an electric field in the x_1 direction."
+    }
+  ],
+  "step_inputs": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level"
+  ],
+  "step_justification": [
+    "The response current is obtained by differentiating the effective action with respect to the background gauge potential.",
+    "For a 2+1-dimensional sample, the antisymmetric tensor in the Chern-Simons term turns a longitudinal electric field into a transverse current."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "chern_simons_action_induces_hall_current",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Treat the effective action as a differentiable functional of the background gauge field.",
+    "Work at the level of formal variational calculus rather than deriving the effective action from a microscopic path integral inside the same lemma."
+  ],
+  "lean_prerequisite_ids": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "formalization_blockers": [
+    "The repository does not yet provide a formal variational-calculus layer for differential-form actions.",
+    "Sign conventions for epsilon tensors and electric-field components are still carried as source-level notation rather than a reusable formal convention package."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation needs the explicit step from topological response action to Hall conductivity."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

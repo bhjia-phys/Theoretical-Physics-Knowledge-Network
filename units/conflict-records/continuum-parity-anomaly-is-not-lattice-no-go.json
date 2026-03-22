@@ -1,0 +1,60 @@
+{
+  "id": "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+  "type": "conflict_record",
+  "title": "Continuum Parity Anomaly Is Not Lattice No-Go",
+  "summary": "This conflict record preserves the inferential boundary between the continuum parity-anomaly / domain-wall story and the separate lattice Nielsen-Ninomiya theorem: the former motivates edge consistency, but it is not itself a proof of the lattice zero-sum law.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "conflict-routing",
+  "canonical_family": "topological-phases/anomaly-vs-lattice-no-go",
+  "tags": [
+    "conflict-record",
+    "parity-anomaly",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Nearby sources and informal explanations often blur the continuum and lattice arguments."
+  ],
+  "regime": "Scope-boundary preservation across related theorem families.",
+  "scope": "Conflict-preservation object for anomaly intuition versus lattice proof.",
+  "dependencies": [
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "related_units": [
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Witten uses anomaly inflow as boundary intuition, not as the lattice no-go proof."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "The continuum edge-mode story remains distinct from the global lattice theorem."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Conflict-preservation object keeping the continuum and lattice arguments distinct.",
+  "conflict_unit_ids": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "retrieval_hints": [
+    "Use when an answer must explicitly preserve the difference between anomaly intuition and lattice proof."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

@@ -1,0 +1,18 @@
+# regression_run:witten-lecture-one-2026-03-19
+
+- Suite ID: `regression_suite:witten-lecture-one`
+- Status: `mixed`
+- Created: `2026-03-19`
+- Topic completion: `not_assessed`
+- Promotion readiness: `not-assessed`
+
+## Results
+- [Define A Weyl Node With Its Assumptions](../Regression-Questions/define-weyl-node-with-assumptions.md) | oracle=[Oracle For Defining A Weyl Node With Assumptions](../Question-Oracles/define-weyl-node-with-assumptions.md) | grade=`pass` | The local definition branch is now explicit and formula-bearing.
+- [Reconstruct The Local Weyl Linearization](../Regression-Questions/reconstruct-local-weyl-linearization.md) | oracle=[Oracle For Reconstructing The Local Weyl Linearization](../Question-Oracles/reconstruct-local-weyl-linearization.md) | grade=`pass` | The derivation spine is now decomposed into explicit derivation-step units.
+- [Prove Nielsen-Ninomiya By Stokes](../Regression-Questions/prove-nielsen-ninomiya-by-stokes.md) | oracle=[Oracle For Proving Nielsen-Ninomiya By Stokes](../Question-Oracles/prove-nielsen-ninomiya-by-stokes.md) | grade=`partial` | The lecture-level Stokes proof is present, but the cited stronger external proof route is still unresolved.
+  - writeback: [Former Friedan-Level Nielsen-Ninomiya Source Gap (Recovered)](../Open-Gaps/friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested.md), [Ingest Friedan's Proof Of Nielsen-Ninomiya](../Followup-Source-Tasks/ingest-friedan-proof-of-nielsen-ninomiya.md)
+- [Explain The Berry-Flux Version Of The Node Charge](../Regression-Questions/explain-berry-flux-version-of-node-charge.md) | oracle=[Oracle For The Berry-Flux Version Of The Node Charge](../Question-Oracles/explain-berry-flux-version-of-node-charge.md) | grade=`pass` | The local flux formula and the global dF=0 route are both explicit.
+- [Separate Anomaly Intuition From The Lattice Proof](../Regression-Questions/separate-anomaly-intuition-from-lattice-proof.md) | oracle=[Oracle For Separating Anomaly Intuition From The Lattice Proof](../Question-Oracles/separate-anomaly-intuition-from-lattice-proof.md) | grade=`partial` | The distinction is now explicit, but the background anomaly sources have not yet been ingested into proof fragments.
+  - writeback: [Former Parity-Anomaly Versus Lattice-No-Go Scope Gap (Closed)](../Open-Gaps/parity-anomaly-motivates-but-does-not-prove-lattice-no-go.md), [Ingest Callan-Harvey And Jackiw-Rebbi For The Edge-Mode Proof](../Followup-Source-Tasks/ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof.md)
+- [Identify Lecture Two And Three Prerequisites For The Edge-Mode Proof](../Regression-Questions/identify-lecture-two-and-three-prerequisites-for-edge-mode-proof.md) | oracle=[Oracle For Identifying Lecture Two And Three Prerequisites](../Question-Oracles/identify-lecture-two-and-three-prerequisites-for-edge-mode-proof.md) | grade=`partial` | The flagship Lecture Two and Lecture Three theorem branches are present, but their cited-paper recovery routes are still only partially complete.
+  - writeback: [Lecture Two TKNN / Haldane Archival Enrichment Remains To Be Curated](../Open-Gaps/lecture-two-tknn-equivalence-proof-not-yet-curated.md), [Jackiw-Rebbi / Callan-Harvey Archival Enrichment Remains To Be Curated](../Open-Gaps/jackiw-rebbi-domain-wall-proof-not-yet-curated.md), [Ingest TKNN And Haldane For The Lecture Two Equivalence](../Followup-Source-Tasks/ingest-tknn-and-haldane-for-lecture-two-equivalence.md), [Ingest Callan-Harvey And Jackiw-Rebbi For The Edge-Mode Proof](../Followup-Source-Tasks/ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof.md)

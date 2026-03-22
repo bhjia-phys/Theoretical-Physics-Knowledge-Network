@@ -1,0 +1,103 @@
+{
+  "id": "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+  "type": "open_gap",
+  "title": "Jackiw-Rebbi / Callan-Harvey Archival Enrichment Remains To Be Curated",
+  "summary": "The core Lecture Three continuum edge-mode family is source-grade locally, the parity-anomaly side is split into explicit half-level and hemisphere-Berry-flux units, the Callan-Harvey cancellation identity is explicit, and the lecture-one boundary precursor is explicit; what remains is denser original-paper anchoring for Jackiw-Rebbi and Callan-Harvey plus the broader continuum-versus-lattice bridge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "gap-routing",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "open-gap",
+    "jackiw-rebbi",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Witten lecture proof spine for the sign-changing-mass edge mode is already decomposed locally.",
+    "Dedicated Jackiw-Rebbi and anomaly-inflow theorems are already present in the current KB.",
+    "The residual follow-up is finer archival granularity and a broader bridge to neighboring discussions, not a missing core proof."
+  ],
+  "regime": "Lecture Three source-enrichment follow-up.",
+  "scope": "Residual enrichment task for denser archival anchoring of the Jackiw-Rebbi and Callan-Harvey papers and for deeper neighboring-source bridges.",
+  "dependencies": [
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "The lecture's proof chain is decomposed in the KB, including the half-level theorem and boundary precursor; remaining work is denser archival and neighboring-source linkage."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/isolated-zero-mode",
+      "equation_labels": [
+        "soliton-dirac-zero-mode"
+      ],
+      "notes": "The zero-mode mechanism is local, but broader archival anchors in the original paper are still thinner than the Witten-side route."
+    },
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/anomaly-cancellation",
+      "equation_labels": [
+        "bulk-topological-variation",
+        "inflow-balance"
+      ],
+      "notes": "The core cancellation equation is already local, but broader archival anchors in the original paper are still thinner than the Witten-side route."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Residual source-enrichment item for the Lecture Three continuum edge-mode theorem family.",
+  "gap_kind": "missing-bridge",
+  "recovery_source_type": "cited-paper",
+  "runtime_gap_kinds": [
+    "missing_cited_result",
+    "cross_paper_dependency"
+  ],
+  "runtime_return_to_stages": [
+    "L0"
+  ],
+  "topic_queue_ids": [
+    "queue:topological-phases-core-unresolved",
+    "queue:witten-lecture-three-prerequisites"
+  ],
+  "blocking_units": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "resolution_targets": [
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof"
+  ],
+  "reentry_targets": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "followup_required": true,
+  "retrieval_hints": [
+    "Use when the local Lecture Three theorem is already source-grade but the user asks what archival or neighboring-source work still remains."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

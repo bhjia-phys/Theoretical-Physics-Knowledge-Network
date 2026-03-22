@@ -1,0 +1,67 @@
+{
+  "id": "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+  "type": "proof_obligation",
+  "title": "Single Massive Dirac Fermion Induces Half Level",
+  "summary": "Discharge the proof obligation that one massive 2+1-dimensional Dirac fermion induces the half-level Chern-Simons term (sign m)/2 times I_CS, using Witten's Berry-flux hemisphere argument.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-obligation",
+    "parity-anomaly",
+    "dirac-fermion"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Berry-flux derivation of the induced topological term is being used in the continuum theory."
+  ],
+  "regime": "Continuum parity-anomaly derivation.",
+  "scope": "First proof obligation in the Lecture Three theorem family.",
+  "dependencies": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "equation_context:lecture-three-parity-anomaly-half-level"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "uftof",
+        "puft",
+        "PPP"
+      ],
+      "notes": "Witten's hemisphere argument for the half-level parity anomaly."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the half-level anomaly of one massive Dirac fermion.",
+  "pass_conditions": [
+    "The answer states the massive Dirac Hamiltonian used in the Berry-flux argument.",
+    "The answer explains why the normalized map covers only a hemisphere and therefore contributes half a degree.",
+    "The answer concludes with the induced half-level Chern-Simons term."
+  ],
+  "mandatory_logical_moves": [
+    "Write the massive Dirac Hamiltonian.",
+    "Interpret its normalized coefficient vector as a map into the target sphere.",
+    "Use the hemisphere coverage to justify the half-integer level."
+  ],
+  "common_failure_patterns": [
+    "Invoking 'parity anomaly' without showing why the level is one half.",
+    "Using the final half-level result without the hemisphere geometry."
+  ],
+  "grading_rubric": [
+    "Full credit requires the Berry-flux or hemisphere argument, not only the final formula.",
+    "Partial credit is appropriate if the answer knows the half-level but cannot justify it."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must derive, not merely cite, the half-level anomaly."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

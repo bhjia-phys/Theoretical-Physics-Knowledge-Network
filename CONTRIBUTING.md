@@ -52,7 +52,9 @@ The following are generated and may be overwritten:
 
 The repository keeps only the Python needed for:
 
-- `scripts/kb.py`: protocol enforcement plus deterministic projection building.
+- `scripts/check_protocol.py`: protocol enforcement.
+- `scripts/build.py`: deterministic projection building.
+- `scripts/kb_common.py`: shared helpers used by the protocol/build scripts.
 
 ## Review Standard
 
@@ -77,6 +79,6 @@ If an AI agent is promoting knowledge from an upstream `L2` workflow:
 Run the repository checks before opening a pull request:
 
 ```bash
-python3 scripts/kb.py check
-python3 scripts/kb.py build
+python3 scripts/check_protocol.py
+python3 scripts/build.py
 ```

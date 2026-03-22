@@ -1,0 +1,84 @@
+{
+  "id": "notation_map:lecture-two-hall-response-symbols",
+  "type": "notation_map",
+  "title": "Lecture Two Hall-Response Symbols",
+  "summary": "This notation map fixes the symbols used in Lecture Two for the Chern-Simons level, Hall current, filled-band Chern number, and twist-angle Berry curvature.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "notation-map",
+    "lecture-two",
+    "hall-response"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The low-energy response is described by a 2+1-dimensional effective action.",
+    "The finite sample has periodic boundary conditions with twist angles alpha_1 and alpha_2."
+  ],
+  "regime": "Lecture Two integer quantum Hall response and Berry-curvature notation.",
+  "scope": "Shared notation for the Hall-response / Chern-number equivalence branch.",
+  "dependencies": [],
+  "related_units": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "equation_labels": [
+        "zurr",
+        "murr"
+      ],
+      "notes": "Hall-response notation centered on the integer level k."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "mizz",
+        "coff",
+        "plizz"
+      ],
+      "notes": "Twist-angle Berry-curvature notation for the many-body Chern number."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Shared symbol table for the Hall-response / TKNN / twist-angle branch.",
+  "symbols": [
+    {
+      "symbol": "k",
+      "meaning": "integer Chern-Simons level or Hall-response coefficient"
+    },
+    {
+      "symbol": "k'",
+      "meaning": "filled-band first Chern number in single-particle band theory"
+    },
+    {
+      "symbol": "\\widehat{k}'",
+      "meaning": "many-body Chern number over the twist-angle torus"
+    },
+    {
+      "symbol": "\\alpha_1, \\alpha_2",
+      "meaning": "twist angles or flat background holonomies around the two spatial cycles"
+    },
+    {
+      "symbol": "\\widehat{\\mathcal F}",
+      "meaning": "Berry curvature on the twist-angle torus"
+    },
+    {
+      "symbol": "\\mathcal I_{\\mathrm{CS}}",
+      "meaning": "2+1-dimensional Chern-Simons functional"
+    }
+  ],
+  "retrieval_hints": [
+    "Use before answering a Lecture Two derivation question that mixes k, k', and the many-body twist-angle invariant."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

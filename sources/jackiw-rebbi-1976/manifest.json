@@ -1,0 +1,46 @@
+{
+  "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+  "title": "Solitons with Fermion Number 1/2",
+  "authors": [
+    "R. Jackiw",
+    "C. Rebbi"
+  ],
+  "version": "journal",
+  "submitted_date": "1975-12-01",
+  "updated_date": "1975-12-01",
+  "canonical_scope": "External source anchor for the domain-wall zero-mode argument reused in the topological-phases edge-mode family.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevD.13.3398",
+    "inspire": "https://inspirehep.net/literature/100444"
+  },
+  "section_map": [
+    {
+      "id": "paper/main-result",
+      "title": "Main Result",
+      "summary": "An isolated Dirac zero mode in a soliton background implies a topologically protected fermionic mode with fractionalized quantum numbers."
+    },
+    {
+      "id": "paper/isolated-zero-mode",
+      "title": "Isolated Zero Mode In A Soliton Background",
+      "summary": "A Dirac operator in a topologically nontrivial background can support an isolated zero-energy solution whose wavefunction is localized by the soliton profile."
+    },
+    {
+      "id": "paper/fractional-fermion-number-doublet",
+      "title": "Fractional Fermion-Number Doublet",
+      "summary": "Occupying or emptying the isolated zero mode produces a doublet whose fermion number differs by one and is centered around one half."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "soliton-dirac-zero-mode",
+      "section": "paper/isolated-zero-mode",
+      "title": "Dirac equation admitting an isolated zero-energy mode"
+    },
+    {
+      "label": "half-fermion-number-doublet",
+      "section": "paper/fractional-fermion-number-doublet",
+      "title": "Fractional fermion number from the isolated zero-mode occupancy"
+    }
+  ],
+  "figure_map": []
+}

@@ -1,0 +1,62 @@
+{
+  "id": "regression_question:prove-nielsen-ninomiya-by-stokes",
+  "type": "regression_question",
+  "title": "Prove Nielsen-Ninomiya By Stokes",
+  "summary": "Tests whether the topic can reconstruct the degree-theoretic Stokes proof of charge cancellation on the punctured Brillouin zone and also identify the equivalent cited Friedan route that packages the same theorem as a spectral-bundle Chern-number statement.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer should use the punctured Brillouin-zone argument and not replace it with anomaly intuition."
+  ],
+  "regime": "Topic regression for the Witten Lecture One exemplar.",
+  "scope": "Flagship theorem-proof question for the lattice no-go branch.",
+  "dependencies": [
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "related_units": [
+    "question_oracle:prove-nielsen-ninomiya-by-stokes"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "wnn",
+        "weta",
+        "cl"
+      ],
+      "notes": "The answer should follow the actual Stokes spine of the lecture theorem."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Derivation-family regression prompt for the theorem proof.",
+  "prompt": "Prove the Lecture One Nielsen-Ninomiya theorem by the punctured-Brillouin-zone Stokes argument, making every nontrivial step explicit, and identify the equivalent Friedan spectral-bundle route that gives the same vanishing theorem.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "pass_conditions": [
+    "The answer identifies the local charge as the degree integral on a small surrounding sphere.",
+    "The answer defines the punctured Brillouin zone and its boundary spheres.",
+    "The answer applies Stokes's theorem to a closed form and derives the zero total charge.",
+    "The answer can name the Friedan spectral-projection or cobordism reformulation as the cited rigorous route for the same theorem."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to test whether the KB can reconstruct the actual theorem proof rather than only the statement."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

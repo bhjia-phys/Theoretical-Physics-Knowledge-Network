@@ -1,0 +1,29 @@
+{
+  "queue_id": "queue:witten-lecture-one-unresolved",
+  "title": "Witten Lecture One Unresolved Queue",
+  "topic": "topological-phases-of-matter/witten-lecture-one",
+  "queue_kind": "unresolved",
+  "summary": "Open gaps and follow-up tasks that still block a fully proof-grade Lecture One branch.",
+  "items": [
+    {
+      "unit_id": "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+      "status": "open",
+      "priority": "high",
+      "notes": "The theorem branch still needs the cited stronger proof source."
+    },
+    {
+      "unit_id": "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+      "status": "open",
+      "priority": "high",
+      "notes": "The proof/intution boundary is now explicit but still unresolved."
+    },
+    {
+      "unit_id": "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+      "status": "open",
+      "priority": "high",
+      "notes": "Background-source task for the stronger theorem proof path."
+    }
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

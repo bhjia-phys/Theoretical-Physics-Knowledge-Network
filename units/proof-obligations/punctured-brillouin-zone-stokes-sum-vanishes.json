@@ -1,0 +1,74 @@
+{
+  "id": "proof_obligation:punctured-brillouin-zone-stokes-sum-vanishes",
+  "type": "proof_obligation",
+  "title": "Punctured Brillouin-Zone Stokes Sum Vanishes",
+  "summary": "Discharge the proof obligation that excising small balls around all isolated nodes and applying Stokes's theorem to a closed form on the punctured Brillouin zone yields vanishing total charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "proof-obligation",
+    "stokes-theorem",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The set of isolated nodes is finite.",
+    "The relevant form is closed away from the nodes."
+  ],
+  "regime": "Global topological analysis on the punctured Brillouin zone.",
+  "scope": "Second proof obligation in the Lecture One lattice no-go family.",
+  "dependencies": [
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum"
+  ],
+  "related_units": [
+    "proof_state:lecture-one-weyl-node-no-go",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "cl"
+      ],
+      "notes": "Witten's punctured-zone Stokes proof of vanishing total charge."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "nna"
+      ],
+      "notes": "Berry-curvature version of the same zero-sum law."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the global Stokes step in the lattice no-go theorem.",
+  "pass_conditions": [
+    "The answer defines the punctured Brillouin zone and its boundary spheres.",
+    "The answer explains why the relevant form is closed on the punctured zone.",
+    "The answer applies Stokes's theorem and identifies the boundary integral with the sum of local node charges."
+  ],
+  "mandatory_logical_moves": [
+    "Excise small neighborhoods around all isolated nodes.",
+    "State that the remaining manifold has boundary equal to the union of surrounding spheres.",
+    "Apply Stokes's theorem to the closed form and conclude that the total charge vanishes."
+  ],
+  "common_failure_patterns": [
+    "Skipping the punctured-zone construction and jumping directly to the final zero-sum formula.",
+    "Invoking Stokes's theorem without stating what closed form is being integrated."
+  ],
+  "grading_rubric": [
+    "Full credit requires an explicit punctured-zone Stokes argument.",
+    "Partial credit is appropriate if the answer only quotes the final vanishing sum."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must supply the global lattice step rather than only the local node charge."
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

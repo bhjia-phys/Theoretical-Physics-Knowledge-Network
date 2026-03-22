@@ -1,0 +1,87 @@
+{
+  "id": "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+  "type": "question_oracle",
+  "title": "Oracle For Separating Local Lecture Two Proof From Cited-Source Fusion Gap",
+  "summary": "Detailed oracle for the Lecture Two honesty question about local proof coverage versus the narrower residual enrichment route.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "question-oracle",
+    "gap",
+    "source-fusion"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer should separate local derivation coverage from the remaining enrichment route cleanly."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the Lecture Two proof-versus-fusion honesty question.",
+  "dependencies": [
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "The local reusable proof spine is in the current KB."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "The original source is present through the traced-curvature and projector fragments, while denser archival mapping remains follow-up work."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap.",
+  "mandatory_unit_ids": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "derivation_spine": [
+    "State that the Witten-side local proof obligations are explicit and reusable.",
+    "State that the TKNN core route is already source-grade locally through the traced-curvature identity and the projector formula.",
+    "Name the actual remaining enrichment route: denser archival mapping and the Haldane lattice-realization bridge."
+  ],
+  "mandatory_logical_moves": [
+    "Separate core theorem coverage from the narrower residual enrichment route.",
+    "Name the actual open gap and follow-up task."
+  ],
+  "common_failure_patterns": [
+    "Claiming the family is still missing a core TKNN source-grade fragment.",
+    "Treating the projector formula as present while ignoring the local traced-curvature bridge that now supports it.",
+    "Claiming the family is fully exhausted and has no remaining Haldane or archival follow-up."
+  ],
+  "grading_rubric": [
+    "Pass requires a clean distinction between core source-grade coverage and the remaining enrichment route."
+  ],
+  "failure_triggers": [
+    "Fail if the answer says TKNN/Haldane are already fully exhausted when the designated follow-up route still remains.",
+    "Fail if the answer cannot identify any current local proof coverage."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

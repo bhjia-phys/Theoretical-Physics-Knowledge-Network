@@ -4,6 +4,7 @@
 - Type: `bridge`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `bridge-objects`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `working`
@@ -20,6 +21,18 @@ Local Weyl-node analysis with Berry geometry.
 ## Assumptions
 - `The node is isolated and the occupied-state bundle is defined away from it.`
 
+## Representation
+Cross-perspective bridge from local Hamiltonian data to geometric flux.
+
+## Source Anchors
+- `lecture-one/the-berry-connection | eqs: zif | The flux formula is the bridge between node and monopole viewpoints.`
+
+## Mathematical Content
+- none
+
+## Symbols
+- none
+
 ## Dependencies
 - [Weyl Node](../Concepts/weyl-node.md)
 - [Berry Curvature](../Concepts/berry-curvature.md)
@@ -29,17 +42,17 @@ Local Weyl-node analysis with Berry geometry.
 - [Chirality Of A Weyl Node](../Concepts/chirality-of-weyl-node.md)
 - [Berry-Flux Diagnosis Of Node Charge](../Methods/berry-flux-diagnosis-of-node-charge.md)
 
-## Source Anchors
-- `lecture-one/the-berry-connection | eqs: zif | The flux formula is the bridge between node and monopole viewpoints.`
+## Failure Modes
+- `The monopole language is only valid on the punctured region where the Berry bundle is defined.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Use when translating between band-crossing and Berry-curvature explanations.`
 
 ## Outgoing Edges
 - `bridges_to` -> [Berry Curvature](../Concepts/berry-curvature.md): The bridge lands on the Berry-curvature picture of the node.
 
 ## Incoming Edges
 - [Weyl Node](../Concepts/weyl-node.md) -> `bridges_to`: The local crossing picture is bridged to the Berry-flux picture.
-
-## Failure Modes
-- `The monopole language is only valid on the punctured region where the Berry bundle is defined.`
-
-## Formal Targets
-- `aitp-l2`

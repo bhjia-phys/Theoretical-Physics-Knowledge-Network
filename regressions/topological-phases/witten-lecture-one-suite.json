@@ -1,0 +1,36 @@
+{
+  "suite_id": "regression_suite:witten-lecture-one",
+  "title": "Witten Lecture One Regression Suite",
+  "topic": "topological-phases-of-matter/witten-lecture-one",
+  "summary": "Proof-grade regression suite for the flagship Lecture One local Weyl, Berry-flux, and Nielsen-Ninomiya branches, including the cited Friedan proof route and the explicit anomaly-versus-lattice scope boundary.",
+  "source_map_id": "source_map:witten-topological-phases-lecture-one",
+  "question_ids": [
+    "regression_question:define-weyl-node-with-assumptions",
+    "regression_question:reconstruct-local-weyl-linearization",
+    "regression_question:prove-nielsen-ninomiya-by-stokes",
+    "regression_question:explain-berry-flux-version-of-node-charge",
+    "regression_question:separate-anomaly-intuition-from-lattice-proof",
+    "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof"
+  ],
+  "oracle_ids": [
+    "question_oracle:define-weyl-node-with-assumptions",
+    "question_oracle:reconstruct-local-weyl-linearization",
+    "question_oracle:prove-nielsen-ninomiya-by-stokes",
+    "question_oracle:explain-berry-flux-version-of-node-charge",
+    "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+    "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof"
+  ],
+  "focus_units": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation"
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

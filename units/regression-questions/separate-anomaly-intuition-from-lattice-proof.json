@@ -1,0 +1,57 @@
+{
+  "id": "regression_question:separate-anomaly-intuition-from-lattice-proof",
+  "type": "regression_question",
+  "title": "Separate Anomaly Intuition From The Lattice Proof",
+  "summary": "Tests whether the topic can say exactly why continuum anomaly language is helpful intuition but not the actual Lecture One proof of Nielsen-Ninomiya, using explicit local units instead of hand-waving toward a future source recovery.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "regression-question",
+    "gap",
+    "anomaly"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must use the now-explicit local cited-source units rather than leaving the distinction as a future gap."
+  ],
+  "regime": "Topic regression for the Witten Lecture One exemplar.",
+  "scope": "Gap-identification question at the boundary between Lecture One and the later anomaly discussion.",
+  "dependencies": [
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "related_units": [
+    "question_oracle:separate-anomaly-intuition-from-lattice-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Anomaly inflow belongs to the boundary-consistency story rather than the actual lattice theorem proof."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Gap-family regression prompt.",
+  "prompt": "Explain why parity-anomaly or anomaly-inflow intuition does not replace the actual lattice proof of Nielsen-Ninomiya, and cite the local units that make this distinction explicit.",
+  "question_family": "gap",
+  "primary_retrieval_paths": [
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "pass_conditions": [
+    "The answer explicitly distinguishes the Lecture One lattice proof from later continuum anomaly arguments.",
+    "The answer identifies Friedan's compact-BZ Chern-number route as the theorem proof and Haldane or Callan-Harvey as neighboring anomaly motivation sources.",
+    "The answer does not falsely present the anomaly argument as the theorem proof."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to expose hidden conflations between proof and motivation."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

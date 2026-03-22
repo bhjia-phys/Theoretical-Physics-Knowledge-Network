@@ -1,0 +1,73 @@
+{
+  "id": "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+  "type": "question_oracle",
+  "title": "Oracle For Identifying Lecture Two And Three Prerequisites",
+  "summary": "Detailed oracle for the dependency question that asks what cited-paper recovery work still remains beyond the promoted Lecture Two and Lecture Three flagship proofs.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "question-oracle",
+    "dependency",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "This question should surface the remaining recovery routes even though the local Witten-based theorem chains already exist."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the cross-lecture prerequisite question.",
+  "dependencies": [
+    "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Later edge-mode arguments still depend on cited-paper recovery beyond the promoted Witten-based theorem chains."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof.",
+  "mandatory_unit_ids": [
+    "source_map:witten-topological-phases-lecture-two",
+    "source_map:witten-topological-phases-lecture-three",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "derivation_spine": [
+    "Separate the locally promoted Lecture Two theorem chain from the narrower cited TKNN and Haldane enrichment route.",
+    "Separate the locally promoted Lecture Three edge-mode chain from the cited Jackiw-Rebbi and Callan-Harvey background route.",
+    "Name the concrete open gaps and the follow-up source tasks that own those routes.",
+    "State which proof states or theorem families the recovered material must reintegrate into."
+  ],
+  "common_failure_patterns": [
+    "Collapsing promoted local theorem chains and cited enrichment routes into one undifferentiated 'still missing background' claim.",
+    "Naming the open gaps without identifying the concrete follow-up source tasks or reintegration targets."
+  ],
+  "grading_rubric": [
+    "Pass requires both Lecture Two and Lecture Three recovery routes to be named explicitly.",
+    "Unsafe-pass is appropriate if the answer identifies both branches but is vague about which source-fusion records or proof states they affect."
+  ],
+  "pass_conditions": [
+    "The answer identifies the Lecture Two TKNN/Haldane branch and the Lecture Three Jackiw-Rebbi/Callan-Harvey branch as remaining recovery routes.",
+    "The answer routes each unresolved branch to the correct follow-up source task."
+  ],
+  "failure_triggers": [
+    "Fail if the answer claims the later edge-mode story is fully source-fused without any remaining recovery work.",
+    "Fail if the answer mentions only one missing branch and hides the other."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

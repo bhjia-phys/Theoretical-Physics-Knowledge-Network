@@ -1,0 +1,67 @@
+{
+  "id": "proof_obligation:local-weyl-charge-is-degree-integral",
+  "type": "proof_obligation",
+  "title": "Local Weyl Charge Is A Degree Integral",
+  "summary": "Discharge the proof obligation that the charge of an isolated Weyl node is the degree integral of the normalized coefficient map on a small surrounding sphere.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "proof-obligation",
+    "weyl-node",
+    "degree-theory"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "A two-band crossing is isolated and enclosed by a small sphere in momentum space."
+  ],
+  "regime": "Local topological analysis near one Weyl node.",
+  "scope": "First proof obligation in the Lecture One lattice no-go family.",
+  "dependencies": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "equation:winding-number-as-s2-to-s2-degree"
+  ],
+  "related_units": [
+    "proof_state:lecture-one-weyl-node-no-go",
+    "theorem_family:weyl-node-no-go-consistency"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "nwn",
+        "wnn"
+      ],
+      "notes": "Witten's degree-theory definition of the local node charge."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the local topological charge of one Weyl node.",
+  "pass_conditions": [
+    "The answer defines the normalized coefficient map on a small sphere around the node.",
+    "The answer writes the degree integral or equivalent pullback-area-form formula for the local charge.",
+    "The answer explains why the resulting integer is stable under smooth deformations that keep the node isolated."
+  ],
+  "mandatory_logical_moves": [
+    "Choose a small sphere surrounding one isolated bad point.",
+    "Normalize the local coefficient vector to a map into S^2.",
+    "Integrate the pulled-back normalized area form to obtain the integer charge."
+  ],
+  "common_failure_patterns": [
+    "Naming chirality without giving the surrounding-sphere degree formula.",
+    "Using Berry flux without connecting it to the local degree map."
+  ],
+  "grading_rubric": [
+    "Full credit requires an explicit local degree formula.",
+    "Partial credit is appropriate if the answer only states that the charge is an integer."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must justify the local integer attached to one Weyl node before the global sum rule."
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

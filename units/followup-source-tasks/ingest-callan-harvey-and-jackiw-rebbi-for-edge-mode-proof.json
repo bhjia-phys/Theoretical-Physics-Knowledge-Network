@@ -1,0 +1,100 @@
+{
+  "id": "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+  "type": "followup_source_task",
+  "title": "Ingest Callan-Harvey And Jackiw-Rebbi For The Edge-Mode Proof",
+  "summary": "Return to L0 only for denser equation-level archival mapping of Callan-Harvey and Jackiw-Rebbi and for the broader continuum-to-lattice bridge; the core Lecture Three continuum theorem family is source-grade locally and now includes an explicit half-level theorem, hemisphere-Berry-flux fragment, Callan-Harvey cancellation fragment, and lecture-one boundary precursor.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "followup",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "followup-source-task",
+    "jackiw-rebbi",
+    "callan-harvey",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Witten-based wall-mode theorem and parity-anomaly spine are already present locally.",
+    "Dedicated Jackiw-Rebbi and anomaly-inflow theorems are already fused into the canonical family.",
+    "The remaining work is finer archival detail and broader neighboring-source linkage."
+  ],
+  "regime": "AITP background-source recovery.",
+  "scope": "L0 -> L1 -> L3 -> L2 task packet for denser archival recovery of the continuum edge-mode derivation and anomaly inflow.",
+  "dependencies": [
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+    "source_map:witten-topological-phases-lecture-three",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Triggered now by the need for denser archival mapping and broader neighboring-source bridges beyond the already explicit proof chain."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Durable background-source ingestion task.",
+  "task_status": "source-selected",
+  "recovery_source_type": "cited-paper",
+  "runtime_gap_kinds": [
+    "missing_cited_result",
+    "cross_paper_dependency"
+  ],
+  "runtime_return_to_stages": [
+    "L0",
+    "L1",
+    "L3"
+  ],
+  "topic_queue_ids": [
+    "queue:topological-phases-core-unresolved",
+    "queue:witten-lecture-three-prerequisites"
+  ],
+  "resolves_gaps": [
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated"
+  ],
+  "routes_back_to": [
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "source_map:topological-phases-core"
+  ],
+  "reentry_targets": [
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "source_map:topological-phases-core"
+  ],
+  "candidate_sources": [
+    {
+      "citation": "C. G. Callan Jr. and J. A. Harvey, \"Anomalies And Fermion Zero-Modes On Strings And Domain Walls,\" Nucl. Phys. B250 (1985) 427.",
+      "why": "Witten cites anomaly inflow as the boundary-consistency mechanism."
+    },
+    {
+      "citation": "R. Jackiw and C. Rebbi, \"Solitons With Fermion Number 1/2,\" Phys. Rev. D13 (1976) 3398.",
+      "why": "Witten cites Jackiw-Rebbi for the sign-changing mass domain-wall mode."
+    }
+  ],
+  "retrieval_hints": [
+    "Use when an answer needs denser archival detail or broader neighboring-source linkage beyond the already-fused core Lecture Three theorem family."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

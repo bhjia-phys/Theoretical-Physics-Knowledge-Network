@@ -1,0 +1,60 @@
+{
+  "id": "proof_fragment:punctured-brillouin-zone-boundary-sum",
+  "type": "proof_fragment",
+  "title": "The Punctured Brillouin Zone Boundary Sum Vanishes",
+  "summary": "Excise small balls around all bad points, integrate the exterior derivative of the pulled-back closed form over the punctured Brillouin zone, and use Stokes's theorem to obtain the vanishing total charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "tags": [
+    "proof-fragment",
+    "stokes-theorem",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Brillouin zone is compact.",
+    "The set of bad points is finite and isolated."
+  ],
+  "regime": "Global topological analysis on the punctured Brillouin zone.",
+  "scope": "Core proof fragment in the degree-theoretic derivation of Nielsen-Ninomiya.",
+  "dependencies": [
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "equation:winding-number-as-s2-to-s2-degree"
+  ],
+  "related_units": [
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "derivation:stokes-theorem-implies-net-zero-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "cl"
+      ],
+      "notes": "Stokes's theorem turns the punctured-zone boundary integral into the vanishing sum over node charges."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Global Stokes-theorem step on the punctured Brillouin zone.",
+  "math_expressions": [
+    {
+      "latex": "0 = \\int_{\\mathcal B'} \\mathrm d\\,\\widehat b^{\\,*}(\\eta) = \\sum_\\alpha \\int_{S^2_\\alpha}\\widehat b^{\\,*}(\\eta) = \\sum_\\alpha w_\\alpha",
+      "kind": "display",
+      "equation_label": "cl",
+      "notes": "Charge cancellation from a closed form and the boundary of the punctured Brillouin zone."
+    }
+  ],
+  "step_justification": [
+    "The punctured Brillouin zone has boundary equal to the union of small spheres around the bad points.",
+    "The pulled-back area form is closed away from the bad points.",
+    "Stokes's theorem converts the bulk integral of an exact form to the boundary sum of local charges."
+  ],
+  "retrieval_hints": [
+    "Use when a proof must show the precise Stokes step behind the lattice charge-cancellation theorem."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

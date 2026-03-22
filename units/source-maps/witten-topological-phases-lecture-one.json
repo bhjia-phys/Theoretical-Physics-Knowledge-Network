@@ -2,7 +2,7 @@
   "id": "source_map:witten-topological-phases-lecture-one",
   "type": "source_map",
   "title": "Witten Topological Phases Lecture One Source Map",
-  "summary": "This source map records which Lecture One sections and equation labels seed the current canonical object set in the repository.",
+  "summary": "This source map records which Lecture One sections and neighboring cited sources seed the current canonical object set for the Weyl-node and lattice no-go family, including the now-explicit Friedan proof route and the explicit anomaly-versus-lattice scope boundary.",
   "domain": "topological-phases-of-matter",
   "subdomain": "source-maps",
   "tags": [
@@ -12,16 +12,25 @@
   ],
   "aliases": [],
   "assumptions": [
-    "The current repository version covers Lecture One only."
+    "Lecture One remains the densest proof-grade exemplar, but it now sits inside a broader topic-level network that includes promoted Lecture Two and Lecture Three flagship branches."
   ],
   "regime": "Exemplar source curation layer.",
-  "scope": "Mapping from Witten Lecture One structure to canonical reusable units.",
+  "scope": "Mapping from Witten Lecture One structure to canonical reusable units and residual source-recovery routes.",
   "dependencies": [],
   "related_units": [
     "concept:weyl-node",
     "concept:berry-connection",
     "concept:nielsen-ninomiya-theorem",
-    "claim:fermi-arcs-terminate-at-projected-weyl-nodes"
+    "claim:fermi-arcs-terminate-at-projected-weyl-nodes",
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "source_map:topological-phases-core",
+    "regression_question:prove-nielsen-ninomiya-by-stokes"
   ],
   "source_anchors": [
     {
@@ -58,6 +67,14 @@
       "source_id": "paper:witten-topological-phases-1510.07698v2",
       "section": "lecture-one/weyl-fermions-and-fermi-arcs",
       "notes": "Core boundary-signature material."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "Cited rigorous route for the same theorem branch."
     }
   ],
   "formalization_status": "not_started",
@@ -81,17 +98,21 @@
     "concept:weyl-node",
     "concept:berry-connection",
     "concept:nielsen-ninomiya-theorem",
-    "concept:fermi-arc"
+    "concept:fermi-arc",
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go"
   ],
   "failure_modes": [
-    "This map is intentionally incomplete until Lecture Two and Lecture Three are curated."
+    "This map now closes the former Friedan and anomaly-versus-lattice blockers, but it still does not cover broader future-buffer branches such as fractional Hall topological order."
   ],
   "formal_targets": [
     "aitp-l2"
   ],
   "retrieval_hints": [
-    "Use as the top-level entry point for the current exemplar corpus."
+    "Use as the Lecture One entry point inside the broader topological-phases core network."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-21"
 }

@@ -1,0 +1,161 @@
+{
+  "id": "theorem_family:domain-wall-edge-mode-consistency",
+  "type": "theorem_family",
+  "title": "Domain-Wall Edge-Mode Consistency Family",
+  "summary": "Canonical theorem family for the Lecture Three continuum edge-mode story: the lecture-one boundary precursor, the parity-anomaly half-level theorem, the hemisphere Berry-flux subfragment, the explicit Callan-Harvey inflow-cancellation fragment, the Jackiw-Rebbi zero mode, and the sign-changing-mass wall equation together explain the consistent integer Hall boundary.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "theorem-family",
+    "jackiw-rebbi",
+    "anomaly-inflow"
+  ],
+  "aliases": [
+    "Lecture Three edge-mode family"
+  ],
+  "assumptions": [
+    "The family groups the continuum proof route and keeps the lattice no-go theorem separate."
+  ],
+  "regime": "Cross-source reusable theorem family.",
+  "scope": "Family-level grouping for the Lecture Three flagship theorem and its neighbors.",
+  "dependencies": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "notation_family:domain-wall-edge-mode-notation"
+  ],
+  "related_units": [
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Witten's local continuum theorem family."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/isolated-zero-mode",
+      "equation_labels": [
+        "soliton-dirac-zero-mode"
+      ],
+      "notes": "Original zero-mode source."
+    },
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/anomaly-cancellation",
+      "equation_labels": [
+        "bulk-topological-variation",
+        "inflow-balance"
+      ],
+      "notes": "Original anomaly-inflow source."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Family object for the Lecture Three continuum edge-mode theorem branch.",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "formal_theory_role": "trusted_target",
+  "definition_trust_tier": "reviewed_translation",
+  "statement_graph_role": "target_statement",
+  "statement_graph_parents": [
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass"
+  ],
+  "statement_graph_children": [
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode"
+  ],
+  "target_statement_id": "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+  "faithfulness_status": "reviewed",
+  "faithfulness_strategy": "Use the family wrapper only to organize the parity-anomaly, Jackiw-Rebbi, and anomaly-inflow subclaims that support the trusted continuum edge-mode theorem, while keeping the lattice no-go branch explicitly separate.",
+  "faithfulness_notes": "The family remains faithful only because the continuum-versus-lattice scope boundary is kept explicit.",
+  "comparator_audit_status": "passed",
+  "comparator_risks": [
+    "Do not let continuum anomaly arguments masquerade as a lattice no-go proof when curating this family."
+  ],
+  "provenance_kind": "mixed",
+  "attribution_requirements": [
+    "Retain attribution to Witten, Jackiw-Rebbi, and Callan-Harvey when citing this cross-source family wrapper."
+  ],
+  "prerequisite_closure_status": "closed",
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "sign_changing_mass_supports_chiral_edge_mode",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "Work in the continuum doubled 2+1-dimensional Dirac model rather than in a full lattice regularization.",
+    "Treat the parity-anomaly half-level, the boundary folding step, and the anomaly-inflow cancellation identity as separate sublemmas.",
+    "Use an external analytic library for normalizable zero-mode estimates instead of hiding those estimates in the final theorem statement."
+  ],
+  "lean_prerequisite_ids": [
+    "notation_family:domain-wall-edge-mode-notation",
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "formalization_blockers": [
+    "A reusable Lean-side analytic interface for domain-wall Dirac operators and normalizable zero modes is still missing.",
+    "The full Callan-Harvey / Jackiw-Rebbi cited-source fusion should remain an explicit neighboring bridge rather than being collapsed into the local continuum theorem declaration."
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "family_member_ids": [
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change"
+  ],
+  "retrieval_hints": [
+    "Use when a query spans parity anomaly, Jackiw-Rebbi, and anomaly inflow as one continuum family."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:show-callan-harvey-inflow-cancels-boundary-anomaly",
+    "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "question_oracle:show-callan-harvey-inflow-cancels-boundary-anomaly",
+    "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
+    "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
+    "regression_run:topological-phases-core-2026-03-21-lecture-one-cited-recovery",
+    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

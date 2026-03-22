@@ -1,0 +1,70 @@
+{
+  "id": "notation_map:lecture-three-edge-mode-symbols",
+  "type": "notation_map",
+  "title": "Lecture Three Edge-Mode Symbols",
+  "summary": "This notation map fixes the symbols used in Lecture Three for the parity-anomaly half level, the sign-changing mass profile, and the boundary-localized Dirac mode.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "notation-map",
+    "lecture-three",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The boundary is taken at x_1 = 0.",
+    "The bulk Dirac fermions are described in 2+1 dimensions."
+  ],
+  "regime": "Lecture Three continuum edge-mode and parity-anomaly discussion.",
+  "scope": "Shared notation for the domain-wall zero-mode and anomaly-inflow branch.",
+  "dependencies": [],
+  "related_units": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "uftof",
+        "gift",
+        "trogg"
+      ],
+      "notes": "Core notation for the half-level parity anomaly and the chiral boundary mode."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Shared symbol table for the continuum edge-mode proof family.",
+  "symbols": [
+    {
+      "symbol": "m",
+      "meaning": "Dirac mass whose sign controls the half-level and the wall profile"
+    },
+    {
+      "symbol": "x_1",
+      "meaning": "coordinate normal to the boundary"
+    },
+    {
+      "symbol": "\\psi_{\\parallel}",
+      "meaning": "boundary-localized spinor solving the reduced 1+1-dimensional Dirac equation"
+    },
+    {
+      "symbol": "\\gamma_1",
+      "meaning": "normal gamma matrix whose eigenvalue fixes the boundary chirality"
+    },
+    {
+      "symbol": "\\slashed{\\partial}^{\\parallel}",
+      "meaning": "Dirac operator tangent to the boundary"
+    }
+  ],
+  "retrieval_hints": [
+    "Use before answering a Lecture Three edge-mode question that mixes bulk parity anomaly, wall profile, and boundary chirality."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

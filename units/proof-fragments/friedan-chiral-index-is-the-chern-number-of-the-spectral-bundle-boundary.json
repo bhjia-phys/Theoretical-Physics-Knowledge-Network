@@ -1,0 +1,104 @@
+{
+  "id": "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+  "type": "proof_fragment",
+  "title": "Friedan Chiral Index Is The Chern Number Of The Spectral Bundle Boundary",
+  "summary": "Friedan identifies the lattice chiral index with the Chern number of the spectral bundle W over the boundary of the punctured Brillouin zone; because that boundary bounds a compact manifold, cobordism invariance forces the total chiral index to vanish.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "proof-fragment",
+    "friedan",
+    "chern-character",
+    "cobordism",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Zero energy occurs only at isolated Fermi points so the punctured Brillouin zone has a boundary made of small surrounding spheres.",
+    "The occupied spectral subspaces form a finite-rank bundle W over the punctured Brillouin zone."
+  ],
+  "regime": "Characteristic-class formulation of the lattice no-go theorem.",
+  "scope": "Friedan's Chern-character and cobordism interpretation of the total lattice chiral index.",
+  "dependencies": [
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum"
+  ],
+  "related_units": [
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/spectral-projection-chiral-current",
+      "equation_labels": [
+        "chiral-index-from-low-energy-current"
+      ],
+      "notes": "The low-energy chiral index is the total charge of Friedan's chiral current at p^0=0."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "spectral-bundle-curvature",
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "The current is reinterpreted as the top Chern character of the spectral bundle W, and the theorem becomes cobordism invariance of that Chern number."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Characteristic-class proof fragment turning the lattice chiral index into a boundary Chern number that must vanish.",
+  "math_expressions": [
+    {
+      "latex": "I_Q = \\int \\mathrm d^d p\\, j_Q^0(0,p)",
+      "kind": "display",
+      "equation_label": "chiral-index-from-low-energy-current",
+      "notes": "The lattice chiral index is the total low-energy chiral charge."
+    },
+    {
+      "latex": "D = S(\\mathrm d - \\mathrm dS), \\qquad \\Omega = S(\\mathrm dS\\,\\mathrm dS)",
+      "kind": "display",
+      "equation_label": "spectral-bundle-curvature",
+      "notes": "Natural covariant derivative and curvature on the spectral bundle W determined by the projector S."
+    },
+    {
+      "latex": "I_Q = \\int_{\\partial M} n_\\mu F_Q^{0\\mu} = 0",
+      "kind": "display",
+      "equation_label": "cobordism-chern-number-zero",
+      "notes": "The boundary Chern number of the spectral bundle vanishes because \\partial M bounds the punctured Brillouin-zone manifold M."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "I_Q",
+      "meaning": "total chiral index in charge sector Q"
+    },
+    {
+      "symbol": "W",
+      "meaning": "spectral bundle formed by the range of S(0,p) over the punctured Brillouin zone"
+    },
+    {
+      "symbol": "D",
+      "meaning": "natural covariant derivative on the spectral bundle"
+    },
+    {
+      "symbol": "\\Omega",
+      "meaning": "curvature two-form of the spectral bundle"
+    }
+  ],
+  "step_justification": [
+    "At zero energy the current measures the net right-minus-left chiral content of the low-energy lattice spectrum.",
+    "Removing small balls around the isolated Fermi points leaves a manifold M with boundary \\partial M equal to the union of enclosing spheres.",
+    "The current is the dual of the top Chern character of the spectral bundle W on M, so the total chiral index becomes a boundary Chern number.",
+    "Cobordism invariance of the Chern number forces any such boundary contribution to vanish, yielding the lattice no-go theorem."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must explain why Friedan's proof is stronger than a bare Stokes sketch: it identifies the theorem as a characteristic-class and cobordism statement."
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

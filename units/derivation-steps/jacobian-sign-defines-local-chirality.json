@@ -1,0 +1,63 @@
+{
+  "id": "derivation_step:jacobian-sign-defines-local-chirality",
+  "type": "derivation_step",
+  "title": "The Jacobian Sign Defines The Local Chirality",
+  "summary": "The sign of the determinant of the linearized Pauli-vector Jacobian is the handedness or chirality of the Weyl node.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "weyl-semimetals",
+  "tags": [
+    "derivation-step",
+    "chirality",
+    "jacobian-sign"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The local linear map is invertible."
+  ],
+  "regime": "Local topological classification of an isolated Weyl node.",
+  "scope": "Final local step that converts the linearized Hamiltonian into a signed topological charge.",
+  "dependencies": [
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "quantity:chirality-sign"
+  ],
+  "related_units": [
+    "concept:chirality-of-weyl-node",
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "equation:berry-flux-topological-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "perd"
+      ],
+      "notes": "The determinant sign is Witten's compact local chirality formula."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Local chirality extracted from the orientation of the linearized Pauli-vector map.",
+  "math_expressions": [
+    {
+      "latex": "\\chi=\\operatorname{sign}\\det\\bigl((\\partial_j b_i)_{\\vec p_*}\\bigr)",
+      "kind": "display",
+      "equation_label": "perd",
+      "notes": "Local handedness of the Weyl cone."
+    }
+  ],
+  "step_inputs": [
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "quantity:chirality-sign"
+  ],
+  "step_justification": [
+    "The determinant records whether the linear map from momentum space to Pauli-vector space preserves or reverses orientation.",
+    "That orientation sign is the local degree of the normalized map on a small enclosing sphere."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation answer must justify why the Jacobian sign is the Weyl-node chirality."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

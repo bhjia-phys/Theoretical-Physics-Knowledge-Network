@@ -1,0 +1,65 @@
+{
+  "id": "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+  "type": "regression_question",
+  "title": "Derive The Jackiw-Rebbi Edge Mode From Mass Sign Change",
+  "summary": "Tests whether the topic can derive the chiral boundary mode from the sign-changing Dirac mass and explain how that mode fits the parity-anomaly consistency story.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must distinguish the continuum edge-mode derivation from the separate lattice no-go theorem."
+  ],
+  "regime": "Topic regression for the Lecture Three boundary-mode branch.",
+  "scope": "Flagship Lecture Three derivation question for the topological-phases topic suite.",
+  "dependencies": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "related_units": [
+    "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "The answer should reconstruct the wall-mode derivation and connect it to the doubled parity-anomaly setup."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Lecture Three flagship regression prompt.",
+  "prompt": "Derive the chiral boundary mode supported by a sign-changing Dirac mass and explain why it makes the doubled integer Hall system consistent.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "pass_conditions": [
+    "The answer explains why a single massive Dirac fermion carries a half-level parity anomaly.",
+    "The answer shows how the boundary problem is rewritten as a sign-changing-mass Dirac equation.",
+    "The answer writes the localized ansatz and the reduced boundary Dirac equation.",
+    "The answer writes the bulk-plus-boundary anomaly-cancellation equation rather than mentioning anomaly inflow only as a slogan.",
+    "The answer explains why the resulting chiral edge mode restores consistency with the integer bulk response."
+  ],
+  "retrieval_hints": [
+    "Use in topic regression runs to test whether the Lecture Three edge-mode story is derivable rather than only cited."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

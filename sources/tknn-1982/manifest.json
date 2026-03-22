@@ -1,0 +1,58 @@
+{
+  "source_id": "paper:tknn-quantized-hall-conductance-1982",
+  "title": "Quantized Hall Conductance in a Two-Dimensional Periodic Potential",
+  "authors": [
+    "D. J. Thouless",
+    "M. Kohmoto",
+    "M. P. Nightingale",
+    "M. den Nijs"
+  ],
+  "version": "journal",
+  "submitted_date": "1982-08-01",
+  "updated_date": "1982-08-01",
+  "canonical_scope": "External source anchor for the TKNN Hall-conductance invariant and its role in the topological-phases core theorem family.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.49.405",
+    "inspire": "https://inspirehep.net/literature/188642"
+  },
+  "section_map": [
+    {
+      "id": "paper/main-result",
+      "title": "Main Result",
+      "summary": "The Hall conductance of a gapped two-dimensional periodic system is expressed as a quantized topological invariant."
+    },
+    {
+      "id": "paper/kubo-to-topological-invariant",
+      "title": "Kubo Formula To Topological Invariant",
+      "summary": "The Hall-conductance Kubo formula is reorganized into a Brillouin-zone topological integral when the Fermi energy lies in a gap."
+    },
+    {
+      "id": "paper/projector-curvature-identity",
+      "title": "Projector / Curvature Identity",
+      "summary": "The same Hall integer is written through Berry-curvature data of the occupied bundle, giving the local geometric integrand used in later projector formulas."
+    },
+    {
+      "id": "paper/gap-protected-quantization",
+      "title": "Gap-Protected Quantization",
+      "summary": "Quantization is protected as long as the Fermi level remains in a spectral gap, so the integral cannot change continuously."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "hall-kubo-topological-integral",
+      "section": "paper/kubo-to-topological-invariant",
+      "title": "Hall conductance rewritten as a Brillouin-zone topological integral"
+    },
+    {
+      "label": "occupied-bundle-curvature-form",
+      "section": "paper/projector-curvature-identity",
+      "title": "Occupied-bundle Berry curvature as the local TKNN density"
+    },
+    {
+      "label": "gap-protected-integer",
+      "section": "paper/gap-protected-quantization",
+      "title": "Quantized Hall integer protected by the spectral gap"
+    }
+  ],
+  "figure_map": []
+}

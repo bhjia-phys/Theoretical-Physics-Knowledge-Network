@@ -1,0 +1,150 @@
+{
+  "id": "proof_state:lecture-three-domain-wall-edge-mode",
+  "type": "proof_state",
+  "title": "Lecture Three Domain-Wall Edge-Mode Proof State",
+  "summary": "Current proof-state ledger for the Lecture Three flagship theorem: the local Witten derivation is decomposed into bounded obligations, the parity-anomaly half level is split into a geometric hemisphere fragment plus a theorem-level response statement, the Callan-Harvey inflow-cancellation identity is explicit, the lecture-one boundary-mode precursor is explicit, and the remaining follow-up is narrower archival enrichment plus the separate continuum-versus-lattice scope boundary.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-state",
+    "lecture-three",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The local continuum derivation and the cited-source fusion status must both stay visible."
+  ],
+  "regime": "Proof-completion review state for the edge-mode theorem family.",
+  "scope": "Ledger-level summary of the Lecture Three proof chain and its residual enrichment route.",
+  "dependencies": [
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass"
+  ],
+  "related_units": [
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Full local proof chain."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Proof-state ledger for the Lecture Three continuum edge-mode theorem family.",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "formal_theory_role": "intermediate_theory",
+  "statement_graph_role": "temporary_scaffold",
+  "statement_graph_parents": [
+    "theorem_family:domain-wall-edge-mode-consistency"
+  ],
+  "statement_graph_children": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "target_statement_id": "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+  "faithfulness_status": "bounded",
+  "faithfulness_strategy": "Treat this proof state only as a scaffold of obligations and scope boundaries; it stays faithful by pointing back to the trusted continuum theorem and by keeping the lattice no-go branch separate.",
+  "faithfulness_notes": "This proof-state unit is not itself the theorem and should not absorb the continuum-versus-lattice distinction.",
+  "comparator_audit_status": "passed",
+  "comparator_risks": [
+    "A complete-looking scaffold can still blur the distinction between the continuum edge-mode theorem and the separate lattice no-go story."
+  ],
+  "provenance_kind": "mixed",
+  "attribution_requirements": [
+    "Retain attribution to Witten for the lecture-local proof chain and to the cited Jackiw-Rebbi / Callan-Harvey sources for the neighboring source-grade ingredients."
+  ],
+  "prerequisite_closure_status": "closed",
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "domain_wall_edge_mode_proof_state",
+  "lean_statement_kind": "scaffold",
+  "admissible_assumptions": [
+    "The proof state formalizes the local continuum theorem family only and keeps the lattice no-go theorem separate.",
+    "The cited-source archival enrichment remains outside the local formal scaffold."
+  ],
+  "lean_prerequisite_ids": [
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "formalization_blockers": [
+    "The domain-wall zero-mode proof still depends on analytic lemmas that are not yet available as reusable Lean imports."
+  ],
+  "obligation_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "pass_conditions": [
+    "The local continuum proof obligations are explicit and formula-bearing.",
+    "The Jackiw-Rebbi zero-mode and anomaly-inflow ingredients are explicit source-grade neighboring units.",
+    "The Callan-Harvey inflow-cancellation equation is explicit rather than only named abstractly.",
+    "The half-level parity-anomaly ingredient is factored into an explicit geometric Berry-flux fragment and a theorem-level response statement.",
+    "The proof state keeps the residual archival-enrichment follow-up and the anomaly-versus-lattice distinction visible."
+  ],
+  "failure_triggers": [
+    "Fail if the local derivation is treated as identical to the lattice no-go proof.",
+    "Fail if the theorem is described as still lacking core Jackiw-Rebbi or anomaly-inflow source-grade units even though they are present.",
+    "Fail if anomaly inflow is invoked without the explicit bulk-plus-boundary cancellation equation.",
+    "Fail if the narrower archival-enrichment follow-up is erased."
+  ],
+  "retrieval_hints": [
+    "Use when an answer or audit needs the full Lecture Three proof ledger."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:show-callan-harvey-inflow-cancels-boundary-anomaly",
+    "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "question_oracle:show-callan-harvey-inflow-cancels-boundary-anomaly",
+    "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
+    "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
+    "regression_run:topological-phases-core-2026-03-21-lecture-one-cited-recovery",
+    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

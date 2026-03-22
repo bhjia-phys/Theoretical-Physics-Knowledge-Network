@@ -1,0 +1,92 @@
+{
+  "id": "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+  "type": "definition",
+  "title": "Weyl Node As An Isolated Three-Dimensional Two-Band Crossing",
+  "summary": "A Weyl node is an isolated three-dimensional two-band crossing whose linearized Hamiltonian has an invertible Pauli-vector Jacobian, so the crossing carries a nonzero local topological charge.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "weyl-semimetals",
+  "tags": [
+    "definition",
+    "weyl-node",
+    "local-analysis"
+  ],
+  "aliases": [
+    "local Weyl-node definition"
+  ],
+  "assumptions": [
+    "The crossing is isolated in three-dimensional momentum space.",
+    "A two-band local reduction is valid near the crossing.",
+    "The linear term in the Pauli-vector coefficients has nonzero determinant."
+  ],
+  "regime": "Low-energy expansion near an isolated 3D crossing.",
+  "scope": "Lecture One local definition of a Weyl node in terms of the 2x2 Bloch Hamiltonian.",
+  "dependencies": [
+    "equation:two-band-hamiltonian-d-dot-sigma",
+    "quantity:chirality-sign"
+  ],
+  "related_units": [
+    "concept:weyl-node",
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "derivation_step:jacobian-sign-defines-local-chirality",
+    "notation_map:three-dimensional-two-band-crossing-symbols"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp",
+        "xpa",
+        "perd"
+      ],
+      "notes": "Witten reduces the local crossing to a Pauli-vector Hamiltonian and identifies the chirality by the Jacobian sign."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Local 2x2 Bloch Hamiltonian with an invertible linear Pauli-vector term at the bad point.",
+  "math_expressions": [
+    {
+      "latex": "H(\\vec p)=a(\\vec p)+\\sum_{i=1}^3 b_i(\\vec p)\\sigma^i",
+      "kind": "display",
+      "equation_label": "localexp",
+      "notes": "Universal local two-band form."
+    },
+    {
+      "latex": "H(\\vec p_*+\\delta \\vec p)=a(\\vec p_*)+\\sum_{i,j}(\\partial_j b_i)_{\\vec p_*}\\,\\delta p_j\\,\\sigma^i+O(\\delta p^2)",
+      "kind": "display",
+      "notes": "Taylor expansion at the isolated crossing point after subtracting the scalar shift."
+    },
+    {
+      "latex": "\\chi=\\operatorname{sign}\\det\\bigl((\\partial_j b_i)_{\\vec p_*}\\bigr)",
+      "kind": "display",
+      "equation_label": "perd",
+      "notes": "The local Jacobian sign determines the Weyl-node chirality."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\vec p_*",
+      "meaning": "isolated momentum-space crossing point"
+    },
+    {
+      "symbol": "b_i(\\vec p)",
+      "meaning": "Pauli-vector coefficients of the local Bloch Hamiltonian"
+    },
+    {
+      "symbol": "\\chi",
+      "meaning": "local Weyl-node chirality or topological sign"
+    }
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for the precise local definition of a Weyl node rather than only intuition."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

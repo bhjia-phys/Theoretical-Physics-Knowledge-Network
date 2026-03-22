@@ -20,10 +20,14 @@
   "dependencies": [
     "equation:winding-number-as-s2-to-s2-degree",
     "equation:berry-flux-topological-charge",
-    "concept:nielsen-ninomiya-theorem"
+    "concept:nielsen-ninomiya-theorem",
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum"
   ],
   "related_units": [
-    "claim:lattice-weyl-nodes-sum-to-zero-net-chirality"
+    "claim:lattice-weyl-nodes-sum-to-zero-net-chirality",
+    "theorem:nielsen-ninomiya-charge-cancellation"
   ],
   "source_anchors": [
     {
@@ -50,6 +54,20 @@
   "validation_status": "source-grounded",
   "maturity": "working",
   "representation": "Global derivation using a closed form and boundary spheres around bad points.",
+  "math_expressions": [
+    {
+      "latex": "0 = \\sum_\\alpha w_\\alpha",
+      "kind": "display",
+      "equation_label": "cl",
+      "notes": "Degree-theory version of the charge-cancellation result."
+    },
+    {
+      "latex": "0 = \\sum_\\alpha \\int_{S^2_\\alpha}\\frac{F}{2\\pi}",
+      "kind": "display",
+      "equation_label": "nna",
+      "notes": "Berry-curvature version of the same cancellation law."
+    }
+  ],
   "equation_refs": [
     "equation:winding-number-as-s2-to-s2-degree",
     "equation:berry-flux-topological-charge"
@@ -68,5 +86,5 @@
     "Use when a query asks why local node charges must add to zero globally."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-19"
 }

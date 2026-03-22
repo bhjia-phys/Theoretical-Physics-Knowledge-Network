@@ -4,6 +4,7 @@
 - Type: `claim`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `boundary-phenomena`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `seed`
@@ -21,6 +22,18 @@ Boundary spectrum of a Weyl semimetal.
 - `A boundary orientation is chosen.`
 - `Projected Weyl nodes remain distinguishable on the boundary.`
 
+## Representation
+Boundary claim linking arc endpoints to projected bulk topology.
+
+## Source Anchors
+- `lecture-one/weyl-fermions-and-fermi-arcs | Lecture One identifies Fermi arcs as boundary signatures tied to bulk Weyl nodes.`
+
+## Mathematical Content
+- none
+
+## Symbols
+- none
+
 ## Dependencies
 - [Fermi Arc](../Concepts/fermi-arc.md)
 - [Weyl Node](../Concepts/weyl-node.md)
@@ -29,17 +42,17 @@ Boundary spectrum of a Weyl semimetal.
 ## Related Units
 - [Crossing Away From The Fermi Energy Is Not Yet A Clean Weyl Semimetal](../Warnings/crossing-away-from-fermi-energy-is-not-yet-a-clean-weyl-semimetal.md)
 
-## Source Anchors
-- `lecture-one/weyl-fermions-and-fermi-arcs | Lecture One identifies Fermi arcs as boundary signatures tied to bulk Weyl nodes.`
+## Failure Modes
+- `Surface reconstructions or coincident projections can obscure the simple arc picture.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Use when a query asks how to read bulk Weyl nodes from boundary spectra.`
 
 ## Outgoing Edges
 - `derived_from` -> [Bulk-Boundary Correspondence To Fermi Arc](../Bridges/bulk-boundary-correspondence-to-fermi-arc.md): The Fermi-arc endpoint claim is obtained through the bulk-boundary bridge.
 
 ## Incoming Edges
 - [Bulk-Boundary Correspondence To Fermi Arc](../Bridges/bulk-boundary-correspondence-to-fermi-arc.md) -> `supports`: The bridge supports the boundary endpoint claim for Fermi arcs.
-
-## Failure Modes
-- `Surface reconstructions or coincident projections can obscure the simple arc picture.`
-
-## Formal Targets
-- `aitp-l2`

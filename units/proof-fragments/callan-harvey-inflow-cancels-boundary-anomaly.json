@@ -1,0 +1,131 @@
+{
+  "id": "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+  "type": "proof_fragment",
+  "title": "Callan-Harvey Inflow Cancels The Boundary Anomaly",
+  "summary": "For a wall-localized chiral mode, the anomalous boundary current divergence is exactly canceled by the gauge variation of the bulk Chern-Simons response, so the combined bulk-plus-boundary system is gauge invariant.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-fragment",
+    "callan-harvey",
+    "anomaly-inflow",
+    "edge-modes"
+  ],
+  "aliases": [
+    "Callan-Harvey anomaly cancellation identity"
+  ],
+  "assumptions": [
+    "A chiral wall or edge mode is present on the boundary.",
+    "The bulk effective action contains the corresponding integer Chern-Simons response term."
+  ],
+  "regime": "Continuum anomaly-inflow analysis for integer quantum Hall boundaries and domain walls.",
+  "scope": "Archival Callan-Harvey fragment making the inflow-cancellation equation explicit inside the Lecture Three edge-mode family.",
+  "dependencies": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass"
+  ],
+  "related_units": [
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/anomaly-cancellation",
+      "equation_labels": [
+        "bulk-topological-variation",
+        "inflow-balance"
+      ],
+      "notes": "Archival anomaly-cancellation mechanism for wall-localized chiral zero modes."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "equation_labels": [
+        "facs"
+      ],
+      "notes": "Witten states the bulk Chern-Simons term whose boundary variation must be canceled."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Explicit bulk-plus-boundary anomaly-cancellation identity behind the edge-mode consistency story.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because 'anomaly inflow' is often used as a slogan. The actual content is the equality between the boundary gauge anomaly and the gauge variation of the bulk Chern-Simons response.",
+  "prerequisite_story": "Know the integer Hall Chern-Simons response, the existence of a wall-localized chiral mode, and the fact that a chiral boundary theory carries a gauge anomaly with a computable coefficient.",
+  "local_context_story": "In the Lecture Three edge-mode family, this is the explicit cancellation identity that turns the Jackiw-Rebbi wall mode into a consistency mechanism for the bulk Hall response.",
+  "forward_links_story": "Once the inflow equation is written explicitly, one can state the full anomaly-inflow theorem and then combine it with the domain-wall zero mode to obtain the final chiral edge-mode theorem.",
+  "canonical_questions": [
+    "Why does the bulk Chern-Simons variation reduce to a boundary term?",
+    "How does the edge anomaly coefficient match the bulk Hall level k?",
+    "Why does this equality imply that edge modes are required rather than optional?"
+  ],
+  "scope_boundaries": [
+    "This fragment establishes the anomaly-cancellation identity, not yet the existence of the boundary mode that realizes it.",
+    "The argument is continuum and assumes the effective Chern-Simons response has already been identified."
+  ],
+  "math_expressions": [
+    {
+      "latex": "I_{\\mathrm{bulk}}=\\frac{k}{4\\pi}\\int_{M} A\\wedge \\mathrm{d}A",
+      "kind": "display",
+      "notes": "Bulk Chern-Simons response term."
+    },
+    {
+      "latex": "\\delta_{\\Lambda} I_{\\mathrm{bulk}}=\\frac{k}{4\\pi}\\int_{\\partial M}\\Lambda\\,\\mathrm{d}A",
+      "kind": "display",
+      "notes": "Gauge variation of the bulk response becomes a boundary term."
+    },
+    {
+      "latex": "\\partial_a j^a_{\\mathrm{edge}}=-\\frac{k}{4\\pi}\\,\\epsilon^{ab}F_{ab},\\qquad \\delta_{\\Lambda}W_{\\mathrm{edge}}=-\\delta_{\\Lambda}I_{\\mathrm{bulk}}",
+      "kind": "display",
+      "notes": "Boundary anomaly of the chiral mode is exactly canceled by bulk inflow."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "k",
+      "meaning": "integer Hall-response level"
+    },
+    {
+      "symbol": "j^a_{\\mathrm{edge}}",
+      "meaning": "boundary chiral current"
+    },
+    {
+      "symbol": "W_{\\mathrm{edge}}",
+      "meaning": "effective action of the boundary chiral mode"
+    }
+  ],
+  "step_justification": [
+    "Compute the gauge variation of the bulk Chern-Simons response and note that it localizes on the boundary.",
+    "Identify the wall-localized chiral mode as the only place where a boundary gauge anomaly can live.",
+    "Match the boundary anomaly coefficient to the bulk variation so the combined system is gauge invariant."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "callan_harvey_inflow_cancels_boundary_anomaly",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work with an integer-level bulk Chern-Simons response on a manifold with boundary and a chiral edge theory living on that boundary.",
+    "Treat the anomaly coefficient of the chiral boundary mode as a permitted lower-level input."
+  ],
+  "lean_prerequisite_ids": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass"
+  ],
+  "formalization_blockers": [
+    "The current KB does not yet provide a Lean-side interface for gauge variation of the Chern-Simons action on manifolds with boundary.",
+    "The boundary chiral anomaly formula is still imported as physics background rather than as a formal theorem in the same library."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must show the exact Callan-Harvey cancellation equation rather than only saying 'anomaly inflow'."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

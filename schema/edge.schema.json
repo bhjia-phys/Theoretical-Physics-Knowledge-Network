@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Theoretical Physics Knowledge Network Edge",
+  "title": "Open Physics KB Edge",
   "type": "object",
   "required": [
     "id",
@@ -35,7 +35,12 @@
         "warned_by",
         "bridges_to",
         "formalizes_toward",
-        "anchored_in_source"
+        "anchored_in_source",
+        "tests",
+        "oracles",
+        "blocked_by",
+        "resolves",
+        "routes_to"
       ]
     },
     "target": {

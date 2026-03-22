@@ -1,0 +1,18 @@
+# regression_run:topological-phases-core-2026-03-19
+
+- Suite ID: `regression_suite:topological-phases-core`
+- Status: `mixed`
+- Created: `2026-03-19`
+- Topic completion: `not_assessed`
+- Promotion readiness: `not-assessed`
+
+## Results
+- [Define A Weyl Node With Its Assumptions](../Regression-Questions/define-weyl-node-with-assumptions.md) | oracle=[Oracle For Defining A Weyl Node With Assumptions](../Question-Oracles/define-weyl-node-with-assumptions.md) | grade=`pass` | The local Weyl definition branch remains explicit and formula-bearing.
+- [Reconstruct The Local Weyl Linearization](../Regression-Questions/reconstruct-local-weyl-linearization.md) | oracle=[Oracle For Reconstructing The Local Weyl Linearization](../Question-Oracles/reconstruct-local-weyl-linearization.md) | grade=`pass` | The local Weyl derivation is still decomposed into explicit derivation-step units.
+- [Prove Nielsen-Ninomiya By Stokes](../Regression-Questions/prove-nielsen-ninomiya-by-stokes.md) | oracle=[Oracle For Proving Nielsen-Ninomiya By Stokes](../Question-Oracles/prove-nielsen-ninomiya-by-stokes.md) | grade=`partial` | The local theorem proof is explicit, but the stronger Friedan cited-paper route is still unresolved.
+  - writeback: [Former Friedan-Level Nielsen-Ninomiya Source Gap (Recovered)](../Open-Gaps/friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested.md), [Ingest Friedan's Proof Of Nielsen-Ninomiya](../Followup-Source-Tasks/ingest-friedan-proof-of-nielsen-ninomiya.md)
+- [Explain The Berry-Flux Version Of The Node Charge](../Regression-Questions/explain-berry-flux-version-of-node-charge.md) | oracle=[Oracle For The Berry-Flux Version Of The Node Charge](../Question-Oracles/explain-berry-flux-version-of-node-charge.md) | grade=`pass` | The Berry-curvature route to the node charge and zero-sum law is explicit.
+- [Separate Anomaly Intuition From The Lattice Proof](../Regression-Questions/separate-anomaly-intuition-from-lattice-proof.md) | oracle=[Oracle For Separating Anomaly Intuition From The Lattice Proof](../Question-Oracles/separate-anomaly-intuition-from-lattice-proof.md) | grade=`partial` | The local distinction is explicit, but the cited-source separation between anomaly intuition and lattice proof is still incomplete.
+  - writeback: [Former Parity-Anomaly Versus Lattice-No-Go Scope Gap (Closed)](../Open-Gaps/parity-anomaly-motivates-but-does-not-prove-lattice-no-go.md), [Ingest Friedan's Proof Of Nielsen-Ninomiya](../Followup-Source-Tasks/ingest-friedan-proof-of-nielsen-ninomiya.md), [Ingest Callan-Harvey And Jackiw-Rebbi For The Edge-Mode Proof](../Followup-Source-Tasks/ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof.md)
+- [Reconstruct The Hall-Response / Chern-Number Equivalence](../Regression-Questions/reconstruct-hall-response-chern-number-equivalence.md) | oracle=[Oracle For Reconstructing The Hall-Response / Chern-Number Equivalence](../Question-Oracles/reconstruct-hall-response-chern-number-equivalence.md) | grade=`pass` | The Hall-response, band-Chern, and many-body twist-angle equality can now be reconstructed explicitly from the current canonical family.
+- [Derive The Jackiw-Rebbi Edge Mode From Mass Sign Change](../Regression-Questions/derive-jackiw-rebbi-edge-mode-from-mass-sign-change.md) | oracle=[Oracle For Deriving The Jackiw-Rebbi Edge Mode From Mass Sign Change](../Question-Oracles/derive-jackiw-rebbi-edge-mode-from-mass-sign-change.md) | grade=`pass` | The sign-changing-mass edge-mode theorem is derivable locally, even though the original Jackiw-Rebbi and Callan-Harvey sources still remain queued for recovery.

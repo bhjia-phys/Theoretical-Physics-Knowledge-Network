@@ -1,0 +1,105 @@
+{
+  "id": "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+  "type": "proof_fragment",
+  "title": "Continuum Parity Anomaly Does Not Establish Lattice Charge Cancellation",
+  "summary": "The continuum parity-anomaly and anomaly-inflow story diagnoses the response of a massive Dirac cone or a wall-localized chiral mode, while the lattice Nielsen-Ninomiya theorem is a compact-Brillouin-zone Chern-number and cobordism statement; Haldane's lattice model realizes the former only after the valley contributions combine into an integer lattice invariant.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "bridge-objects",
+  "canonical_family": "topological-phases/anomaly-vs-lattice-no-go",
+  "tags": [
+    "proof-fragment",
+    "parity-anomaly",
+    "nielsen-ninomiya",
+    "scope-boundary"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "A single continuum Dirac cone and a compact lattice Brillouin zone answer different questions and live on different state spaces.",
+    "The answer must keep motivation, lattice realization, and actual theorem proof distinct."
+  ],
+  "regime": "Conceptual and proof-level separation between continuum anomaly language and the lattice no-go theorem.",
+  "scope": "Explicit formula-bearing scope boundary for the Lecture One lattice theorem versus the later parity-anomaly and anomaly-inflow branches.",
+  "dependencies": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary"
+  ],
+  "related_units": [
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_state:lecture-one-weyl-node-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Witten uses anomaly inflow as a boundary-consistency argument, not as the Lecture One lattice proof."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Haldane's lattice completion converts local parity-anomaly intuition into an integer Hall invariant after both valleys are included."
+    },
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/anomaly-cancellation",
+      "equation_labels": [
+        "bulk-topological-variation",
+        "inflow-balance"
+      ],
+      "notes": "Callan-Harvey explains continuum bulk-boundary consistency, not the compact-BZ proof of zero net lattice chirality."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "Friedan's theorem proof is a Chern-number and cobordism argument on the spectral bundle over the punctured Brillouin zone."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Scope-boundary proof fragment separating continuum anomaly response statements from the global lattice no-go theorem.",
+  "math_expressions": [
+    {
+      "latex": "\\Gamma_{\\mathrm{odd}}[A]=\\frac{\\operatorname{sign}m}{2}\\,I_{\\mathrm{CS}}(A)",
+      "kind": "display",
+      "notes": "Continuum parity-anomaly response of one massive Dirac cone."
+    },
+    {
+      "latex": "\\delta_{\\Lambda}W_{\\mathrm{edge}}=-\\delta_{\\Lambda}I_{\\mathrm{bulk}}",
+      "kind": "display",
+      "notes": "Callan-Harvey anomaly inflow is a bulk-boundary consistency equation for a continuum wall mode."
+    },
+    {
+      "latex": "C=\\frac{1}{2}\\Bigl(\\operatorname{sign}(m_K)-\\operatorname{sign}(m_{K'})\\Bigr)",
+      "kind": "display",
+      "equation_label": "chern-number-from-valley-masses",
+      "notes": "Haldane's lattice model yields an integer Hall invariant only after combining the two valley contributions."
+    },
+    {
+      "latex": "I_Q = \\int_{\\partial M} n_\\mu F_Q^{0\\mu} = 0",
+      "kind": "display",
+      "equation_label": "cobordism-chern-number-zero",
+      "notes": "The lattice theorem proves zero net chirality from compact-BZ spectral-bundle topology, not from continuum anomaly response alone."
+    }
+  ],
+  "step_justification": [
+    "The half-level Chern-Simons term characterizes the parity-odd response of one continuum Dirac cone, which is not yet a gauge-invariant lattice model.",
+    "Callan-Harvey inflow explains how a boundary chiral anomaly is canceled by a bulk topological term in a continuum domain-wall setup.",
+    "Haldane's lattice realization shows that lattice physics restores an integer invariant by combining both valleys, so the lattice object is already different from a single anomalous cone.",
+    "Friedan's proof of Nielsen-Ninomiya instead computes a compact-Brillouin-zone Chern number of the spectral bundle and sets it to zero by cobordism invariance."
+  ],
+  "retrieval_hints": [
+    "Use when a query risks conflating parity anomaly, anomaly inflow, and the actual lattice no-go proof."
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

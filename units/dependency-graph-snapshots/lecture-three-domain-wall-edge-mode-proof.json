@@ -1,0 +1,61 @@
+{
+  "id": "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+  "type": "dependency_graph_snapshot",
+  "title": "Lecture Three Domain-Wall Edge-Mode Dependency Graph",
+  "summary": "Dependency snapshot for the Lecture Three flagship proof: the half-level anomaly and its cancellation set up the doubled system, the folding step produces the domain-wall equation, the wall ansatz yields the chiral boundary equation, and normalizability plus bulk interpretation complete the theorem.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "dependency-graph-snapshot",
+    "lecture-three",
+    "proof-order"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The proof order matters because the wall-mode synthesis depends on the doubled starting point and the folding step."
+  ],
+  "regime": "Proof-order audit for the edge-mode theorem family.",
+  "scope": "Ordered prerequisite spine for the Lecture Three theorem.",
+  "dependencies": [
+    "equation_context:lecture-three-parity-anomaly-half-level",
+    "equation_context:lecture-three-sign-changing-mass-wall-equation",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Entire proof order sits in this lecture-three section."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Dependency snapshot for the Lecture Three proof order.",
+  "mandatory_unit_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "derivation_spine": [
+    "Derive the half-level anomaly of one massive Dirac fermion.",
+    "Cancel that anomaly by doubling with opposite masses before introducing a boundary sign flip.",
+    "Fold the boundary problem into a sign-changing-mass Dirac equation on all of space.",
+    "Insert the localized wall ansatz and derive the chiral boundary equation.",
+    "Use the mass sign flip to prove normalizability of the wall mode.",
+    "Reconnect the local wall mode to the consistent integer Hall boundary story."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must preserve the exact order of the Lecture Three derivation."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

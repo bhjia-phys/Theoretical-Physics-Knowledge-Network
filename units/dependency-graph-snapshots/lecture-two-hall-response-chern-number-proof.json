@@ -1,0 +1,64 @@
+{
+  "id": "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof",
+  "type": "dependency_graph_snapshot",
+  "title": "Lecture Two Hall-Response / Chern-Number Dependency Graph",
+  "summary": "Dependency snapshot for the Lecture Two flagship proof: level quantization precedes Hall current, the band invariant and many-body invariant are defined on their own geometric spaces, and the theorem closes only after those routes are fused.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "dependency-graph-snapshot",
+    "lecture-two",
+    "proof-order"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The proof order matters because later claims depend on earlier quantization and definition steps."
+  ],
+  "regime": "Proof-order audit for the Hall-response theorem family.",
+  "scope": "Ordered prerequisite spine for the Lecture Two theorem.",
+  "dependencies": [
+    "equation_context:lecture-two-large-gauge-holonomy-shift",
+    "equation_context:lecture-two-hall-current-from-chern-simons",
+    "equation_context:lecture-two-twist-angle-berry-curvature"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "notes": "Start of the proof order."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "End of the proof order."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Dependency snapshot for the Lecture Two proof order.",
+  "mandatory_unit_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "derivation_spine": [
+    "Quantize the Chern-Simons level by the large-gauge argument on S^2 times S^1.",
+    "Differentiate the effective action to obtain the Hall current and identify k as the macroscopic response coefficient.",
+    "Define the microscopic band invariant k' from the Berry curvature of the filled-state bundle.",
+    "Derive the many-body invariant \\widehat{k}' from the twist-angle Berry curvature.",
+    "Fuse the response, band, and many-body routes into k = k' = \\widehat{k}'."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must respect the proof order and not jump to the final equality prematurely."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

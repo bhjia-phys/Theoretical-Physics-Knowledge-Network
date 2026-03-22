@@ -1,0 +1,29 @@
+{
+  "queue_id": "queue:witten-lecture-three-prerequisites",
+  "title": "Witten Lecture Three Prerequisites Queue",
+  "topic": "topological-phases-of-matter/witten-lecture-three",
+  "queue_kind": "prerequisite",
+  "summary": "Residual cited-paper recovery tasks that remain after the flagship Lecture Three theorem branch has been promoted.",
+  "items": [
+    {
+      "unit_id": "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+      "status": "in_progress",
+      "priority": "high",
+      "notes": "The local theorem chain exists, but the original Jackiw-Rebbi and Callan-Harvey source fusion is still open."
+    },
+    {
+      "unit_id": "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+      "status": "in_progress",
+      "priority": "high",
+      "notes": "Background-source task for the remaining cited-paper fusion of the Lecture Three edge-mode family."
+    },
+    {
+      "unit_id": "source_map:witten-topological-phases-lecture-three",
+      "status": "in_progress",
+      "priority": "medium",
+      "notes": "Source map now binds the flagship theorem chain, the future buffer, and the remaining cited-paper recovery route."
+    }
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

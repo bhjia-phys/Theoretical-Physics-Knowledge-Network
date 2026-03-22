@@ -1,0 +1,41 @@
+{
+  "queue_id": "queue:topological-phases-core-unresolved",
+  "title": "Topological Phases Core Unresolved Queue",
+  "topic": "topological-phases-of-matter/core",
+  "queue_kind": "unresolved",
+  "summary": "Topic-level unresolved items that remain after promoting the current Witten, TKNN, Haldane, Jackiw-Rebbi, and Callan-Harvey flagship theorem families.",
+  "items": [
+    {
+      "unit_id": "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+      "status": "open",
+      "priority": "high",
+      "notes": "The stronger cited-paper proof route for Nielsen-Ninomiya is still missing."
+    },
+    {
+      "unit_id": "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+      "status": "open",
+      "priority": "high",
+      "notes": "The continuum-anomaly intuition still needs stronger cited-source separation from the lattice proof."
+    },
+    {
+      "unit_id": "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+      "status": "in_progress",
+      "priority": "medium",
+      "notes": "The local theorem exists, but original-source TKNN and Haldane recovery is still open."
+    },
+    {
+      "unit_id": "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+      "status": "in_progress",
+      "priority": "medium",
+      "notes": "The local theorem exists, but original-source Jackiw-Rebbi and Callan-Harvey recovery is still open."
+    },
+    {
+      "unit_id": "source_map:topological-phases-core",
+      "status": "in_progress",
+      "priority": "medium",
+      "notes": "The topic source network is active, but it still depends on the unresolved cited-paper recovery routes above."
+    }
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

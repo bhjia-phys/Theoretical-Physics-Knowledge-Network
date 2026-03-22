@@ -1,0 +1,66 @@
+{
+  "id": "notation_map:three-dimensional-two-band-crossing-symbols",
+  "type": "notation_map",
+  "title": "Three-Dimensional Two-Band Crossing Symbols",
+  "summary": "This notation map fixes the symbols used in Lecture One for the local 2x2 crossing Hamiltonian, its Taylor expansion, and the resulting chirality sign.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "notation",
+  "tags": [
+    "notation",
+    "weyl-node",
+    "local-analysis"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The local band problem has already been reduced to a two-band description."
+  ],
+  "regime": "Lecture One local Weyl-node analysis.",
+  "scope": "Reusable symbol map for the local crossing-to-Weyl derivation.",
+  "dependencies": [
+    "equation:two-band-hamiltonian-d-dot-sigma",
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing"
+  ],
+  "related_units": [
+    "concept:weyl-node",
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp",
+        "xpa",
+        "perd"
+      ],
+      "notes": "The notation here is what the local linearization and chirality formula reuse downstream."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Symbol table for the local crossing Hamiltonian and its Jacobian.",
+  "symbols": [
+    {
+      "symbol": "a(\\vec p)",
+      "meaning": "scalar shift of the local 2x2 Hamiltonian"
+    },
+    {
+      "symbol": "b_i(\\vec p)",
+      "meaning": "Pauli-vector coefficients whose zero locates the crossing"
+    },
+    {
+      "symbol": "\\sigma^i",
+      "meaning": "Pauli matrices acting on the local two-band space"
+    },
+    {
+      "symbol": "(\\partial_j b_i)_{\\vec p_*}",
+      "meaning": "Jacobian of the Pauli-vector coefficients at the bad point"
+    }
+  ],
+  "retrieval_hints": [
+    "Use whenever a proof or regression answer needs to state Witten's local symbols explicitly."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

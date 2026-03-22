@@ -1,0 +1,104 @@
+{
+  "run_id": "regression_run:topological-phases-core-2026-03-20",
+  "suite_id": "regression_suite:topological-phases-core",
+  "status": "mixed",
+  "results": [
+    {
+      "question_id": "regression_question:define-weyl-node-with-assumptions",
+      "oracle_id": "question_oracle:define-weyl-node-with-assumptions",
+      "grade": "pass",
+      "notes": "The local Weyl definition branch remains explicit and formula-bearing."
+    },
+    {
+      "question_id": "regression_question:reconstruct-local-weyl-linearization",
+      "oracle_id": "question_oracle:reconstruct-local-weyl-linearization",
+      "grade": "pass",
+      "notes": "The local Weyl derivation is still decomposed into explicit derivation-step units."
+    },
+    {
+      "question_id": "regression_question:prove-nielsen-ninomiya-by-stokes",
+      "oracle_id": "question_oracle:prove-nielsen-ninomiya-by-stokes",
+      "grade": "partial",
+      "notes": "The local theorem proof is explicit, but the stronger Friedan cited-paper route is still unresolved.",
+      "writeback_unit_ids": [
+        "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+        "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya"
+      ]
+    },
+    {
+      "question_id": "regression_question:explain-berry-flux-version-of-node-charge",
+      "oracle_id": "question_oracle:explain-berry-flux-version-of-node-charge",
+      "grade": "pass",
+      "notes": "The Berry-curvature route to the node charge and zero-sum law is explicit."
+    },
+    {
+      "question_id": "regression_question:separate-anomaly-intuition-from-lattice-proof",
+      "oracle_id": "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+      "grade": "partial",
+      "notes": "The local distinction is explicit, but the cited-source separation between anomaly intuition and lattice proof is still incomplete.",
+      "writeback_unit_ids": [
+        "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+        "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+        "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+        "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+      ]
+    },
+    {
+      "question_id": "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "oracle_id": "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "grade": "pass",
+      "notes": "The KB now names both Lecture Two and Lecture Three recovery routes explicitly and ties them to proof states and follow-up tasks."
+    },
+    {
+      "question_id": "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+      "oracle_id": "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence",
+      "grade": "pass",
+      "notes": "The large-gauge prerequisite proof is now explicit through equation context and proof-obligation units."
+    },
+    {
+      "question_id": "regression_question:reconstruct-hall-response-chern-number-equivalence",
+      "oracle_id": "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+      "grade": "unsafe-pass",
+      "notes": "The local proof chain is now obligation-level explicit, but the answer still carries the declared TKNN/Haldane source-fusion risk if it is presented without the open-gap context.",
+      "writeback_unit_ids": [
+        "proof_state:lecture-two-hall-response-chern-number",
+        "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+        "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated"
+      ]
+    },
+    {
+      "question_id": "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+      "oracle_id": "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+      "grade": "pass",
+      "notes": "The KB cleanly separates local derivation coverage from the remaining TKNN/Haldane source-fusion gap."
+    },
+    {
+      "question_id": "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+      "oracle_id": "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+      "grade": "unsafe-pass",
+      "notes": "The local derivation is now obligation-level explicit, but the answer still carries the declared Jackiw-Rebbi/Callan-Harvey source-fusion risk if presented without the gap context.",
+      "writeback_unit_ids": [
+        "proof_state:lecture-three-domain-wall-edge-mode",
+        "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+        "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated"
+      ]
+    },
+    {
+      "question_id": "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+      "oracle_id": "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
+      "grade": "unsafe-pass",
+      "notes": "The full local proof order is explicit, but the answer remains unsafe if it hides the still-open cited-source fusion and continuum-versus-lattice scope boundary.",
+      "writeback_unit_ids": [
+        "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+        "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+      ]
+    },
+    {
+      "question_id": "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+      "oracle_id": "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+      "grade": "pass",
+      "notes": "The KB cleanly separates the local continuum proof, the external-source fusion route, and the distinct lattice no-go theorem."
+    }
+  ],
+  "created_at": "2026-03-20"
+}

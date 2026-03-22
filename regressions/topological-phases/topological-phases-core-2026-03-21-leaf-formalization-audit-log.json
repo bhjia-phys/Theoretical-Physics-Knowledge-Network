@@ -1,0 +1,145 @@
+{
+  "run_id": "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit",
+  "suite_id": "regression_suite:topological-phases-core",
+  "status": "pass",
+  "topic_completion_status": "promotion-ready",
+  "promotion_readiness": "ready",
+  "blocking_unit_ids": [],
+  "results": [
+    {
+      "question_id": "regression_question:define-weyl-node-with-assumptions",
+      "oracle_id": "question_oracle:define-weyl-node-with-assumptions",
+      "grade": "pass",
+      "notes": "Lecture One remains stable while the leaf-formalization audit focuses on the Hall and edge-mode branches."
+    },
+    {
+      "question_id": "regression_question:reconstruct-local-weyl-linearization",
+      "oracle_id": "question_oracle:reconstruct-local-weyl-linearization",
+      "grade": "pass",
+      "notes": "The Lecture One derivation spine stays explicit; this run does not loosen the earlier proof-grade standard."
+    },
+    {
+      "question_id": "regression_question:prove-nielsen-ninomiya-by-stokes",
+      "oracle_id": "question_oracle:prove-nielsen-ninomiya-by-stokes",
+      "grade": "pass",
+      "notes": "The lattice no-go branch remains explicit and is unaffected by the new Hall/edge leaf-formalization rollout."
+    },
+    {
+      "question_id": "regression_question:explain-berry-flux-version-of-node-charge",
+      "oracle_id": "question_oracle:explain-berry-flux-version-of-node-charge",
+      "grade": "pass",
+      "notes": "The Berry-flux node-charge branch remains formula-explicit while the Hall branch now reuses the same Berry/Chern infrastructure at leaf level."
+    },
+    {
+      "question_id": "regression_question:separate-anomaly-intuition-from-lattice-proof",
+      "oracle_id": "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+      "grade": "pass",
+      "notes": "The continuum-versus-lattice scope boundary stays explicit even after adding leaf-level parity-anomaly planning surfaces."
+    },
+    {
+      "question_id": "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "oracle_id": "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "grade": "pass",
+      "notes": "The prerequisite graph is now leaf-resolved: Hall-response and domain-wall families both expose theorem/fragment/derivation-step leaves with explicit Lean targets or bounded formalization blockers.",
+      "writeback_unit_ids": [
+        "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+        "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+        "derivation_step:chern-simons-action-induces-hall-current",
+        "theorem:half-level-cs-term-from-massive-dirac-fermion",
+        "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+        "derivation_step:boundary-dirac-mode-from-negative-bulk-mass"
+      ]
+    },
+    {
+      "question_id": "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+      "oracle_id": "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence",
+      "grade": "pass",
+      "notes": "The large-gauge and Hall-current steps now carry leaf-level learning-note context plus bounded Lean declarations rather than only theorem-family planning.",
+      "writeback_unit_ids": [
+        "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+        "derivation_step:chern-simons-action-induces-hall-current",
+        "proof_state:lecture-two-hall-response-chern-number"
+      ]
+    },
+    {
+      "question_id": "regression_question:reconstruct-hall-response-chern-number-equivalence",
+      "oracle_id": "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+      "grade": "pass",
+      "notes": "The Hall-response branch is now leaf-complete at the formalization-planning level: TKNN definition, traced-curvature identity, projector formula, twist-angle lemma, equivalence statement, and flagship theorem all expose bounded Lean-facing plans.",
+      "writeback_unit_ids": [
+        "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+        "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+        "proof_fragment:projector-formula-for-the-tknn-chern-number",
+        "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level",
+        "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+        "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+        "theorem_family:hall-response-chern-number-equivalence"
+      ]
+    },
+    {
+      "question_id": "regression_question:compute-haldane-chern-number-from-dirac-mass-signs",
+      "oracle_id": "question_oracle:compute-haldane-chern-number-from-dirac-mass-signs",
+      "grade": "pass",
+      "notes": "The neighboring Haldane realization remains explicit and now sits beside a clearer leaf-level Hall-response theorem spine rather than a family-level summary only."
+    },
+    {
+      "question_id": "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+      "oracle_id": "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+      "grade": "pass",
+      "notes": "The local Hall-response theorem spine is leaf-complete while the cited-source enrichment gap remains explicitly routed through the open-gap and follow-up-task surfaces.",
+      "writeback_unit_ids": [
+        "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+        "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+      ]
+    },
+    {
+      "question_id": "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+      "oracle_id": "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+      "grade": "pass",
+      "notes": "The Jackiw-Rebbi branch is now leaf-complete at the formalization-planning level: precursor, wall reduction, normalizability lemma, zero-mode theorem, inflow fragment, and final theorem all expose bounded declarations or blockers.",
+      "writeback_unit_ids": [
+        "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+        "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+        "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+        "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+        "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+      ]
+    },
+    {
+      "question_id": "regression_question:show-callan-harvey-inflow-cancels-boundary-anomaly",
+      "oracle_id": "question_oracle:show-callan-harvey-inflow-cancels-boundary-anomaly",
+      "grade": "pass",
+      "notes": "The Callan-Harvey cancellation equation and the theorem built on top of it now carry explicit leaf-level formalization plans instead of only family/state planning metadata.",
+      "writeback_unit_ids": [
+        "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+        "theorem:anomaly-inflow-requires-chiral-edge-modes",
+        "proof_state:lecture-three-domain-wall-edge-mode"
+      ]
+    },
+    {
+      "question_id": "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+      "oracle_id": "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
+      "grade": "pass",
+      "notes": "The doubling, folding, wall-reduction, and normalizability parts of the argument are now explicitly represented as leaf derivation/proof units with bounded formal targets.",
+      "writeback_unit_ids": [
+        "theorem:half-level-cs-term-from-massive-dirac-fermion",
+        "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+        "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+        "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+        "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+      ]
+    },
+    {
+      "question_id": "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+      "oracle_id": "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+      "grade": "pass",
+      "notes": "The local edge-mode proof spine is now leaf-complete while the cited-source archival expansion remains explicitly buffered through the runtime-gap bridge and topic queues.",
+      "writeback_unit_ids": [
+        "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+        "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+        "theorem_family:domain-wall-edge-mode-consistency"
+      ]
+    }
+  ],
+  "created_at": "2026-03-21"
+}

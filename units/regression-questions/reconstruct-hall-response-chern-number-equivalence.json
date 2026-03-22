@@ -1,0 +1,65 @@
+{
+  "id": "regression_question:reconstruct-hall-response-chern-number-equivalence",
+  "type": "regression_question",
+  "title": "Reconstruct The Hall-Response / Chern-Number Equivalence",
+  "summary": "Tests whether the topic can reconstruct the Lecture Two flagship chain from Chern-Simons level quantization to Hall current and then to the equality k = k' = \\widehat{k}'.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "integer-quantum-hall-effect"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must mention both the macroscopic Chern-Simons route and the microscopic Berry-curvature route."
+  ],
+  "regime": "Topic regression for the integer Hall / TKNN theorem family.",
+  "scope": "Flagship Lecture Two derivation question for the topological-phases topic suite.",
+  "dependencies": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions"
+  ],
+  "related_units": [
+    "question_oracle:reconstruct-hall-response-chern-number-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "mizz",
+        "coff",
+        "plizz"
+      ],
+      "notes": "The answer should recover the many-body Berry-curvature proof and connect it to the Hall-response level."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Lecture Two flagship regression prompt.",
+  "prompt": "Reconstruct the chain of reasoning that identifies the integer Hall-response coefficient with both the band-theory TKNN invariant and the many-body twist-angle Chern number.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "pass_conditions": [
+    "The answer explains why the Chern-Simons level k is integral.",
+    "The answer derives the Hall current from the Chern-Simons action.",
+    "The answer states both the filled-band Chern number k' and the many-body twist-angle invariant \\widehat{k}'.",
+    "The answer explains why the traced Berry curvature equals the occupied-projector commutator density or writes the equivalent local identity.",
+    "The answer ends with the equality k = k' = \\widehat{k}'."
+  ],
+  "retrieval_hints": [
+    "Use in topic regression runs to test whether Lecture Two is usable as a derivation branch rather than only as a source map."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

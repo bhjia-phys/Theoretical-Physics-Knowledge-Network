@@ -1,0 +1,95 @@
+{
+  "id": "question_oracle:compute-haldane-chern-number-from-dirac-mass-signs",
+  "type": "question_oracle",
+  "title": "Oracle For Computing The Haldane Chern Number From Dirac-Mass Signs",
+  "summary": "Detailed oracle for the Haldane bridge question that reconstructs the Chern number from the two valley masses.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "question-oracle",
+    "derivation",
+    "haldane",
+    "graphene"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must use the local graphene-to-Haldane bridge rather than quoting a final phase diagram."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the Haldane valley-mass criterion.",
+  "dependencies": [
+    "regression_question:compute-haldane-chern-number-from-dirac-mass-signs"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/dirac-mass-criterion",
+      "equation_labels": [
+        "dirac-mass-at-k-and-k-prime"
+      ],
+      "notes": "The answer must write the two valley masses."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "The answer must reconstruct the Chern-number criterion from the valley contributions."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:compute-haldane-chern-number-from-dirac-mass-signs.",
+  "mandatory_unit_ids": [
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "proof_state:lecture-two-hall-response-chern-number"
+  ],
+  "mandatory_equation_labels": [
+    "dirac-mass-at-k-and-k-prime",
+    "chern-number-from-valley-masses"
+  ],
+  "derivation_spine": [
+    "Start from the graphene Dirac points and identify the two low-energy valleys.",
+    "Write the two valley masses m_K = M - 3 sqrt(3) t_2 sin(phi) and m_K prime = M + 3 sqrt(3) t_2 sin(phi).",
+    "Use the massive Dirac half-Chern contribution together with the opposite orientation of the two valleys.",
+    "Sum the two valley contributions to obtain C = 1/2 (sgn(m_K prime) - sgn(m_K)).",
+    "State explicitly which sign patterns give the trivial phase and which give the anomalous Hall phase."
+  ],
+  "mandatory_logical_moves": [
+    "Do not skip the passage from graphene valleys to Haldane masses.",
+    "Explain why the two half-Chern contributions subtract rather than add.",
+    "Identify the topological phase by the relative sign of the two masses."
+  ],
+  "common_failure_patterns": [
+    "Quoting the final Chern-number formula with no explanation of the two valley contributions.",
+    "Ignoring the opposite orientation of the K and K prime cones.",
+    "Treating the Haldane phase as topological for any nonzero mass without checking the relative signs."
+  ],
+  "grading_rubric": [
+    "Pass requires the explicit mass formulas, the half-cone logic, and the final signed Chern-number criterion.",
+    "Partial is appropriate if the answer remembers the criterion but hides the valley-orientation reasoning."
+  ],
+  "failure_triggers": [
+    "Fail if the answer never writes the masses at K and K prime.",
+    "Fail if the answer never explains why opposite mass signs give nonzero Chern number."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

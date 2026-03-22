@@ -4,6 +4,7 @@
 - Type: `quantity`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `low-energy-kinematics`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `stable`
@@ -20,6 +21,20 @@ Band structures near half-filling or another chosen filling.
 ## Assumptions
 - `The filling and chemical potential are specified.`
 
+## Representation
+Energy reference that sets the active low-energy degrees of freedom.
+
+## Source Anchors
+- `lecture-one/band-crossing-at-the-fermi-energy | Lecture One distinguishes topological crossings from low-energy physical relevance at the Fermi level.`
+
+## Mathematical Content
+- none
+
+## Symbols
+| Symbol | Meaning |
+|---|---|
+| `E_F` | Fermi energy |
+
 ## Dependencies
 - none
 
@@ -27,17 +42,17 @@ Band structures near half-filling or another chosen filling.
 - [Crossing Away From The Fermi Energy Is Not Yet A Clean Weyl Semimetal](../Warnings/crossing-away-from-fermi-energy-is-not-yet-a-clean-weyl-semimetal.md)
 - [Band Crossing](../Concepts/band-crossing.md)
 
-## Source Anchors
-- `lecture-one/band-crossing-at-the-fermi-energy | Lecture One distinguishes topological crossings from low-energy physical relevance at the Fermi level.`
+## Failure Modes
+- `A material can host Weyl-like crossings but still not realize a clean Weyl semimetal if the crossing lies far from E_F.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Use when deciding whether a crossing is physically relevant at low energy.`
 
 ## Outgoing Edges
 - none
 
 ## Incoming Edges
 - none
-
-## Failure Modes
-- `A material can host Weyl-like crossings but still not realize a clean Weyl semimetal if the crossing lies far from E_F.`
-
-## Formal Targets
-- `aitp-l2`

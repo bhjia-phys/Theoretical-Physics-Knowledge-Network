@@ -1,0 +1,92 @@
+{
+  "id": "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+  "type": "source_fusion_record",
+  "title": "Hall-Response / Chern-Number Cross-Source Fusion Record",
+  "summary": "Fusion record for the Lecture Two flagship family: Witten provides the response-theory and many-body proof spine, TKNN is fused locally through the traced-curvature identity and the occupied-projector formula, and the Haldane lattice-realization side is decomposed through explicit graphene Hamiltonian, Dirac-point, symmetry-protection, and valley-mass Chern-number units while original-paper archival mapping still remains to be deepened.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "source-fusion-record",
+    "multi-source",
+    "tknn"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Witten and TKNN core routes now contribute explicit local derivation units.",
+    "The Haldane branch now has a local graphene/Dirac-point/symmetry/mass-sign bridge, but its original-paper equation-level mapping is still being expanded."
+  ],
+  "regime": "Cross-source family-fusion audit.",
+  "scope": "Durable fusion record for the Hall-response theorem family.",
+  "dependencies": [
+    "theorem_family:hall-response-chern-number-equivalence",
+    "proof_state:lecture-two-hall-response-chern-number"
+  ],
+  "related_units": [
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Local reusable proof spine in the current KB."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "Original band-invariant source now fused locally through the traced-curvature identity and the occupied-projector formula."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Conceptual condensed-matter realization whose valley-mass Chern-number criterion is local, while finer original-paper mapping remains follow-up work."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Source-fusion audit trail for the Lecture Two theorem family.",
+  "fusion_member_ids": [
+    "source_map:witten-topological-phases-lecture-two",
+    "source_map:topological-phases-core",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number"
+  ],
+  "retrieval_hints": [
+    "Use when an answer or audit must say which parts of the Hall-response family are already source-grade locally and which residual Haldane / archival steps remain."
+  ],
+  "topic_completion_status": "regression-stable",
+  "supporting_regression_question_ids": [
+    "regression_question:reconstruct-hall-response-chern-number-equivalence",
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+    "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

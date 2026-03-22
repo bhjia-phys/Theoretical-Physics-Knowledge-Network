@@ -1,0 +1,70 @@
+{
+  "id": "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+  "type": "open_gap",
+  "title": "Former Friedan-Level Nielsen-Ninomiya Source Gap (Recovered)",
+  "summary": "This former source gap is now closed locally: Friedan's cited spectral-projection and Chern-character route has been routed back through L0 -> L1 -> L3 -> L2 and fused into the Lecture One theorem family.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "gap-routing",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "open-gap",
+    "friedan",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The theorem branch now contains both Witten's lecture-level proof spine and Friedan's cited rigorous route."
+  ],
+  "regime": "Closure record for a previously missing cited-proof branch.",
+  "scope": "Historical gap record for the once-missing Friedan proof route, now reintegrated into the Lecture One lattice no-go family.",
+  "dependencies": [
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_state:lecture-one-weyl-node-no-go"
+  ],
+  "related_units": [
+    "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "notes": "Witten is the reason this cited source route had to be recovered."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "The formerly missing cited proof route is now explicit locally."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Historical closure record for the cited Friedan proof route.",
+  "gap_kind": "source-omitted",
+  "recovery_source_type": "cited-paper",
+  "blocking_units": [],
+  "resolution_targets": [
+    "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_state:lecture-one-weyl-node-no-go"
+  ],
+  "reentry_targets": [
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion"
+  ],
+  "followup_required": false,
+  "retrieval_hints": [
+    "Use when auditing how the former Friedan blocker was closed and reintegrated into the Lecture One theorem family."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

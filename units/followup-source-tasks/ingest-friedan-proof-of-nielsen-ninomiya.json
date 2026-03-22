@@ -1,0 +1,83 @@
+{
+  "id": "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+  "type": "followup_source_task",
+  "title": "Ingest Friedan's Proof Of Nielsen-Ninomiya",
+  "summary": "This cited-source recovery task has now been resolved into local L2-grade units: Friedan's spectral-projection current and Chern-character / cobordism route are explicit inside the Lecture One theorem family.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "followup",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "followup-source-task",
+    "friedan",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The task began from a cited external source rather than from new speculation.",
+    "The recovered source route is now explicit in the current KB."
+  ],
+  "regime": "AITP background-source recovery.",
+  "scope": "Resolved L0 -> L1 -> L3 -> L2 task packet for the stronger Nielsen-Ninomiya proof route.",
+  "dependencies": [
+    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested"
+  ],
+  "related_units": [
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "notes": "Triggered because the lecture theorem branch needed the cited stronger proof line."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "Recovered source now reintegrated into local proof fragments."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Durable background-source ingestion task.",
+  "task_status": "resolved-into-l2",
+  "recovery_source_type": "cited-paper",
+  "resolves_gaps": [
+    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested"
+  ],
+  "routes_back_to": [
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "regression_question:prove-nielsen-ninomiya-by-stokes"
+  ],
+  "reentry_targets": [
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "regression_question:prove-nielsen-ninomiya-by-stokes"
+  ],
+  "candidate_sources": [
+    {
+      "citation": "D. Friedan, \"A Proof Of The Nielsen-Ninomiya Theorem,\" Commun. Math. Phys. 85 (1982) 481.",
+      "why": "Witten cites Friedan as a stronger proof route for the theorem."
+    }
+  ],
+  "retrieval_hints": [
+    "Use when auditing how the formerly external Friedan proof route was recovered and reintegrated into the Lecture One theorem family."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

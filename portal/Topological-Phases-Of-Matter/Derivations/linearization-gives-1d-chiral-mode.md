@@ -4,6 +4,7 @@
 - Type: `derivation`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `lecture-one`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `working`
@@ -21,6 +22,18 @@ One-dimensional low-energy effective theory.
 - `The crossing is simple with nonzero slope.`
 - `Long-wavelength continuum approximation is valid.`
 
+## Representation
+Low-energy derivation from Taylor expansion plus momentum-to-derivative substitution.
+
+## Source Anchors
+- `lecture-one/relativistic-dispersion-in-one-space-dimension | eqs: dolz, continuum | This is the first continuum reduction in Lecture One.`
+
+## Mathematical Content
+- none
+
+## Symbols
+- none
+
 ## Dependencies
 - [Linearized Dispersion Near A Fermi Point](../Equations/linearized-dispersion-near-fermi-point.md)
 - [Continuum 1D Chiral Fermion Hamiltonian](../Equations/continuum-1d-chiral-fermion-hamiltonian.md)
@@ -29,8 +42,14 @@ One-dimensional low-energy effective theory.
 ## Related Units
 - [Local Weyl Description Does Not Fix Global Lattice Consistency](../Warnings/local-weyl-description-does-not-fix-global-lattice-consistency.md)
 
-## Source Anchors
-- `lecture-one/relativistic-dispersion-in-one-space-dimension | eqs: dolz, continuum | This is the first continuum reduction in Lecture One.`
+## Failure Modes
+- `A single chiral branch is only a local low-energy description, not a global lattice theory.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Use when a query asks how a band crossing becomes a relativistic chiral mode.`
 
 ## Outgoing Edges
 - `derived_from` -> [Linearized Dispersion Near A Fermi Point](../Equations/linearized-dispersion-near-fermi-point.md): The derivation starts from the linearized dispersion relation.
@@ -38,9 +57,3 @@ One-dimensional low-energy effective theory.
 
 ## Incoming Edges
 - none
-
-## Failure Modes
-- `A single chiral branch is only a local low-energy description, not a global lattice theory.`
-
-## Formal Targets
-- `aitp-l2`

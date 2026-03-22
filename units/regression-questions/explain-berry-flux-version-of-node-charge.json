@@ -1,0 +1,58 @@
+{
+  "id": "regression_question:explain-berry-flux-version-of-node-charge",
+  "type": "regression_question",
+  "title": "Explain The Berry-Flux Version Of The Node Charge",
+  "summary": "Tests whether the topic can explain the Berry-curvature route from local geometry to node charge and then to the same global zero-sum law.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "regression-question",
+    "berry-curvature",
+    "node-charge"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer should stay on the Berry-curvature route, not fall back to only the degree-language route."
+  ],
+  "regime": "Topic regression for the Witten Lecture One exemplar.",
+  "scope": "Bridge question between local Berry geometry and global charge cancellation.",
+  "dependencies": [
+    "equation:berry-flux-topological-charge",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum"
+  ],
+  "related_units": [
+    "question_oracle:explain-berry-flux-version-of-node-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "zif",
+        "wif",
+        "nna"
+      ],
+      "notes": "The answer should expose the local flux formula and the global dF=0 sum rule."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bridge-style regression prompt.",
+  "prompt": "Explain how Witten's Berry-curvature construction turns an isolated Weyl node into an integer charge and then reproduces the Nielsen-Ninomiya sum rule.",
+  "question_family": "bridge",
+  "primary_retrieval_paths": [
+    "equation:berry-flux-topological-charge",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum"
+  ],
+  "pass_conditions": [
+    "The answer writes the Berry-flux charge formula on a small surrounding sphere.",
+    "The answer states that dF = 0 away from the bad points.",
+    "The answer explains how Stokes's theorem on the punctured zone recovers the global zero-sum law."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to test whether the KB can navigate from Berry geometry to global topology."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

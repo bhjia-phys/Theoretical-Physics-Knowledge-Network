@@ -1,0 +1,71 @@
+{
+  "id": "question_oracle:explain-berry-flux-version-of-node-charge",
+  "type": "question_oracle",
+  "title": "Oracle For The Berry-Flux Version Of The Node Charge",
+  "summary": "Detailed oracle for the Berry-curvature charge and zero-sum question.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "question-oracle",
+    "berry-curvature",
+    "node-charge"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must include both the local charge formula and the global Stokes step."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the Berry-curvature route to charge and charge cancellation.",
+  "dependencies": [
+    "regression_question:explain-berry-flux-version-of-node-charge"
+  ],
+  "related_units": [
+    "equation:berry-flux-topological-charge",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "zif",
+        "wif",
+        "nna"
+      ],
+      "notes": "The answer must reconstruct the local Berry-flux charge formula and the punctured-zone dF=0 argument."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:explain-berry-flux-version-of-node-charge.",
+  "mandatory_unit_ids": [
+    "equation:berry-flux-topological-charge",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum"
+  ],
+  "mandatory_equation_labels": [
+    "zif",
+    "wif",
+    "nna"
+  ],
+  "derivation_spine": [
+    "Write the flux formula for the local node charge.",
+    "State that the Berry curvature is closed away from singular points.",
+    "Apply Stokes's theorem on the punctured Brillouin zone to derive the global sum rule."
+  ],
+  "common_failure_patterns": [
+    "Mentioning Berry curvature qualitatively without writing the sphere flux integral for the node charge.",
+    "Giving the local flux formula but never using the punctured-zone Stokes argument to derive the zero-sum law."
+  ],
+  "grading_rubric": [
+    "Pass requires both the local Berry-flux charge formula and the global punctured-zone Stokes derivation of charge cancellation.",
+    "Partial is appropriate if the answer gets either the local charge or the global zero-sum argument right but not both."
+  ],
+  "failure_triggers": [
+    "Fail if the answer never writes the flux integral.",
+    "Fail if the answer states dF=0 without using it to derive the boundary sum."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

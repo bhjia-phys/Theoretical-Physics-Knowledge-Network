@@ -1,0 +1,179 @@
+{
+  "id": "source_map:topological-phases-core",
+  "type": "source_map",
+  "title": "Topological Phases Core Source Network",
+  "summary": "This topic-scale source map fuses the current Witten exemplar with the Friedan, TKNN, Haldane, Jackiw-Rebbi, and Callan-Harvey papers into a single canonical regression surface whose Lecture One, Two, and Three flagship branches are now source-grade locally through explicit Stokes, spectral-bundle, traced-curvature, valley-mass, and anomaly-inflow bridge units.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "source-maps",
+  "canonical_family": "topological-phases/core-source-network",
+  "tags": [
+    "source-map",
+    "topological-phases",
+    "multi-source"
+  ],
+  "aliases": [
+    "topological phases topic source network"
+  ],
+  "assumptions": [
+    "This object groups canonical theorem families rather than one paper's local exposition.",
+    "Some source branches are still routed through explicit follow-up tasks and open gaps."
+  ],
+  "regime": "Topic-level fusion layer for reusable topological-phase knowledge.",
+  "scope": "Maps the current flagship theorem families, source anchors, and follow-up branches for the topological-phases core topic.",
+  "dependencies": [],
+  "related_units": [
+    "source_map:witten-topological-phases-lecture-one",
+    "source_map:witten-topological-phases-lecture-two",
+    "source_map:witten-topological-phases-lecture-three",
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+    "open_gap:fractional-quantum-hall-topological-order-not-yet-curated",
+    "open_gap:fqhe-wilson-loop-algebra-not-yet-curated",
+    "open_gap:fqhe-torus-ground-state-degeneracy-not-yet-curated",
+    "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated",
+    "regression_question:reconstruct-hall-response-chern-number-equivalence",
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+    "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "notes": "Global lattice-topology branch."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "Cited rigorous route for the Lecture One lattice no-go theorem."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Hall-response, projector-formula, and many-body Berry-curvature branch."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Edge-mode, Jackiw-Rebbi, and anomaly-inflow branch."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "Original Hall-conductance topological invariant source for the traced-curvature bridge behind the TKNN formula."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Lattice parity-anomaly realization of anomalous Hall response through the valley-mass Chern-number criterion."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/isolated-zero-mode",
+      "equation_labels": [
+        "soliton-dirac-zero-mode"
+      ],
+      "notes": "Original zero-mode source for the domain-wall edge-mode branch."
+    },
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/anomaly-cancellation",
+      "equation_labels": [
+        "bulk-topological-variation",
+        "inflow-balance"
+      ],
+      "notes": "Original anomaly-inflow source for the edge-mode consistency branch."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Topic-scale multi-source source map with canonical families and regression entry points.",
+  "coverage_sections": [
+    "paper:witten-topological-phases-1510.07698v2::lecture-one/the-nielsen-ninomiya-theorem",
+    "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982::paper/chern-character-and-cobordism",
+    "paper:witten-topological-phases-1510.07698v2::lecture-two/proof-of-the-equivalence",
+    "paper:witten-topological-phases-1510.07698v2::lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+    "paper:tknn-quantized-hall-conductance-1982::paper/main-result",
+    "paper:haldane-quantum-hall-without-landau-levels-1988::paper/main-result",
+    "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976::paper/main-result",
+    "paper:callan-harvey-anomalies-zero-modes-1985::paper/main-result"
+  ],
+  "seed_units": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass"
+  ],
+  "failure_modes": [
+    "This topic network now closes the former Lecture One cited-source blockers, but it remains incomplete until the remaining original-paper archival-enrichment routes and the split future-buffer branches are further promoted."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use as the topic-level entry point when a query spans Witten, TKNN, Haldane, Jackiw-Rebbi, or Callan-Harvey rather than only one lecture.",
+    "Pair with regressions/topological-phases/topological-phases-core-suite.json when running the topic-level regression surface."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

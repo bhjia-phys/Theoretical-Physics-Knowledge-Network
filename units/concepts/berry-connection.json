@@ -25,7 +25,8 @@
   "related_units": [
     "concept:berry-curvature",
     "equation:berry-flux-topological-charge",
-    "quantity:berry-curvature-two-form"
+    "quantity:berry-curvature-two-form",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle"
   ],
   "source_anchors": [
     {
@@ -44,12 +45,64 @@
     "U(1) gauge redundancy in phase choice."
   ],
   "representation": "Connection one-form on the occupied-state bundle.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because once the occupied states are organized into a line bundle, one still needs a local differential object that tracks how phase changes under adiabatic motion. Without the Berry connection, Berry phase and Berry curvature appear as disconnected formulas instead of geometric transport data.",
+  "prerequisite_story": "Before reading this note, know that in the one-filled-band two-band problem the occupied states form a complex line bundle over the punctured momentum region. Choosing a normalized local section psi_p is a gauge choice, and changing psi_p by e^{i\\chi(p)} psi_p is a U(1) redundancy rather than new physics.",
+  "local_context_story": "In Witten Lecture One, the Berry connection is introduced immediately after the occupied-state line-bundle picture. The local parallel-transport rule along a path is the operational way to define how phases are compared at neighboring momenta.",
+  "forward_links_story": "Once the connection is defined, its curvature F = dA becomes gauge invariant, the flux of F over a surrounding sphere becomes an integer node charge, and the same first-Chern-class viewpoint later reappears in Lecture Two as the TKNN invariant.",
+  "canonical_questions": [
+    "Why is the Berry connection a connection on a line bundle instead of just a choice of phase convention?",
+    "How does the parallel-transport condition along a path determine the local one-form A?",
+    "How does A change under psi_p -> e^{i\\chi(p)} psi_p, and why is that only gauge redundancy?",
+    "Why is the Berry connection not globally definable at a bad point?"
+  ],
+  "scope_boundaries": [
+    "This note treats the rank-one abelian case. Several filled bands require a non-abelian Berry connection.",
+    "The connection is defined on regular momentum regions or local patches, not globally through a singular band-touching point."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\left\\langle \\psi_p, \\frac{\\mathrm{d}}{\\mathrm{d}s} \\psi_p \\right\\rangle = 0",
+      "equation_label": "zb",
+      "notes": "Parallel-transport condition along a path; the connection is the object that enforces this phase convention."
+    },
+    {
+      "latex": "A = -i\\,\\langle \\psi_p, \\mathrm d\\psi_p\\rangle",
+      "notes": "Local gauge expression for the Berry connection one-form in a chosen local section."
+    },
+    {
+      "latex": "A \\mapsto A + \\mathrm d\\chi",
+      "notes": "Gauge transformation induced by psi_p -> e^{i\\chi(p)} psi_p."
+    },
+    {
+      "latex": "F = \\mathrm dA",
+      "notes": "Curvature of the Berry connection."
+    }
+  ],
   "model_refs": [],
   "equation_refs": [
     "equation:berry-flux-topological-charge"
   ],
   "quantity_refs": [
     "quantity:berry-curvature-two-form"
+  ],
+  "symbols": [
+    {
+      "symbol": "\\psi_p",
+      "meaning": "normalized occupied-state wavefunction at momentum p"
+    },
+    {
+      "symbol": "A",
+      "meaning": "Berry connection one-form in a local gauge"
+    },
+    {
+      "symbol": "F",
+      "meaning": "Berry-curvature two-form"
+    },
+    {
+      "symbol": "\\chi",
+      "meaning": "local phase redefinition parameter"
+    }
   ],
   "failure_modes": [
     "At bad points the bundle is singular and the U(1) connection is not globally defined."
@@ -62,5 +115,5 @@
     "Use for Berry phase, holonomy, or line-bundle questions."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-21"
 }

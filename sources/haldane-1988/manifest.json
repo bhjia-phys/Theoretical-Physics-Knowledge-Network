@@ -1,0 +1,55 @@
+{
+  "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+  "title": "Model for a Quantum Hall Effect without Landau Levels: Condensed-Matter Realization of the 'Parity Anomaly'",
+  "authors": [
+    "F. D. M. Haldane"
+  ],
+  "version": "journal",
+  "submitted_date": "1988-10-31",
+  "updated_date": "1988-10-31",
+  "canonical_scope": "External source anchor for the lattice parity-anomaly realization and Haldane-model branch in the topological-phases core network.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.61.2015",
+    "inspire": "https://inspirehep.net/literature/276370"
+  },
+  "section_map": [
+    {
+      "id": "paper/main-result",
+      "title": "Main Result",
+      "summary": "A lattice model realizes quantized Hall response without Landau levels and interprets the result through the parity anomaly."
+    },
+    {
+      "id": "paper/lattice-model-with-complex-nnn-hopping",
+      "title": "Lattice Model With Complex Next-Nearest-Neighbor Hopping",
+      "summary": "The honeycomb lattice acquires a time-reversal-breaking perturbation through complex next-nearest-neighbor hopping while keeping zero net magnetic flux per unit cell."
+    },
+    {
+      "id": "paper/dirac-mass-criterion",
+      "title": "Dirac-Mass Criterion At K And K Prime",
+      "summary": "The two graphene Dirac cones acquire masses controlled by the staggered potential and the complex next-nearest-neighbor phase; the sign pattern determines whether the phase is topological."
+    },
+    {
+      "id": "paper/chern-insulator-phase",
+      "title": "Chern-Insulator Phase Without Landau Levels",
+      "summary": "Opposite effective mass signs at the two valleys produce a nonzero Chern number and quantized Hall response without an external magnetic field."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "complex-nnn-hopping-term",
+      "section": "paper/lattice-model-with-complex-nnn-hopping",
+      "title": "Complex next-nearest-neighbor hopping that breaks time reversal"
+    },
+    {
+      "label": "dirac-mass-at-k-and-k-prime",
+      "section": "paper/dirac-mass-criterion",
+      "title": "Valley masses m_K and m_K prime from staggered potential and hopping phase"
+    },
+    {
+      "label": "chern-number-from-valley-masses",
+      "section": "paper/chern-insulator-phase",
+      "title": "Chern number as the signed sum of the two valley contributions"
+    }
+  ],
+  "figure_map": []
+}

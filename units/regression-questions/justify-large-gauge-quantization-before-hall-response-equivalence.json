@@ -1,0 +1,57 @@
+{
+  "id": "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+  "type": "regression_question",
+  "title": "Justify Large-Gauge Quantization Before Hall-Response Equivalence",
+  "summary": "Tests whether the topic can reconstruct the closed-manifold large-gauge argument that forces the integer Hall-response level before invoking the rest of the Lecture Two theorem.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "large-gauge-invariance"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must expose the holonomy-shift argument, not only the final statement that k is integral."
+  ],
+  "regime": "Topic regression for the Lecture Two prerequisite proof.",
+  "scope": "Proof-focused regression prompt for the large-gauge quantization step.",
+  "dependencies": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "equation_context:lecture-two-large-gauge-holonomy-shift"
+  ],
+  "related_units": [
+    "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "equation_labels": [
+        "unitf",
+        "nifty",
+        "prif"
+      ],
+      "notes": "The answer should reconstruct the actual large-gauge proof."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Lecture Two prerequisite regression prompt.",
+  "prompt": "Explain in detail why the Chern-Simons level k must be an integer by using Witten's S^2 times S^1 large-gauge argument before any Hall-current or TKNN step is invoked.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "equation_context:lecture-two-large-gauge-holonomy-shift",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level"
+  ],
+  "pass_conditions": [
+    "The answer states the unit-flux background on S^2 times S^1.",
+    "The answer explains how the holonomy shifts by 2pi under a large gauge transformation.",
+    "The answer concludes that gauge invariance of exp(i k I_CS) requires k to be integer."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

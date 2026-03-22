@@ -1,0 +1,59 @@
+{
+  "queue_id": "queue:topological-phases-core-future-buffer",
+  "title": "Topological Phases Core Future Buffer",
+  "topic": "topological-phases-of-matter/core",
+  "queue_kind": "future_buffer",
+  "summary": "Topic-level future buffer for branches that are known to matter but are still too wide to promote responsibly in the current pass.",
+  "items": [
+    {
+      "unit_id": "open_gap:fractional-quantum-hall-topological-order-not-yet-curated",
+      "status": "open",
+      "priority": "high",
+      "notes": "Umbrella future-buffer branch now split into narrower Wilson-loop, degeneracy, and fractional-statistics subgaps."
+    },
+    {
+      "unit_id": "followup_source_task:ingest-fqhe-topological-order-and-wilson-loop-algebra",
+      "status": "in_progress",
+      "priority": "high",
+      "notes": "Umbrella background-source recovery task for the split future-buffer branch."
+    },
+    {
+      "unit_id": "open_gap:fqhe-wilson-loop-algebra-not-yet-curated",
+      "status": "open",
+      "priority": "high",
+      "notes": "Wilson-loop algebra remains buffered as its own narrower branch."
+    },
+    {
+      "unit_id": "open_gap:fqhe-torus-ground-state-degeneracy-not-yet-curated",
+      "status": "open",
+      "priority": "high",
+      "notes": "Topological ground-state degeneracy remains buffered as its own narrower branch."
+    },
+    {
+      "unit_id": "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated",
+      "status": "open",
+      "priority": "high",
+      "notes": "Fractional charge and anyonic statistics remain buffered as their own narrower branch."
+    },
+    {
+      "unit_id": "followup_source_task:ingest-fqhe-wilson-loop-algebra-and-torus-degeneracy",
+      "status": "in_progress",
+      "priority": "high",
+      "notes": "Focused future-buffer task for the Wilson-loop and degeneracy subbranches."
+    },
+    {
+      "unit_id": "followup_source_task:ingest-fqhe-fractional-charge-and-statistics",
+      "status": "open",
+      "priority": "high",
+      "notes": "Focused future-buffer task for the fractionalized quasiparticle subbranch."
+    },
+    {
+      "unit_id": "source_map:witten-topological-phases-lecture-three",
+      "status": "in_progress",
+      "priority": "medium",
+      "notes": "Lecture Three now carries both the promoted edge-mode theorem family and the explicitly split buffered FQHE branch."
+    }
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

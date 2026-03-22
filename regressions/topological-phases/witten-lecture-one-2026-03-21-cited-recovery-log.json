@@ -1,0 +1,61 @@
+{
+  "run_id": "regression_run:witten-lecture-one-2026-03-21-cited-recovery",
+  "suite_id": "regression_suite:witten-lecture-one",
+  "status": "pass",
+  "topic_completion_status": "promotion-ready",
+  "promotion_readiness": "ready",
+  "blocking_unit_ids": [],
+  "results": [
+    {
+      "question_id": "regression_question:define-weyl-node-with-assumptions",
+      "oracle_id": "question_oracle:define-weyl-node-with-assumptions",
+      "grade": "pass",
+      "notes": "The local definition branch remains explicit and formula-bearing."
+    },
+    {
+      "question_id": "regression_question:reconstruct-local-weyl-linearization",
+      "oracle_id": "question_oracle:reconstruct-local-weyl-linearization",
+      "grade": "pass",
+      "notes": "The derivation spine remains decomposed into explicit derivation-step units."
+    },
+    {
+      "question_id": "regression_question:prove-nielsen-ninomiya-by-stokes",
+      "oracle_id": "question_oracle:prove-nielsen-ninomiya-by-stokes",
+      "grade": "pass",
+      "notes": "The local punctured-zone Stokes proof and the cited Friedan spectral-bundle route are both explicit locally, so the flagship Lecture One theorem is now source-grade in the current KB.",
+      "writeback_unit_ids": [
+        "theorem:nielsen-ninomiya-charge-cancellation",
+        "theorem_family:weyl-node-no-go-consistency",
+        "proof_state:lecture-one-weyl-node-no-go",
+        "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+        "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+        "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary"
+      ]
+    },
+    {
+      "question_id": "regression_question:explain-berry-flux-version-of-node-charge",
+      "oracle_id": "question_oracle:explain-berry-flux-version-of-node-charge",
+      "grade": "pass",
+      "notes": "The local flux formula and the global dF=0 route are both explicit."
+    },
+    {
+      "question_id": "regression_question:separate-anomaly-intuition-from-lattice-proof",
+      "oracle_id": "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+      "grade": "pass",
+      "notes": "The KB now states the exact scope boundary: Haldane and Callan-Harvey supply neighboring anomaly motivation or consistency formulas, while Witten and Friedan supply the compact-BZ lattice theorem proof.",
+      "writeback_unit_ids": [
+        "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+        "bridge:continuum-anomaly-to-lattice-no-go",
+        "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+        "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+      ]
+    },
+    {
+      "question_id": "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "oracle_id": "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "grade": "pass",
+      "notes": "The flagship Lecture Two and Lecture Three theorem branches remain explicit, and the former Lecture One cited blockers are now closed locally rather than leaking into those neighboring branches."
+    }
+  ],
+  "created_at": "2026-03-21"
+}

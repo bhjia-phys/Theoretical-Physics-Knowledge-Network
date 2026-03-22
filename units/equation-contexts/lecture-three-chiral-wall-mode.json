@@ -1,0 +1,72 @@
+{
+  "id": "equation_context:lecture-three-chiral-wall-mode",
+  "type": "equation_context",
+  "title": "Lecture Three Chiral Wall-Mode Context",
+  "summary": "This equation context records the exponentially localized wall ansatz, the gamma_1 chirality projection, and the reduced tangential Dirac equation that together produce the chiral boundary mode.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "equation-context",
+    "chiral-edge-mode",
+    "domain-wall"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The physical edge mode must be normalizable away from the wall."
+  ],
+  "regime": "Domain-wall zero-mode derivation.",
+  "scope": "Equation-level context for the localized chiral wall mode.",
+  "dependencies": [
+    "notation_map:lecture-three-edge-mode-symbols"
+  ],
+  "related_units": [
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "Localized ansatz and reduced boundary Dirac equation."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Equation context for the chiral wall mode supported by the sign-changing mass.",
+  "math_expressions": [
+    {
+      "latex": "\\widehat\\psi = e^{-m|x_1|}\\,\\psi_{\\parallel}",
+      "kind": "display",
+      "equation_label": "zoggg",
+      "notes": "Exponentially localized wall profile."
+    },
+    {
+      "latex": "\\gamma_1\\psi_{\\parallel} = -\\psi_{\\parallel},\\qquad \\slashed{\\partial}^{\\parallel}\\psi_{\\parallel}=0",
+      "kind": "display",
+      "equation_label": "trogg",
+      "notes": "Boundary chirality projection and reduced tangential Dirac equation."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\psi_{\\parallel}",
+      "meaning": "boundary-localized spinor after factoring out the wall profile"
+    },
+    {
+      "symbol": "\\gamma_1",
+      "meaning": "normal gamma matrix fixing the chirality of the wall mode"
+    }
+  ],
+  "retrieval_hints": [
+    "Use when an answer must reconstruct the actual wall-mode ansatz and chirality condition."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

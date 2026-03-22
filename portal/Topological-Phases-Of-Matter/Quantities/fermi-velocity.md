@@ -4,6 +4,7 @@
 - Type: `quantity`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `low-energy-kinematics`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `stable`
@@ -20,6 +21,20 @@ Low-energy analysis near a Fermi point.
 ## Assumptions
 - `The dispersion is differentiable at the crossing.`
 
+## Representation
+Slope of the energy-momentum relation at the crossing.
+
+## Source Anchors
+- `lecture-one/relativistic-dispersion-in-one-space-dimension | eqs: dolz | Defined as the derivative of epsilon with respect to momentum at p0.`
+
+## Mathematical Content
+- none
+
+## Symbols
+| Symbol | Meaning |
+|---|---|
+| `v` | Fermi velocity |
+
 ## Dependencies
 - none
 
@@ -27,17 +42,17 @@ Low-energy analysis near a Fermi point.
 - [Linearized Dispersion Near A Fermi Point](../Equations/linearized-dispersion-near-fermi-point.md)
 - [Continuum 1D Chiral Fermion Hamiltonian](../Equations/continuum-1d-chiral-fermion-hamiltonian.md)
 
-## Source Anchors
-- `lecture-one/relativistic-dispersion-in-one-space-dimension | eqs: dolz | Defined as the derivative of epsilon with respect to momentum at p0.`
+## Failure Modes
+- `Vanishing slope invalidates the simple chiral continuum description.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Use for the relativistic-form interpretation of a linearized band crossing.`
 
 ## Outgoing Edges
 - none
 
 ## Incoming Edges
 - [Linearized Dispersion Near A Fermi Point](../Equations/linearized-dispersion-near-fermi-point.md) -> `uses`: The linearized dispersion is controlled by the Fermi velocity.
-
-## Failure Modes
-- `Vanishing slope invalidates the simple chiral continuum description.`
-
-## Formal Targets
-- `aitp-l2`

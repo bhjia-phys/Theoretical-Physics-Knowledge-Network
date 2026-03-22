@@ -1,0 +1,82 @@
+{
+  "id": "definition:jackiw-rebbi-domain-wall-zero-mode",
+  "type": "definition",
+  "title": "Jackiw-Rebbi Domain-Wall Zero Mode",
+  "summary": "A Jackiw-Rebbi domain-wall zero mode is a boundary-localized Dirac solution supported where a mass term changes sign, with exponential decay away from the wall and a fixed boundary chirality.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "definition",
+    "jackiw-rebbi",
+    "edge-mode"
+  ],
+  "aliases": [
+    "domain-wall zero mode",
+    "chiral boundary mode from mass sign change"
+  ],
+  "assumptions": [
+    "The bulk Dirac mass changes sign across the wall.",
+    "The mode is required to be normalizable in the direction transverse to the wall."
+  ],
+  "regime": "Continuum edge-mode analysis for a 2+1-dimensional Dirac fermion.",
+  "scope": "Definition of the boundary-localized zero mode invoked in Witten Lecture Three and traced back to Jackiw-Rebbi.",
+  "dependencies": [
+    "notation_map:lecture-three-edge-mode-symbols"
+  ],
+  "related_units": [
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "Witten's folded sign-changing-mass Dirac equation and the resulting localized mode."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/main-result",
+      "notes": "Original source of the isolated Dirac zero-mode mechanism."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Boundary-localized spinor supported on a sign-changing Dirac mass profile.",
+  "math_expressions": [
+    {
+      "latex": "\\left(\\slashed{\\partial} - m\\,\\operatorname{sign}(x_1)\\right)\\psi = 0",
+      "kind": "display",
+      "equation_label": "gift",
+      "notes": "Dirac equation with sign-changing mass profile."
+    },
+    {
+      "latex": "\\psi = e^{-m|x_1|}\\,\\psi_{\\parallel}",
+      "kind": "display",
+      "equation_label": "zoggg",
+      "notes": "Localized wall profile."
+    },
+    {
+      "latex": "\\gamma_1\\psi_{\\parallel} = -\\psi_{\\parallel},\\qquad \\slashed{\\partial}^{\\parallel}\\psi_{\\parallel}=0",
+      "kind": "display",
+      "equation_label": "trogg",
+      "notes": "Boundary chirality condition and reduced tangential Dirac equation."
+    }
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks what exactly the Jackiw-Rebbi boundary mode is before asking why it exists."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

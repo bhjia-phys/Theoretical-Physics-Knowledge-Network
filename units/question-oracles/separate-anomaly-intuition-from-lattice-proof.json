@@ -1,0 +1,62 @@
+{
+  "id": "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+  "type": "question_oracle",
+  "title": "Oracle For Separating Anomaly Intuition From The Lattice Proof",
+  "summary": "Detailed oracle for distinguishing continuum anomaly intuition from the actual lattice proof route now that the cited-source distinction is explicit locally.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "question-oracle",
+    "gap",
+    "anomaly"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer should now remain fully local and no longer route this distinction to an unresolved follow-up."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for a gap-identification question at the proof/intution boundary.",
+  "dependencies": [
+    "regression_question:separate-anomaly-intuition-from-lattice-proof"
+  ],
+  "related_units": [
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "The answer should place anomaly inflow on the boundary-consistency side rather than on the Lecture One lattice-proof side."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:separate-anomaly-intuition-from-lattice-proof.",
+  "mandatory_unit_ids": [
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "pass_conditions": [
+    "The answer clearly says that anomaly intuition is not the Lecture One proof.",
+    "The answer contrasts the continuum anomaly formulas with the compact-BZ Chern-number proof route."
+  ],
+  "common_failure_patterns": [
+    "Treating the parity anomaly or Callan-Harvey inflow as if they were the proof of the compact-Brillouin-zone lattice theorem.",
+    "Overcorrecting by denying any conceptual relation between continuum anomaly arguments and the neighboring topological-phase consistency story."
+  ],
+  "grading_rubric": [
+    "Pass requires an explicit scope boundary together with the correct compact-BZ proof route for Nielsen-Ninomiya.",
+    "Partial is appropriate if the answer states the boundary but does not explain what the continuum anomaly branch still contributes conceptually."
+  ],
+  "failure_triggers": [
+    "Fail if the answer identifies the parity-anomaly argument as the proof of Nielsen-Ninomiya.",
+    "Fail if the answer hides the logical difference between Haldane or Callan-Harvey motivation and Friedan's theorem proof."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

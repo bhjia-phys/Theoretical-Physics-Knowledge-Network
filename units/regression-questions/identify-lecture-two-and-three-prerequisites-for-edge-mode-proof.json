@@ -1,0 +1,60 @@
+{
+  "id": "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+  "type": "regression_question",
+  "title": "Identify Lecture Two And Three Prerequisites For The Edge-Mode Proof",
+  "summary": "Tests whether the topic can point to the remaining Lecture Two and Lecture Three cited-paper recovery chains that still sit beyond the promoted flagship proofs.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "regression-question",
+    "dependency",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The flagship Lecture Two Hall-response theorem and Lecture Three Jackiw-Rebbi theorem are already present locally.",
+    "The cited-paper recovery routes for those branches remain open."
+  ],
+  "regime": "Topic regression for the Witten exemplar roadmap.",
+  "scope": "Dependency question connecting the promoted Witten-based proofs to the remaining cited-paper recovery tasks.",
+  "dependencies": [
+    "source_map:witten-topological-phases-lecture-two",
+    "source_map:witten-topological-phases-lecture-three",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "related_units": [
+    "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Later cross-lecture explanations still depend on cited-paper recovery beyond the promoted Witten-based proof spines."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Dependency-family regression prompt.",
+  "prompt": "Identify which Lecture Two and Lecture Three cited-paper recovery branches still need work before the broader edge-mode and anomaly story is fully source-fused.",
+  "question_family": "dependency",
+  "primary_retrieval_paths": [
+    "source_map:witten-topological-phases-lecture-two",
+    "source_map:witten-topological-phases-lecture-three",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "pass_conditions": [
+    "The answer identifies the Lecture Two TKNN/Haldane source-recovery branch as still unresolved.",
+    "The answer identifies the Lecture Three Jackiw-Rebbi/Callan-Harvey source-recovery branch as still unresolved.",
+    "The answer routes each missing branch to a concrete follow-up source task."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to ensure the KB can state its own missing prerequisites honestly."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

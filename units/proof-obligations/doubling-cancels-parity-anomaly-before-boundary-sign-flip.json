@@ -1,0 +1,65 @@
+{
+  "id": "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+  "type": "proof_obligation",
+  "title": "Doubling Cancels Parity Anomaly Before Boundary Sign Flip",
+  "summary": "Discharge the proof obligation that two Dirac fermions with opposite masses contribute opposite half levels, so the doubled boundary-free starting point has zero total Chern-Simons level before one mass sign is flipped.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-obligation",
+    "doubling",
+    "parity-anomaly"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The doubled system is considered before introducing the domain wall."
+  ],
+  "regime": "Consistency setup for the integer Hall boundary discussion.",
+  "scope": "Second proof obligation in the Lecture Three theorem family.",
+  "dependencies": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "equation_context:lecture-three-parity-anomaly-half-level"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "quft"
+      ],
+      "notes": "Witten's explicit cancellation of the two opposite half levels."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the anomaly-free doubled starting point.",
+  "pass_conditions": [
+    "The answer states that the two masses have opposite sign.",
+    "The answer shows that the two half-level contributions cancel.",
+    "The answer explains why this gives a trivial starting point before the boundary sign flip."
+  ],
+  "mandatory_logical_moves": [
+    "Pair the two opposite-mass fermions.",
+    "Sum their half-level contributions.",
+    "Interpret the zero total level as the pre-domain-wall reference configuration."
+  ],
+  "common_failure_patterns": [
+    "Jumping straight to the domain wall without explaining the anomaly-free doubled starting point.",
+    "Treating the single-fermion half level as already gauge invariant."
+  ],
+  "grading_rubric": [
+    "Full credit requires the cancellation step and its role in setting up the boundary problem.",
+    "Partial credit is appropriate if the answer knows there are two fermions but does not explain why their total level vanishes."
+  ],
+  "retrieval_hints": [
+    "Use when the derivation must keep the doubled setup explicit."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

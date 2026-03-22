@@ -1,0 +1,102 @@
+{
+  "id": "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+  "type": "proof_fragment",
+  "title": "Friedan Spectral Projection Localizes The Chiral Current On The Spectrum",
+  "summary": "Friedan rewrites the lattice no-go theorem in terms of the charge-filtered spectral projection S(p)=Theta(K(p)-p^0)P_Q(p) and an antisymmetrized trace current whose support collapses onto the spectrum and whose local form depends only on the nearby spectral projector.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "proof-fragment",
+    "friedan",
+    "spectral-projection",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The lattice Hamiltonian K(p) and the charge projector P_Q(p) vary smoothly with momentum.",
+    "A generic point on the spectrum lies on a single nearby eigenvalue branch k(p) with local spectral projector P_0(p)."
+  ],
+  "regime": "Rigorous lattice proof route on energy-momentum space.",
+  "scope": "Friedan's spectral-projection reformulation of the lattice chiral current behind the Nielsen-Ninomiya theorem.",
+  "dependencies": [
+    "concept:nielsen-ninomiya-theorem"
+  ],
+  "related_units": [
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/spectral-projection-chiral-current",
+      "equation_labels": [
+        "spectral-projection-S",
+        "chiral-index-from-low-energy-current"
+      ],
+      "notes": "Friedan defines the charge-filtered spectral projection and the conserved chiral current."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/localization-near-spectrum",
+      "equation_labels": [
+        "local-current-from-spectral-projection"
+      ],
+      "notes": "Near a generic eigenvalue branch the current localizes to a delta-function spectral-projector formula."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Spectral-projector current formula that makes the lattice proof local in energy-momentum space while keeping the theorem global in momentum-space topology.",
+  "math_expressions": [
+    {
+      "latex": "S(p)=\\Theta\\!\\bigl(K(p)-p^0\\bigr)P_Q(p)",
+      "kind": "display",
+      "equation_label": "spectral-projection-S",
+      "notes": "Charge-filtered spectral projection onto eigenstates whose energy is at least p^0."
+    },
+    {
+      "latex": "\\partial_\\nu S = S(\\partial_\\nu S)(1-S) + (1-S)(\\partial_\\nu S)S",
+      "kind": "display",
+      "notes": "Projector calculus identity used to show that the chiral current vanishes away from the spectrum."
+    },
+    {
+      "latex": "j_Q^\\mu(p) \\propto \\delta\\!\\bigl(k(p)-p^0\\bigr)\\,\\epsilon^{\\mu\\nu_1\\cdots\\nu_d}(\\partial_{\\nu_1}k)\\,\\mathrm{tr}\\!\\bigl(P_0\\,\\partial_{\\nu_2}P_0\\cdots\\partial_{\\nu_d}P_0\\bigr)",
+      "kind": "display",
+      "equation_label": "local-current-from-spectral-projection",
+      "notes": "Local generic-branch form of Friedan's chiral current; the dimensional normalization is fixed by the Chern-character convention."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "S(p)",
+      "meaning": "charge-filtered spectral projection used to define the lattice chiral current"
+    },
+    {
+      "symbol": "P_Q(p)",
+      "meaning": "projector onto the chosen irreducible charge sector"
+    },
+    {
+      "symbol": "P_0(p)",
+      "meaning": "local spectral projector onto the generic eigenvalue branch k(p)"
+    },
+    {
+      "symbol": "j_Q^\\mu(p)",
+      "meaning": "chiral current in energy-momentum space for charge Q"
+    }
+  ],
+  "step_justification": [
+    "The charge-filtered spectral projection packages the lattice Hamiltonian and internal symmetry sector into one projector-valued object on energy-momentum space.",
+    "Projector calculus forces every antisymmetrized trace term to contain S(1-S), so the current vanishes wherever S is smooth, namely away from the spectrum.",
+    "Near a generic spectral branch the current collapses to a delta-function expression controlled only by the local spectral projector P_0 and the branch derivative \\partial k."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must explain the rigorous cited-paper route rather than only Witten's punctured-zone Stokes sketch."
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

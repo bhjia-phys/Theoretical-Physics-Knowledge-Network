@@ -1,0 +1,83 @@
+{
+  "id": "equation_context:lecture-three-parity-anomaly-half-level",
+  "type": "equation_context",
+  "title": "Lecture Three Parity-Anomaly Half-Level Context",
+  "summary": "This equation context records Witten's continuum derivation that one massive 2+1-dimensional Dirac fermion induces a half-level Chern-Simons term, while a doubled pair with opposite masses restores an integer-gauge-invariant total.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "equation-context",
+    "parity-anomaly",
+    "lecture-three"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The massive Dirac fermion can be integrated out at low energies.",
+    "The normalized momentum-space map controls the induced Chern-Simons term."
+  ],
+  "regime": "Continuum parity-anomaly discussion in 2+1 dimensions.",
+  "scope": "Equation-level context for the parity-anomaly part of the Lecture Three theorem family.",
+  "dependencies": [
+    "notation_map:lecture-three-edge-mode-symbols"
+  ],
+  "related_units": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "uftof",
+        "puft",
+        "PPP",
+        "quft"
+      ],
+      "notes": "Witten's continuum derivation of the half-level and its doubling cancellation."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Equation context for the half-level parity anomaly and its cancellation by doubling.",
+  "math_expressions": [
+    {
+      "latex": "\\frac{\\operatorname{sign}m}{2}\\,\\mathcal I_{\\mathrm{CS}}(A)",
+      "kind": "display",
+      "equation_label": "uftof",
+      "notes": "Effective Chern-Simons term induced by one massive Dirac fermion."
+    },
+    {
+      "latex": "H = \\sigma_x p_x + \\sigma_y p_y + m\\sigma_z",
+      "kind": "display",
+      "equation_label": "puft",
+      "notes": "Massive Dirac Hamiltonian used in the Berry-flux argument."
+    },
+    {
+      "latex": "(p_x,p_y) \\mapsto \\left(\\frac{p_x}{\\sqrt{p_x^2+p_y^2+m^2}},\\frac{p_y}{\\sqrt{p_x^2+p_y^2+m^2}},\\frac{m}{\\sqrt{p_x^2+p_y^2+m^2}}\\right)",
+      "kind": "display",
+      "equation_label": "PPP",
+      "notes": "Momentum-space map to a hemisphere, giving half a degree."
+    },
+    {
+      "latex": "\\frac{1}{2}(\\operatorname{sign}m+\\operatorname{sign}(-m))=0",
+      "kind": "display",
+      "equation_label": "quft",
+      "notes": "Two opposite masses cancel the half-level anomaly."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "m",
+      "meaning": "Dirac mass whose sign determines the induced half level"
+    }
+  ],
+  "retrieval_hints": [
+    "Open this when an answer must explain the half-level carefully rather than only invoking 'parity anomaly'."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

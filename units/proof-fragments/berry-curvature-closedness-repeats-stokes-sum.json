@@ -1,0 +1,67 @@
+{
+  "id": "proof_fragment:berry-curvature-closedness-repeats-stokes-sum",
+  "type": "proof_fragment",
+  "title": "Berry Curvature Closedness Repeats The Same Stokes Sum",
+  "summary": "Away from the singular points, the Berry curvature is closed; applying Stokes's theorem on the punctured Brillouin zone gives the same zero-sum law as the degree-theory proof.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "berry-geometry",
+  "tags": [
+    "proof-fragment",
+    "berry-curvature",
+    "stokes-theorem"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Berry connection is defined away from the bad points.",
+    "The node set is isolated so the punctured Brillouin zone is smooth."
+  ],
+  "regime": "Berry-geometric proof on the punctured Brillouin zone.",
+  "scope": "Lecture One proof fragment that recovers Nielsen-Ninomiya from Berry curvature.",
+  "dependencies": [
+    "equation:berry-flux-topological-charge",
+    "quantity:berry-curvature-two-form"
+  ],
+  "related_units": [
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "derivation:stokes-theorem-implies-net-zero-charge"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "wif",
+        "nna"
+      ],
+      "notes": "Witten rederives the same global sum rule from dF=0 away from the bad points."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Berry-curvature proof fragment paralleling the degree-theory Stokes argument.",
+  "math_expressions": [
+    {
+      "latex": "\\mathrm dF = 0",
+      "kind": "display",
+      "equation_label": "wif",
+      "notes": "Berry curvature is closed away from the singular locus."
+    },
+    {
+      "latex": "0 = \\int_{\\mathcal B'} \\mathrm d\\!\\left(\\frac{F}{2\\pi}\\right) = \\sum_\\alpha \\int_{S^2_\\alpha}\\frac{F}{2\\pi}",
+      "kind": "display",
+      "equation_label": "nna",
+      "notes": "The Berry-curvature boundary sum reproduces charge cancellation."
+    }
+  ],
+  "step_justification": [
+    "Closedness of F away from bad points makes the punctured-zone bulk integral vanish.",
+    "The boundary spheres around the bad points capture the Berry-flux charges.",
+    "Summing those boundary integrals gives the zero-total-charge statement."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation answer must give the Berry-curvature route to Nielsen-Ninomiya."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

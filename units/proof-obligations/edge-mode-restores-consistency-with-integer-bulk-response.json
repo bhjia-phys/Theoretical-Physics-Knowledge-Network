@@ -1,0 +1,94 @@
+{
+  "id": "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response",
+  "type": "proof_obligation",
+  "title": "Edge Mode Restores Consistency With Integer Bulk Response",
+  "summary": "Discharge the synthesis obligation that the chiral wall mode derived from the sign-changing mass supplies the boundary degree of freedom required by the doubled integer Hall system once one mass sign has been flipped.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-obligation",
+    "anomaly-inflow",
+    "edge-mode"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The bulk discussion is the doubled integer Hall system built from opposite-mass Dirac fermions."
+  ],
+  "regime": "Final synthesis of the Lecture Three theorem family.",
+  "scope": "Final synthesis obligation connecting the local wall mode back to the bulk response story.",
+  "dependencies": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "plof",
+        "uftof",
+        "gift",
+        "trogg"
+      ],
+      "notes": "Witten's conceptual closure of the edge-mode consistency argument."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Final synthesis obligation for the Lecture Three boundary-mode theorem.",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "edge_mode_restores_consistency_with_integer_bulk_response",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "The doubled bulk system starts anomaly-free before one mass sign is flipped.",
+    "The boundary-folding and normalizability lemmas have already been discharged separately."
+  ],
+  "lean_prerequisite_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change"
+  ],
+  "formalization_blockers": [
+    "The boundary zero-mode formalization still needs reusable lemmas for the folded Dirac operator and chiral projection."
+  ],
+  "pass_conditions": [
+    "The answer explains the doubled starting point and the boundary sign flip.",
+    "The answer reconstructs the wall mode locally.",
+    "The answer connects that wall mode back to the consistent integer Hall boundary story."
+  ],
+  "mandatory_logical_moves": [
+    "Start from the doubled anomaly-free bulk system.",
+    "Introduce the boundary sign flip and obtain the wall equation.",
+    "Derive the localized chiral mode.",
+    "Explain why that mode is the missing boundary excitation of the integer Hall system."
+  ],
+  "common_failure_patterns": [
+    "Stopping at the local wall-mode derivation without reconnecting it to the bulk consistency story.",
+    "Confusing this continuum synthesis with the separate lattice Nielsen-Ninomiya theorem."
+  ],
+  "grading_rubric": [
+    "Full credit requires both the local derivation and the bulk-boundary consistency interpretation.",
+    "Partial credit is appropriate if the wall mode is derived but never tied back to the integer Hall response."
+  ],
+  "retrieval_hints": [
+    "Use when the answer must close the loop between parity anomaly, domain wall, and integer Hall consistency."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

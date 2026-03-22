@@ -1,0 +1,69 @@
+{
+  "id": "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+  "type": "derivation_step",
+  "title": "Taylor Expand The Two-Band Hamiltonian Near The Crossing",
+  "summary": "Start from the local 2x2 Bloch Hamiltonian, subtract the scalar part, and Taylor expand the Pauli-vector coefficients around the isolated bad point.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "weyl-semimetals",
+  "tags": [
+    "derivation-step",
+    "taylor-expansion",
+    "weyl-node"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The crossing point \\vec p_* is isolated.",
+    "The scalar shift does not affect whether the two levels cross."
+  ],
+  "regime": "Local momentum-space analysis near a bad point.",
+  "scope": "First nontrivial step in the local derivation of the Weyl Hamiltonian.",
+  "dependencies": [
+    "equation:two-band-hamiltonian-d-dot-sigma",
+    "concept:band-crossing"
+  ],
+  "related_units": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp"
+      ],
+      "notes": "Witten first writes the generic 2x2 Hamiltonian and then expands around the bad point."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Low-energy Taylor expansion of the local 2x2 Bloch Hamiltonian.",
+  "math_expressions": [
+    {
+      "latex": "H(\\vec p)=a(\\vec p)+\\sum_i b_i(\\vec p)\\sigma^i",
+      "kind": "display",
+      "equation_label": "localexp",
+      "notes": "Generic local two-band Hamiltonian."
+    },
+    {
+      "latex": "b_i(\\vec p_*+\\delta \\vec p)=\\sum_j (\\partial_j b_i)_{\\vec p_*}\\,\\delta p_j+O(\\delta p^2)",
+      "kind": "display",
+      "notes": "Taylor expansion after using b_i(\\vec p_*)=0 at the bad point."
+    }
+  ],
+  "step_inputs": [
+    "equation:two-band-hamiltonian-d-dot-sigma",
+    "concept:band-crossing"
+  ],
+  "step_justification": [
+    "A crossing requires the Pauli-vector coefficients to vanish at the bad point after the scalar shift is removed.",
+    "A smooth Bloch Hamiltonian can be Taylor expanded around the isolated crossing momentum.",
+    "Quadratic terms are suppressed in the low-energy limit compared with the linear term."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation answer must show where the linearized Weyl Hamiltonian actually comes from."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

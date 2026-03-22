@@ -1,0 +1,75 @@
+{
+  "id": "proof_obligation:friedan-spectral-bundle-cobordism-kills-total-chiral-index",
+  "type": "proof_obligation",
+  "title": "Friedan Spectral-Bundle Cobordism Kills Total Chiral Index",
+  "summary": "Discharge the proof obligation that Friedan's spectral-projection current identifies the lattice chiral index with the boundary Chern number of the spectral bundle, and therefore cobordism invariance forces the total chiral index to vanish.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "proof-obligation",
+    "friedan",
+    "chern-character",
+    "cobordism"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The occupied spectral subspaces form a finite-rank bundle over the punctured Brillouin zone."
+  ],
+  "regime": "Characteristic-class reformulation of the lattice theorem.",
+  "scope": "Third proof obligation in the Lecture One lattice no-go family.",
+  "dependencies": [
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary"
+  ],
+  "related_units": [
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/spectral-projection-chiral-current",
+      "equation_labels": [
+        "chiral-index-from-low-energy-current"
+      ],
+      "notes": "Friedan identifies the low-energy chiral index with the total current charge."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "spectral-bundle-curvature",
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "The current is reinterpreted as the top Chern character of the spectral bundle on the punctured Brillouin zone."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for Friedan's rigorous cited route to the lattice no-go theorem.",
+  "pass_conditions": [
+    "The answer writes the lattice chiral index as the total low-energy chiral charge.",
+    "The answer identifies the spectral bundle W and its natural connection or curvature.",
+    "The answer states that the index is a boundary Chern number and explains why cobordism invariance forces it to vanish."
+  ],
+  "mandatory_logical_moves": [
+    "Construct or name the charge-filtered spectral projection S(p).",
+    "Interpret the resulting current as the top Chern character of the spectral bundle.",
+    "Use the fact that the punctured Brillouin zone boundary bounds a manifold to conclude that the boundary Chern number is zero."
+  ],
+  "common_failure_patterns": [
+    "Mentioning Friedan only as a citation without the spectral bundle or cobordism argument.",
+    "Treating the cited route as merely another slogan for the Stokes proof without explaining the characteristic-class reformulation."
+  ],
+  "grading_rubric": [
+    "Full credit requires the spectral-bundle and cobordism interpretation.",
+    "Partial credit is appropriate if the answer cites Friedan but cannot explain the Chern-number reformulation."
+  ],
+  "retrieval_hints": [
+    "Use when an answer must justify why the cited Friedan route counts as a rigorous recovery rather than a placeholder citation."
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

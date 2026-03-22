@@ -1,0 +1,46 @@
+{
+  "id": "notation_family:domain-wall-edge-mode-notation",
+  "type": "notation_family",
+  "title": "Domain-Wall Edge-Mode Notation Family",
+  "summary": "Canonical notation family for the mass sign, folded wall equation, and chiral boundary spinor appearing across the Lecture Three continuum edge-mode theorem family.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "notation-family",
+    "lecture-three",
+    "symbols"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Several nearby units reuse the same mass-wall and boundary-spinor notation."
+  ],
+  "regime": "Shared notation for the continuum edge-mode theorem family.",
+  "scope": "Notation family for the Lecture Three anomaly and domain-wall branch.",
+  "dependencies": [],
+  "related_units": [
+    "theorem_family:domain-wall-edge-mode-consistency"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Shared notation for the half-level anomaly and the wall mode."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Notation-family object for the Lecture Three continuum edge-mode theorem family.",
+  "family_member_ids": [
+    "notation_map:lecture-three-edge-mode-symbols",
+    "equation_context:lecture-three-parity-anomaly-half-level",
+    "equation_context:lecture-three-sign-changing-mass-wall-equation",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "retrieval_hints": [
+    "Use when an answer mixes the parity-anomaly, folding, and wall-mode symbols."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

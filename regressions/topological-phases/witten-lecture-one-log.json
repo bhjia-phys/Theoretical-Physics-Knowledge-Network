@@ -1,0 +1,58 @@
+{
+  "run_id": "regression_run:witten-lecture-one-2026-03-19",
+  "suite_id": "regression_suite:witten-lecture-one",
+  "status": "mixed",
+  "results": [
+    {
+      "question_id": "regression_question:define-weyl-node-with-assumptions",
+      "oracle_id": "question_oracle:define-weyl-node-with-assumptions",
+      "grade": "pass",
+      "notes": "The local definition branch is now explicit and formula-bearing."
+    },
+    {
+      "question_id": "regression_question:reconstruct-local-weyl-linearization",
+      "oracle_id": "question_oracle:reconstruct-local-weyl-linearization",
+      "grade": "pass",
+      "notes": "The derivation spine is now decomposed into explicit derivation-step units."
+    },
+    {
+      "question_id": "regression_question:prove-nielsen-ninomiya-by-stokes",
+      "oracle_id": "question_oracle:prove-nielsen-ninomiya-by-stokes",
+      "grade": "partial",
+      "notes": "The lecture-level Stokes proof is present, but the cited stronger external proof route is still unresolved.",
+      "writeback_unit_ids": [
+        "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+        "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya"
+      ]
+    },
+    {
+      "question_id": "regression_question:explain-berry-flux-version-of-node-charge",
+      "oracle_id": "question_oracle:explain-berry-flux-version-of-node-charge",
+      "grade": "pass",
+      "notes": "The local flux formula and the global dF=0 route are both explicit."
+    },
+    {
+      "question_id": "regression_question:separate-anomaly-intuition-from-lattice-proof",
+      "oracle_id": "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+      "grade": "partial",
+      "notes": "The distinction is now explicit, but the background anomaly sources have not yet been ingested into proof fragments.",
+      "writeback_unit_ids": [
+        "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+        "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof"
+      ]
+    },
+    {
+      "question_id": "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "oracle_id": "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "grade": "partial",
+      "notes": "The flagship Lecture Two and Lecture Three theorem branches are present, but their cited-paper recovery routes are still only partially complete.",
+      "writeback_unit_ids": [
+        "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+        "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+        "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence",
+        "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof"
+      ]
+    }
+  ],
+  "created_at": "2026-03-19"
+}

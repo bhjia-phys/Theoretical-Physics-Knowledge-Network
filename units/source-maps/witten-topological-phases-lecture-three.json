@@ -1,0 +1,120 @@
+{
+  "id": "source_map:witten-topological-phases-lecture-three",
+  "type": "source_map",
+  "title": "Witten Topological Phases Lecture Three Source Map",
+  "summary": "This source map records the canonical Lecture Three branch: the promoted parity-anomaly / Jackiw-Rebbi / anomaly-inflow edge-mode theorem family with proof-state assets and an explicit Callan-Harvey cancellation fragment, the now-explicit graphene/Haldane lattice bridge, the lecture-one boundary precursor, and the split buffered fractional-Hall topological-order branch.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "source-maps",
+  "tags": [
+    "source-map",
+    "witten",
+    "lecture-three"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Witten-based Jackiw-Rebbi / parity-anomaly theorem family is already promoted into reusable units.",
+    "Dedicated Jackiw-Rebbi and anomaly-inflow theorems are now present locally.",
+    "The remaining Callan-Harvey / Jackiw-Rebbi work is archival enrichment, and the wider fractional-Hall branch is intentionally parked in the future buffer."
+  ],
+  "regime": "Lecture Three source curation layer.",
+  "scope": "Mapping from Lecture Three sections to the flagship edge-mode theorem family, the future-buffer branch, and residual enrichment work.",
+  "dependencies": [],
+  "related_units": [
+    "notation_family:domain-wall-edge-mode-notation",
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "notation_map:lecture-three-edge-mode-symbols",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+    "open_gap:fractional-quantum-hall-topological-order-not-yet-curated",
+    "open_gap:fqhe-wilson-loop-algebra-not-yet-curated",
+    "open_gap:fqhe-torus-ground-state-degeneracy-not-yet-curated",
+    "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "followup_source_task:ingest-fqhe-topological-order-and-wilson-loop-algebra",
+    "followup_source_task:ingest-fqhe-wilson-loop-algebra-and-torus-degeneracy",
+    "followup_source_task:ingest-fqhe-fractional-charge-and-statistics",
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "Fractional Hall topological order, Wilson loops, and torus degeneracy."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Parity anomaly, Jackiw-Rebbi, anomaly inflow, and edge-mode consistency."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "notes": "Honeycomb Dirac points and Haldane masses."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Source map for the Lecture Three flagship theorem family, future buffer, and the narrower residual archival-enrichment routes.",
+  "coverage_sections": [
+    "lecture-three/more-on-the-fractional-quantum-hall-effect",
+    "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+    "lecture-three/haldanes-model-of-graphene"
+  ],
+  "seed_units": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "open_gap:fractional-quantum-hall-topological-order-not-yet-curated",
+    "open_gap:fqhe-wilson-loop-algebra-not-yet-curated",
+    "open_gap:fqhe-torus-ground-state-degeneracy-not-yet-curated",
+    "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated",
+    "followup_source_task:ingest-fqhe-topological-order-and-wilson-loop-algebra",
+    "followup_source_task:ingest-fqhe-wilson-loop-algebra-and-torus-degeneracy",
+    "followup_source_task:ingest-fqhe-fractional-charge-and-statistics"
+  ],
+  "failure_modes": [
+    "The edge-mode theorem family is usable and source-grade locally, including the Callan-Harvey cancellation identity, but the original Callan-Harvey and Jackiw-Rebbi papers are still only coarsely anchored and the wider fractional-Hall branch remains incomplete."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use to find the current Lecture Three theorem family, its future buffer, and the remaining enrichment routes."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

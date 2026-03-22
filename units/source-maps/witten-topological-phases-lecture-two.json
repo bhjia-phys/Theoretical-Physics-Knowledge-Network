@@ -1,0 +1,119 @@
+{
+  "id": "source_map:witten-topological-phases-lecture-two",
+  "type": "source_map",
+  "title": "Witten Topological Phases Lecture Two Source Map",
+  "summary": "This source map records the canonical Lecture Two branch: Hall-response quantization, the source-grade TKNN equivalence with its traced-curvature and projector formulas, anomaly inflow, charge pumping, and the now-partially explicit Haldane route whose remaining work is original-paper archival enrichment.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "source-maps",
+  "tags": [
+    "source-map",
+    "witten",
+    "lecture-two"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The Witten-based flagship theorem family is already promoted into reusable units.",
+    "The TKNN side is now source-grade locally through the traced-curvature identity and the occupied-projector formula.",
+    "The remaining queued work is finer Haldane bridging and denser archival mapping."
+  ],
+  "regime": "Lecture Two Hall-response source curation layer.",
+  "scope": "Mapping from Lecture Two sections to the flagship theorem family, anomaly inflow, residual enrichment tasks, and neighboring branches.",
+  "dependencies": [],
+  "related_units": [
+    "notation_family:hall-response-chern-number-notation",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "notation_map:lecture-two-hall-response-symbols",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence",
+    "regression_question:reconstruct-hall-response-chern-number-equivalence",
+    "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "notes": "Macroscopic Hall-response quantization."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "TKNN invariant, occupied-projector formula, and filled-band Berry bundle."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Many-body twisted-boundary proof of the TKNN equivalence."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Anomaly inflow and chiral boundary modes."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/more-on-fermi-arcs",
+      "notes": "Auxiliary quantum Hall interpretation of Fermi arcs."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Source map for the Lecture Two flagship theorem family, its anomaly-inflow branch, and the narrower residual enrichment route.",
+  "coverage_sections": [
+    "lecture-two/chern-simons-effective-action",
+    "lecture-two/quantization-of-the-chern-simons-coupling",
+    "lecture-two/quantization-of-the-hall-conductivity",
+    "lecture-two/relation-to-band-topology",
+    "lecture-two/proof-of-the-equivalence",
+    "lecture-two/edge-states-and-anomaly-inflow",
+    "lecture-two/the-charge-pump",
+    "lecture-two/joining-valence-and-conduction-bands",
+    "lecture-two/more-on-the-fractional-quantum-hall-effect",
+    "lecture-two/more-on-fermi-arcs"
+  ],
+  "seed_units": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "failure_modes": [
+    "The Witten-based theorem chain and the core TKNN traced-curvature bridge are usable and proof-decomposed, the local Haldane bridge is partially explicit, but the original Haldane paper is still only coarsely anchored."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use to find the current Lecture Two theorem family, its regression surface, and the remaining enrichment route."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

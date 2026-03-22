@@ -1,0 +1,84 @@
+{
+  "id": "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence",
+  "type": "question_oracle",
+  "title": "Oracle For Large-Gauge Quantization Before Hall-Response Equivalence",
+  "summary": "Detailed oracle for the large-gauge quantization prerequisite in the Lecture Two theorem family.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "question-oracle",
+    "derivation",
+    "large-gauge-invariance"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must not rely on later Hall-current or TKNN statements to justify integrality."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the large-gauge prerequisite proof.",
+  "dependencies": [
+    "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence"
+  ],
+  "related_units": [
+    "equation_context:lecture-two-large-gauge-holonomy-shift",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "proof_state:lecture-two-hall-response-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "equation_labels": [
+        "unitf",
+        "nifty",
+        "prif"
+      ],
+      "notes": "The answer must reconstruct the S^2 times S^1 argument itself."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:justify-large-gauge-quantization-before-hall-response-equivalence.",
+  "mandatory_unit_ids": [
+    "equation_context:lecture-two-large-gauge-holonomy-shift",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level"
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level"
+  ],
+  "mandatory_equation_labels": [
+    "unitf",
+    "nifty",
+    "prif"
+  ],
+  "derivation_spine": [
+    "Insert one unit of flux through the spatial two-sphere.",
+    "Evaluate the Chern-Simons functional on S^2 times S^1 and identify it with the holonomy angle.",
+    "Apply the large gauge transformation that shifts the holonomy by 2pi.",
+    "Demand invariance of exp(i k I_CS) and conclude that k must be integral."
+  ],
+  "mandatory_logical_moves": [
+    "The unit-flux background must be named explicitly.",
+    "The 2pi holonomy shift must appear explicitly.",
+    "The conclusion k in Z must be derived from path-integral invariance."
+  ],
+  "common_failure_patterns": [
+    "Claiming Chern-Simons levels are quantized without the specific background argument.",
+    "Using later parts of the Hall theorem to justify the prerequisite."
+  ],
+  "grading_rubric": [
+    "Pass requires the actual large-gauge proof.",
+    "Unsafe-pass is not allowed here because the question is only about the local prerequisite proof.",
+    "Partial is appropriate if the conclusion is known but the holonomy-shift step is missing."
+  ],
+  "failure_triggers": [
+    "Fail if the answer only quotes the integer result without the S^2 times S^1 construction.",
+    "Fail if the answer invokes the Hall current or Berry curvature before the level is quantized."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

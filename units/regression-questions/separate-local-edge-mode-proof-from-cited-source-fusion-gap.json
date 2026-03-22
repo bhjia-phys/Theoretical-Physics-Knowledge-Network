@@ -1,0 +1,55 @@
+{
+  "id": "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+  "type": "regression_question",
+  "title": "Separate Local Edge-Mode Proof From Cited-Source Fusion Gap",
+  "summary": "Tests whether the topic can say exactly which parts of the Lecture Three continuum edge-mode family are already source-grade locally and which parts remain narrower Jackiw-Rebbi / Callan-Harvey archival-enrichment work, while preserving anomaly-versus-lattice scope control.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "regression-question",
+    "gap",
+    "source-fusion"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must separate local derivation coverage from the remaining enrichment route and from the lattice theorem."
+  ],
+  "regime": "Topic regression for gap honesty.",
+  "scope": "Honesty-focused regression prompt for the Lecture Three theorem family.",
+  "dependencies": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "related_units": [
+    "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Witten's local proof is present, and the remaining work is denser archival mapping rather than a missing core theorem."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Lecture Three honesty regression prompt.",
+  "prompt": "State clearly which parts of the Lecture Three continuum edge-mode family are source-grade locally in the current KB, which parts still remain Jackiw-Rebbi / Callan-Harvey archival-enrichment work, and why this continuum branch is not identical to the lattice no-go theorem.",
+  "question_family": "gap",
+  "primary_retrieval_paths": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "pass_conditions": [
+    "The answer identifies the local Witten-side continuum proof as present.",
+    "The answer identifies the Jackiw-Rebbi, anomaly-inflow, and Callan-Harvey cancellation ingredients as already source-grade locally.",
+    "The answer states that the remaining follow-up is narrower archival enrichment and keeps the continuum edge-mode family distinct from the lattice no-go theorem."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

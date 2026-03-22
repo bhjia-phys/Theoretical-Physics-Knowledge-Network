@@ -1,0 +1,116 @@
+{
+  "id": "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+  "type": "open_gap",
+  "title": "Lecture Two TKNN / Haldane Archival Enrichment Remains To Be Curated",
+  "summary": "The core Hall-response / TKNN / many-body equivalence is source-grade locally through the traced-curvature identity, the occupied-projector formula, and the many-body twist-angle route, and the Haldane side has an explicit graphene Hamiltonian, Dirac-point, symmetry-protection, and valley-mass bridge; what remains is denser original-paper archival mapping.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "gap-routing",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "open-gap",
+    "lecture-two",
+    "tknn"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The local Witten Lecture Two proof spine is already promoted into theorem, equivalence, proof-fragment, and derivation-step units.",
+    "The TKNN side now has an explicit projector-formula fragment in the current KB.",
+    "The residual follow-up is finer archival mapping and a richer Haldane bridge, not a missing core theorem proof."
+  ],
+  "regime": "Lecture Two source-enrichment follow-up.",
+  "scope": "Residual enrichment task for line-level archival mapping of the TKNN route and for decomposing the Haldane lattice-realization branch.",
+  "dependencies": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "source_map:witten-topological-phases-lecture-two"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "Lecture Two states the TKNN relation that is now fused locally through the projector formula."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "The core geometric bridge is already local, but broader archival anchors in the original paper remain thinner than the Witten-side route."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "The neighboring lattice-realization branch is bridged locally through the valley-mass criterion, but the original-paper decomposition is still coarse."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Residual source-enrichment item for the Lecture Two Hall-response theorem family.",
+  "formal_theory_role": "supporting_context",
+  "statement_graph_role": "explanatory_bridge",
+  "statement_graph_parents": [
+    "proof_state:lecture-two-hall-response-chern-number"
+  ],
+  "statement_graph_children": [
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "target_statement_id": "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+  "faithfulness_status": "not_applicable",
+  "comparator_audit_status": "not_applicable",
+  "provenance_kind": "source_derived",
+  "attribution_requirements": [
+    "Retain attribution to the cited TKNN and Haldane papers when this gap is resolved into finer archival notes."
+  ],
+  "prerequisite_closure_status": "partial",
+  "gap_kind": "missing-bridge",
+  "recovery_source_type": "cited-paper",
+  "runtime_gap_kinds": [
+    "missing_cited_result",
+    "cross_paper_dependency"
+  ],
+  "runtime_return_to_stages": [
+    "L0"
+  ],
+  "topic_queue_ids": [
+    "queue:topological-phases-core-unresolved",
+    "queue:witten-lecture-two-prerequisites"
+  ],
+  "blocking_units": [
+    "source_map:witten-topological-phases-lecture-two",
+    "source_map:topological-phases-core"
+  ],
+  "resolution_targets": [
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "reentry_targets": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "source_map:witten-topological-phases-lecture-two"
+  ],
+  "followup_required": true,
+  "retrieval_hints": [
+    "Use when the Hall-response theorem is already source-grade locally but the user asks what finer Haldane or archival work still remains."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

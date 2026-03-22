@@ -1,0 +1,147 @@
+{
+  "id": "proof_state:lecture-two-hall-response-chern-number",
+  "type": "proof_state",
+  "title": "Lecture Two Hall-Response / Chern-Number Proof State",
+  "summary": "Current proof-state ledger for the Lecture Two flagship theorem: the local Witten derivation spine is explicit, the TKNN side is source-grade locally through the traced-curvature identity plus the projector formula, the graphene/Haldane bridge is decomposed through explicit lattice and valley-mass units, and the remaining follow-up is original-paper archival enrichment rather than a missing core proof.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-state",
+    "lecture-two",
+    "tknn"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The local theorem family is being audited for proof completeness and source-fusion honesty."
+  ],
+  "regime": "Proof-completion review state.",
+  "scope": "Ledger-level summary of the Hall-response / Chern-number theorem family.",
+  "dependencies": [
+    "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number"
+  ],
+  "related_units": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "notes": "Beginning of the local proof chain."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Completion of the local proof chain."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Proof-state ledger distinguishing the explicit core theorem chain from the narrower residual enrichment route.",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "formal_theory_role": "intermediate_theory",
+  "statement_graph_role": "temporary_scaffold",
+  "statement_graph_parents": [
+    "theorem_family:hall-response-chern-number-equivalence"
+  ],
+  "statement_graph_children": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "target_statement_id": "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+  "faithfulness_status": "bounded",
+  "faithfulness_strategy": "Treat this proof state only as a ledger of obligations and dependency structure; it is faithful precisely by refusing to replace the trusted theorem statement.",
+  "faithfulness_notes": "The proof state is intentionally narrower than the theorem family and should never be cited as the theorem itself.",
+  "comparator_audit_status": "passed",
+  "comparator_risks": [
+    "A proof-state ledger can look complete enough to be mistaken for the theorem; keep the target theorem link explicit."
+  ],
+  "provenance_kind": "mixed",
+  "attribution_requirements": [
+    "Preserve the distinction between Witten's lecture-local proof spine and the cited TKNN/Haldane source enrichments when reusing this scaffold."
+  ],
+  "prerequisite_closure_status": "closed",
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "hall_response_chern_number_proof_state",
+  "lean_statement_kind": "scaffold",
+  "admissible_assumptions": [
+    "The theorem family is formalized as a bundle of bounded lemmas rather than as one opaque derivation block.",
+    "The cited-source Haldane enrichment remains outside the local core scaffold."
+  ],
+  "lean_prerequisite_ids": [
+    "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof",
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "formalization_blockers": [
+    "The occupied-bundle geometry package still needs a stable import surface before this proof state can become a real Lean namespace wrapper."
+  ],
+  "obligation_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "pass_conditions": [
+    "All local Witten-side obligations are explicit and formula-bearing.",
+    "The TKNN route is explicit through the traced-curvature identity, the occupied-projector formula, and the Chern-class interpretation.",
+    "The Haldane bridge is explicit through the graphene Hamiltonian, Dirac-point condition, symmetry-protection statement, and valley-mass Chern-number criterion.",
+    "The proof state records the remaining original-paper Haldane / archival-enrichment follow-up honestly instead of overstating it as a missing core proof."
+  ],
+  "failure_triggers": [
+    "Fail if the theorem is described as still lacking a core TKNN source-grade fragment even though the projector formula is present.",
+    "Fail if the projector formula is quoted without the local Berry-curvature-to-projector bridge.",
+    "Fail if any obligation is referenced only by title without its defining equations or logical move.",
+    "Fail if the narrower Haldane / archival-enrichment follow-up is silently erased."
+  ],
+  "retrieval_hints": [
+    "Use when an answer or audit needs the whole proof ledger rather than one isolated obligation."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+    "regression_question:reconstruct-hall-response-chern-number-equivalence",
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence",
+    "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+    "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
+    "regression_run:topological-phases-core-2026-03-21-lecture-one-cited-recovery",
+    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

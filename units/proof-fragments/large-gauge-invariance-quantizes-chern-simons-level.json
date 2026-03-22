@@ -1,0 +1,106 @@
+{
+  "id": "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+  "type": "proof_fragment",
+  "title": "Large Gauge Invariance Quantizes The Chern-Simons Level",
+  "summary": "Place the theory on S^2 times S^1 with one unit of flux through S^2 and a constant temporal holonomy A_0 = s/beta; because the Chern-Simons action shifts by 2pi under the allowed large gauge transformation, its coefficient must be integral.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-fragment",
+    "chern-simons",
+    "large-gauge-invariance"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The microscopic electron field transforms under a compact U(1) gauge symmetry.",
+    "The effective action is allowed to be defined only modulo 2pi in the path integral."
+  ],
+  "regime": "2+1-dimensional effective topological response on a closed spacetime manifold.",
+  "scope": "Quantization step for the Chern-Simons level in Witten Lecture Two.",
+  "dependencies": [
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "related_units": [
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "equation_labels": [
+        "unitf",
+        "nifty",
+        "prif"
+      ],
+      "notes": "Witten's closed-manifold argument for the integrality of the Chern-Simons level."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Closed-manifold large-gauge-invariance argument for integer Chern-Simons level.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the Hall-response theorem cannot start from an arbitrary real Chern-Simons coefficient. The first nontrivial step is to show that compact U(1) gauge invariance forces the response level to be an integer.",
+  "prerequisite_story": "Know the Chern-Simons functional in 2+1 dimensions, why the path integral only cares about the action modulo 2pi, and what counts as a large gauge transformation for a compact U(1) gauge field.",
+  "local_context_story": "In Witten Lecture Two, this is the opening quantization step: put the theory on S^2 x S^1, thread one unit of magnetic flux through S^2, and vary the temporal holonomy around the Euclidean time circle.",
+  "forward_links_story": "Once k is known to be integral, the next step is to differentiate the Chern-Simons action and obtain the quantized Hall current. That integer is then matched to the band and many-body Chern numbers.",
+  "canonical_questions": [
+    "Why does the closed-manifold argument use S^2 x S^1 with one flux unit?",
+    "Why is an action shift by 2pi allowed but any other shift forbidden?",
+    "Where exactly does the integrality of k enter the Hall-response theorem?"
+  ],
+  "scope_boundaries": [
+    "This argument assumes a compact U(1) gauge field and a topological effective action defined modulo 2pi in the path integral.",
+    "It is a response-theory quantization argument, not yet the microscopic derivation of the same integer from band topology."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\int_{S^2}\\frac{F}{2\\pi}=1",
+      "kind": "display",
+      "equation_label": "unitf",
+      "notes": "Unit Dirac flux through the spatial two-sphere."
+    },
+    {
+      "latex": "\\mathcal I_{\\mathrm{CS}} = \\frac{1}{4\\pi}\\int_{S^2\\times S^1}\\epsilon^{ijk}A_i\\partial_jA_k = s",
+      "kind": "display",
+      "equation_label": "nifty",
+      "notes": "Value of the Chern-Simons functional on the background with temporal holonomy s."
+    },
+    {
+      "latex": "s \\to s + 2\\pi",
+      "kind": "display",
+      "equation_label": "prif",
+      "notes": "Allowed large gauge transformation of the temporal holonomy."
+    }
+  ],
+  "step_justification": [
+    "The electron wavefunction only requires exp(i phi) to be single-valued, not phi itself.",
+    "The path integral is unchanged when the action shifts by an integer multiple of 2pi.",
+    "Therefore an effective action term k I_CS is gauge invariant only when k is an integer."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "large_gauge_invariance_quantizes_chern_simons_level",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work with a compact U(1) gauge field on the closed manifold S^2 x S^1.",
+    "Treat the large gauge transformation of the temporal holonomy as an allowed input rather than formalizing the full gauge-group homotopy theory inside this lemma."
+  ],
+  "lean_prerequisite_ids": [
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "formalization_blockers": [
+    "The current KB does not yet expose a reusable Lean-side library for the Chern-Simons functional on closed three-manifolds.",
+    "The path-integral modulo-2pi convention still needs a more explicit formal wrapper than plain equality of real actions."
+  ],
+  "retrieval_hints": [
+    "Use when a Hall-response explanation must justify why the Chern-Simons level is quantized before differentiating it into a current."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

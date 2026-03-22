@@ -4,6 +4,7 @@
 - Type: `concept`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `weyl-semimetals`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `seed`
@@ -21,19 +22,48 @@ Low-energy expansion near an isolated 3D crossing.
 - `The crossing is isolated in three-dimensional momentum space.`
 - `A two-band local reduction is valid near the node.`
 
+## Representation
+Local 2x2 Bloch Hamiltonian with linearized Pauli-matrix coefficients.
+
+## Source Anchors
+- `lecture-one/three-dimensions | eqs: xpa, perd | The local 2x2 Hamiltonian determines the Weyl cone and its handedness.`
+
+## Mathematical Content
+- `kind=display` | `label=localexp` | Generic local 2x2 Hamiltonian near the crossing.
+$$
+H(\vec p)=a(\vec p)+\sum_i b_i(\vec p)\sigma^i
+$$
+- `kind=display` | `label=perd` | Local chirality of the Weyl node.
+$$
+\chi=\operatorname{sign}\det\bigl((\partial_j b_i)_{\vec p_*}\bigr)
+$$
+
+## Symbols
+- none
+
 ## Dependencies
 - [Band Crossing](band-crossing.md)
 - [Two-Band Hamiltonian A Plus B Dot Sigma](../Equations/two-band-hamiltonian-d-dot-sigma.md)
 - [Chirality Sign](../Quantities/chirality-sign.md)
 
 ## Related Units
+- [Weyl Node As An Isolated Three-Dimensional Two-Band Crossing](../Definitions/weyl-node-as-isolated-three-dimensional-two-band-crossing.md)
 - [Chirality Of A Weyl Node](chirality-of-weyl-node.md)
 - [Berry Curvature](berry-curvature.md)
 - [Weyl Node To Berry Monopole](../Bridges/weyl-node-to-berry-monopole.md)
 - [Local Weyl Description Does Not Fix Global Lattice Consistency](../Warnings/local-weyl-description-does-not-fix-global-lattice-consistency.md)
+- [Three-Dimensional Two-Band Crossing Symbols](../Notation-Maps/three-dimensional-two-band-crossing-symbols.md)
 
-## Source Anchors
-- `lecture-one/three-dimensions | eqs: xpa, perd | The local 2x2 Hamiltonian determines the Weyl cone and its handedness.`
+## Failure Modes
+- `If the determinant of the linearization vanishes, the simple Weyl description can fail.`
+- `Global lattice consistency is not fixed by the local cone alone.`
+
+## Formal Targets
+- `aitp-l2`
+- `lean`
+
+## Retrieval Hints
+- `Primary entry point for Weyl semimetal queries.`
 
 ## Outgoing Edges
 - `anchored_in_source` -> [Witten Topological Phases Lecture One Source Map](../Source-Maps/witten-topological-phases-lecture-one.md): The Weyl-node unit is part of the current Lecture One source map.
@@ -49,11 +79,4 @@ Low-energy expansion near an isolated 3D crossing.
 - [Fermi Arc](fermi-arc.md) -> `depends_on`: Fermi arcs are boundary signatures of bulk Weyl-node topology.
 - [Nielsen-Ninomiya Theorem](nielsen-ninomiya-theorem.md) -> `depends_on`: The theorem constrains sets of Weyl nodes in a lattice band structure.
 - [Two-Band Hamiltonian A Plus B Dot Sigma](../Equations/two-band-hamiltonian-d-dot-sigma.md) -> `explains`: The Pauli-vector decomposition is the universal local language for Weyl nodes.
-
-## Failure Modes
-- `If the determinant of the linearization vanishes, the simple Weyl description can fail.`
-- `Global lattice consistency is not fixed by the local cone alone.`
-
-## Formal Targets
-- `aitp-l2`
-- `lean`
+- [Weyl Node As An Isolated Three-Dimensional Two-Band Crossing](../Definitions/weyl-node-as-isolated-three-dimensional-two-band-crossing.md) -> `defines`: The new definition unit makes the local Weyl-node assumptions explicit.

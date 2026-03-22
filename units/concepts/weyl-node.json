@@ -26,10 +26,12 @@
     "quantity:chirality-sign"
   ],
   "related_units": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
     "concept:chirality-of-weyl-node",
     "concept:berry-curvature",
     "bridge:weyl-node-to-berry-monopole",
-    "warning:local-weyl-description-does-not-fix-global-lattice-consistency"
+    "warning:local-weyl-description-does-not-fix-global-lattice-consistency",
+    "notation_map:three-dimensional-two-band-crossing-symbols"
   ],
   "source_anchors": [
     {
@@ -49,6 +51,20 @@
     "Crystal translation symmetry is implicit."
   ],
   "representation": "Local 2x2 Bloch Hamiltonian with linearized Pauli-matrix coefficients.",
+  "math_expressions": [
+    {
+      "latex": "H(\\vec p)=a(\\vec p)+\\sum_i b_i(\\vec p)\\sigma^i",
+      "kind": "display",
+      "equation_label": "localexp",
+      "notes": "Generic local 2x2 Hamiltonian near the crossing."
+    },
+    {
+      "latex": "\\chi=\\operatorname{sign}\\det\\bigl((\\partial_j b_i)_{\\vec p_*}\\bigr)",
+      "kind": "display",
+      "equation_label": "perd",
+      "notes": "Local chirality of the Weyl node."
+    }
+  ],
   "model_refs": [
     "model:two-band-lattice-weyl-model"
   ],
@@ -72,5 +88,5 @@
     "Primary entry point for Weyl semimetal queries."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-19"
 }

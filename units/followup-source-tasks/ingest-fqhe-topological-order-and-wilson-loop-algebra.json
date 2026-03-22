@@ -1,0 +1,67 @@
+{
+  "id": "followup_source_task:ingest-fqhe-topological-order-and-wilson-loop-algebra",
+  "type": "followup_source_task",
+  "title": "Ingest FQHE Topological Order And Wilson-Loop Algebra",
+  "summary": "Return to L0 and ingest a broad fractional-Hall background source so the split Wilson-loop, torus-degeneracy, and fractional-charge branches can later leave the future buffer with more focused follow-up tasks.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "followup",
+  "canonical_family": "topological-phases/fractional-hall-topological-order",
+  "tags": [
+    "followup-source-task",
+    "fractional-quantum-hall-effect",
+    "future-buffer"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The current pass does not attempt a full proof-grade curation of the fractional Hall branch."
+  ],
+  "regime": "AITP background-source recovery for a deferred topic branch.",
+  "scope": "Umbrella future-buffer task packet for the split fractional-Hall topological-order subbranches.",
+  "dependencies": [
+    "open_gap:fractional-quantum-hall-topological-order-not-yet-curated"
+  ],
+  "related_units": [
+    "open_gap:fqhe-wilson-loop-algebra-not-yet-curated",
+    "open_gap:fqhe-torus-ground-state-degeneracy-not-yet-curated",
+    "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated",
+    "followup_source_task:ingest-fqhe-wilson-loop-algebra-and-torus-degeneracy",
+    "followup_source_task:ingest-fqhe-fractional-charge-and-statistics",
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "Triggered by the buffered Lecture Three topological-order branch."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Durable future-buffer recovery task.",
+  "task_status": "source-selected",
+  "recovery_source_type": "cited-paper",
+  "resolves_gaps": [
+    "open_gap:fractional-quantum-hall-topological-order-not-yet-curated"
+  ],
+  "routes_back_to": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "reentry_targets": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "candidate_sources": [
+    {
+      "citation": "X.-G. Wen, \"Topological Orders and Edge Excitations in FQH States,\" Adv. Phys. 44 (1995) 405.",
+      "why": "Witten cites Wen as the review-level source for the effective-field-theory and topological-order structure of the fractional Hall effect."
+    }
+  ],
+  "retrieval_hints": [
+    "Use when a query reaches the buffered Lecture Three topological-order branch and needs the designated recovery source."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

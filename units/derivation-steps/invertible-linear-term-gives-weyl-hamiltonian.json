@@ -1,0 +1,68 @@
+{
+  "id": "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+  "type": "derivation_step",
+  "title": "An Invertible Linear Term Gives A Weyl Hamiltonian",
+  "summary": "If the Jacobian of the Pauli-vector coefficients at the bad point is invertible, the linearized Hamiltonian is equivalent to the standard Weyl Hamiltonian after a linear change of coordinates.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "weyl-semimetals",
+  "tags": [
+    "derivation-step",
+    "weyl-hamiltonian",
+    "jacobian"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The linear map (\\partial_j b_i)_{\\vec p_*} is invertible.",
+    "Only the linearized low-energy structure is being kept."
+  ],
+  "regime": "Low-energy local analysis of an isolated point node.",
+  "scope": "Second nontrivial step in the derivation of the Weyl-node local form.",
+  "dependencies": [
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing"
+  ],
+  "related_units": [
+    "concept:weyl-node",
+    "derivation_step:jacobian-sign-defines-local-chirality"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "xpa"
+      ],
+      "notes": "The local Hamiltonian is put into Weyl form by linearizing the Pauli-vector coefficients."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Linearized Weyl Hamiltonian extracted from the first-order Pauli-vector term.",
+  "math_expressions": [
+    {
+      "latex": "H_{\\mathrm{lin}}(\\delta \\vec p)=\\sum_{i,j}V_{ij}\\,\\delta p_j\\,\\sigma^i",
+      "kind": "display",
+      "notes": "The linearized Hamiltonian with V_{ij}=(\\partial_j b_i)_{\\vec p_*}."
+    },
+    {
+      "latex": "H_{\\mathrm{lin}}\\sim \\chi\\,\\sum_{i=1}^3 q_i\\sigma^i",
+      "kind": "display",
+      "equation_label": "xpa",
+      "notes": "After a linear redefinition of momentum coordinates, the local cone is the Weyl Hamiltonian."
+    }
+  ],
+  "step_inputs": [
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing"
+  ],
+  "step_justification": [
+    "An invertible Jacobian means the three components of b_i change independently to first order.",
+    "A nonsingular linear change of momentum coordinates reduces the linear term to the standard Weyl form.",
+    "The sign of the determinant survives the coordinate change and becomes the chirality data."
+  ],
+  "retrieval_hints": [
+    "Use when a proof must explain why a generic isolated 3D two-band crossing is locally Weyl."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

@@ -1,0 +1,29 @@
+{
+  "queue_id": "queue:witten-lecture-two-prerequisites",
+  "title": "Witten Lecture Two Prerequisites Queue",
+  "topic": "topological-phases-of-matter/witten-lecture-two",
+  "queue_kind": "prerequisite",
+  "summary": "Residual cited-paper recovery tasks that remain after the flagship Lecture Two theorem branch has been promoted.",
+  "items": [
+    {
+      "unit_id": "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+      "status": "in_progress",
+      "priority": "high",
+      "notes": "The Witten-based theorem chain exists, but original-source recovery through TKNN and Haldane is still open."
+    },
+    {
+      "unit_id": "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence",
+      "status": "in_progress",
+      "priority": "high",
+      "notes": "Background-source task for the remaining cited-paper fusion of the Lecture Two theorem family."
+    },
+    {
+      "unit_id": "source_map:witten-topological-phases-lecture-two",
+      "status": "in_progress",
+      "priority": "medium",
+      "notes": "Source map now binds the flagship theorem chain and its remaining cited-paper recovery route."
+    }
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

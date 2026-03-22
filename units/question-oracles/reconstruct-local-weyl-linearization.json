@@ -1,0 +1,74 @@
+{
+  "id": "question_oracle:reconstruct-local-weyl-linearization",
+  "type": "question_oracle",
+  "title": "Oracle For Reconstructing The Local Weyl Linearization",
+  "summary": "Detailed oracle for the flagship local Weyl derivation question.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "question-oracle",
+    "derivation",
+    "weyl-node"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must show intermediate steps, not only the endpoint Hamiltonian."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for reconstructing the local Weyl-node derivation.",
+  "dependencies": [
+    "regression_question:reconstruct-local-weyl-linearization"
+  ],
+  "related_units": [
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "derivation_step:jacobian-sign-defines-local-chirality"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp",
+        "xpa",
+        "perd"
+      ],
+      "notes": "The derivation must be reconstructed from the lecture's actual local formulas."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:reconstruct-local-weyl-linearization.",
+  "mandatory_unit_ids": [
+    "derivation_step:taylor-expand-two-band-hamiltonian-near-crossing",
+    "derivation_step:invertible-linear-term-gives-weyl-hamiltonian",
+    "derivation_step:jacobian-sign-defines-local-chirality"
+  ],
+  "mandatory_equation_labels": [
+    "localexp",
+    "xpa",
+    "perd"
+  ],
+  "derivation_spine": [
+    "Write the local 2x2 Hamiltonian.",
+    "Expand the Pauli-vector coefficients around the bad point.",
+    "Use invertibility of the Jacobian to reduce the linear term to Weyl form.",
+    "Read off chirality from the determinant sign."
+  ],
+  "common_failure_patterns": [
+    "Starting from the generic two-band Hamiltonian and skipping the actual Taylor expansion around the bad point.",
+    "Naming chirality without showing how the determinant of the Jacobian enters the reduced Weyl cone."
+  ],
+  "grading_rubric": [
+    "Pass requires the ordered local expansion from the generic 2x2 form to the Weyl Hamiltonian together with the determinant-sign chirality rule.",
+    "Partial is appropriate if the endpoint Weyl cone is correct but one of the intermediate reduction steps is hidden."
+  ],
+  "failure_triggers": [
+    "Fail if the answer jumps from the generic 2x2 form directly to the chirality sign.",
+    "Fail if the answer never states why the invertible Jacobian matters."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

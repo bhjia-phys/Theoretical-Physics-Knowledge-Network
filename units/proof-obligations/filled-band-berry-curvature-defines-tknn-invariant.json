@@ -1,0 +1,77 @@
+{
+  "id": "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+  "type": "proof_obligation",
+  "title": "Filled-Band Berry Curvature Defines The TKNN Invariant",
+  "summary": "Discharge the proof obligation that the microscopic Hall invariant k' is the first Chern number of the occupied-band bundle over the Brillouin torus, explicitly realized by the occupied-projector formula and the Berry curvature of the filled states.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-obligation",
+    "tknn",
+    "berry-curvature"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The occupied-state bundle is smooth over the Brillouin torus.",
+    "The system is gapped so the filled-state projector is well-defined."
+  ],
+  "regime": "Single-particle band-topology formulation.",
+  "scope": "Microscopic Berry-curvature obligation inside the Lecture Two theorem family.",
+  "dependencies": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "Witten identifies k' with the first Chern class of the filled-band bundle."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "Original band-theory source of the traced-curvature identity and the quantized Hall invariant."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the band-theory side of the Hall-response family.",
+  "pass_conditions": [
+    "The answer identifies the occupied-band bundle over the Brillouin torus.",
+    "The answer defines k' as the first Chern number or Berry-curvature integral of that bundle.",
+    "The answer can explain why Tr F equals i Tr(P dP wedge dP) on a smooth occupied patch.",
+    "The answer can write the occupied-projector formula or explain why it is equivalent to the Berry-curvature integral.",
+    "The answer makes clear that k' is the microscopic invariant to be matched with the response coefficient."
+  ],
+  "mandatory_logical_moves": [
+    "Name the filled-state bundle or projector data over the Brillouin zone.",
+    "Bridge the traced Berry curvature to the projector commutator density.",
+    "Write the first-Chern-number integral or the equivalent occupied-projector formula.",
+    "Interpret the resulting integer as the microscopic Hall invariant."
+  ],
+  "common_failure_patterns": [
+    "Mentioning TKNN without giving the bundle or Berry-curvature meaning of k'.",
+    "Writing the projector formula without saying why it equals the traced Berry curvature.",
+    "Quoting k' without any explicit formula for the occupied subspace.",
+    "Treating the band invariant as already equal to k without stating what it is."
+  ],
+  "grading_rubric": [
+    "Full credit requires a genuine band-topology definition of k'.",
+    "Partial credit is appropriate if the answer only says 'TKNN invariant' without defining it."
+  ],
+  "retrieval_hints": [
+    "Use when the answer must include the microscopic side of the Hall-response theorem and not only the response-theory side."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

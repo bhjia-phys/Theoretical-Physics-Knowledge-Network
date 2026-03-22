@@ -1,0 +1,60 @@
+{
+  "id": "followup_source_task:ingest-fqhe-fractional-charge-and-statistics",
+  "type": "followup_source_task",
+  "title": "Ingest FQHE Fractional Charge And Statistics",
+  "summary": "Return to L0 and ingest focused fractional-Hall sources so the deferred fractional-charge and anyonic-statistics branch can later leave the future buffer.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "followup",
+  "canonical_family": "topological-phases/fractional-hall-topological-order",
+  "tags": [
+    "followup-source-task",
+    "fractional-quantum-hall-effect",
+    "fractional-charge",
+    "anyons"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The current pass does not yet promote the fractional Hall quasiparticle branch into proof-grade reusable units."
+  ],
+  "regime": "AITP background-source recovery for a buffered topic branch.",
+  "scope": "Focused future-buffer task for fractional charge and statistics.",
+  "dependencies": [
+    "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated"
+  ],
+  "related_units": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "Triggered by the buffered fractional-charge and statistics branch."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Durable future-buffer recovery task for the fractionalized quasiparticle branch.",
+  "task_status": "source-selected",
+  "recovery_source_type": "cited-paper",
+  "resolves_gaps": [
+    "open_gap:fqhe-fractional-charge-and-statistics-not-yet-curated"
+  ],
+  "routes_back_to": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "reentry_targets": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "candidate_sources": [
+    {
+      "citation": "X.-G. Wen, \"Topological Orders and Edge Excitations in FQH States,\" Adv. Phys. 44 (1995) 405.",
+      "why": "Wen's review is the designated recovery source for fractional charge, statistics, and related topological-order data."
+    }
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

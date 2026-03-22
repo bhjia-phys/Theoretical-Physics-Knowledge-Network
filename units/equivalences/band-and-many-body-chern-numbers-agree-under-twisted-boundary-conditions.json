@@ -1,0 +1,87 @@
+{
+  "id": "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+  "type": "equivalence",
+  "title": "Band And Many-Body Chern Numbers Agree Under Twisted Boundary Conditions",
+  "summary": "The single-particle TKNN invariant k' and the many-body twist-angle invariant \\widehat{k}' are two organizations of the same Berry-curvature calculation in the gapped integer quantum Hall system.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "equivalence",
+    "tknn",
+    "many-body-berry-curvature"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The finite-volume ground state is obtained by filling the gapped occupied bands.",
+    "Twist-angle adiabatic transport can be defined on the ground-state line bundle."
+  ],
+  "regime": "Comparison between single-particle band topology and many-body adiabatic transport.",
+  "scope": "Witten's equivalence between the TKNN invariant and the twist-angle many-body invariant.",
+  "dependencies": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level"
+  ],
+  "related_units": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "equation_labels": [
+        "zudo"
+      ],
+      "notes": "The finite-volume shifted-momentum picture reorganizes the band-theory calculation."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "plizz"
+      ],
+      "notes": "Witten identifies the many-body twist-angle invariant with the same integer."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/main-result",
+      "notes": "Original microscopic invariant side of the equivalence."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Equivalence between the Brillouin-zone Chern number and the twist-angle many-body Chern number.",
+  "math_expressions": [
+    {
+      "latex": "k' = \\widehat{k}'",
+      "kind": "display",
+      "notes": "The occupied-band invariant and the twist-angle many-body invariant agree."
+    }
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "band_chern_number_eq_many_body_chern_number_under_twists",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "Work in a gapped integer Hall phase where the many-body ground state is obtained by filling the occupied bands and remains nondegenerate under adiabatic twists.",
+    "Use the determinant-line-bundle identification between filled-band data and the many-body ground-state bundle as a permitted wrapper statement."
+  ],
+  "lean_prerequisite_ids": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level"
+  ],
+  "formalization_blockers": [
+    "A clean Lean-side interface between the filled-band determinant line and the many-body ground-state bundle is still missing.",
+    "Finite-volume and thermodynamic-limit comparison lemmas are not yet separated from the wrapper equivalence statement."
+  ],
+  "retrieval_hints": [
+    "Use when a query asks why the TKNN invariant can be reformulated without assuming a single-particle band description."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

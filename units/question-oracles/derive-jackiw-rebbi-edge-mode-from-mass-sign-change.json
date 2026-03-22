@@ -1,0 +1,119 @@
+{
+  "id": "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+  "type": "question_oracle",
+  "title": "Oracle For Deriving The Jackiw-Rebbi Edge Mode From Mass Sign Change",
+  "summary": "Detailed oracle for the Lecture Three boundary-mode derivation question.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "question-oracle",
+    "derivation",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must keep the continuum edge-mode proof distinct from the lattice Nielsen-Ninomiya theorem."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the Jackiw-Rebbi / parity-anomaly boundary-mode theorem family.",
+  "dependencies": [
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "uftof",
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "The answer must reconstruct both the half-level anomaly and the wall-mode derivation."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change.",
+  "mandatory_unit_ids": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "equation_context_ids": [
+    "equation_context:lecture-three-parity-anomaly-half-level",
+    "equation_context:lecture-three-sign-changing-mass-wall-equation",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "dependency_graph_snapshot_id": "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+  "mandatory_equation_labels": [
+    "uftof",
+    "gift",
+    "zoggg",
+    "trogg"
+  ],
+  "derivation_spine": [
+    "State the half-level parity anomaly of one massive 2+1-dimensional Dirac fermion.",
+    "Explain why doubling with the opposite mass gives a trivial boundary-free starting point.",
+    "Flip one mass sign, fold the boundary problem into a sign-changing-mass Dirac equation, and write the localized ansatz.",
+    "Invoke the Jackiw-Rebbi zero-mode theorem to justify the exponential wall profile and its normalizability.",
+    "Derive the boundary chirality condition and reduced tangential Dirac equation.",
+    "Write the Callan-Harvey cancellation equation matching the edge anomaly to the bulk variation.",
+    "Explain that anomaly inflow requires the resulting chiral wall mode as the boundary degree of freedom of the consistent integer Hall system."
+  ],
+  "mandatory_logical_moves": [
+    "Keep the doubled starting point explicit before the sign flip.",
+    "Derive the sign-changing-mass equation from folding rather than assuming it.",
+    "Use the explicit bulk-plus-boundary cancellation equation when invoking anomaly inflow.",
+    "Reconnect the local wall mode to the consistent integer Hall boundary story."
+  ],
+  "common_failure_patterns": [
+    "Jumping directly to the wall ansatz without the folding step.",
+    "Citing Jackiw-Rebbi or anomaly inflow by name without using their actual theorem content.",
+    "Invoking anomaly inflow without the explicit Callan-Harvey cancellation equation.",
+    "Forgetting the anomaly-cancellation role of doubling.",
+    "Confusing the continuum edge-mode derivation with the lattice no-go theorem."
+  ],
+  "grading_rubric": [
+    "Pass requires the ordered local derivation together with explicit use of the Jackiw-Rebbi zero-mode and anomaly-inflow ingredients.",
+    "Partial is appropriate if one major intermediate step is omitted."
+  ],
+  "failure_triggers": [
+    "Fail if the answer states only that Jackiw-Rebbi was cited without reconstructing the mode.",
+    "Fail if the answer identifies the continuum edge-mode proof with the lattice no-go proof.",
+    "Fail if the answer treats anomaly inflow as a slogan and never writes the cancellation equation.",
+    "Fail if the answer omits why the wall profile is normalizable."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

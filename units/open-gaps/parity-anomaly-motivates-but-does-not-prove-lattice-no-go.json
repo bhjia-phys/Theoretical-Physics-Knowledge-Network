@@ -1,0 +1,85 @@
+{
+  "id": "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+  "type": "open_gap",
+  "title": "Former Parity-Anomaly Versus Lattice-No-Go Scope Gap (Closed)",
+  "summary": "This former scope gap is now closed locally: the continuum parity-anomaly and anomaly-inflow route is explicit, Friedan's compact-BZ theorem proof is explicit, and the KB now states formula-by-formula why the former motivates but does not replace the latter.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "gap-routing",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "open-gap",
+    "parity-anomaly",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Continuum anomaly language appears only later in the lectures.",
+    "Motivation and proof are now explicitly separated by dedicated local units."
+  ],
+  "regime": "Closure record for a formerly blurred cross-lecture bridge.",
+  "scope": "Historical gap record for the once-missing distinction between continuum anomaly motivation and the actual lattice theorem proof.",
+  "dependencies": [
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "related_units": [
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+    "regression_question:separate-anomaly-intuition-from-lattice-proof",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "Anomaly inflow clarifies boundary consistency but does not retroactively supply the lattice no-go proof."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "The parity-anomaly realization strengthens the intuition but is conceptually downstream from the lattice theorem."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "The actual lattice proof route is a compact-BZ Chern-number statement."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Historical closure record for the formerly unresolved distinction between continuum anomaly arguments and the lattice no-go theorem.",
+  "gap_kind": "missing-background",
+  "recovery_source_type": "cited-paper",
+  "blocking_units": [],
+  "resolution_targets": [
+    "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "reentry_targets": [
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation"
+  ],
+  "followup_required": false,
+  "retrieval_hints": [
+    "Use when auditing how the former anomaly-versus-lattice blocker was closed without collapsing the two arguments."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

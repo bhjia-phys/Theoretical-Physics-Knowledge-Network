@@ -1,0 +1,62 @@
+{
+  "id": "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+  "type": "regression_question",
+  "title": "Derive Boundary Chirality After Doubling And Folding",
+  "summary": "Tests whether the topic can reconstruct the Lecture Three proof in the correct order from half-level anomaly, to anomaly cancellation by doubling, to the folded sign-changing-mass equation, and finally to the chiral boundary mode.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "edge-modes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must preserve the proof order and not jump straight to the wall ansatz."
+  ],
+  "regime": "Topic regression for the Lecture Three flagship proof.",
+  "scope": "Proof-focused regression prompt for the doubled continuum edge-mode derivation.",
+  "dependencies": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof"
+  ],
+  "related_units": [
+    "question_oracle:derive-boundary-chirality-after-doubling-and-folding"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "uftof",
+        "quft",
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "The answer should reconstruct the entire local proof in order."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Lecture Three proof-order regression prompt.",
+  "prompt": "Reconstruct in detail how Witten goes from the half-level parity anomaly of one massive Dirac fermion, to anomaly cancellation by doubling, to the folded sign-changing-mass Dirac equation, and finally to the chiral boundary mode.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+    "equation_context:lecture-three-parity-anomaly-half-level",
+    "equation_context:lecture-three-sign-changing-mass-wall-equation",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "pass_conditions": [
+    "The answer derives the half-level anomaly and its cancellation by doubling.",
+    "The answer explains the folding step to the sign-changing-mass equation.",
+    "The answer derives the chiral boundary equation and localized wall profile.",
+    "The answer preserves the order of the proof."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

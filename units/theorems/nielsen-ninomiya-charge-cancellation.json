@@ -1,0 +1,136 @@
+{
+  "id": "theorem:nielsen-ninomiya-charge-cancellation",
+  "type": "theorem",
+  "title": "Nielsen-Ninomiya Charge Cancellation",
+  "summary": "For a compact lattice Brillouin zone with finitely many isolated Weyl nodes, the sum of their local charges vanishes; in the current KB this statement is explicit both through Witten's punctured-zone Stokes proof and through Friedan's cited spectral-projection / Chern-character route.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "theorem",
+    "nielsen-ninomiya",
+    "fermion-doubling"
+  ],
+  "aliases": [
+    "zero-net-chirality theorem"
+  ],
+  "assumptions": [
+    "The Brillouin zone is compact.",
+    "Only finitely many isolated point nodes are present.",
+    "The local charge of each node is defined either by degree theory or by Berry flux."
+  ],
+  "regime": "Global lattice band theory with isolated point nodes.",
+  "scope": "Lecture One theorem statement that rules out a net uncompensated chirality on the lattice.",
+  "dependencies": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation"
+  ],
+  "related_units": [
+    "concept:nielsen-ninomiya-theorem",
+    "claim:lattice-weyl-nodes-sum-to-zero-net-chirality",
+    "theorem_family:weyl-node-no-go-consistency",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "wnn",
+        "cl"
+      ],
+      "notes": "Degree-theoretic derivation of the total-charge sum rule."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-berry-connection",
+      "equation_labels": [
+        "nna"
+      ],
+      "notes": "Berry-curvature reformulation of the same sum rule."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/spectral-projection-chiral-current",
+      "equation_labels": [
+        "chiral-index-from-low-energy-current"
+      ],
+      "notes": "Friedan identifies the total chiral index with the total low-energy chiral charge."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "Friedan's cited rigorous route identifies the theorem with the vanishing boundary Chern number of the spectral bundle."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Global charge-cancellation theorem on a compact punctured Brillouin zone.",
+  "math_expressions": [
+    {
+      "latex": "\\sum_{\\alpha} w_\\alpha = 0",
+      "kind": "display",
+      "equation_label": "cl",
+      "notes": "Stokes-theorem sum rule for the total lattice Weyl charge."
+    },
+    {
+      "latex": "\\sum_{\\alpha}\\int_{S^2_\\alpha}\\frac{F}{2\\pi}=0",
+      "kind": "display",
+      "equation_label": "nna",
+      "notes": "Berry-curvature version of the same cancellation law."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "w_\\alpha",
+      "meaning": "integer charge of the isolated node labeled by \\alpha"
+    },
+    {
+      "symbol": "F",
+      "meaning": "Berry curvature of the filled-state line bundle away from bad points"
+    }
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for the theorem statement itself rather than only the concept summary."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:prove-nielsen-ninomiya-by-stokes",
+    "regression_question:explain-berry-flux-version-of-node-charge",
+    "regression_question:separate-anomaly-intuition-from-lattice-proof"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:prove-nielsen-ninomiya-by-stokes",
+    "question_oracle:explain-berry-flux-version-of-node-charge",
+    "question_oracle:separate-anomaly-intuition-from-lattice-proof"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:witten-lecture-one-2026-03-21-cited-recovery",
+    "regression_run:topological-phases-core-2026-03-21-lecture-one-cited-recovery"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+    "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya"
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

@@ -1,0 +1,111 @@
+{
+  "id": "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+  "type": "question_oracle",
+  "title": "Oracle For Reconstructing The Hall-Response / Chern-Number Equivalence",
+  "summary": "Detailed oracle for the Lecture Two flagship derivation question.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "question-oracle",
+    "derivation",
+    "integer-quantum-hall-effect"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must expose both the response-theory spine and the Berry-curvature spine."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the Lecture Two Hall-response equivalence theorem.",
+  "dependencies": [
+    "regression_question:reconstruct-hall-response-chern-number-equivalence"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "mizz",
+        "coff",
+        "plizz"
+      ],
+      "notes": "The answer must explicitly traverse the twist-angle Berry-curvature proof."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:reconstruct-hall-response-chern-number-equivalence.",
+  "mandatory_unit_ids": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "equation_context_ids": [
+    "equation_context:lecture-two-large-gauge-holonomy-shift",
+    "equation_context:lecture-two-hall-current-from-chern-simons",
+    "equation_context:lecture-two-twist-angle-berry-curvature"
+  ],
+  "dependency_graph_snapshot_id": "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof",
+  "mandatory_equation_labels": [
+    "murr",
+    "coff",
+    "plizz"
+  ],
+  "derivation_spine": [
+    "Use large gauge invariance on S^2 times S^1 to show the Chern-Simons level k is integral.",
+    "Differentiate the Chern-Simons effective action to obtain the Hall current J_2 = k E_1 / 2pi.",
+    "Define the filled-band Chern number k' from the occupied-state Berry curvature over the Brillouin torus and bridge Tr F to i Tr(P dP wedge dP).",
+    "Write the equivalent occupied-projector formula for the same microscopic integer.",
+    "Compute the twist-angle Berry curvature and integrate it to obtain the many-body invariant \\widehat{k}' = k.",
+    "Conclude that k = k' = \\widehat{k}'."
+  ],
+  "mandatory_logical_moves": [
+    "Justify integrality of k before using it as a response coefficient.",
+    "Keep the response, band, and many-body routes distinct until the final synthesis step.",
+    "Do not quote the projector formula as a black box; connect it to the Berry-curvature trace.",
+    "Use the twist-angle torus as a many-body geometric space, not as the Brillouin torus."
+  ],
+  "common_failure_patterns": [
+    "Quoting the final equality without distinguishing what k, k', and \\widehat{k}' each mean.",
+    "Skipping the large-gauge quantization step.",
+    "Writing the projector formula with no explanation of why it equals the traced occupied-bundle curvature.",
+    "Naming the TKNN invariant without any explicit occupied-bundle or projector formula.",
+    "Collapsing the twist-angle Berry curvature into the band Berry curvature without explanation."
+  ],
+  "grading_rubric": [
+    "Pass requires the three-route derivation, the occupied-projector or Berry-curvature formula for k', and the final synthesis.",
+    "Partial is appropriate if one of the major routes is missing."
+  ],
+  "failure_triggers": [
+    "Fail if the answer only quotes the TKNN formula without the response-theory route.",
+    "Fail if the answer omits the many-body twist-angle invariant.",
+    "Fail if the answer never states why the Hall-response coefficient is an integer."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-20"
+}

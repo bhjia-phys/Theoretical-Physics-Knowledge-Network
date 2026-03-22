@@ -24,7 +24,8 @@
   "related_units": [
     "concept:weyl-node",
     "quantity:winding-number",
-    "derivation:berry-flux-gives-node-charge"
+    "derivation:berry-flux-gives-node-charge",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle"
   ],
   "source_anchors": [
     {
@@ -45,6 +46,42 @@
     "Gauge-invariant as a curvature form."
   ],
   "representation": "Curvature two-form F=dA on the occupied-state bundle.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the Berry connection itself depends on gauge choice, while the topological information used in Lecture One must not. Berry curvature is the gauge-invariant local object that converts phase transport into measurable flux and integer charge.",
+  "prerequisite_story": "Know the Berry connection A on the occupied-state line bundle and the basic differential-geometric rule that curvature is the exterior derivative of a connection one-form in the abelian case. Also keep in mind that the singular band-touching points have been removed from the region where the form is computed.",
+  "local_context_story": "In Witten Lecture One, Berry curvature is introduced as the first Chern-class representative of the occupied-state bundle. This is the move that lets the local data near a bad point be converted into an integral topological charge.",
+  "forward_links_story": "The flux integral of F over a small sphere gives the Weyl-node charge, and the closedness condition dF = 0 on the punctured Brillouin zone leads to the global zero-total-charge sum rule. In Lecture Two the same curvature viewpoint becomes the TKNN Chern invariant on the Brillouin torus.",
+  "canonical_questions": [
+    "Why is Berry curvature gauge invariant even though the Berry connection is not?",
+    "Why does the flux of F over a small sphere give an integer rather than an arbitrary real number?",
+    "Why is dF = 0 away from singular points, and what does that imply globally?",
+    "How does the local Weyl-node charge become a first-Chern-class statement?"
+  ],
+  "scope_boundaries": [
+    "This note concerns the abelian rank-one curvature of a single filled band; for several filled bands one uses a non-abelian curvature before taking traces.",
+    "Berry curvature is regular only on the punctured region where the occupied bundle is smooth; the singular source of the topological charge sits at the excluded bad point."
+  ],
+  "math_expressions": [
+    {
+      "latex": "F = \\mathrm dA",
+      "notes": "Abelian Berry curvature as the curvature of the Berry connection."
+    },
+    {
+      "latex": "\\int_{S^2_\\alpha} \\frac{F}{2\\pi} = c_1(\\mathcal L|_{S^2_\\alpha})",
+      "equation_label": "fc",
+      "notes": "First-Chern-class interpretation of the Berry-curvature flux."
+    },
+    {
+      "latex": "w_\\alpha = \\int_{S^2_\\alpha}\\frac{F}{2\\pi}",
+      "equation_label": "zif",
+      "notes": "Local node charge as Berry-curvature flux."
+    },
+    {
+      "latex": "\\mathrm dF = 0",
+      "equation_label": "wif",
+      "notes": "Closedness of the curvature away from singularities."
+    }
+  ],
   "model_refs": [],
   "equation_refs": [
     "equation:berry-flux-topological-charge"
@@ -52,6 +89,24 @@
   "quantity_refs": [
     "quantity:berry-curvature-two-form",
     "quantity:winding-number"
+  ],
+  "symbols": [
+    {
+      "symbol": "A",
+      "meaning": "Berry connection one-form"
+    },
+    {
+      "symbol": "F",
+      "meaning": "Berry-curvature two-form"
+    },
+    {
+      "symbol": "\\mathcal L",
+      "meaning": "occupied-state line bundle"
+    },
+    {
+      "symbol": "w_\\alpha",
+      "meaning": "integer topological charge of the isolated node labeled by alpha"
+    }
   ],
   "failure_modes": [
     "If the subspace is not isolated, the abelian description breaks down."
@@ -64,5 +119,5 @@
     "Use when a query asks how topology is seen from Berry data."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-21"
 }

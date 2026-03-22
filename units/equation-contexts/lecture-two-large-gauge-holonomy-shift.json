@@ -1,0 +1,84 @@
+{
+  "id": "equation_context:lecture-two-large-gauge-holonomy-shift",
+  "type": "equation_context",
+  "title": "Lecture Two Large-Gauge Holonomy Shift Context",
+  "summary": "This equation context records why Witten's unit-flux background on S^2 times S^1 and the large gauge shift of the temporal holonomy are enough to force the Chern-Simons level to be integral.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "equation-context",
+    "large-gauge-invariance",
+    "lecture-two"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The background gauge field is compact.",
+    "The path integral only depends on the action modulo 2pi."
+  ],
+  "regime": "Closed-manifold Chern-Simons quantization argument.",
+  "scope": "Equation-level context for the large-gauge argument preceding the Hall-response theorem.",
+  "dependencies": [
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "related_units": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "equation_labels": [
+        "unitf",
+        "nifty",
+        "prif"
+      ],
+      "notes": "Witten's S^2 times S^1 large-gauge background that makes the level quantization explicit."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Equation context for the holonomy-shift argument that upgrades Chern-Simons gauge invariance into integrality of k.",
+  "math_expressions": [
+    {
+      "latex": "\\int_{S^2}\\frac{F}{2\\pi}=1",
+      "kind": "display",
+      "equation_label": "unitf",
+      "notes": "One unit of magnetic flux is inserted through the spatial two-sphere."
+    },
+    {
+      "latex": "\\mathcal I_{\\mathrm{CS}} = \\frac{1}{4\\pi}\\int_{S^2\\times S^1}\\epsilon^{ijk}A_i\\partial_jA_k = s",
+      "kind": "display",
+      "equation_label": "nifty",
+      "notes": "The Chern-Simons functional evaluates to the temporal holonomy angle."
+    },
+    {
+      "latex": "s \\to s + 2\\pi",
+      "kind": "display",
+      "equation_label": "prif",
+      "notes": "A large gauge transformation shifts the holonomy by 2pi without changing the physical configuration."
+    },
+    {
+      "latex": "e^{ik\\mathcal I_{\\mathrm{CS}}} \\text{ is gauge invariant } \\Rightarrow k \\in \\mathbb Z",
+      "kind": "display",
+      "notes": "Because the action is only defined modulo 2pi, the coefficient k must be integral."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "s",
+      "meaning": "temporal holonomy angle on the S^1 factor"
+    },
+    {
+      "symbol": "k",
+      "meaning": "Chern-Simons level multiplying the effective action"
+    }
+  ],
+  "retrieval_hints": [
+    "Open this before answering why k is an integer instead of merely asserting it."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

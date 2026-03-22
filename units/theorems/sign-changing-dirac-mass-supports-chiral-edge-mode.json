@@ -1,0 +1,207 @@
+{
+  "id": "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+  "type": "theorem",
+  "title": "Sign-Changing Dirac Mass Supports Chiral Edge Mode",
+  "summary": "A 2+1-dimensional Dirac system whose mass changes sign across a boundary supports a boundary-localized chiral mode; source-grade Jackiw-Rebbi zero-mode and anomaly-inflow results now make the continuum edge-mode consistency story explicit locally.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "theorem",
+    "edge-modes",
+    "jackiw-rebbi"
+  ],
+  "aliases": [
+    "domain-wall edge-mode theorem"
+  ],
+  "assumptions": [
+    "The bulk effective action is the integer-level Chern-Simons term after doubling.",
+    "The folded boundary problem is equivalent to a sign-changing-mass Dirac equation."
+  ],
+  "regime": "Continuum edge-mode realization of the integer quantum Hall boundary theory.",
+  "scope": "Flagship Lecture Three theorem joining the parity anomaly, Jackiw-Rebbi wall mode, and anomaly-inflow consistency.",
+  "dependencies": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change"
+  ],
+  "related_units": [
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "plof",
+        "uftof",
+        "quft",
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "Witten's continuum proof of edge-mode consistency from the parity anomaly and a sign-changing mass."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/isolated-zero-mode",
+      "equation_labels": [
+        "soliton-dirac-zero-mode"
+      ],
+      "notes": "Original zero-mode ingredient, now represented by a dedicated source-grade theorem in the KB."
+    },
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/anomaly-cancellation",
+      "equation_labels": [
+        "bulk-topological-variation",
+        "inflow-balance"
+      ],
+      "notes": "Original anomaly-inflow ingredient, now represented by a dedicated source-grade theorem in the KB."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Lattice realization of the same continuum consistency story."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Canonical theorem family for the continuum edge-mode realization of the integer Hall boundary.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because Lecture Three has its own flagship theorem: the bulk Hall response together with a sign-changing Dirac mass produces a boundary-localized chiral mode. The proof is only clear when the parity-anomaly, Jackiw-Rebbi, and anomaly-inflow pieces are kept explicit.",
+  "prerequisite_story": "Know the half-level response of one massive Dirac fermion, the folded sign-changing-mass wall equation, the Jackiw-Rebbi zero-mode theorem, and the Callan-Harvey anomaly-inflow identity.",
+  "local_context_story": "In Witten Lecture Three, this is the culmination of the boundary discussion. Doubling cancels the bulk half anomaly, folding turns the boundary into a sign-changing-mass problem, and the resulting wall mode restores consistency with the integer bulk response.",
+  "forward_links_story": "This theorem is the boundary companion of the Lecture Two Hall-response theorem: the same integer k that labels the bulk Hall term also fixes the chirality that the boundary mode must carry.",
+  "canonical_questions": [
+    "Which steps connect the parity anomaly to the final chiral boundary mode?",
+    "Why does the sign-changing mass matter rather than only the existence of a boundary?",
+    "How does the boundary mode restore consistency with the integer bulk Hall response?"
+  ],
+  "scope_boundaries": [
+    "This theorem is a continuum bulk-boundary consistency theorem and should not be conflated with the distinct lattice no-go branch.",
+    "The theorem assumes the integer bulk Hall response has already been identified; it does not rederive the Hall integer from scratch."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\frac{\\operatorname{sign}m}{2}\\,\\mathcal I_{\\mathrm{CS}}(A)",
+      "kind": "display",
+      "equation_label": "uftof",
+      "notes": "One massive Dirac fermion carries a half-level parity anomaly."
+    },
+    {
+      "latex": "\\left(\\slashed{\\partial} - m\\,\\operatorname{sign}(x_1)\\right)\\widehat\\psi = 0",
+      "kind": "display",
+      "equation_label": "gift",
+      "notes": "Boundary problem rewritten as a sign-changing-mass Dirac equation."
+    },
+    {
+      "latex": "\\widehat\\psi = e^{-m|x_1|}\\,\\psi_{\\parallel},\\qquad \\gamma_1\\psi_{\\parallel} = -\\psi_{\\parallel},\\qquad \\slashed{\\partial}^{\\parallel}\\psi_{\\parallel}=0",
+      "kind": "display",
+      "equation_label": "trogg",
+      "notes": "Chiral boundary mode localized at the wall."
+    }
+  ],
+  "obligation_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "equation_context_ids": [
+    "equation_context:lecture-three-parity-anomaly-half-level",
+    "equation_context:lecture-three-sign-changing-mass-wall-equation",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "dependency_graph_snapshot_id": "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "formal_theory_role": "trusted_target",
+  "statement_graph_role": "target_statement",
+  "statement_graph_parents": [
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion"
+  ],
+  "statement_graph_children": [
+    "proof_state:lecture-three-domain-wall-edge-mode"
+  ],
+  "faithfulness_status": "reviewed",
+  "faithfulness_strategy": "Keep the trusted theorem limited to the continuum bulk-boundary consistency statement proved from sign-changing mass, Jackiw-Rebbi localization, and anomaly inflow, while leaving the lattice no-go branch outside the theorem.",
+  "faithfulness_notes": "The KB expands the argument into source-grade subclaims but keeps the trusted target theorem at the same scope as the source.",
+  "comparator_audit_status": "passed",
+  "comparator_risks": [
+    "Do not let the continuum theorem drift into a claim about lattice charge cancellation or species doubling."
+  ],
+  "provenance_kind": "mixed",
+  "attribution_requirements": [
+    "Retain attribution to Witten for the theorem statement and to Jackiw-Rebbi / Callan-Harvey for the explicit neighboring source-grade ingredients."
+  ],
+  "prerequisite_closure_status": "closed",
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "sign_changing_dirac_mass_supports_chiral_edge_mode",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "Work in the continuum doubled 2+1-dimensional Dirac model with a folded boundary producing a sign-changing mass profile.",
+    "Treat the parity-anomaly half level, Jackiw-Rebbi zero mode, and anomaly-inflow cancellation as explicit local sublemmas."
+  ],
+  "lean_prerequisite_ids": [
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change"
+  ],
+  "formalization_blockers": [
+    "A reusable Lean-side analytic interface for domain-wall Dirac operators and localized zero modes is still missing.",
+    "The continuum edge-mode theorem is still intentionally separated from the distinct lattice regularization story and needs a formal bridge layer if those branches are to be combined."
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for the flagship Lecture Three boundary-mode theorem, including how the bulk topological term and edge mode fit together."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:show-callan-harvey-inflow-cancels-boundary-anomaly",
+    "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "question_oracle:show-callan-harvey-inflow-cancels-boundary-anomaly",
+    "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
+    "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
+    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

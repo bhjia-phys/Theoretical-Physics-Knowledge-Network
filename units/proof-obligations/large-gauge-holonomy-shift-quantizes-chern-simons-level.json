@@ -1,0 +1,69 @@
+{
+  "id": "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+  "type": "proof_obligation",
+  "title": "Large-Gauge Holonomy Shift Quantizes The Chern-Simons Level",
+  "summary": "Discharge the proof obligation that the Hall-response coefficient k is integer by evaluating the Chern-Simons functional on S^2 times S^1 with unit flux and demanding invariance under the large-gauge holonomy shift.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-obligation",
+    "large-gauge-invariance",
+    "chern-simons"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The effective action appears in the path integral exponent.",
+    "The gauge field is compact, so large gauge transformations are physically allowed."
+  ],
+  "regime": "Closed-manifold quantization argument.",
+  "scope": "First proof obligation in the Lecture Two flagship theorem family.",
+  "dependencies": [
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "equation_context:lecture-two-large-gauge-holonomy-shift"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "equation_labels": [
+        "unitf",
+        "nifty",
+        "prif"
+      ],
+      "notes": "The closed-manifold large-gauge step that forces integrality of k."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the integrality of the Chern-Simons level.",
+  "pass_conditions": [
+    "The answer introduces the unit-flux background on S^2 times S^1.",
+    "The answer states that the Chern-Simons functional shifts by 2pi under the allowed large gauge transformation.",
+    "The answer concludes that exp(i k I_CS) is gauge invariant only when k is integral."
+  ],
+  "mandatory_logical_moves": [
+    "Evaluate the Chern-Simons functional on the unit-flux background.",
+    "Apply the large gauge transformation that shifts the temporal holonomy by 2pi.",
+    "Translate invariance of the path integral into integrality of k."
+  ],
+  "common_failure_patterns": [
+    "Asserting k is integer without mentioning the S^2 times S^1 background.",
+    "Quoting gauge invariance abstractly without the 2pi action shift.",
+    "Using Hall-current quantization before the level has been quantized."
+  ],
+  "grading_rubric": [
+    "Full credit requires the actual large-gauge argument, not only the slogan that Chern-Simons levels are quantized.",
+    "Partial credit is appropriate if the answer knows the conclusion but omits the holonomy-shift mechanism."
+  ],
+  "retrieval_hints": [
+    "Use when the proof must justify the integer nature of k before any Hall-current or Berry-curvature step."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

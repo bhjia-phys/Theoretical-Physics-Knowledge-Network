@@ -1,0 +1,106 @@
+{
+  "id": "theorem_family:weyl-node-no-go-consistency",
+  "type": "theorem_family",
+  "title": "Weyl-Node No-Go Consistency Family",
+  "summary": "Canonical theorem family for the Lecture One lattice no-go story: local Weyl linearization, degree-theory and Berry-flux node charges, Witten's punctured-zone Stokes proof, Friedan's spectral-projection and cobordism route, and the explicit separation between continuum anomaly motivation and the actual compact-BZ theorem.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "canonical_family": "topological-phases/weyl-node-no-go",
+  "tags": [
+    "theorem-family",
+    "nielsen-ninomiya",
+    "weyl-node"
+  ],
+  "aliases": [
+    "Lecture One lattice no-go family"
+  ],
+  "assumptions": [
+    "The family groups the local Weyl and Berry-flux units with both the Witten and Friedan theorem routes.",
+    "Continuum anomaly language belongs as motivation and comparison, not as the theorem proof itself."
+  ],
+  "regime": "Cross-source reusable theorem family.",
+  "scope": "Family-level grouping for the Lecture One lattice no-go theorem and its neighboring source-grade routes.",
+  "dependencies": [
+    "proof_state:lecture-one-weyl-node-no-go"
+  ],
+  "related_units": [
+    "source_fusion_record:weyl-node-no-go-cross-source-fusion",
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go",
+    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "wnn",
+        "cl"
+      ],
+      "notes": "Witten's lecture-level punctured-zone Stokes proof."
+    },
+    {
+      "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+      "section": "paper/chern-character-and-cobordism",
+      "equation_labels": [
+        "cobordism-chern-number-zero"
+      ],
+      "notes": "Friedan's cited rigorous route via spectral bundles and characteristic classes."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Lattice parity-anomaly realization used to keep motivation distinct from proof."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Family object for the Lecture One Weyl-node and lattice no-go theorem branch.",
+  "family_member_ids": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_state:lecture-one-weyl-node-no-go",
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:berry-curvature-closedness-repeats-stokes-sum",
+    "proof_fragment:friedan-spectral-projection-localizes-the-chiral-current-on-the-spectrum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "proof_fragment:continuum-parity-anomaly-does-not-establish-lattice-charge-cancellation",
+    "bridge:continuum-anomaly-to-lattice-no-go"
+  ],
+  "retrieval_hints": [
+    "Use when a query spans local Weyl-node geometry, the lattice no-go theorem, and the anomaly-versus-lattice scope boundary."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:define-weyl-node-with-assumptions",
+    "regression_question:reconstruct-local-weyl-linearization",
+    "regression_question:prove-nielsen-ninomiya-by-stokes",
+    "regression_question:explain-berry-flux-version-of-node-charge",
+    "regression_question:separate-anomaly-intuition-from-lattice-proof"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:define-weyl-node-with-assumptions",
+    "question_oracle:reconstruct-local-weyl-linearization",
+    "question_oracle:prove-nielsen-ninomiya-by-stokes",
+    "question_oracle:explain-berry-flux-version-of-node-charge",
+    "question_oracle:separate-anomaly-intuition-from-lattice-proof"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:witten-lecture-one-2026-03-21-cited-recovery",
+    "regression_run:topological-phases-core-2026-03-21-lecture-one-cited-recovery"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "created_at": "2026-03-21",
+  "updated_at": "2026-03-21"
+}

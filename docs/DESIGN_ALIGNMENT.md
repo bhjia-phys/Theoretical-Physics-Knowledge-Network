@@ -7,9 +7,21 @@ This repository mirrors the same backend assumptions used by the current AITP `L
 - typed object store rather than note blobs;
 - explicit edge layer;
 - deterministic retrieval-facing indexes;
-- source-grounded reusable units with compact summaries.
+- source-grounded reusable units with compact summaries;
+- promotion based on content quality gates rather than schema completeness alone.
 
 The repo is independent from the AITP runtime, but the contracts are shaped so it can later act as an external `L2` backend or seed corpus.
+
+## Paper-Quality Lesson
+
+Paper ingestion is only useful if the resulting notes are actually understandable.
+
+This repository therefore treats the following as first-class quality targets:
+
+- self-interrogation after note writing;
+- detailed derivation visibility when the source supports it;
+- explicit context links across a paper's argument spine;
+- automatic `L0` follow-up when a cited background result is needed to make the note truly clear.
 
 ## LeanCat Lesson
 
@@ -31,7 +43,6 @@ That is why each unit records `formalization_status` and can point toward later 
 This repository keeps the same principle on the human-facing side:
 
 - topic-first navigation in `portal/`;
-- hand-curated example mirrors in `human-mirror/`;
 - concise summaries;
 - equations and models surfaced alongside concepts instead of hidden behind implementation details.
 

@@ -1,0 +1,129 @@
+{
+  "id": "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+  "type": "proof_fragment",
+  "title": "Berry-Curvature Trace Equals Projector Commutator",
+  "summary": "For a smooth occupied-state frame U and projector P = U U dagger, the traced Berry curvature satisfies Tr F_12 = i Tr(P[partial_1 P, partial_2 P]), giving the local identity behind the TKNN projector formula.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-fragment",
+    "tknn",
+    "berry-curvature",
+    "projector-formula"
+  ],
+  "aliases": [
+    "trace of Berry curvature equals the projector commutator density"
+  ],
+  "assumptions": [
+    "A smooth local orthonormal occupied-state frame exists on the patch under discussion.",
+    "The occupied projector has constant rank on the patch."
+  ],
+  "regime": "Local differential-geometric rewrite inside the TKNN band invariant.",
+  "scope": "Archival TKNN bridge between Berry-connection notation and the occupied-projector integrand.",
+  "dependencies": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "concept:berry-connection",
+    "concept:berry-curvature"
+  ],
+  "related_units": [
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "Archival geometric identity linking the Hall-conductance integrand to occupied-bundle curvature."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "Witten states the Hall integer as the first Chern class of the filled-band bundle."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Local TKNN identity making the projector commutator and the traced Berry curvature interchangeable.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the TKNN formula is often quoted either in Berry-curvature language or in projector language, and the equivalence between those two expressions is a real intermediate lemma rather than a slogan.",
+  "prerequisite_story": "Know the occupied-state bundle, the non-abelian Berry connection of a local orthonormal frame, and the algebraic identities satisfied by an orthogonal projector P with P^2 = P.",
+  "local_context_story": "Inside the Lecture Two Hall-response branch, this is the archival TKNN bridge that turns Witten's first-Chern-class statement into the explicit occupied-projector density used in microscopic Hall-conductance formulas.",
+  "forward_links_story": "Once this identity is established, the Brillouin-zone integral of Tr F can be rewritten as the projector formula for k', and then the band invariant can be matched to the many-body twist-angle invariant.",
+  "canonical_questions": [
+    "Why does the traced non-abelian curvature reduce to i Tr(P dP wedge dP)?",
+    "Which algebraic identity from P^2 = P kills the unwanted terms?",
+    "Why is this only a local frame computation even though the final Chern number is global?"
+  ],
+  "scope_boundaries": [
+    "This is a local bundle identity on a smooth patch with constant occupied-band rank; global integrality is a separate step.",
+    "The lemma concerns the traced curvature of the occupied bundle, not an arbitrary matrix-valued connection."
+  ],
+  "math_expressions": [
+    {
+      "latex": "U^{\\dagger}U=\\mathbf{1},\\qquad P=UU^{\\dagger}",
+      "kind": "display",
+      "notes": "Occupied frame and projector on a local patch."
+    },
+    {
+      "latex": "\\mathcal{A}=U^{\\dagger}\\,\\mathrm{d}U,\\qquad \\mathcal{F}=\\mathrm{d}\\mathcal{A}+\\mathcal{A}\\wedge\\mathcal{A}=\\mathrm{d}U^{\\dagger}(\\mathbf{1}-P)\\wedge \\mathrm{d}U",
+      "kind": "display",
+      "notes": "Berry connection and curvature in a local occupied frame."
+    },
+    {
+      "latex": "\\operatorname{Tr}\\mathcal{F}= i\\,\\operatorname{Tr}(P\\,\\mathrm{d}P\\wedge \\mathrm{d}P)= i\\,\\operatorname{Tr}\\!\\left(P[\\partial_{p_1}P,\\partial_{p_2}P]\\right)\\,\\mathrm{d}p_1\\wedge \\mathrm{d}p_2",
+      "kind": "display",
+      "notes": "Identity relating the traced curvature density to the projector commutator."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "U",
+      "meaning": "matrix whose columns are a local orthonormal occupied-state frame"
+    },
+    {
+      "symbol": "P",
+      "meaning": "occupied-band projector UU dagger"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "non-abelian Berry-curvature two-form of the occupied bundle"
+    }
+  ],
+  "step_justification": [
+    "Differentiate U dagger U equals 1 to relate dU dagger U and U dagger dU.",
+    "Use P = UU dagger and P squared equals P to rewrite dP in terms of transitions between occupied and empty subspaces.",
+    "Expand Tr F in the local frame and collapse the result to i Tr(P dP wedge dP)."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "berry_curvature_trace_eq_projector_commutator",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work on a smooth local patch with a finite-rank occupied subbundle and a local orthonormal frame U.",
+    "Use standard matrix-valued differential-form identities instead of rederiving them from first principles in this lemma."
+  ],
+  "lean_prerequisite_ids": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "concept:berry-connection",
+    "concept:berry-curvature"
+  ],
+  "formalization_blockers": [
+    "The Lean-side interface for matrix-valued differential forms and wedge-product trace identities is still missing.",
+    "The passage between local frame notation U and the abstract occupied bundle is not yet packaged as a reusable formal equivalence."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation must show exactly how the Berry-curvature language becomes the projector formula."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

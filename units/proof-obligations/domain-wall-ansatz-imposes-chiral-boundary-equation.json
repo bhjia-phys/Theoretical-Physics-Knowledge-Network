@@ -1,0 +1,67 @@
+{
+  "id": "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+  "type": "proof_obligation",
+  "title": "Domain-Wall Ansatz Imposes Chiral Boundary Equation",
+  "summary": "Discharge the proof obligation that inserting the localized wall ansatz into the sign-changing-mass Dirac equation forces a definite gamma_1 chirality and leaves a reduced tangential Dirac equation for the boundary mode.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-obligation",
+    "jackiw-rebbi",
+    "boundary-chirality"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The wall profile depends only on x_1 and the tangential dynamics live on the boundary."
+  ],
+  "regime": "Localized domain-wall mode derivation.",
+  "scope": "Fourth proof obligation in the Lecture Three theorem family.",
+  "dependencies": [
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "The localized ansatz leads to the chiral boundary equation."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the boundary chirality condition induced by the wall ansatz.",
+  "pass_conditions": [
+    "The answer writes the localized ansatz.",
+    "The answer substitutes it into the sign-changing-mass equation.",
+    "The answer derives both the gamma_1 chirality condition and the tangential Dirac equation."
+  ],
+  "mandatory_logical_moves": [
+    "Factor out the exponential wall profile.",
+    "Separate the normal and tangential pieces of the Dirac equation.",
+    "Identify the surviving chiral boundary equation."
+  ],
+  "common_failure_patterns": [
+    "Writing the final edge mode without showing how the chirality projection appears.",
+    "Failing to distinguish the normal profile from the tangential spinor."
+  ],
+  "grading_rubric": [
+    "Full credit requires the substitution step and the explicit reduced equation.",
+    "Partial credit is appropriate if the answer states the wall-mode form but not the derivation."
+  ],
+  "retrieval_hints": [
+    "Use when the derivation must explain where the chiral boundary equation comes from."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

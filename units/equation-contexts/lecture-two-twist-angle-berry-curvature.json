@@ -1,0 +1,91 @@
+{
+  "id": "equation_context:lecture-two-twist-angle-berry-curvature",
+  "type": "equation_context",
+  "title": "Lecture Two Twist-Angle Berry Curvature Context",
+  "summary": "This equation context records how Witten turns the twist angles into adiabatic coordinates, reads off the Berry connection on the twist-angle torus, and integrates its curvature to recover the Hall-response level.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "equation-context",
+    "twisted-boundary-conditions",
+    "berry-curvature"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The finite-volume ground state remains nondegenerate over the twist-angle torus.",
+    "Only the one-derivative adiabatic term is needed to read off the Berry connection."
+  ],
+  "regime": "Many-body adiabatic transport on the torus of spatial holonomies.",
+  "scope": "Equation-level context for the many-body part of the Lecture Two equivalence proof.",
+  "dependencies": [
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "related_units": [
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "mizz",
+        "roff",
+        "coff",
+        "plizz"
+      ],
+      "notes": "The adiabatic twist-angle route to the many-body Chern number."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Equation context for the adiabatic Berry-connection computation on the twist-angle torus.",
+  "math_expressions": [
+    {
+      "latex": "I' = -\\frac{k}{2\\pi}\\int dt\\,\\alpha_1\\frac{d\\alpha_2}{dt}",
+      "kind": "display",
+      "equation_label": "mizz",
+      "notes": "The effective action reduced to the twist-angle adiabatic term."
+    },
+    {
+      "latex": "\\nabla = \\left(\\frac{\\partial}{\\partial \\alpha_1},\\frac{\\partial}{\\partial \\alpha_2}+i\\frac{k\\alpha_1}{2\\pi}\\right)",
+      "kind": "display",
+      "equation_label": "roff",
+      "notes": "Berry connection on the torus of twist angles."
+    },
+    {
+      "latex": "\\widehat{\\mathcal F}_{\\alpha_1\\alpha_2} = -i\\left[\\frac{D}{D\\alpha_1},\\frac{D}{D\\alpha_2}\\right] = \\frac{k}{2\\pi}",
+      "kind": "display",
+      "equation_label": "coff",
+      "notes": "Constant Berry curvature fixed by the Hall-response level."
+    },
+    {
+      "latex": "\\widehat{k}' = \\int_0^{2\\pi}d\\alpha_1 d\\alpha_2\\,\\frac{\\widehat{\\mathcal F}}{2\\pi} = k",
+      "kind": "display",
+      "equation_label": "plizz",
+      "notes": "The many-body Chern number equals the macroscopic Hall-response coefficient."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\alpha_1,\\alpha_2",
+      "meaning": "twist angles or background holonomies along the two spatial cycles"
+    },
+    {
+      "symbol": "\\widehat{\\mathcal F}",
+      "meaning": "Berry curvature over the twist-angle torus"
+    },
+    {
+      "symbol": "\\widehat{k}'",
+      "meaning": "many-body Chern number defined from the twist-angle Berry curvature"
+    }
+  ],
+  "retrieval_hints": [
+    "Open this when the answer must reconstruct the Berry-phase argument step by step."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

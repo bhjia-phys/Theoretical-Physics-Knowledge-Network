@@ -1,0 +1,77 @@
+{
+  "id": "question_oracle:prove-nielsen-ninomiya-by-stokes",
+  "type": "question_oracle",
+  "title": "Oracle For Proving Nielsen-Ninomiya By Stokes",
+  "summary": "Detailed oracle for the flagship lattice no-go theorem proof question, including the cited Friedan reformulation of the same theorem.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "question-oracle",
+    "derivation",
+    "nielsen-ninomiya"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The proof should follow the punctured-zone Stokes route explicitly."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the degree-theoretic proof of charge cancellation.",
+  "dependencies": [
+    "regression_question:prove-nielsen-ninomiya-by-stokes"
+  ],
+  "related_units": [
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "wnn",
+        "weta",
+        "cl"
+      ],
+      "notes": "The proof must expose the local degree formula, closedness, the punctured-zone boundary sum, and the cited Friedan reformulation."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:prove-nielsen-ninomiya-by-stokes.",
+  "mandatory_unit_ids": [
+    "proof_fragment:pullback-area-form-represents-local-degree",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum",
+    "proof_fragment:friedan-chiral-index-is-the-chern-number-of-the-spectral-bundle-boundary",
+    "theorem:nielsen-ninomiya-charge-cancellation"
+  ],
+  "mandatory_equation_labels": [
+    "wnn",
+    "weta",
+    "cl"
+  ],
+  "derivation_spine": [
+    "Define the local charge as the degree integral on a surrounding sphere.",
+    "Excise small balls around all bad points and define the punctured Brillouin zone.",
+    "Use the closed form on the punctured zone and apply Stokes's theorem.",
+    "Identify the boundary sum with the sum of local charges and conclude it vanishes.",
+    "State that Friedan's cited route re-expresses the same vanishing theorem as a boundary Chern number of the spectral bundle."
+  ],
+  "common_failure_patterns": [
+    "Jumping from the local charge definition directly to vanishing total charge without constructing the punctured Brillouin zone.",
+    "Mentioning Friedan's cited result as background lore instead of identifying it as an equivalent theorem route."
+  ],
+  "grading_rubric": [
+    "Pass requires the local degree formula, the punctured-zone construction, the Stokes step, the boundary-charge sum, and the cited Friedan reformulation.",
+    "Partial is appropriate if the compact-BZ Stokes proof is mostly present but the Friedan equivalence or one nontrivial intermediate step is missing."
+  ],
+  "failure_triggers": [
+    "Fail if the answer states only the theorem without the punctured-zone construction.",
+    "Fail if the answer replaces the proof with anomaly language."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

@@ -23,7 +23,8 @@
   ],
   "related_units": [
     "concept:berry-curvature",
-    "equation:berry-flux-topological-charge"
+    "equation:berry-flux-topological-charge",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle"
   ],
   "source_anchors": [
     {
@@ -40,10 +41,53 @@
   "validation_status": "source-grounded",
   "maturity": "stable",
   "representation": "Gauge-invariant curvature two-form associated with Berry transport.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because once the Berry connection is introduced, the next reusable mathematical object is its curvature two-form F. This is the quantity whose surface integral is topological and whose closedness drives the Stokes arguments in Lecture One.",
+  "prerequisite_story": "Know the Berry connection A on the occupied-state line bundle and the abelian rule F = dA. The domain must stay inside a smooth region of the filled-state bundle so that F is an honest differential two-form there.",
+  "local_context_story": "In Witten Lecture One, F is the explicit object whose integral over a sphere around a bad point gives the local node charge. It is also the representative of the first Chern class that turns bundle topology into a calculable surface integral.",
+  "forward_links_story": "This quantity feeds directly into the local charge formula w_alpha = integral F/2pi, the punctured-zone dF = 0 argument, and later the two-dimensional TKNN invariant over the Brillouin torus.",
+  "canonical_questions": [
+    "Why is F the gauge-invariant object while A is gauge dependent?",
+    "Why does integrating F over a closed surface produce an integer Chern number?",
+    "What is the precise meaning of dF = 0 away from singularities?",
+    "How is this same two-form reused in Lecture Two for the TKNN invariant?"
+  ],
+  "scope_boundaries": [
+    "The two-form is regular only on the smooth domain of the occupied bundle; singular bad points are excluded from the local differential-geometric treatment.",
+    "In a higher-rank occupied bundle, one keeps track of a matrix-valued non-abelian curvature before forming gauge-invariant traced quantities."
+  ],
+  "math_expressions": [
+    {
+      "latex": "F = \\mathrm dA",
+      "notes": "Definition of the Berry-curvature two-form in the abelian rank-one case."
+    },
+    {
+      "latex": "\\int_{\\Sigma} \\frac{F}{2\\pi} = c_1(\\mathcal L|_{\\Sigma})",
+      "equation_label": "fc",
+      "notes": "The integral over a closed surface Sigma measures the first Chern number of the occupied-state line bundle restricted to Sigma."
+    },
+    {
+      "latex": "\\mathrm dF = 0",
+      "equation_label": "wif",
+      "notes": "Closedness of the curvature away from singular sources."
+    }
+  ],
   "symbols": [
     {
       "symbol": "F",
-      "meaning": "Berry curvature two-form"
+      "meaning": "Berry-curvature two-form"
+    },
+    {
+      "symbol": "A",
+      "meaning": "Berry connection one-form"
+    },
+    {
+      "symbol": "\\Sigma",
+      "meaning": "closed oriented surface in parameter or momentum space"
+    },
+    {
+      "symbol": "\\mathcal L",
+      "meaning": "occupied-state line bundle"
     }
   ],
   "failure_modes": [
@@ -57,5 +101,5 @@
     "Use when a query asks for the geometric meaning of Berry curvature."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-21"
 }

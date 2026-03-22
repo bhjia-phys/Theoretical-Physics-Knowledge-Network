@@ -1,0 +1,150 @@
+{
+  "id": "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+  "type": "theorem",
+  "title": "Jackiw-Rebbi Zero Mode For A Sign-Changing Dirac Mass",
+  "summary": "If a Dirac mass profile changes sign across an interface, then the Dirac operator admits a normalizable wall-localized zero mode whose envelope is the exponential of minus the mass integral.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "theorem",
+    "jackiw-rebbi",
+    "domain-wall",
+    "zero-mode"
+  ],
+  "aliases": [
+    "Jackiw-Rebbi wall-mode theorem"
+  ],
+  "assumptions": [
+    "The asymptotic masses at x_1 to plus and minus infinity have opposite sign.",
+    "The tangential momentum is tuned to the interface zero-mode branch when solving the transverse localization problem."
+  ],
+  "regime": "Continuum Dirac operator with a one-dimensional sign-changing mass profile.",
+  "scope": "Reusable source-grade zero-mode theorem behind the Lecture Three domain-wall derivation.",
+  "dependencies": [
+    "definition:jackiw-rebbi-domain-wall-zero-mode",
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change"
+  ],
+  "related_units": [
+    "theorem_family:domain-wall-edge-mode-consistency",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/isolated-zero-mode",
+      "equation_labels": [
+        "soliton-dirac-zero-mode"
+      ],
+      "notes": "Original source of the sign-changing-mass zero-mode mechanism."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "Witten uses the Jackiw-Rebbi mechanism in the folded Hall-boundary problem."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Source-grade zero-mode theorem extracted from the sign-changing-mass Dirac equation.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the Jackiw-Rebbi mechanism is a reusable theorem in its own right, not only a citation inside the Hall-boundary story. It is the exact local statement that turns a sign-changing mass profile into a localized zero mode.",
+  "prerequisite_story": "Know the folded sign-changing-mass Dirac equation, the separation ansatz for the transverse profile, and the normalizability criterion for a wall-localized state.",
+  "local_context_story": "In the current Lecture Three branch, this theorem is the source-grade local zero-mode result inserted between the wall-equation derivation and the anomaly-inflow interpretation.",
+  "forward_links_story": "After the zero mode is established, the Callan-Harvey inflow equation explains why that boundary mode is precisely what the bulk Hall response requires for gauge consistency.",
+  "canonical_questions": [
+    "What exact sign condition on the mass profile guarantees the zero mode?",
+    "How does the exponential envelope arise from the wall Dirac equation?",
+    "Why is this theorem a local ingredient rather than the whole edge-mode consistency story?"
+  ],
+  "scope_boundaries": [
+    "This theorem establishes the local wall zero mode but does not by itself compute the anomaly it carries.",
+    "The theorem is continuum and local to the interface; it is not the same statement as a lattice bulk-boundary correspondence theorem."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\left(\\gamma^1\\partial_1+\\gamma^{\\parallel}\\cdot p_{\\parallel}-m(x_1)\\right)\\psi=0",
+      "kind": "display",
+      "notes": "Dirac equation with a wall-dependent mass profile."
+    },
+    {
+      "latex": "\\psi(x_1,x_{\\parallel})=f(x_1)\\psi_{\\parallel}(x_{\\parallel}),\\qquad \\gamma_1\\psi_{\\parallel}=-\\psi_{\\parallel}",
+      "kind": "display",
+      "notes": "Projected wall ansatz."
+    },
+    {
+      "latex": "f(x_1)=\\exp\\!\\left(-\\int_0^{x_1}m(y)\\,\\mathrm dy\\right)",
+      "kind": "display",
+      "notes": "Normalizable envelope when the mass flips sign."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "m(x_1)",
+      "meaning": "Dirac mass profile across the interface"
+    },
+    {
+      "symbol": "f(x_1)",
+      "meaning": "transverse localization envelope of the zero mode"
+    },
+    {
+      "symbol": "\\psi_{\\parallel}",
+      "meaning": "spinor tangent to the interface"
+    }
+  ],
+  "failure_modes": [
+    "If the mass does not change sign, the exponential profile fails to decay on both sides and this zero-mode construction is not normalizable."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "jackiw_rebbi_zero_mode_for_sign_changing_dirac_mass",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "Work with a continuum Dirac operator whose mass profile has opposite asymptotic signs on the two sides of the interface.",
+    "Treat the tangential zero-mode branch and the wall ansatz as accepted setup data for the theorem."
+  ],
+  "lean_prerequisite_ids": [
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change"
+  ],
+  "formalization_blockers": [
+    "The analytic existence statement for localized zero modes of sign-changing-mass Dirac operators is not yet packaged as a reusable Lean theorem.",
+    "The relation between the local zero mode and the later anomaly-carrying chiral boundary theory remains a separate bridge theorem."
+  ],
+  "retrieval_hints": [
+    "Use when the answer must reconstruct the actual Jackiw-Rebbi mode instead of citing the paper name only."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "regression_question:derive-boundary-chirality-after-doubling-and-folding"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+    "question_oracle:derive-boundary-chirality-after-doubling-and-folding"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
+    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof"
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

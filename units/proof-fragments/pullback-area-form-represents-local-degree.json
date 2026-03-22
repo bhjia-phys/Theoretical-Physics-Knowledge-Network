@@ -1,0 +1,67 @@
+{
+  "id": "proof_fragment:pullback-area-form-represents-local-degree",
+  "type": "proof_fragment",
+  "title": "Pullback Of The Area Form Represents The Local Degree",
+  "summary": "The local charge of an isolated node is the degree of the normalized map from a small sphere in momentum space to the target sphere, computed by pulling back the normalized area form.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "topological-charge",
+  "tags": [
+    "proof-fragment",
+    "degree-theory",
+    "winding-number"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The enclosing sphere does not intersect any other bad point.",
+    "The normalized map is well-defined on the sphere."
+  ],
+  "regime": "Degree-theoretic description of an isolated point node.",
+  "scope": "Local proof fragment that identifies the charge with a pullback integral.",
+  "dependencies": [
+    "equation:winding-number-as-s2-to-s2-degree",
+    "quantity:winding-number"
+  ],
+  "related_units": [
+    "theorem:nielsen-ninomiya-charge-cancellation",
+    "proof_fragment:punctured-brillouin-zone-boundary-sum"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "wnn",
+        "weta"
+      ],
+      "notes": "Witten's charge formula is the degree of the normalized map to the target two-sphere."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Local degree formula for the charge of an isolated node.",
+  "math_expressions": [
+    {
+      "latex": "w_\\alpha = \\int_{S^2_\\alpha} \\widehat b^{\\,*}(\\eta)",
+      "kind": "display",
+      "equation_label": "wnn",
+      "notes": "Charge as the degree of the normalized map \\widehat b."
+    },
+    {
+      "latex": "\\mathrm d\\eta = 0",
+      "kind": "display",
+      "equation_label": "weta",
+      "notes": "Closedness of the normalized area form on the target sphere."
+    }
+  ],
+  "step_justification": [
+    "Normalizing the Pauli-vector coefficients defines a map from the enclosing sphere to S^2.",
+    "The pullback of the normalized area form measures how many times the domain sphere wraps the target sphere.",
+    "This integer is the local charge of the bad point."
+  ],
+  "retrieval_hints": [
+    "Use when a proof must move from the local Weyl cone to the degree-theoretic notion of charge."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

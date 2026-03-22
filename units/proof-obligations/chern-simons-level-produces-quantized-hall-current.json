@@ -1,0 +1,70 @@
+{
+  "id": "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+  "type": "proof_obligation",
+  "title": "Chern-Simons Level Produces Quantized Hall Current",
+  "summary": "Discharge the proof obligation that the same integer k appearing in the Chern-Simons action becomes the observable Hall conductivity when the effective action is differentiated with respect to the background gauge field.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-obligation",
+    "hall-current",
+    "response-theory"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The current is read from the variation of the effective action.",
+    "The background electric field is applied along x_1."
+  ],
+  "regime": "Macroscopic response theory.",
+  "scope": "Second proof obligation in the Lecture Two theorem chain.",
+  "dependencies": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "equation_context:lecture-two-hall-current-from-chern-simons"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "dependency_graph_snapshot:lecture-two-hall-response-chern-number-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "equation_labels": [
+        "curr",
+        "zurr",
+        "murr"
+      ],
+      "notes": "The functional-derivative step turns the quantized level into the Hall current."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the response-theory route from k to J_2 = k E_1 / 2pi.",
+  "pass_conditions": [
+    "The answer starts from the effective Chern-Simons action with level k.",
+    "The answer differentiates with respect to the background gauge field to define the induced current.",
+    "The answer derives the transverse Hall current J_2 = k E_1 / 2pi."
+  ],
+  "mandatory_logical_moves": [
+    "Write the integer-level effective action.",
+    "Apply the functional derivative definition of current.",
+    "Use the antisymmetric structure of the Chern-Simons term to identify the Hall response."
+  ],
+  "common_failure_patterns": [
+    "Quoting the Hall current without showing its origin in the effective action.",
+    "Treating k as a microscopic band invariant before the response-theory step is complete.",
+    "Confusing the electric-field direction with the current direction."
+  ],
+  "grading_rubric": [
+    "Full credit requires the variation step and the transverse-current interpretation.",
+    "Partial credit is appropriate if the final current formula is stated but the derivation route is skipped."
+  ],
+  "retrieval_hints": [
+    "Use when the response-theory part of the theorem needs to be reconstructed explicitly."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

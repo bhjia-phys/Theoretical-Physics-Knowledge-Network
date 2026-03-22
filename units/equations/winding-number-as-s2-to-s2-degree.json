@@ -40,6 +40,20 @@
   "validation_status": "source-grounded",
   "maturity": "working",
   "representation": "Integral formula for the degree of the normalized b-map.",
+  "math_expressions": [
+    {
+      "latex": "w_\\alpha = \\int_{S^2_\\alpha}\\widehat b^{\\,*}(\\eta)",
+      "kind": "display",
+      "equation_label": "wnn",
+      "notes": "Charge as the degree of the normalized map."
+    },
+    {
+      "latex": "\\mathrm d\\eta = 0",
+      "kind": "display",
+      "equation_label": "weta",
+      "notes": "Closed normalized area form on the target sphere."
+    }
+  ],
   "equation_refs": [],
   "quantity_refs": [
     "quantity:winding-number"
@@ -65,5 +79,5 @@
     "Use for topological-charge calculations around a Weyl node."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-19"
 }

@@ -1,0 +1,51 @@
+{
+  "id": "notation_family:hall-response-chern-number-notation",
+  "type": "notation_family",
+  "title": "Hall-Response / Chern-Number Notation Family",
+  "summary": "Canonical notation family for the symbols k, k', \\widehat{k}', and the twist-angle Berry data appearing across the Lecture Two Hall-response theorem family.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "notation-family",
+    "lecture-two",
+    "symbols"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Several nearby units reuse the same symbols with slightly different local emphasis."
+  ],
+  "regime": "Shared notation for the Hall-response theorem family.",
+  "scope": "Notation family for the Lecture Two response and Berry-curvature branch.",
+  "dependencies": [],
+  "related_units": [
+    "theorem_family:hall-response-chern-number-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "notes": "Macroscopic response symbols."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Twist-angle Berry-curvature symbols."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Notation-family object for the Lecture Two flagship theorem family.",
+  "family_member_ids": [
+    "notation_map:lecture-two-hall-response-symbols",
+    "equation_context:lecture-two-large-gauge-holonomy-shift",
+    "equation_context:lecture-two-hall-current-from-chern-simons",
+    "equation_context:lecture-two-twist-angle-berry-curvature"
+  ],
+  "retrieval_hints": [
+    "Use when an answer mixes k, k', and \\widehat{k}' and needs a stable notation entry point."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

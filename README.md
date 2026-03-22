@@ -20,7 +20,7 @@ This repository is intended to be publishable as a standalone open-source projec
 The current exemplar source is:
 
 - Edward Witten, *Three Lectures On Topological Phases Of Matter*, arXiv:1510.07698v2
-- current scope: Lecture One only
+- current stage-two scope: Lecture One proof-grade exemplar plus promoted Lecture Two / Three flagship theorem families, topic-level regression assets, and explicit future-buffer routing
 
 ## Core Contracts
 
@@ -43,6 +43,8 @@ theoretical-physics-knowledge-network/
 ├── indexes/         # generated retrieval-facing indexes
 ├── portal/          # generated human-readable projections
 ├── human-mirror/    # hand-curated example mirror layer
+├── queues/          # durable unresolved-work surfaces
+├── regressions/     # topic-level regression suites and logs
 ├── examples/        # worked examples and source-specific notes
 ├── scripts/         # minimal protocol/build scripts
 └── .github/         # CI for protocol/build checks
@@ -67,11 +69,11 @@ The human mirror is allowed to add explanation, intuition, examples, and navigat
 ## Quick Start
 
 ```bash
-python3 scripts/kb.py check
-python3 scripts/kb.py build
+python3 scripts/check_protocol.py
+python3 scripts/build.py
 ```
 
-`python3 scripts/kb.py build` runs the protocol check before rebuilding generated outputs.
+`python3 scripts/build.py` runs the protocol check before rebuilding generated outputs.
 
 ## What The Public Skeleton Includes
 
@@ -79,7 +81,9 @@ python3 scripts/kb.py build
 - schemas in `schema/`;
 - one source manifest in `sources/`;
 - a first object cluster around Weyl nodes, Berry geometry, Nielsen-Ninomiya, and Fermi arcs;
+- promoted Lecture Two / Three theorem-family branches, proof states, proof obligations, and cited-source recovery tasks;
 - deterministic retrieval indexes and portal projections;
+- durable queues and regression assets for proof-grade topic maintenance;
 - a small `human-mirror/` example showing how a `01 Theoretical Physics` style knowledge base can remain human-facing while staying structurally compatible with `L2`.
 
 ## Current Example Mirror

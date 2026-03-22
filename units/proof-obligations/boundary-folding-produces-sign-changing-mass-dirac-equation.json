@@ -1,0 +1,68 @@
+{
+  "id": "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+  "type": "proof_obligation",
+  "title": "Boundary Folding Produces Sign-Changing Mass Dirac Equation",
+  "summary": "Discharge the proof obligation that the boundary gluing of the doubled system can be folded into a single Dirac equation on all of space with a mass term m sign(x_1).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-obligation",
+    "folding",
+    "sign-changing-mass"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The gluing condition at the boundary is the one used by Witten in the doubled system."
+  ],
+  "regime": "Folded whole-space reformulation of the boundary problem.",
+  "scope": "Third proof obligation in the Lecture Three theorem family.",
+  "dependencies": [
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "equation_context:lecture-three-sign-changing-mass-wall-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "plift",
+        "ulift",
+        "gift"
+      ],
+      "notes": "The gluing condition is rewritten as one sign-changing-mass Dirac equation."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the folding step from boundary gluing to the domain-wall equation.",
+  "pass_conditions": [
+    "The answer states the boundary gluing condition or the two opposite-mass equations.",
+    "The answer explains the folding construction.",
+    "The answer derives the sign-changing-mass Dirac equation."
+  ],
+  "mandatory_logical_moves": [
+    "State the boundary gluing condition.",
+    "Fold the two half-space fermions into one whole-space spinor.",
+    "Show that the resulting equation has mass term m sign(x_1)."
+  ],
+  "common_failure_patterns": [
+    "Starting from the sign-changing-mass equation without explaining how it arises from the doubled system.",
+    "Treating the wall equation as an unrelated ansatz."
+  ],
+  "grading_rubric": [
+    "Full credit requires the boundary-to-domain-wall rewrite, not only the final wall equation.",
+    "Partial credit is appropriate if the answer quotes the wall equation but not the folding logic."
+  ],
+  "retrieval_hints": [
+    "Use when the answer must show how the boundary problem becomes the Jackiw-Rebbi problem."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

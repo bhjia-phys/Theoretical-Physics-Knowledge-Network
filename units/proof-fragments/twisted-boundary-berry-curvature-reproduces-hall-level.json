@@ -1,0 +1,115 @@
+{
+  "id": "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level",
+  "type": "proof_fragment",
+  "title": "Twisted-Boundary Berry Curvature Reproduces The Hall Level",
+  "summary": "Treat the twist angles alpha_1 and alpha_2 as adiabatic parameters, read the Berry connection from the one-derivative effective action, and integrate the resulting curvature over the twist-angle torus to recover the Hall-response level k.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-fragment",
+    "berry-curvature",
+    "twisted-boundary-conditions"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The many-body ground state stays nondegenerate as the twist angles vary.",
+    "The excitation gap remains finite in the large-volume limit relevant for the response measurement."
+  ],
+  "regime": "Many-body adiabatic transport on the twist-angle torus.",
+  "scope": "Key proof fragment in Witten's Lecture Two many-body version of the TKNN formula.",
+  "dependencies": [
+    "notation_map:lecture-two-hall-response-symbols",
+    "derivation_step:chern-simons-action-induces-hall-current"
+  ],
+  "related_units": [
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "mizz",
+        "roff",
+        "coff",
+        "plizz"
+      ],
+      "notes": "The Hall-response level is re-derived as the Berry curvature on the twist-angle torus."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Many-body Berry-curvature proof fragment on the twist-angle torus.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the Hall-response integer also has a genuinely many-body formulation. The twist angles are not bookkeeping devices only; they provide a second Chern-number presentation of the same response level.",
+  "prerequisite_story": "Know adiabatic Berry phases, the reduced effective action for slowly varying twist angles, and why the two twist parameters alpha_1 and alpha_2 are periodic and therefore coordinatize a torus.",
+  "local_context_story": "In Witten Lecture Two, this is the many-body half of the proof of equivalence. The Berry connection on the twist-angle torus is read directly from the one-derivative term in the reduced action.",
+  "forward_links_story": "Once the twist-angle Berry curvature is shown to be k / 2pi, the many-body Chern number equals k and can be compared to the TKNN band invariant k'.",
+  "canonical_questions": [
+    "Why do the twist angles define a torus rather than an open parameter space?",
+    "How is the Berry connection extracted from the reduced action with one time derivative?",
+    "Why does integrating the constant curvature over the whole torus return the Hall level?"
+  ],
+  "scope_boundaries": [
+    "This fragment assumes a nondegenerate gapped ground state throughout the twist-angle torus.",
+    "The argument is many-body and adiabatic; it does not by itself give the microscopic band-projector formula."
+  ],
+  "math_expressions": [
+    {
+      "latex": "I' = -\\frac{k}{2\\pi}\\int dt\\,\\alpha_1\\frac{d\\alpha_2}{dt}",
+      "kind": "display",
+      "equation_label": "mizz",
+      "notes": "One-derivative term in the reduced action for the twist angles."
+    },
+    {
+      "latex": "\\nabla = \\left(\\frac{\\partial}{\\partial \\alpha_1},\\frac{\\partial}{\\partial \\alpha_2}+i\\frac{k\\alpha_1}{2\\pi}\\right)",
+      "kind": "display",
+      "equation_label": "roff",
+      "notes": "Berry connection on the twist-angle torus."
+    },
+    {
+      "latex": "\\widehat{\\mathcal F}_{\\alpha_1\\alpha_2} = -i\\left[\\frac{D}{D\\alpha_1},\\frac{D}{D\\alpha_2}\\right] = \\frac{k}{2\\pi}",
+      "kind": "display",
+      "equation_label": "coff",
+      "notes": "Constant Berry curvature determined by the Hall-response level."
+    },
+    {
+      "latex": "\\widehat{k}' = \\int_0^{2\\pi} d\\alpha_1 d\\alpha_2\\,\\frac{\\widehat{\\mathcal F}}{2\\pi} = k",
+      "kind": "display",
+      "equation_label": "plizz",
+      "notes": "Many-body Chern number equals the Hall-response level."
+    }
+  ],
+  "step_justification": [
+    "The twist angles are adiabatic parameters defined modulo 2pi, so they form a torus.",
+    "In the adiabatic limit the Berry connection is read from the one-time-derivative part of the action.",
+    "Integrating the constant Berry curvature over the full twist-angle torus gives the many-body Chern number."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "twisted_boundary_berry_curvature_reproduces_hall_level",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work on the twist-angle torus for a gapped nondegenerate many-body ground state bundle.",
+    "Use the effective-action extraction of the Berry connection as a permitted wrapper input rather than formalizing the full microscopic adiabatic theorem here."
+  ],
+  "lean_prerequisite_ids": [
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "formalization_blockers": [
+    "The repository does not yet provide a formal interface for many-body ground-state bundles over twist-angle parameter spaces.",
+    "The extraction of Berry connection from the one-derivative effective action is still represented as a physics wrapper step rather than a lower-level formal theorem."
+  ],
+  "retrieval_hints": [
+    "Use when a question asks for the many-body twist-angle route rather than only the single-particle band formula."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

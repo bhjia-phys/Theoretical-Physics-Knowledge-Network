@@ -1,0 +1,157 @@
+{
+  "id": "theorem_family:hall-response-chern-number-equivalence",
+  "type": "theorem_family",
+  "title": "Hall-Response / Chern-Number Equivalence Family",
+  "summary": "Canonical theorem family for the integer Hall response: it groups the response-theory, the traced-curvature-to-projector TKNN bridge, the many-body formulation, and the now-explicit graphene/Haldane lattice bridge while keeping the remaining original-paper archival enrichment explicit.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "theorem-family",
+    "tknn",
+    "integer-quantum-hall-effect"
+  ],
+  "aliases": [
+    "Lecture Two Hall-response family"
+  ],
+  "assumptions": [
+    "The same gapped integer Hall phase is being described from response, band, and many-body viewpoints."
+  ],
+  "regime": "Cross-source reusable theorem family.",
+  "scope": "Family-level grouping for the Lecture Two flagship theorem and its neighbors.",
+  "dependencies": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "notation_family:hall-response-chern-number-notation"
+  ],
+  "related_units": [
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Witten's local family spine."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "Original microscopic source for the occupied-bundle curvature density used in the local TKNN bridge."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "Condensed-matter realization and reinterpretation of the same family through the valley-mass Chern-number criterion."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Family object for the Hall-response / Chern-number theorem branch.",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "formal_theory_role": "trusted_target",
+  "definition_trust_tier": "reviewed_translation",
+  "statement_graph_role": "target_statement",
+  "statement_graph_parents": [
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "statement_graph_children": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions"
+  ],
+  "target_statement_id": "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+  "faithfulness_status": "reviewed",
+  "faithfulness_strategy": "Use the family wrapper only to collect the response, band, and many-body statements already spelled out by child units, while keeping the Haldane branch as an explanatory neighbor rather than silently extending the trusted target.",
+  "faithfulness_notes": "The family wrapper is faithful only because it points back to the flagship theorem and its obligations instead of replacing them with a wider informal summary.",
+  "comparator_audit_status": "passed",
+  "comparator_risks": [
+    "Do not let the Haldane realization or graphene bridge silently widen the trusted target beyond the k = k' = khat' equivalence itself."
+  ],
+  "provenance_kind": "mixed",
+  "attribution_requirements": [
+    "Retain attribution to Witten for the lecture-local theorem spine and to TKNN/Haldane for the cross-source family members that remain fused into this family."
+  ],
+  "prerequisite_closure_status": "closed",
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "hall_response_chern_number_equivalence",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "Work in a gapped two-dimensional U(1)-conserving Hall phase with a nondegenerate ground state under adiabatic twists.",
+    "Treat the response, band, and many-body constructions as three presentations of the same phase rather than as independent systems.",
+    "Import the needed first-Chern-class and Berry-curvature integrality lemmas from a lower-level geometry library instead of reproving them in the family wrapper."
+  ],
+  "lean_prerequisite_ids": [
+    "notation_family:hall-response-chern-number-notation",
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "formalization_blockers": [
+    "The Berry-connection / first-Chern-class infrastructure still needs a reusable Lean-side interface for occupied-band bundles.",
+    "The Haldane lattice-realization branch is a neighboring explanatory bridge and should not be folded into the core theorem declaration until its formal interface is sharper."
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide"
+  ],
+  "family_member_ids": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number",
+    "proof_state:lecture-two-hall-response-chern-number",
+    "proof_fragment:large-gauge-invariance-quantizes-chern-simons-level",
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "proof_fragment:twisted-boundary-berry-curvature-reproduces-hall-level"
+  ],
+  "retrieval_hints": [
+    "Use when a query spans several presentations of the same integer Hall theorem family."
+  ],
+  "topic_completion_status": "promotion-ready",
+  "supporting_regression_question_ids": [
+    "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+    "regression_question:reconstruct-hall-response-chern-number-equivalence",
+    "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_oracle_ids": [
+    "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence",
+    "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+    "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "supporting_regression_run_ids": [
+    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
+    "regression_run:topological-phases-core-2026-03-21-lecture-one-cited-recovery",
+    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
+  ],
+  "promotion_blockers": [],
+  "split_required": false,
+  "recovery_source_refs": [
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

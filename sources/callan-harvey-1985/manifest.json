@@ -1,0 +1,56 @@
+{
+  "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+  "title": "Anomalies and Fermion Zero Modes on Strings and Domain Walls",
+  "authors": [
+    "Curtis G. Callan, Jr.",
+    "Jeffrey A. Harvey"
+  ],
+  "version": "journal",
+  "submitted_date": "1984-10-01",
+  "updated_date": "1984-10-01",
+  "canonical_scope": "External source anchor for anomaly inflow and domain-wall zero-mode cancellation in the topological-phases edge-mode family.",
+  "urls": {
+    "doi": "https://doi.org/10.1016/0550-3213(85)90489-4",
+    "inspire": "https://inspirehep.net/literature/15691"
+  },
+  "section_map": [
+    {
+      "id": "paper/main-result",
+      "title": "Main Result",
+      "summary": "Chiral zero modes on strings or domain walls are accompanied by bulk topological terms whose variation cancels the boundary anomaly."
+    },
+    {
+      "id": "paper/domain-wall-zero-modes",
+      "title": "Domain-Wall Chiral Zero Modes",
+      "summary": "A sign-changing mass profile supports lower-dimensional chiral fermions localized on the wall."
+    },
+    {
+      "id": "paper/anomaly-cancellation",
+      "title": "Bulk Inflow Cancels The Wall Anomaly",
+      "summary": "The gauge anomaly of the wall-localized chiral mode is exactly canceled by the variation of the bulk topological term."
+    },
+    {
+      "id": "paper/parity-anomaly-bridge",
+      "title": "Parity-Anomaly Bridge",
+      "summary": "The same mechanism ties odd-dimensional parity anomalies to even-dimensional chiral anomalies and index-density inflow."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "wall-localized-chiral-mode",
+      "section": "paper/domain-wall-zero-modes",
+      "title": "Wall-localized chiral zero-mode equation"
+    },
+    {
+      "label": "bulk-topological-variation",
+      "section": "paper/anomaly-cancellation",
+      "title": "Gauge variation of the bulk topological term on a manifold with boundary"
+    },
+    {
+      "label": "inflow-balance",
+      "section": "paper/anomaly-cancellation",
+      "title": "Cancellation between wall anomaly and bulk inflow"
+    }
+  ],
+  "figure_map": []
+}

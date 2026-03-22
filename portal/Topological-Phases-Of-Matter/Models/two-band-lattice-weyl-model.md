@@ -4,6 +4,7 @@
 - Type: `model`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `toy-models`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `seed`
@@ -21,6 +22,18 @@ Explicit lattice regularization of point-node band structure.
 - `Crystal momentum is periodic.`
 - `A minimal two-band effective description is sufficient.`
 
+## Representation
+Periodic Bloch Hamiltonian on a Brillouin torus.
+
+## Source Anchors
+- `lecture-one/simple-examples-of-band-hamiltonians | eqs: twof | Lecture One gives an explicit periodic Weyl Hamiltonian on the lattice.`
+
+## Mathematical Content
+- none
+
+## Symbols
+- none
+
 ## Dependencies
 - [Weyl Node](../Concepts/weyl-node.md)
 - [Nielsen-Ninomiya Theorem](../Concepts/nielsen-ninomiya-theorem.md)
@@ -29,18 +42,18 @@ Explicit lattice regularization of point-node band structure.
 - [Two-Band Weyl Model With A Tunable Pair](../Equations/two-band-weyl-model-with-tunable-pair.md)
 - [Local Weyl Description Does Not Fix Global Lattice Consistency](../Warnings/local-weyl-description-does-not-fix-global-lattice-consistency.md)
 
-## Source Anchors
-- `lecture-one/simple-examples-of-band-hamiltonians | eqs: twof | Lecture One gives an explicit periodic Weyl Hamiltonian on the lattice.`
-
-## Outgoing Edges
-- `specializes` -> [Two-Band Weyl Model With A Tunable Pair](../Equations/two-band-weyl-model-with-tunable-pair.md): The lattice model is a periodic specialization of the local Weyl-node toy Hamiltonian idea.
-
-## Incoming Edges
-- [Two-Band Weyl Model With A Tunable Pair](../Equations/two-band-weyl-model-with-tunable-pair.md) -> `motivates`: The local toy model motivates explicit periodic lattice realizations.
-
 ## Failure Modes
 - `A local continuum toy model is not enough to see the torus-level doubling constraint.`
 
 ## Formal Targets
 - `aitp-l2`
 - `lean`
+
+## Retrieval Hints
+- `Use when an explicit lattice regularization is needed.`
+
+## Outgoing Edges
+- `specializes` -> [Two-Band Weyl Model With A Tunable Pair](../Equations/two-band-weyl-model-with-tunable-pair.md): The lattice model is a periodic specialization of the local Weyl-node toy Hamiltonian idea.
+
+## Incoming Edges
+- [Two-Band Weyl Model With A Tunable Pair](../Equations/two-band-weyl-model-with-tunable-pair.md) -> `motivates`: The local toy model motivates explicit periodic lattice realizations.

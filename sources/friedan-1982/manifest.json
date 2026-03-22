@@ -1,0 +1,70 @@
+{
+  "source_id": "paper:friedan-proof-of-the-nielsen-ninomiya-theorem-1982",
+  "title": "A Proof of the Nielsen-Ninomiya Theorem",
+  "authors": [
+    "D. Friedan"
+  ],
+  "version": "journal",
+  "submitted_date": "1982-01-01",
+  "updated_date": "1982-01-01",
+  "canonical_scope": "External source anchor for the rigorous spectral-projection and Chern-character route to the lattice Nielsen-Ninomiya theorem.",
+  "urls": {
+    "doi": "https://doi.org/10.1007/BF01212899",
+    "pdf": "https://www.physics.rutgers.edu/~friedan/papers/Commun_Math_Phys_85_481-490_1982.pdf"
+  },
+  "section_map": [
+    {
+      "id": "paper/main-result",
+      "title": "Main Result",
+      "summary": "The lattice chiral index vanishes in each charge sector, and the proof is recast in the language of characteristic classes."
+    },
+    {
+      "id": "paper/theorem-setup",
+      "title": "Charge-Sector Setup And Chiral Index",
+      "summary": "The lattice Hamiltonian, smooth charge projections, isolated Fermi points, and the low-energy chiral index are defined for an arbitrary odd-dimensional lattice."
+    },
+    {
+      "id": "paper/spectral-projection-chiral-current",
+      "title": "Spectral Projection And Chiral Current",
+      "summary": "A charge-filtered spectral projection S(p) defines a conserved chiral current supported on the spectrum and determined locally by the spectral projector near each branch."
+    },
+    {
+      "id": "paper/localization-near-spectrum",
+      "title": "Localization Near A Generic Spectral Branch",
+      "summary": "Near a generic eigenvalue branch, the chiral current reduces to a delta-function current built from the local spectral projector P_0 and its derivatives."
+    },
+    {
+      "id": "paper/chern-character-and-cobordism",
+      "title": "Chern Character And Cobordism Interpretation",
+      "summary": "The low-energy chiral index is identified with the Chern number of the spectral bundle on the boundary of the punctured Brillouin zone, so cobordism invariance forces it to vanish."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "spectral-projection-S",
+      "section": "paper/spectral-projection-chiral-current",
+      "title": "Charge-filtered spectral projection S(p)"
+    },
+    {
+      "label": "chiral-index-from-low-energy-current",
+      "section": "paper/spectral-projection-chiral-current",
+      "title": "Chiral index as the total low-energy chiral charge"
+    },
+    {
+      "label": "local-current-from-spectral-projection",
+      "section": "paper/localization-near-spectrum",
+      "title": "Local chiral current from the generic spectral projector"
+    },
+    {
+      "label": "spectral-bundle-curvature",
+      "section": "paper/chern-character-and-cobordism",
+      "title": "Covariant derivative and curvature of the spectral bundle"
+    },
+    {
+      "label": "cobordism-chern-number-zero",
+      "section": "paper/chern-character-and-cobordism",
+      "title": "The chiral index as a boundary Chern number that must vanish"
+    }
+  ],
+  "figure_map": []
+}

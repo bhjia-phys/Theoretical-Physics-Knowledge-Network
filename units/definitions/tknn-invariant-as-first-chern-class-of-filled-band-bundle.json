@@ -1,0 +1,161 @@
+{
+  "id": "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
+  "type": "definition",
+  "title": "TKNN Invariant As First Chern Class Of The Filled-Band Bundle",
+  "summary": "For a gapped two-dimensional band insulator, the TKNN invariant is the first Chern number of the filled-band bundle over the Brillouin torus, equivalently written through the occupied-projector formula and the Berry curvature of the occupied states.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "definition",
+    "tknn",
+    "chern-number"
+  ],
+  "aliases": [
+    "filled-band Chern number",
+    "TKNN Chern invariant"
+  ],
+  "assumptions": [
+    "The two-dimensional band structure is fully gapped over the whole Brillouin zone.",
+    "The occupied-state subspaces vary smoothly with momentum."
+  ],
+  "regime": "Gapped two-dimensional band insulators.",
+  "scope": "Definition of the single-particle topological invariant used in Witten Lecture Two and in TKNN.",
+  "dependencies": [
+    "concept:complex-line-bundle-of-filled-states",
+    "concept:berry-connection",
+    "quantity:berry-curvature-two-form",
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "related_units": [
+    "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "Witten defines k' as the first Chern class of the occupied-state bundle over the Brillouin torus."
+    },
+    {
+      "source_id": "paper:tknn-quantized-hall-conductance-1982",
+      "section": "paper/projector-curvature-identity",
+      "equation_labels": [
+        "occupied-bundle-curvature-form"
+      ],
+      "notes": "Primary source for the geometric Hall-conductance invariant written through occupied-bundle curvature."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "First Chern number of the occupied-state bundle over the two-dimensional Brillouin torus.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because Lecture Two needs a microscopic integer invariant that matches the macroscopic quantized Hall response. The TKNN invariant is that band-theoretic integer: it packages the topology of the filled-band bundle into a number that later gets identified with the Hall level.",
+  "prerequisite_story": "Before reading this note, know the Berry connection and Berry curvature of the filled-state bundle and understand that a smooth occupied subspace over the Brillouin torus defines a vector bundle. In the rank-one case the invariant is an ordinary U(1) Chern number; for several filled bands one uses the traced curvature or the occupied-projector formula.",
+  "local_context_story": "In Witten Lecture Two, this definition appears after the Chern-Simons description of the Hall response and before the argument that the many-body Hall coefficient equals the band invariant. It is the microscopic topological quantity denoted by k' in the lecture.",
+  "forward_links_story": "This definition feeds the projector-formula proof fragments and then the theorem equating the integer Hall response with both the band and many-body Chern numbers. It is also the natural two-dimensional analogue of the Lecture One Berry-flux integral around a node.",
+  "canonical_questions": [
+    "Why is the TKNN invariant a first Chern number of the occupied-state bundle rather than an ad hoc integral?",
+    "How do the curvature formula and the projector formula define the same integer?",
+    "What changes when there is more than one filled band?",
+    "Why is this definition not yet the full theorem that measured Hall conductivity equals the invariant in the many-body setting?"
+  ],
+  "scope_boundaries": [
+    "This is a band-topology definition of the invariant itself, not yet the theorem that the interacting many-body Hall response equals the same integer.",
+    "The simple rank-one formula uses an abelian connection; for several filled bands the invariant is written with Tr F or with the occupied-projector commutator formula."
+  ],
+  "math_expressions": [
+    {
+      "latex": "k' = c_1(\\mathcal H'_p) = \\int_{\\mathcal B} \\frac{\\operatorname{Tr}\\,F}{2\\pi}",
+      "notes": "Single-particle Hall invariant defined from the Berry curvature of the filled bands."
+    },
+    {
+      "latex": "k'=\\frac{i}{2\\pi}\\int_{\\mathcal B}\\operatorname{Tr}\\!\\left(P[\\partial_{p_1}P,\\partial_{p_2}P]\\right)\\,\\mathrm d^2p",
+      "equation_label": "occupied-bundle-curvature-form",
+      "notes": "Equivalent projector formula for the same first Chern number."
+    },
+    {
+      "latex": "k' = \\int_{\\mathcal B}\\frac{F}{2\\pi}",
+      "notes": "Rank-one specialization when a single filled band is present."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "k'",
+      "meaning": "band-theory TKNN invariant"
+    },
+    {
+      "symbol": "\\mathcal H'_p",
+      "meaning": "occupied-state subbundle of the full Bloch Hilbert bundle"
+    },
+    {
+      "symbol": "\\mathcal B",
+      "meaning": "two-dimensional Brillouin torus"
+    },
+    {
+      "symbol": "F",
+      "meaning": "Berry curvature of the occupied-state bundle"
+    },
+    {
+      "symbol": "P",
+      "meaning": "projector onto the occupied subspace"
+    }
+  ],
+  "failure_modes": [
+    "If the bulk gap closes anywhere on the Brillouin torus, the occupied-state bundle and its Chern number cease to be well-defined."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "formal_theory_role": "trusted_target",
+  "definition_trust_tier": "reviewed_translation",
+  "statement_graph_role": "prerequisite",
+  "statement_graph_parents": [
+    "concept:complex-line-bundle-of-filled-states",
+    "concept:berry-connection",
+    "quantity:berry-curvature-two-form"
+  ],
+  "statement_graph_children": [
+    "proof_fragment:projector-formula-for-the-tknn-chern-number",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number"
+  ],
+  "faithfulness_status": "reviewed",
+  "faithfulness_strategy": "Keep the canonical definition equal to Witten's k' and the TKNN occupied-bundle Chern number, while exposing the projector formula explicitly for the multi-band case.",
+  "faithfulness_notes": "The KB adds explanatory wording about rank-one versus multi-band presentations, but the invariant itself remains the same first Chern number.",
+  "comparator_audit_status": "passed",
+  "comparator_risks": [
+    "Do not weaken the definition into a rank-one-only statement when the source also supports the traced-curvature and projector formulations."
+  ],
+  "provenance_kind": "mixed",
+  "attribution_requirements": [
+    "Retain attribution to both Witten Lecture Two and the original TKNN paper when citing this canonical definition.",
+    "Do not present the projector formula as KB-internal invention; it is a source-derived equivalent expression."
+  ],
+  "prerequisite_closure_status": "closed",
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "tknn_invariant_as_first_chern_class",
+  "lean_statement_kind": "definition",
+  "admissible_assumptions": [
+    "Work with a smooth gapped occupied-state bundle over the two-dimensional Brillouin torus.",
+    "Treat the multi-band case through the occupied projector or traced curvature rather than through one global abelian gauge."
+  ],
+  "lean_prerequisite_ids": [
+    "concept:complex-line-bundle-of-filled-states",
+    "concept:berry-connection",
+    "concept:berry-curvature",
+    "quantity:berry-curvature-two-form"
+  ],
+  "formalization_blockers": [
+    "A reusable Lean-side interface for smooth Bloch bundles over the Brillouin torus is still missing.",
+    "The passage from local Berry-connection charts to a global first-Chern-class representative is not yet packaged as a lower-level geometry lemma."
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for the precise microscopic invariant behind the integer Hall response."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

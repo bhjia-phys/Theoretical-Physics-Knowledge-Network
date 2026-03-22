@@ -1,0 +1,121 @@
+{
+  "id": "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+  "type": "proof_fragment",
+  "title": "Parity Anomaly Half Level From Massive Dirac Fermion",
+  "summary": "A gapped 2+1-dimensional Dirac fermion induces the half-integer Chern-Simons term (sign m)/2 times I_CS; in the current KB this umbrella fragment is now factored through an explicit hemisphere-Berry-flux subfragment and a theorem-level half-level response statement.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-fragment",
+    "parity-anomaly",
+    "chern-simons"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The bulk Dirac fermion is massive and can be integrated out.",
+    "The resulting topological term is interpreted modulo the gauge-invariance obstruction of the half level."
+  ],
+  "regime": "Continuum 2+1-dimensional parity-anomaly analysis.",
+  "scope": "Continuum proof fragment that motivates the edge-mode consistency story in Witten Lecture Three.",
+  "dependencies": [
+    "notation_map:lecture-three-edge-mode-symbols",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion"
+  ],
+  "related_units": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "uftof",
+        "puft",
+        "PPP",
+        "quft"
+      ],
+      "notes": "Witten's Berry-flux derivation of the half-level parity anomaly."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/main-result",
+      "notes": "Haldane's lattice realization is explicitly cited by Witten as the condensed-matter parity-anomaly model."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Continuum Berry-flux argument for the half-integer Chern-Simons level of a massive Dirac fermion.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because the parity anomaly is a proof fragment with internal steps, not a black box. One needs to see how the hemisphere Berry-flux picture, the half-level response, and the doubling cancellation fit together.",
+  "prerequisite_story": "Know the single massive Dirac Hamiltonian, the normalized momentum-space map to the Bloch sphere, and why the occupied-state Berry flux computes a Chern number when the image covers a closed sphere.",
+  "local_context_story": "In Lecture Three, Witten uses this fragment to motivate why one massive Dirac fermion alone carries a half-level anomaly and why a doubled system with opposite masses is the correct starting point for an honest bulk-plus-boundary discussion.",
+  "forward_links_story": "This half-level fragment feeds the folded boundary problem, the Jackiw-Rebbi wall mode, and the Callan-Harvey anomaly-inflow cancellation that restores a consistent integer Hall boundary theory.",
+  "canonical_questions": [
+    "Why does the massive Dirac Hamiltonian map only to a hemisphere?",
+    "How does that hemisphere coverage produce one-half of an integer Chern number?",
+    "Why does adding the opposite-mass partner cancel the bulk anomaly before the boundary sign flip?"
+  ],
+  "scope_boundaries": [
+    "This is a continuum Berry-flux argument for one Dirac cone; it does not by itself prove a lattice no-go theorem.",
+    "The fragment explains the origin of the half level but still relies on later edge-mode or doubling arguments to restore a globally gauge-invariant picture."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\frac{\\operatorname{sign}m}{2}\\,\\mathcal I_{\\mathrm{CS}}(A)",
+      "kind": "display",
+      "equation_label": "uftof",
+      "notes": "Half-level Chern-Simons term induced by integrating out one massive Dirac fermion."
+    },
+    {
+      "latex": "H = \\sigma_x p_x + \\sigma_y p_y + m\\sigma_z",
+      "kind": "display",
+      "equation_label": "puft",
+      "notes": "Massive Dirac Hamiltonian whose normalized vector gives the Berry map."
+    },
+    {
+      "latex": "(p_x,p_y) \\mapsto \\left(\\frac{p_x}{\\sqrt{p_x^2+p_y^2+m^2}},\\frac{p_y}{\\sqrt{p_x^2+p_y^2+m^2}},\\frac{m}{\\sqrt{p_x^2+p_y^2+m^2}}\\right)",
+      "kind": "display",
+      "equation_label": "PPP",
+      "notes": "Momentum-space map to a hemisphere with degree sign(m)/2."
+    },
+    {
+      "latex": "\\frac{1}{2}(\\operatorname{sign}m + \\operatorname{sign}(-m)) = 0",
+      "kind": "display",
+      "equation_label": "quft",
+      "notes": "Doubling with opposite masses removes the half-level anomaly."
+    }
+  ],
+  "step_justification": [
+    "The normalized Dirac vector covers only one hemisphere of the target two-sphere.",
+    "Therefore its Berry-flux degree is one half of the integer map obtained from a full sphere.",
+    "A second fermion with opposite mass contributes the opposite half level and restores a gauge-invariant integer total."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "parity_anomaly_half_level_from_massive_dirac_fermion",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work with the continuum massive Dirac Hamiltonian and its occupied-band Berry map.",
+    "Use the hemisphere-degree argument as the accepted local route to the one-half coefficient."
+  ],
+  "lean_prerequisite_ids": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion"
+  ],
+  "formalization_blockers": [
+    "The link between hemisphere Berry flux and the parity-odd effective action is still encoded as a physics wrapper rather than a lower-level formal theorem.",
+    "The doubled cancellation statement has not yet been isolated as its own reusable Lean lemma."
+  ],
+  "retrieval_hints": [
+    "Use when a query asks for the continuum parity-anomaly ingredient of the edge-mode story, but not when a lattice no-go proof is required."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

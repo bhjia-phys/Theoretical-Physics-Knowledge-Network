@@ -1,0 +1,95 @@
+{
+  "id": "theorem:graphene-symmetry-protects-dirac-nodes",
+  "type": "theorem",
+  "title": "Graphene Lattice Symmetries Protect The Dirac Nodes",
+  "summary": "Reflection and rotational symmetries of the honeycomb lattice keep the two graphene Dirac nodes pinned and at the same energy; only symmetry-breaking perturbations can turn them into masses and open the Haldane route to quantized Hall response.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "haldane-model",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "theorem",
+    "graphene",
+    "haldane",
+    "dirac-nodes"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The starting model is the nearest-neighbor honeycomb Hamiltonian.",
+    "Perturbations preserve the lattice symmetries until the Haldane mass mechanism is discussed explicitly."
+  ],
+  "regime": "Honeycomb-lattice symmetry analysis prior to opening a topological gap.",
+  "scope": "Reusable theorem-level statement of why graphene has protected Dirac points before the Haldane mass is introduced.",
+  "dependencies": [
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition"
+  ],
+  "related_units": [
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "equation_labels": [
+        "hham",
+        "theq",
+        "omeq"
+      ],
+      "notes": "Witten's symmetry-based explanation of why the two Dirac nodes persist before the Haldane perturbation."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/main-result",
+      "notes": "Original condensed-matter realization in which suitable symmetry breaking gaps the paired Dirac cones into a Chern insulator."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Theorem-level symmetry statement for the graphene precursor of the Haldane model.",
+  "math_expressions": [
+    {
+      "latex": "H=t\\begin{pmatrix} 0 & 1+e^{-i\\alpha}+e^{-i\\beta} \\\\ 1+e^{i\\alpha}+e^{i\\beta} & 0 \\end{pmatrix}",
+      "kind": "display",
+      "equation_label": "hham",
+      "notes": "Symmetry-constrained nearest-neighbor graphene Hamiltonian."
+    },
+    {
+      "latex": "1+e^{i\\alpha}+e^{i\\beta}=0",
+      "kind": "display",
+      "equation_label": "theq",
+      "notes": "Band-touching condition selecting the Dirac nodes."
+    },
+    {
+      "latex": "e^{i\\alpha}=\\frac{1}{2}\\left(-1\\pm\\sqrt{-3}\\right)=e^{-i\\beta}",
+      "kind": "display",
+      "equation_label": "omeq",
+      "notes": "The two symmetry-related Dirac-point locations."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "H",
+      "meaning": "graphene Bloch Hamiltonian near half filling"
+    },
+    {
+      "symbol": "\\alpha,\\beta",
+      "meaning": "Brillouin-zone angles locating the two graphene Dirac points"
+    }
+  ],
+  "failure_modes": [
+    "This theorem by itself does not yet give the explicit Haldane mass term or the full lattice Chern-number calculation."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when the Haldane branch needs the explicit statement of what protects the ungapped graphene cones and what must be broken to gap them."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

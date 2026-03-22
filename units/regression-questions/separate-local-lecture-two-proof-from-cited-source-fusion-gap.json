@@ -1,0 +1,54 @@
+{
+  "id": "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+  "type": "regression_question",
+  "title": "Separate Local Lecture Two Proof From Cited-Source Fusion Gap",
+  "summary": "Tests whether the topic can say exactly which parts of the Lecture Two theorem family are already source-grade locally and which parts remain narrower Haldane / archival-enrichment follow-up.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "regression-question",
+    "gap",
+    "source-fusion"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must remain honest about local proof coverage versus the remaining enrichment route."
+  ],
+  "regime": "Topic regression for gap honesty.",
+  "scope": "Honesty-focused regression prompt for the Lecture Two theorem family.",
+  "dependencies": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated"
+  ],
+  "related_units": [
+    "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "Witten names the TKNN route that is now source-grade locally, leaving only the narrower enrichment route."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Lecture Two honesty regression prompt.",
+  "prompt": "State clearly which parts of the Hall-response / Chern-number family are source-grade locally in the current KB and which parts still remain narrower Haldane / archival-enrichment work.",
+  "question_family": "gap",
+  "primary_retrieval_paths": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
+    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
+    "followup_source_task:ingest-tknn-and-haldane-for-lecture-two-equivalence"
+  ],
+  "pass_conditions": [
+    "The answer identifies the local Witten-side derivation spine as present.",
+    "The answer identifies the TKNN projector-formula route as already source-grade locally.",
+    "The answer states that the remaining follow-up is the narrower Haldane / archival-enrichment route."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

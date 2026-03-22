@@ -1,0 +1,99 @@
+{
+  "id": "proof_obligation:hall-response-band-and-many-body-chern-numbers-coincide",
+  "type": "proof_obligation",
+  "title": "Hall Response, Band, And Many-Body Chern Numbers Coincide",
+  "summary": "Discharge the synthesis obligation that the macroscopic Hall-response coefficient k, the band invariant k', and the many-body twist-angle invariant \\widehat{k}' all encode the same quantized integer in the gapped integer Hall system.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "proof-obligation",
+    "hall-response",
+    "tknn"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The response-theory, band-theory, and many-body constructions are all applied in the same gapped phase.",
+    "The ground state stays nondegenerate under adiabatic twists."
+  ],
+  "regime": "Flagship Lecture Two theorem synthesis.",
+  "scope": "Final synthesis obligation for the equality k = k' = \\widehat{k}'.",
+  "dependencies": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions",
+    "equation_context:lecture-two-twist-angle-berry-curvature"
+  ],
+  "related_units": [
+    "proof_state:lecture-two-hall-response-chern-number",
+    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+    "theorem_family:hall-response-chern-number-equivalence"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "Band-theory side of the equality."
+    },
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "equation_labels": [
+        "plizz"
+      ],
+      "notes": "Many-body side of the equality and its identification with k."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Final synthesis obligation that makes the Lecture Two family reusable as one theorem.",
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
+  "lean_declaration": "hall_response_band_and_many_body_chern_numbers_coincide",
+  "lean_statement_kind": "theorem",
+  "admissible_assumptions": [
+    "The response coefficient, band invariant, and twist-angle invariant are all computed in the same gapped phase.",
+    "The ground state stays nondegenerate during the twist-angle deformation."
+  ],
+  "lean_prerequisite_ids": [
+    "proof_obligation:large-gauge-holonomy-shift-quantizes-chern-simons-level",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current",
+    "proof_obligation:filled-band-berry-curvature-defines-tknn-invariant",
+    "proof_obligation:twist-angle-berry-curvature-equals-hall-level",
+    "equivalence:band-and-many-body-chern-numbers-agree-under-twisted-boundary-conditions"
+  ],
+  "formalization_blockers": [
+    "The twist-angle Berry-curvature formalization still needs a clean geometric interface between many-body parameter space and the Hall-response coefficient."
+  ],
+  "pass_conditions": [
+    "The answer states what k, k', and \\widehat{k}' each mean.",
+    "The answer explains why k is the response coefficient, k' the band invariant, and \\widehat{k}' the many-body invariant.",
+    "The answer concludes with the equality k = k' = \\widehat{k}' without erasing which route produced each quantity."
+  ],
+  "mandatory_logical_moves": [
+    "Carry the response-theory route to the integer k.",
+    "Carry the microscopic band-topology route to k'.",
+    "Carry the twist-angle Berry-curvature route to \\widehat{k}'.",
+    "Fuse the three routes into one canonical equality."
+  ],
+  "common_failure_patterns": [
+    "Giving only one side of the equality.",
+    "Using the final formula without distinguishing the three meanings of the symbols.",
+    "Skipping the bridge from the many-body invariant back to the Hall-response level."
+  ],
+  "grading_rubric": [
+    "Full credit requires all three routes and the final synthesis.",
+    "Partial credit is appropriate if the answer reconstructs only two of the three routes."
+  ],
+  "retrieval_hints": [
+    "Use when the answer must recover the full theorem rather than one local lemma."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-21"
+}

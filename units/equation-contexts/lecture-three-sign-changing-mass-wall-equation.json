@@ -1,0 +1,80 @@
+{
+  "id": "equation_context:lecture-three-sign-changing-mass-wall-equation",
+  "type": "equation_context",
+  "title": "Lecture Three Sign-Changing Mass Wall Context",
+  "summary": "This equation context records the folding step that converts the boundary problem for two opposite-mass fermions into one Dirac equation on all of space with a sign-changing mass profile.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "equation-context",
+    "domain-wall",
+    "folding"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The boundary condition can be encoded by folding the two half-space problems into one whole-space problem."
+  ],
+  "regime": "Folded continuum boundary analysis.",
+  "scope": "Equation-level context for the sign-changing-mass Dirac equation.",
+  "dependencies": [
+    "notation_map:lecture-three-edge-mode-symbols"
+  ],
+  "related_units": [
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "plift",
+        "ulift",
+        "nuft",
+        "obeys",
+        "gift"
+      ],
+      "notes": "The boundary gluing is rewritten as one Dirac equation with a sign-changing mass."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Equation context for the folded sign-changing-mass problem.",
+  "math_expressions": [
+    {
+      "latex": "\\left.\\psi'\\right|_{x_1=0}=\\gamma_1\\left.\\psi\\right|_{x_1=0}",
+      "kind": "display",
+      "equation_label": "plift",
+      "notes": "Boundary condition gluing the two opposite-mass fermions."
+    },
+    {
+      "latex": "\\left(\\slashed{\\partial}-m\\right)\\psi=0,\\qquad \\left(\\slashed{\\partial}+m\\right)\\psi'=0",
+      "kind": "display",
+      "equation_label": "ulift",
+      "notes": "The two bulk equations before folding."
+    },
+    {
+      "latex": "\\left(\\slashed{\\partial}-m\\,\\operatorname{sign}(x_1)\\right)\\widehat\\psi = 0",
+      "kind": "display",
+      "equation_label": "gift",
+      "notes": "Folded whole-space Dirac equation with a sign-changing mass profile."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "x_1",
+      "meaning": "coordinate normal to the boundary"
+    },
+    {
+      "symbol": "\\widehat\\psi",
+      "meaning": "folded spinor defined on all of space"
+    }
+  ],
+  "retrieval_hints": [
+    "Use when the answer must show how the boundary problem becomes a domain-wall problem."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

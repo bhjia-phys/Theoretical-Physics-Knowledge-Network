@@ -4,6 +4,7 @@
 - Type: `warning`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `low-energy-kinematics`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `working`
@@ -20,6 +21,18 @@ Band structures with crossings that may or may not sit near the chemical potenti
 ## Assumptions
 - `Material or model filling is part of the physical question.`
 
+## Representation
+Scope warning about physical relevance at the chosen filling.
+
+## Source Anchors
+- `lecture-one/band-crossing-at-the-fermi-energy | Lecture One explicitly distinguishes a formal crossing from a physically active low-energy semimetal.`
+
+## Mathematical Content
+- none
+
+## Symbols
+- none
+
 ## Dependencies
 - [Band Crossing](../Concepts/band-crossing.md)
 - [Fermi Energy](../Quantities/fermi-energy.md)
@@ -28,17 +41,17 @@ Band structures with crossings that may or may not sit near the chemical potenti
 - [Fermi Arc](../Concepts/fermi-arc.md)
 - [Fermi Arcs Terminate At Projected Weyl Nodes](../Claims/fermi-arcs-terminate-at-projected-weyl-nodes.md)
 
-## Source Anchors
-- `lecture-one/band-crossing-at-the-fermi-energy | Lecture One explicitly distinguishes a formal crossing from a physically active low-energy semimetal.`
+## Failure Modes
+- `Ignoring filling can lead to overstating the phase realized by a model or material.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Return this whenever a band crossing is discussed without specifying its location relative to the Fermi energy.`
 
 ## Outgoing Edges
 - none
 
 ## Incoming Edges
 - [Band Crossing](../Concepts/band-crossing.md) -> `warned_by`: A crossing away from the Fermi energy does not automatically define the low-energy phase.
-
-## Failure Modes
-- `Ignoring filling can lead to overstating the phase realized by a model or material.`
-
-## Formal Targets
-- `aitp-l2`

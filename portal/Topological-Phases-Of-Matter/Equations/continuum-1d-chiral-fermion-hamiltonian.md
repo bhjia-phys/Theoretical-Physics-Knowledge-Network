@@ -4,6 +4,7 @@
 - Type: `equation`
 - Domain: `topological-phases-of-matter`
 - Subdomain: `lecture-one`
+- Canonical Family: ``
 - Formalization: `not_started`
 - Validation: `source-grounded`
 - Maturity: `stable`
@@ -20,23 +21,38 @@ Long-wavelength effective theory near a one-dimensional crossing.
 ## Assumptions
 - `The constant energy shift can be dropped for low-energy dynamics.`
 
+## Representation
+Effective continuum Hamiltonian for a single chiral branch.
+
+## Source Anchors
+- `lecture-one/relativistic-dispersion-in-one-space-dimension | eqs: continuum, constantshift | The constant term is identified as a removable density shift.`
+
+## Mathematical Content
+- none
+
+## Symbols
+| Symbol | Meaning |
+|---|---|
+| `psi` | continuum field for the low-energy branch |
+| `v` | branch velocity |
+
 ## Dependencies
 - [Linearized Dispersion Near A Fermi Point](linearized-dispersion-near-fermi-point.md)
 
 ## Related Units
 - [Linearization Gives A 1D Chiral Mode](../Derivations/linearization-gives-1d-chiral-mode.md)
 
-## Source Anchors
-- `lecture-one/relativistic-dispersion-in-one-space-dimension | eqs: continuum, constantshift | The constant term is identified as a removable density shift.`
+## Failure Modes
+- `A single chiral branch is only local; lattice realizations require balancing branches globally.`
+
+## Formal Targets
+- `aitp-l2`
+
+## Retrieval Hints
+- `Use when connecting a Fermi crossing to a chiral field theory.`
 
 ## Outgoing Edges
 - `derived_from` -> [Linearized Dispersion Near A Fermi Point](linearized-dispersion-near-fermi-point.md): The continuum Hamiltonian follows from the linearized dispersion after momentum-to-derivative substitution.
 
 ## Incoming Edges
 - [Linearization Gives A 1D Chiral Mode](../Derivations/linearization-gives-1d-chiral-mode.md) -> `uses`: The derivation ends at the continuum chiral Hamiltonian.
-
-## Failure Modes
-- `A single chiral branch is only local; lattice realizations require balancing branches globally.`
-
-## Formal Targets
-- `aitp-l2`

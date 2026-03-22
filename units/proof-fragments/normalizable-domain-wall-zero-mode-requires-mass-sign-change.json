@@ -1,0 +1,116 @@
+{
+  "id": "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+  "type": "proof_fragment",
+  "title": "Normalizable Domain-Wall Zero Mode Requires Mass Sign Change",
+  "summary": "Gluing two opposite-mass fermions across a boundary is equivalent to a single fermion with a sign-changing mass; once the mass profile changes sign, the exponentially localized boundary mode becomes normalizable and furnishes the missing chiral edge excitation.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-fragment",
+    "jackiw-rebbi",
+    "normalizability"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The boundary condition can be folded into a sign-changing-mass problem on all of space.",
+    "The edge mode must decay away from the boundary to count as a boundary excitation."
+  ],
+  "regime": "Folded continuum description of a boundary in the integer quantum Hall problem.",
+  "scope": "Normalizability and existence part of the Lecture Three Jackiw-Rebbi proof chain.",
+  "dependencies": [
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion"
+  ],
+  "related_units": [
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "plift",
+        "ulift",
+        "nuft",
+        "obeys",
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "Witten folds the boundary condition into a sign-changing-mass Dirac equation and then extracts the boundary mode."
+    },
+    {
+      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
+      "section": "paper/main-result",
+      "notes": "Original anomaly-inflow source for the physical meaning of the chiral wall mode."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "cross-checked",
+  "maturity": "working",
+  "representation": "Folded-wall proof fragment that turns boundary consistency into a sign-changing-mass zero-mode problem.",
+  "human_projection_profile": "learning-note",
+  "motivation": "This note exists because obtaining the boundary Dirac equation is not yet enough. One must still prove that the wall profile is physically admissible, which means normalizable on both sides of the interface.",
+  "prerequisite_story": "Know the folded sign-changing-mass Dirac equation and the reduced boundary equation coming from the wall ansatz. Also remember that a boundary excitation must decay away from the interface rather than blow up into the bulk.",
+  "local_context_story": "In Lecture Three, this is the existence part of the Jackiw-Rebbi edge-mode chain. It explains why the sign flip of the mass is not decoration but the actual condition that makes the mode physical.",
+  "forward_links_story": "Once the wall mode is known to be normalizable, it can carry the chiral anomaly required to cancel the bulk inflow and complete the integer Hall boundary consistency story.",
+  "canonical_questions": [
+    "Why is a sign change of the mass necessary for normalizability on both sides of the wall?",
+    "How does folding the doubled fermion system lead to this sign-changing-mass condition?",
+    "Why is normalizability the missing step between the boundary Dirac equation and a genuine edge excitation?"
+  ],
+  "scope_boundaries": [
+    "This fragment proves existence and normalizability of the wall mode, not yet the separate anomaly-inflow interpretation.",
+    "The argument is continuum and local to the wall profile; it does not replace the distinct lattice topological arguments elsewhere in the topic."
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\left.\\psi'\\right|_{x_1=0}=\\gamma_1\\left.\\psi\\right|_{x_1=0}",
+      "kind": "display",
+      "equation_label": "plift",
+      "notes": "Boundary condition gluing the two opposite-mass fermions."
+    },
+    {
+      "latex": "\\left(\\slashed{\\partial} - m\\,\\operatorname{sign}(x_1)\\right)\\widehat\\psi = 0",
+      "kind": "display",
+      "equation_label": "gift",
+      "notes": "Folded sign-changing-mass Dirac equation."
+    },
+    {
+      "latex": "\\widehat\\psi = e^{-m|x_1|}\\,\\psi_{\\parallel}",
+      "kind": "display",
+      "equation_label": "zoggg",
+      "notes": "Normalizable boundary-localized profile."
+    }
+  ],
+  "step_justification": [
+    "Before the mass flip, the doubled system has zero total Chern-Simons level and no edge excitation.",
+    "After the mass flip, the folded fermion sees a sign-changing mass profile across the boundary.",
+    "That sign change makes the exponential wall profile decaying on both sides, hence normalizable."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
+  "lean_declaration": "normalizable_domain_wall_zero_mode_requires_mass_sign_change",
+  "lean_statement_kind": "lemma",
+  "admissible_assumptions": [
+    "Work with the folded sign-changing-mass Dirac problem in the continuum.",
+    "Treat the exponential profile extracted from the wall ansatz as the candidate zero-mode envelope."
+  ],
+  "lean_prerequisite_ids": [
+    "derivation_step:domain-wall-ansatz-reduces-to-boundary-dirac-equation",
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion"
+  ],
+  "formalization_blockers": [
+    "The analytic normalizability estimate for the wall profile is not yet abstracted into a reusable Lean theorem.",
+    "The folded-boundary construction is still represented as a local physics reduction rather than a fully explicit formal equivalence."
+  ],
+  "retrieval_hints": [
+    "Use when a proof answer must explain why the wall mode exists as a physical boundary excitation rather than merely writing its ansatz."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-21"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+  "type": "question_oracle",
+  "title": "Oracle For Separating Local Edge-Mode Proof From Cited-Source Fusion Gap",
+  "summary": "Detailed oracle for the Lecture Three honesty question about local continuum proof coverage versus the narrower residual enrichment route and scope boundaries.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "question-oracle",
+    "gap",
+    "source-fusion"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer should separate local coverage, the residual enrichment route, and the scope conflict cleanly."
+  ],
+  "regime": "Topic regression oracle.",
+  "scope": "Detailed answer key for the Lecture Three proof-versus-fusion honesty question.",
+  "dependencies": [
+    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "Local continuum proof spine."
+    },
+    {
+      "source_id": "paper:jackiw-rebbi-solitons-with-fermion-number-half-1976",
+      "section": "paper/main-result",
+      "notes": "The original source is present through a dedicated theorem, while denser archival mapping remains follow-up work."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Detailed oracle object.",
+  "prompt": "Detailed oracle for regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap.",
+  "mandatory_unit_ids": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "source_fusion_record:domain-wall-edge-mode-cross-source-fusion",
+    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
+    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+  ],
+  "supporting_obligation_ids": [
+    "proof_obligation:single-massive-dirac-fermion-induces-half-level",
+    "proof_obligation:doubling-cancels-parity-anomaly-before-boundary-sign-flip",
+    "proof_obligation:boundary-folding-produces-sign-changing-mass-dirac-equation",
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+    "proof_obligation:edge-mode-restores-consistency-with-integer-bulk-response"
+  ],
+  "derivation_spine": [
+    "State that the local Witten-side continuum proof obligations are explicit.",
+    "State that the Jackiw-Rebbi, anomaly-inflow, and Callan-Harvey cancellation ingredients are already source-grade locally.",
+    "State that the remaining follow-up is denser archival mapping rather than a missing core theorem.",
+    "State that the continuum parity-anomaly story is not the same thing as the lattice no-go theorem."
+  ],
+  "mandatory_logical_moves": [
+    "Separate local continuum proof completion from the residual enrichment route.",
+    "Name the actual gap and follow-up task.",
+    "Preserve the continuum-versus-lattice scope boundary."
+  ],
+  "common_failure_patterns": [
+    "Claiming the cited-source route is still missing a core Jackiw-Rebbi or anomaly-inflow theorem.",
+    "Ignoring the explicit Callan-Harvey cancellation fragment when describing what is already local.",
+    "Collapsing the continuum edge-mode family into the lattice no-go theorem.",
+    "Failing to identify any current local proof coverage."
+  ],
+  "grading_rubric": [
+    "Pass requires all three distinctions: local source-grade coverage, the residual enrichment route, and the scope boundary."
+  ],
+  "failure_triggers": [
+    "Fail if the answer says the Jackiw-Rebbi / Callan-Harvey route is already exhaustively complete when the designated enrichment task still remains.",
+    "Fail if the answer identifies the continuum story with the lattice theorem."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "regression_question:define-weyl-node-with-assumptions",
+  "type": "regression_question",
+  "title": "Define A Weyl Node With Its Assumptions",
+  "summary": "Tests whether the topic can state the Weyl-node definition with the correct local assumptions and notational data.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "tags": [
+    "regression-question",
+    "definition",
+    "weyl-node"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer is expected to come from the curated Lecture One branch."
+  ],
+  "regime": "Topic regression for the Witten Lecture One exemplar.",
+  "scope": "Flagship definition question for the local Weyl-node branch.",
+  "dependencies": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "notation_map:three-dimensional-two-band-crossing-symbols"
+  ],
+  "related_units": [
+    "question_oracle:define-weyl-node-with-assumptions"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/three-dimensions",
+      "equation_labels": [
+        "localexp",
+        "xpa",
+        "perd"
+      ],
+      "notes": "The answer should recover Witten's local 2x2 form, the linearized Weyl cone, and the chirality sign."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Definition-family regression prompt.",
+  "prompt": "State precisely what a Weyl node is in Witten Lecture One, including the local 2x2 Hamiltonian, the nondegeneracy assumption, and the chirality data.",
+  "question_family": "definition",
+  "primary_retrieval_paths": [
+    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
+    "notation_map:three-dimensional-two-band-crossing-symbols",
+    "source_map:witten-topological-phases-lecture-one"
+  ],
+  "pass_conditions": [
+    "The answer states that the crossing is isolated, three-dimensional, and locally reduced to two bands.",
+    "The answer names the invertible linear Pauli-vector Jacobian as the nondegeneracy condition.",
+    "The answer explains that chirality is the sign of the determinant and not merely a vague handedness label."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to test whether the KB can give a precise local Weyl-node definition."
+  ],
+  "created_at": "2026-03-19",
+  "updated_at": "2026-03-19"
+}

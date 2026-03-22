@@ -1,0 +1,55 @@
+{
+  "id": "open_gap:fqhe-wilson-loop-algebra-not-yet-curated",
+  "type": "open_gap",
+  "title": "FQHE Wilson-Loop Algebra Is Not Yet Curated",
+  "summary": "The Lecture Three fractional Hall branch mentions the Wilson-loop algebra of emergent gauge fields, but that algebra has not yet been promoted into proof-grade reusable units.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "gap-routing",
+  "canonical_family": "topological-phases/fractional-hall-topological-order",
+  "tags": [
+    "open-gap",
+    "fractional-quantum-hall-effect",
+    "wilson-loops"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The broader fractional Hall branch remains in the future buffer."
+  ],
+  "regime": "Lecture Three future-buffer routing.",
+  "scope": "Specific future-buffer gap for the Wilson-loop algebra branch.",
+  "dependencies": [
+    "open_gap:fractional-quantum-hall-topological-order-not-yet-curated",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "related_units": [
+    "followup_source_task:ingest-fqhe-wilson-loop-algebra-and-torus-degeneracy"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "Wilson-loop algebra branch of the deferred Lecture Three topological-order discussion."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "representation": "Future-buffer gap for the FQHE Wilson-loop algebra branch.",
+  "gap_kind": "too-wide-topic",
+  "recovery_source_type": "cited-paper",
+  "blocking_units": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "resolution_targets": [
+    "followup_source_task:ingest-fqhe-wilson-loop-algebra-and-torus-degeneracy"
+  ],
+  "reentry_targets": [
+    "source_map:witten-topological-phases-lecture-three",
+    "source_map:topological-phases-core"
+  ],
+  "future_buffered": true,
+  "followup_required": true,
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

@@ -1,0 +1,79 @@
+{
+  "id": "equation_context:lecture-two-hall-current-from-chern-simons",
+  "type": "equation_context",
+  "title": "Lecture Two Hall Current From Chern-Simons Context",
+  "summary": "This equation context records the functional-derivative route from the integer-level Chern-Simons effective action to the transverse Hall current J_2 = k E_1 / 2pi.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "integer-quantum-hall-effect",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "equation-context",
+    "hall-current",
+    "chern-simons"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The topological response dominates the low-energy effective action.",
+    "The sample occupies the x_1-x_2 plane."
+  ],
+  "regime": "Macroscopic integer quantum Hall response theory.",
+  "scope": "Equation-level context for the Hall current extracted from the Chern-Simons action.",
+  "dependencies": [
+    "notation_map:lecture-two-hall-response-symbols"
+  ],
+  "related_units": [
+    "derivation_step:chern-simons-action-induces-hall-current",
+    "proof_obligation:chern-simons-level-produces-quantized-hall-current"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "equation_labels": [
+        "curr",
+        "zurr",
+        "murr"
+      ],
+      "notes": "The functional derivative of the Chern-Simons response produces the Hall current."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Equation context for the response-theory step that converts the topological action into the observed Hall conductivity.",
+  "math_expressions": [
+    {
+      "latex": "J_i = -\\frac{\\delta I_{\\mathrm{eff}}}{\\delta A_i}",
+      "kind": "display",
+      "equation_label": "curr",
+      "notes": "Definition of the induced current in the effective-action formalism."
+    },
+    {
+      "latex": "I_{\\mathrm{eff}} = k\\,\\mathcal I_{\\mathrm{CS}} = \\frac{k}{4\\pi}\\int_{M_3}\\epsilon^{ijk}A_i\\partial_jA_k",
+      "kind": "display",
+      "equation_label": "zurr",
+      "notes": "The integer Hall system is governed by an effective Chern-Simons term."
+    },
+    {
+      "latex": "J_2 = \\frac{kF_{01}}{2\\pi} = \\frac{kE_1}{2\\pi}",
+      "kind": "display",
+      "equation_label": "murr",
+      "notes": "The longitudinal electric field becomes a transverse Hall current."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "J_2",
+      "meaning": "Hall current flowing in the x_2 direction"
+    },
+    {
+      "symbol": "E_1",
+      "meaning": "electric field in the x_1 direction"
+    }
+  ],
+  "retrieval_hints": [
+    "Use when an answer must show the variation step and not only quote the final conductivity."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

@@ -25,7 +25,3 @@ The current object set is designed to answer queries like:
 - how Berry curvature detects node charge;
 - why Fermi arcs are tied to projected bulk Weyl nodes;
 - what extra assumptions are needed before calling a crossing a Weyl semimetal.
-
-## L2 Writeback Example
-
-See `examples/witten-1510.07698/L2-Bridge-Example.md` for the concrete pattern an AI agent should follow when promoting new Witten-derived knowledge from `L2` into this repository.

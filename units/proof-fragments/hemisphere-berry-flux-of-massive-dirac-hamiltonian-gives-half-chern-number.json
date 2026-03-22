@@ -1,0 +1,95 @@
+{
+  "id": "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+  "type": "proof_fragment",
+  "title": "Hemisphere Berry Flux Of A Massive Dirac Hamiltonian Gives Half A Chern Number",
+  "summary": "For H=p_x sigma_x + p_y sigma_y + m sigma_z, the normalized Bloch vector covers only one hemisphere of S^2, so the occupied-band Berry flux is sign(m)/2 rather than an integer.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "parity-anomaly",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-fragment",
+    "berry-curvature",
+    "parity-anomaly",
+    "chern-number"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The occupied band is the negative-energy band of a single continuum massive Dirac cone.",
+    "Momentum space is compactified by the point at infinity."
+  ],
+  "regime": "Continuum 2+1-dimensional Dirac cone viewed through Berry geometry.",
+  "scope": "Geometric substep behind the parity-anomaly half level and the Haldane lattice bridge.",
+  "dependencies": [
+    "concept:berry-curvature"
+  ],
+  "related_units": [
+    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
+    "source_map:witten-topological-phases-lecture-three"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "puft",
+        "PPP"
+      ],
+      "notes": "Witten's hemisphere map explanation of the half-level parity-anomaly contribution."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/main-result",
+      "notes": "The lattice completion of this half-integer continuum contribution is the condensed-matter motivation for the Haldane model."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Geometric Berry-flux fragment extracting one half of a Chern number from a single massive Dirac cone.",
+  "math_expressions": [
+    {
+      "latex": "\\hat n(p)=\\frac{(p_x,p_y,m)}{\\sqrt{p_x^2+p_y^2+m^2}}",
+      "kind": "display",
+      "notes": "Normalized Bloch vector of the massive Dirac Hamiltonian."
+    },
+    {
+      "latex": "\\mathcal F_{p_xp_y}=\\frac{1}{2}\\hat n\\cdot\\left(\\partial_{p_x}\\hat n\\times\\partial_{p_y}\\hat n\\right)=\\frac{m}{2(p_x^2+p_y^2+m^2)^{3/2}}",
+      "kind": "display",
+      "notes": "Berry curvature of the occupied Dirac band."
+    },
+    {
+      "latex": "\\frac{1}{2\\pi}\\int_{\\mathbb R^2}\\mathcal F_{p_xp_y}\\,\\mathrm d p_x\\,\\mathrm d p_y=\\frac{1}{2}\\operatorname{sign}(m)",
+      "kind": "display",
+      "notes": "Half-integer Berry flux from the hemisphere image."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\hat n",
+      "meaning": "normalized Bloch vector of the two-band Dirac Hamiltonian"
+    },
+    {
+      "symbol": "\\mathcal F",
+      "meaning": "Berry curvature of the occupied Dirac band"
+    }
+  ],
+  "step_justification": [
+    "The compactified momentum plane maps to only one hemisphere because the sign of m fixes the north-versus-south choice at the origin while infinity lands on the equator.",
+    "The Berry-curvature integral equals the solid angle swept by the normalized Bloch vector.",
+    "A single hemisphere contributes exactly half of the full sphere degree."
+  ],
+  "failure_modes": [
+    "A full lattice model cannot stop at the half-integer result; ultraviolet completion must restore an integer total Chern number."
+  ],
+  "formal_targets": [
+    "aitp-l2",
+    "lean"
+  ],
+  "retrieval_hints": [
+    "Use when a query asks where the factor of one half comes from geometrically in the parity-anomaly argument."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "regression_question:compute-haldane-chern-number-from-dirac-mass-signs",
+  "type": "regression_question",
+  "title": "Compute The Haldane Chern Number From Dirac-Mass Signs",
+  "summary": "Tests whether the topic can derive the Haldane-model Chern number from the two valley masses instead of citing the lattice Chern insulator by name only.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "regression",
+  "canonical_family": "topological-phases/hall-response-chern-number",
+  "tags": [
+    "regression-question",
+    "derivation",
+    "haldane",
+    "graphene"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The answer must start from the low-energy graphene valleys rather than jumping directly to the final Hall phase."
+  ],
+  "regime": "Topic regression for the Haldane bridge inside the Lecture Two and Lecture Three hall-response family.",
+  "scope": "Bridge-derivation question for the explicit Haldane lattice criterion.",
+  "dependencies": [
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number"
+  ],
+  "related_units": [
+    "question_oracle:compute-haldane-chern-number-from-dirac-mass-signs"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/dirac-mass-criterion",
+      "equation_labels": [
+        "dirac-mass-at-k-and-k-prime"
+      ],
+      "notes": "The answer should write the two valley masses explicitly."
+    },
+    {
+      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
+      "section": "paper/chern-insulator-phase",
+      "equation_labels": [
+        "chern-number-from-valley-masses"
+      ],
+      "notes": "The answer should reconstruct the signed valley contribution formula for the Chern number."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Haldane-bridge regression prompt.",
+  "prompt": "Derive the Haldane-model Chern number from the valley masses at K and K prime, and explain why opposite mass signs produce the anomalous Hall phase.",
+  "question_family": "derivation",
+  "primary_retrieval_paths": [
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "derivation_step:graphene-dirac-point-condition",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "proof_fragment:haldane-dirac-mass-signs-determine-chern-number"
+  ],
+  "pass_conditions": [
+    "The answer writes the valley masses m_K and m_K prime explicitly.",
+    "The answer explains that each massive Dirac cone contributes a half Chern number with opposite valley orientation.",
+    "The answer derives C = 1/2 (sgn(m_K prime) - sgn(m_K)).",
+    "The answer states clearly when the phase is topological and when it is trivial."
+  ],
+  "retrieval_hints": [
+    "Use in regression runs to ensure the local Haldane bridge is derivable rather than merely name-dropped."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}

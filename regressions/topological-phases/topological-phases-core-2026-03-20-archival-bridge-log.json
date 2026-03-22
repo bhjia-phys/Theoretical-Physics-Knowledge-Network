@@ -1,0 +1,130 @@
+{
+  "run_id": "regression_run:topological-phases-core-2026-03-20-archival-bridge",
+  "suite_id": "regression_suite:topological-phases-core",
+  "status": "mixed",
+  "results": [
+    {
+      "question_id": "regression_question:define-weyl-node-with-assumptions",
+      "oracle_id": "question_oracle:define-weyl-node-with-assumptions",
+      "grade": "pass",
+      "notes": "The local Weyl definition branch remains explicit and formula-bearing."
+    },
+    {
+      "question_id": "regression_question:reconstruct-local-weyl-linearization",
+      "oracle_id": "question_oracle:reconstruct-local-weyl-linearization",
+      "grade": "pass",
+      "notes": "The local Weyl derivation is still decomposed into explicit derivation-step units."
+    },
+    {
+      "question_id": "regression_question:prove-nielsen-ninomiya-by-stokes",
+      "oracle_id": "question_oracle:prove-nielsen-ninomiya-by-stokes",
+      "grade": "partial",
+      "notes": "The local theorem proof is explicit, but the stronger Friedan cited-paper route is still unresolved.",
+      "writeback_unit_ids": [
+        "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested",
+        "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya"
+      ]
+    },
+    {
+      "question_id": "regression_question:explain-berry-flux-version-of-node-charge",
+      "oracle_id": "question_oracle:explain-berry-flux-version-of-node-charge",
+      "grade": "pass",
+      "notes": "The Berry-curvature route to the node charge and zero-sum law is explicit."
+    },
+    {
+      "question_id": "regression_question:separate-anomaly-intuition-from-lattice-proof",
+      "oracle_id": "question_oracle:separate-anomaly-intuition-from-lattice-proof",
+      "grade": "partial",
+      "notes": "The local distinction is explicit, but the cited-source separation between anomaly intuition and lattice proof is still incomplete.",
+      "writeback_unit_ids": [
+        "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
+        "followup_source_task:ingest-friedan-proof-of-nielsen-ninomiya",
+        "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
+        "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+      ]
+    },
+    {
+      "question_id": "regression_question:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "oracle_id": "question_oracle:identify-lecture-two-and-three-prerequisites-for-edge-mode-proof",
+      "grade": "pass",
+      "notes": "The KB now names the traced-curvature TKNN bridge, the Jackiw-Rebbi zero-mode theorem, the Callan-Harvey inflow fragment, and the residual narrowed enrichment routes explicitly."
+    },
+    {
+      "question_id": "regression_question:justify-large-gauge-quantization-before-hall-response-equivalence",
+      "oracle_id": "question_oracle:justify-large-gauge-quantization-before-hall-response-equivalence",
+      "grade": "pass",
+      "notes": "The large-gauge prerequisite proof is explicit through equation context and proof-obligation units."
+    },
+    {
+      "question_id": "regression_question:reconstruct-hall-response-chern-number-equivalence",
+      "oracle_id": "question_oracle:reconstruct-hall-response-chern-number-equivalence",
+      "grade": "pass",
+      "notes": "The response, traced-curvature TKNN bridge, projector-level formula, and many-body twist-angle routes are all explicit locally.",
+      "writeback_unit_ids": [
+        "proof_fragment:berry-curvature-trace-equals-projector-commutator",
+        "proof_fragment:projector-formula-for-the-tknn-chern-number",
+        "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
+        "proof_state:lecture-two-hall-response-chern-number"
+      ]
+    },
+    {
+      "question_id": "regression_question:compute-haldane-chern-number-from-dirac-mass-signs",
+      "oracle_id": "question_oracle:compute-haldane-chern-number-from-dirac-mass-signs",
+      "grade": "pass",
+      "notes": "The local graphene-to-Haldane bridge is explicit enough to derive the valley-mass Chern-number criterion rather than naming the phase only.",
+      "writeback_unit_ids": [
+        "definition:graphene-nearest-neighbor-hamiltonian",
+        "derivation_step:graphene-dirac-point-condition",
+        "proof_fragment:haldane-dirac-mass-signs-determine-chern-number"
+      ]
+    },
+    {
+      "question_id": "regression_question:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+      "oracle_id": "question_oracle:separate-local-lecture-two-proof-from-cited-source-fusion-gap",
+      "grade": "pass",
+      "notes": "The KB cleanly separates the core source-grade Hall-response theorem from the narrower Haldane and archival-enrichment route."
+    },
+    {
+      "question_id": "regression_question:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+      "oracle_id": "question_oracle:derive-jackiw-rebbi-edge-mode-from-mass-sign-change",
+      "grade": "pass",
+      "notes": "The parity-anomaly setup, Jackiw-Rebbi zero-mode theorem, Callan-Harvey cancellation equation, and wall-mode derivation are all explicit locally.",
+      "writeback_unit_ids": [
+        "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+        "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+        "theorem:anomaly-inflow-requires-chiral-edge-modes",
+        "proof_state:lecture-three-domain-wall-edge-mode"
+      ]
+    },
+    {
+      "question_id": "regression_question:show-callan-harvey-inflow-cancels-boundary-anomaly",
+      "oracle_id": "question_oracle:show-callan-harvey-inflow-cancels-boundary-anomaly",
+      "grade": "pass",
+      "notes": "The anomaly-inflow branch now exposes the explicit bulk variation, edge anomaly, and cancellation equation.",
+      "writeback_unit_ids": [
+        "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+        "theorem:anomaly-inflow-requires-chiral-edge-modes",
+        "source_fusion_record:domain-wall-edge-mode-cross-source-fusion"
+      ]
+    },
+    {
+      "question_id": "regression_question:derive-boundary-chirality-after-doubling-and-folding",
+      "oracle_id": "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
+      "grade": "pass",
+      "notes": "The full ordered derivation is explicit, and the final anomaly-inflow interpretation plus the continuum-versus-lattice scope boundary are both preserved.",
+      "writeback_unit_ids": [
+        "dependency_graph_snapshot:lecture-three-domain-wall-edge-mode-proof",
+        "theorem:anomaly-inflow-requires-chiral-edge-modes",
+        "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly",
+        "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
+      ]
+    },
+    {
+      "question_id": "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+      "oracle_id": "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap",
+      "grade": "pass",
+      "notes": "The KB cleanly separates the source-grade continuum family, including Callan-Harvey cancellation, from the narrower archival-enrichment route and from the distinct lattice no-go theorem."
+    }
+  ],
+  "created_at": "2026-03-20"
+}

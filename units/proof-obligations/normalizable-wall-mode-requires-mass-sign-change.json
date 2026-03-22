@@ -1,0 +1,67 @@
+{
+  "id": "proof_obligation:normalizable-wall-mode-requires-mass-sign-change",
+  "type": "proof_obligation",
+  "title": "Normalizable Wall Mode Requires Mass Sign Change",
+  "summary": "Discharge the proof obligation that the exponential wall profile is normalizable only because the mass changes sign across the boundary, so the mode decays away from the wall on both sides.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "edge-modes",
+  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "tags": [
+    "proof-obligation",
+    "normalizability",
+    "domain-wall"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "A genuine boundary excitation must be square-integrable in the normal direction."
+  ],
+  "regime": "Physical existence criterion for the wall mode.",
+  "scope": "Fifth proof obligation in the Lecture Three theorem family.",
+  "dependencies": [
+    "proof_obligation:domain-wall-ansatz-imposes-chiral-boundary-equation",
+    "proof_fragment:normalizable-domain-wall-zero-mode-requires-mass-sign-change",
+    "equation_context:lecture-three-chiral-wall-mode"
+  ],
+  "related_units": [
+    "proof_state:lecture-three-domain-wall-edge-mode",
+    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "gift",
+        "zoggg",
+        "trogg"
+      ],
+      "notes": "The wall profile is normalizable only when the mass flips sign."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "source-grounded",
+  "maturity": "working",
+  "representation": "Bounded proof obligation for the physical normalizability of the wall mode.",
+  "pass_conditions": [
+    "The answer explains why the sign-changing mass makes the exponential profile decay on both sides.",
+    "The answer states that normalizability is what makes the mode a physical boundary excitation."
+  ],
+  "mandatory_logical_moves": [
+    "Inspect the wall profile away from the boundary on both sides.",
+    "Use the mass sign flip to show both tails decay rather than one exploding.",
+    "Interpret the result as normalizability of the edge mode."
+  ],
+  "common_failure_patterns": [
+    "Writing the exponential profile without checking whether it is normalizable.",
+    "Saying a wall mode exists without explaining why the sign change matters."
+  ],
+  "grading_rubric": [
+    "Full credit requires an explicit normalizability argument tied to the mass sign change.",
+    "Partial credit is appropriate if the answer states the mode but omits why it decays."
+  ],
+  "retrieval_hints": [
+    "Use when a derivation must justify that the boundary mode is physically admissible."
+  ],
+  "created_at": "2026-03-20",
+  "updated_at": "2026-03-20"
+}
