@@ -22,15 +22,12 @@
   "dependencies": [
     "concept:weyl-node",
     "quantity:winding-number",
-    "derivation:stokes-theorem-implies-net-zero-charge",
-    "theorem:nielsen-ninomiya-charge-cancellation"
+    "derivation:stokes-theorem-implies-net-zero-charge"
   ],
   "related_units": [
-    "theorem:nielsen-ninomiya-charge-cancellation",
     "claim:lattice-weyl-nodes-sum-to-zero-net-chirality",
     "warning:local-weyl-description-does-not-fix-global-lattice-consistency",
-    "bridge:continuum-anomaly-to-lattice-no-go",
-    "open_gap:friedan-level-rigorous-nielsen-ninomiya-proof-not-yet-ingested"
+    "bridge:continuum-anomaly-to-lattice-no-go"
   ],
   "source_anchors": [
     {
@@ -61,16 +58,19 @@
   "representation": "Global topological constraint on a lattice node set.",
   "math_expressions": [
     {
-      "latex": "\\sum_{\\alpha} w_\\alpha = 0",
-      "kind": "display",
-      "equation_label": "cl",
-      "notes": "Degree-theoretic form of the theorem."
+      "latex": "w(S) = \\int_S \\varphi^{*}(\\eta)",
+      "label": "wnn",
+      "context": "Degree-theory form of the node charge."
     },
     {
-      "latex": "\\sum_{\\alpha}\\int_{S^2_\\alpha}\\frac{F}{2\\pi}=0",
-      "kind": "display",
-      "equation_label": "nna",
-      "notes": "Berry-curvature form of the theorem."
+      "latex": "0 = \\int_{B'} \\varphi^{*}(\\mathrm{d}\\eta) = \\sum_{\\alpha} w(S_{\\alpha})",
+      "label": "cl",
+      "context": "Stokes-theorem derivation of zero net winding number."
+    },
+    {
+      "latex": "0 = \\int_{B'} \\frac{\\mathrm{d}\\mathcal{F}}{2\\pi} = \\sum_{\\alpha} \\int_{S_{\\alpha}} \\frac{\\mathcal{F}}{2\\pi} = \\sum_{\\alpha} w(S_{\\alpha})",
+      "label": "nna",
+      "context": "Berry-curvature form of the Nielsen-Ninomiya cancellation theorem."
     }
   ],
   "model_refs": [
@@ -83,6 +83,20 @@
   "quantity_refs": [
     "quantity:winding-number"
   ],
+  "symbols": [
+    {
+      "symbol": "w(S_{\\alpha})",
+      "meaning": "topological charge of the isolated node enclosed by the sphere S_alpha"
+    },
+    {
+      "symbol": "\\eta",
+      "meaning": "normalized volume two-form on the target sphere of the map \\varphi"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "Berry curvature two-form"
+    }
+  ],
   "failure_modes": [
     "The simple statement changes for non-isolated crossings or for continuum models without lattice compactness."
   ],
@@ -94,5 +108,5 @@
     "Use for chirality cancellation, fermion doubling, and lattice no-go queries."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-19"
+  "updated_at": "2026-03-18"
 }

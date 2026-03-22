@@ -2,164 +2,147 @@
   "id": "theorem:anomaly-inflow-requires-chiral-edge-modes",
   "type": "theorem",
   "title": "Boundary Anomaly Inflow Requires Chiral Edge Modes",
-  "summary": "On a manifold with boundary, the gauge variation of the bulk integer Chern-Simons response cannot be canceled by a purely local boundary counterterm, so anomalous gapless boundary modes are required to absorb the inflow.",
-  "domain": "topological-phases-of-matter",
-  "subdomain": "edge-modes",
-  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "summary": "On a manifold with boundary, the variation of the bulk Chern-Simons term cannot be canceled by a local boundary counterterm and therefore requires anomalous gapless boundary modes; source anchor: Lecture Two / Edge States And Anomaly Inflow (lines 1600-1629; eqs. facs, trytry).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
   "tags": [
     "theorem",
-    "anomaly-inflow",
-    "edge-modes",
-    "chern-simons"
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
   ],
-  "aliases": [
-    "boundary anomaly inflow theorem"
-  ],
+  "aliases": [],
   "assumptions": [
-    "The bulk effective action contains an integer-level Chern-Simons term.",
-    "The system is defined on a manifold with physical boundary."
+    "Scope: boundary of an integer quantum Hall phase with bulk Chern-Simons response."
   ],
-  "regime": "Integer quantum Hall boundary theory and its continuum anomaly-cancellation story.",
-  "scope": "Source-grade anomaly-inflow theorem reused in the Lecture Three edge-mode family.",
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:anomaly-inflow-requires-chiral-edge-modes after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the anomaly-inflow requirement for chiral edge modes ready to be stored as a reusable theorem_card?",
   "dependencies": [
-    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
-    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
-    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly"
+    "proof_fragment:chern-simons-gauge-variation-is-a-boundary-term",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "theorem:hall-level-equals-many-body-chern-number"
   ],
   "related_units": [
-    "theorem_family:domain-wall-edge-mode-consistency",
-    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
-    "proof_state:lecture-three-domain-wall-edge-mode",
-    "source_map:witten-topological-phases-lecture-two",
-    "source_map:witten-topological-phases-lecture-three",
-    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly"
+    "concept:parity-anomaly-of-a-single-two-plus-one-dimensional-dirac-fermion",
+    "theorem:half-level-cs-term-from-massive-dirac-fermion"
   ],
   "source_anchors": [
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "notes": "AITP promoted candidate candidate:anomaly-inflow-requires-chiral-edge-modes from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
       "equation_labels": [
-        "facs"
-      ],
-      "notes": "Witten's anomaly-inflow statement for the integer Hall boundary."
-    },
-    {
-      "source_id": "paper:callan-harvey-anomalies-zero-modes-1985",
-      "section": "paper/anomaly-cancellation",
-      "equation_labels": [
-        "bulk-topological-variation",
-        "inflow-balance"
-      ],
-      "notes": "Original source for anomaly inflow and wall-localized chiral zero modes."
+        "facs",
+        "trytry"
+      ]
     }
   ],
   "formalization_status": "candidate",
-  "validation_status": "cross-checked",
-  "maturity": "working",
-  "representation": "Reusable anomaly-inflow theorem linking the bulk Chern-Simons response to mandatory chiral boundary degrees of freedom.",
-  "human_projection_profile": "learning-note",
-  "motivation": "This note exists because Lecture Three needs a theorem-level statement of anomaly inflow, not only the local cancellation equation. The theorem says that a nontrivial bulk Hall response on a manifold with boundary forces chiral edge degrees of freedom.",
-  "prerequisite_story": "Know the integer Hall-response theorem, the parity-anomaly half-level ingredient, and the Callan-Harvey equality between the bulk boundary variation and the edge anomaly.",
-  "local_context_story": "In the current topic graph, this theorem sits between the explicit Callan-Harvey fragment and the final domain-wall edge-mode theorem. It abstracts the physical message of the cancellation identity.",
-  "forward_links_story": "Combined with the Jackiw-Rebbi wall-mode existence theorem, this anomaly-inflow theorem yields the final statement that a sign-changing Dirac mass supports a chiral edge mode consistent with the bulk Hall level.",
-  "canonical_questions": [
-    "Why does a bulk Chern-Simons term on a manifold with boundary force edge modes?",
-    "How does the inflow equation become a theorem about net boundary chirality?",
-    "Why is this theorem distinct from the separate lattice Nielsen-Ninomiya no-go statement?"
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "equivalence:weyl-charge-equals-berry-flux",
+    "symbol_binding:bij-jacobian-determines-weyl-chirality"
   ],
-  "scope_boundaries": [
-    "This theorem is a continuum bulk-boundary consistency statement and should not be confused with the lattice charge-cancellation theorem.",
-    "It assumes the bulk integer Hall response is already known and does not independently derive that bulk integer."
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:anomaly-inflow-requires-chiral-edge-modes."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-anomaly-inflow-requires-chiral-edge-modes/agent_consensus.json",
+    "candidate_id=candidate:anomaly-inflow-requires-chiral-edge-modes",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-anomaly-inflow-requires-chiral-edge-modes/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-anomaly-inflow-requires-chiral-edge-modes/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-anomaly-inflow-requires-chiral-edge-modes/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-anomaly-inflow-requires-chiral-edge-modes/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:anomaly-inflow-requires-chiral-edge-modes",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:38:39+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two anomaly-inflow audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:anomaly-inflow-requires-chiral-edge-modes",
+    "updated_at": "2026-03-18T01:38:39+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two anomaly-inflow audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:anomaly-inflow-requires-chiral-edge-modes",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
   ],
   "math_expressions": [
     {
-      "latex": "I_{\\mathrm{bulk}}=\\frac{k}{4\\pi}\\int_{M_2\\times\\mathbb R}A\\wedge \\mathrm dA",
-      "kind": "display",
-      "equation_label": "facs",
-      "notes": "Bulk Chern-Simons action for the integer Hall phase."
+      "latex": "k\\, I_{\\mathrm{CS}} = \\frac{k}{4\\pi}\\int_{M_2\\times \\mathbb{R}} \\mathrm{d}^3x\\, \\epsilon^{ijk} A_i\\partial_j A_k",
+      "label": "facs",
+      "context": "Bulk Chern-Simons action whose gauge variation creates a boundary anomaly."
     },
     {
-      "latex": "\\delta_{\\Lambda}I_{\\mathrm{bulk}}=\\frac{k}{4\\pi}\\int_{\\partial M_2\\times\\mathbb R}\\Lambda\\,\\mathrm dA",
-      "kind": "display",
-      "notes": "Gauge variation becomes a boundary anomaly that must be canceled by edge degrees of freedom."
-    },
-    {
-      "latex": "\\partial_a j^a_{\\mathrm{edge}}=-\\frac{k}{4\\pi}\\,\\epsilon^{ab}F_{ab},\\qquad \\delta_{\\Lambda}W_{\\mathrm{edge}}=-\\delta_{\\Lambda}I_{\\mathrm{bulk}}",
-      "kind": "display",
-      "notes": "Callan-Harvey inflow equation equating the edge anomaly with the bulk variation."
-    },
-    {
-      "latex": "n_+-n_-=k",
-      "kind": "display",
-      "notes": "Net boundary chirality must match the bulk Hall level."
+      "latex": "I_{\\mathrm{CS}} + \\int_{\\partial M_2\\times \\mathbb{R}} \\mathrm{d}t\\,\\mathrm{d}x\\,(?????)",
+      "label": "trytry",
+      "context": "Schematic failed attempt to cancel the anomaly by a purely local boundary counterterm."
     }
   ],
   "symbols": [
     {
       "symbol": "k",
-      "meaning": "integer Hall-response level multiplying the Chern-Simons action"
+      "meaning": "Hall-level coefficient multiplying the bulk Chern-Simons term"
     },
     {
-      "symbol": "\\Lambda",
-      "meaning": "gauge parameter whose variation exposes the boundary anomaly"
+      "symbol": "I_{\\mathrm{CS}}",
+      "meaning": "bulk Chern-Simons action"
     },
     {
-      "symbol": "j^a_{\\mathrm{edge}}",
-      "meaning": "boundary chiral current whose divergence carries the edge anomaly"
-    },
-    {
-      "symbol": "n_+-n_-",
-      "meaning": "net chirality of boundary gapless modes"
+      "symbol": "\\partial M_2\\times \\mathbb{R}",
+      "meaning": "physical boundary where anomaly inflow must be canceled by edge modes"
     }
-  ],
-  "failure_modes": [
-    "This continuum anomaly-inflow statement does not by itself prove the separate lattice Nielsen-Ninomiya theorem."
-  ],
-  "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
-  "lean_declaration": "anomaly_inflow_requires_chiral_edge_modes",
-  "lean_statement_kind": "theorem",
-  "admissible_assumptions": [
-    "Work with an integer-level Hall response on a manifold with boundary in the continuum effective theory.",
-    "Treat the local boundary anomaly formula as available input through the Callan-Harvey lemma."
-  ],
-  "lean_prerequisite_ids": [
-    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
-    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
-    "proof_fragment:callan-harvey-inflow-cancels-boundary-anomaly"
-  ],
-  "formalization_blockers": [
-    "The formal relation between the bulk Hall level and net boundary chirality still needs a reusable index-style wrapper in Lean.",
-    "The current KB still keeps the continuum theorem separate from the lattice regularization story instead of connecting them with a common formal interface."
-  ],
-  "retrieval_hints": [
-    "Use when the answer must explain why a nontrivial bulk Hall term forces chiral boundary modes."
-  ],
-  "topic_completion_status": "promotion-ready",
-  "supporting_regression_question_ids": [
-    "regression_question:show-callan-harvey-inflow-cancels-boundary-anomaly",
-    "regression_question:derive-boundary-chirality-after-doubling-and-folding",
-    "regression_question:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
-  ],
-  "supporting_oracle_ids": [
-    "question_oracle:show-callan-harvey-inflow-cancels-boundary-anomaly",
-    "question_oracle:derive-boundary-chirality-after-doubling-and-folding",
-    "question_oracle:separate-local-edge-mode-proof-from-cited-source-fusion-gap"
-  ],
-  "supporting_regression_run_ids": [
-    "regression_run:topological-phases-core-2026-03-20-proof-grade-closure",
-    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
-  ],
-  "promotion_blockers": [],
-  "split_required": false,
-  "recovery_source_refs": [
-    "open_gap:jackiw-rebbi-domain-wall-proof-not-yet-curated",
-    "followup_source_task:ingest-callan-harvey-and-jackiw-rebbi-for-edge-mode-proof",
-    "conflict_record:continuum-parity-anomaly-is-not-lattice-no-go"
-  ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-21"
+  ]
 }

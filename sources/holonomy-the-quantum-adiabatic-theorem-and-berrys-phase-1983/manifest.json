@@ -1,0 +1,25 @@
+{
+  "source_id": "paper:holonomy-the-quantum-adiabatic-theorem-and-berrys-phase-1983",
+  "title": "Holonomy, the Quantum Adiabatic Theorem, and Berry's Phase",
+  "authors": [
+    "Barry Simon"
+  ],
+  "version": "journal",
+  "submitted_date": "1983-12-01",
+  "updated_date": "1983-12-01",
+  "canonical_scope": "Primary geometric source for Berry holonomy, line bundles, and the Chern-class interpretation of Hall integers.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.51.2167",
+    "inspire": "https://inspirehep.net/literature/10.1103/physrevlett.51.2167",
+    "journal": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.51.2167"
+  },
+  "section_map": [
+    {
+      "id": "berry-holonomy",
+      "title": "Berry Holonomy as Line-Bundle Connection",
+      "summary": "Berry's phase is the holonomy of a Hermitian line bundle, and the Hall integers are Chern numbers controlled by eigenvalue degeneracies."
+    }
+  ],
+  "equation_map": [],
+  "figure_map": []
+}

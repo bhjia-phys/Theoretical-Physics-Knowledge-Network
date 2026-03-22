@@ -1,0 +1,165 @@
+{
+  "id": "theorem:hall-level-equals-many-body-chern-number",
+  "type": "theorem",
+  "title": "Hall Level Equals the Many-Body Chern Number",
+  "summary": "Substituting the twist-angle background into the Chern-Simons response yields hat F = k / 2pi and hence hat k' = k; source anchor: Lecture Two / Proof Of The Equivalence (lines 1576-1597; eqs. mizz, roff, coff, plizz).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
+  "tags": [
+    "theorem",
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: integer Hall system whose effective response is k I_CS(A)."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:hall-level-equals-many-body-chern-number after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the theorem that the Hall level equals the many-body Chern number ready to be stored as a reusable theorem_card?",
+  "dependencies": [
+    "definition:many-body-twist-angle-chern-number",
+    "derivation_step:adiabatic-first-order-action-equals-berry-connection",
+    "theorem:chern-simons-level-is-integer"
+  ],
+  "related_units": [
+    "equivalence:khat-prime-equals-band-chern-number",
+    "proof_fragment:chern-simons-gauge-variation-is-a-boundary-term",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "AITP promoted candidate candidate:hall-level-equals-many-body-chern-number from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "mizz",
+        "roff",
+        "coff",
+        "plizz"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:chern-simons-level-is-integer",
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "theorem:graphene-symmetry-protects-dirac-nodes"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:hall-level-equals-many-body-chern-number."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-level-equals-many-body-chern-number/agent_consensus.json",
+    "candidate_id=candidate:hall-level-equals-many-body-chern-number",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-level-equals-many-body-chern-number/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-level-equals-many-body-chern-number/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-level-equals-many-body-chern-number/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-level-equals-many-body-chern-number/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:hall-level-equals-many-body-chern-number",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:32+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two Hall-level equals many-body Chern-number audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:hall-level-equals-many-body-chern-number",
+    "updated_at": "2026-03-18T12:26:32+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two Hall-level equals many-body Chern-number audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:hall-level-equals-many-body-chern-number",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "I^{\\prime}=-\\frac{k}{2\\pi}\\int \\mathrm{d}t\\,\\alpha_1\\frac{\\mathrm{d}\\alpha_2}{\\mathrm{d}t}",
+      "label": "mizz",
+      "context": "First-order effective action for the adiabatically varying twist angles."
+    },
+    {
+      "latex": "\\nabla\\equiv\\left(\\frac{D}{D\\alpha_1},\\frac{D}{D\\alpha_2}\\right)=\\left(\\frac{\\partial}{\\partial \\alpha_1},\\frac{\\partial}{\\partial \\alpha_2}+i\\frac{k\\alpha_1}{2\\pi}\\right)",
+      "label": "roff",
+      "context": "Berry connection read off from the first-order action."
+    },
+    {
+      "latex": "\\widehat{\\mathcal{F}}_{\\alpha_1\\alpha_2}=-i\\left[\\frac{D}{D\\alpha_1},\\frac{D}{D\\alpha_2}\\right]=\\frac{k}{2\\pi}",
+      "label": "coff",
+      "context": "Constant Berry curvature induced by the Hall response."
+    },
+    {
+      "latex": "\\widehat{k}^{\\prime}=\\int_0^{2\\pi}\\mathrm{d}\\alpha_1\\,\\mathrm{d}\\alpha_2\\,\\frac{\\widehat{\\mathcal{F}}}{2\\pi}=k",
+      "label": "plizz",
+      "context": "Twist-angle Chern number equals the Hall coefficient."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "k",
+      "meaning": "Hall level / coefficient of the Chern-Simons response"
+    },
+    {
+      "symbol": "\\alpha_1,\\alpha_2",
+      "meaning": "twist angles for the two fundamental cycles of the finite sample"
+    },
+    {
+      "symbol": "\\widehat{\\mathcal{F}}",
+      "meaning": "Berry curvature on the twist-angle torus"
+    },
+    {
+      "symbol": "\\widehat{k}^{\\prime}",
+      "meaning": "many-body Chern number extracted from \\widehat{\\mathcal{F}}"
+    }
+  ]
+}

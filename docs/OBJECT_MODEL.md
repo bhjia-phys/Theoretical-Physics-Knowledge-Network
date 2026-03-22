@@ -2,67 +2,45 @@
 
 ## Source Of Truth
 
-The kernel now has five canonical surfaces:
+The kernel has three canonical surfaces:
 
-- `sources/`: public source manifests
-- `units/`: reusable typed knowledge objects
-- `edges/`: typed graph relations
-- `queues/`: durable unresolved and prerequisite routing state
-- `regressions/`: topic regression manifests and pass logs
+- `sources/`: public source manifests;
+- `units/`: reusable typed knowledge objects;
+- `edges/`: typed relations between units.
 
 Everything else is a projection.
 
+The operational rules that constrain these surfaces live in `docs/PROTOCOLS.md`.
+
 ## Unit Families
 
-Current unit families are:
+Current unit families:
 
 - `concept`
-- `definition`
-- `theorem`
-- `lemma`
-- `equivalence`
-- `conjecture`
-- `theorem_family`
-- `definition_family`
-- `notation_family`
-- `feasibility_question`
-- `dependency_request`
-- `proof_search_request`
 - `equation`
-- `equation_context`
 - `quantity`
 - `claim`
 - `derivation`
-- `proof_fragment`
-- `proof_obligation`
-- `proof_state`
-- `derivation_step`
-- `dependency_graph_snapshot`
 - `method`
 - `model`
 - `warning`
 - `bridge`
-- `notation_map`
-- `source_fusion_record`
-- `conflict_record`
-- `open_gap`
-- `question_oracle`
-- `regression_question`
-- `followup_source_task`
 - `source_map`
+- `notation`
+- `assumption`
+- `regime`
+- `theorem`
+- `proof_fragment`
+- `derivation_step`
+- `definition`
+- `example`
+- `caveat`
+- `equivalence`
+- `symbol_binding`
 
-The point of the expanded family list is simple:
-
-- concepts and equations are not enough for proof-grade theoretical-physics notes;
-- derivation steps and proof fragments must be promotable as first-class objects;
-- proof obligations and proof states must survive as first-class objects when a theorem family is too detailed for one card;
-- equation contexts and dependency-graph snapshots must carry the exact local role of formulas and prerequisites;
-- theorem or notation families must be allowed to fuse several source-local views without erasing source-local differences;
-- unresolved prerequisites and regression assets must also be durable rather than hidden in agent memory.
+Each unit carries both human-readable fields and retrieval-facing fields.
 
 ## Required Common Fields
-
-Every unit still carries the common backbone:
 
 - `id`
 - `type`
@@ -83,170 +61,88 @@ Every unit still carries the common backbone:
 - `created_at`
 - `updated_at`
 
-## Extended Proof-Grade Fields
+## Physics-Specific Fields
 
-Units may additionally carry structured proof-facing fields such as:
+Units may also carry:
 
-- `human_projection_profile`
-- `motivation`
-- `prerequisite_story`
-- `local_context_story`
-- `forward_links_story`
-- `canonical_questions`
-- `scope_boundaries`
+- `symmetries`
+- `representation`
 - `math_expressions`
+- `model_refs`
+- `equation_refs`
+- `quantity_refs`
+- `failure_modes`
+- `formal_targets`
+- `retrieval_hints`
 - `symbols`
-- `step_inputs`
-- `step_output`
-- `step_justification`
-- `source_omission_flag`
-- `followup_required`
-- `prompt`
-- `question_family`
-- `primary_retrieval_paths`
-- `pass_conditions`
-- `mandatory_unit_ids`
-- `mandatory_equation_labels`
-- `obligation_ids`
-- `supporting_obligation_ids`
-- `equation_context_ids`
-- `dependency_graph_snapshot_id`
-- `family_member_ids`
-- `fusion_member_ids`
-- `conflict_unit_ids`
-- `derivation_spine`
-- `mandatory_logical_moves`
-- `common_failure_patterns`
-- `grading_rubric`
-- `failure_triggers`
-- `blocking_units`
-- `resolution_targets`
-- `resolves_gaps`
-- `routes_back_to`
-- `candidate_sources`
-- `canonical_family`
-- `formal_theory_role`
-- `definition_trust_tier`
-- `statement_graph_role`
-- `statement_graph_parents`
-- `statement_graph_children`
-- `target_statement_id`
-- `faithfulness_status`
-- `faithfulness_strategy`
-- `faithfulness_notes`
-- `comparator_audit_status`
-- `comparator_risks`
-- `provenance_kind`
-- `attribution_requirements`
-- `prerequisite_closure_status`
-- `lean_namespace`
-- `lean_declaration`
-- `lean_statement_kind`
-- `admissible_assumptions`
-- `lean_prerequisite_ids`
-- `formalization_blockers`
-- `gap_kind`
-- `recovery_source_type`
-- `task_status`
-- `reentry_targets`
-- `future_buffered`
-- `runtime_gap_kinds`
-- `runtime_return_to_stages`
-- `topic_queue_ids`
 
-These fields exist so that a derivation or oracle can expose formulas, assumptions, and missing prerequisites explicitly instead of collapsing into prose.
+## Auto-Canonical Metadata (Optional)
 
-The Lean-planning fields have a narrower role:
+For AITP auto-promotion and canonicalization workflows, units may also carry:
 
-- `lean_namespace`, `lean_declaration`, and `lean_statement_kind` say what the eventual formal object should be;
-- `admissible_assumptions` records which physics assumptions are allowed to remain at the wrapper statement;
-- `lean_prerequisite_ids` names the supporting local declarations or proof obligations;
-- `formalization_blockers` records what still prevents honest formalization.
+- `canonical_layer`
+- `review_mode`
+- `review_artifacts`
+- `coverage`
+- `consensus`
+- `merge_lineage`
+- `conflict_status`
+- `conflict_refs`
+- `equivalence_refs`
 
-The newer formal-theory governance fields answer a different question: even if a
-Lean-facing plan exists, what exactly is being trusted?
+These fields are optional and backward-compatible with older unit files.
+`review_artifacts` and `merge_lineage` are stored as flat string lists so the
+backend stays easy to diff, grep, and re-index.
 
-- `formal_theory_role` separates trusted targets from intermediate theory and supporting context
-- `statement_graph_role`, `statement_graph_parents`, and `statement_graph_children` make the local statement graph explicit
-- `target_statement_id` says which trusted target an intermediate scaffold is serving
-- `definition_trust_tier` records whether a translated definition is already trusted, only reviewed as a translation, still provisional, or merely scaffold-level
-- `faithfulness_status`, `faithfulness_strategy`, and `faithfulness_notes` record whether the current unit still matches the scientific source claim
-- `comparator_audit_status` and `comparator_risks` record the anti-cheat comparison against nearby weakened statements
-- `provenance_kind` and `attribution_requirements` record where the current formal material came from and what reuse obligations remain
-- `prerequisite_closure_status` says whether the prerequisite graph is actually closed or still pending/partial
+## Source Anchors
 
-For promotion-grade AITP branches, these unit-local fields should be backed by
-durable kernel review artifacts in the matching `theory-packets/<candidate>/`
-directory. The most important artifacts are:
+`source_anchors` connect reusable units back to public source structure.
 
-- `faithfulness_review.json`
-- `comparator_audit_record.json`
-- `provenance_review.json`
-- `prerequisite_closure_review.json`
-- `formal_theory_review.json/.md`
+Each anchor may specify:
 
-The KB object model does not force one fixed field name for those external
-paths, but the review ledger itself is part of the intended protocol surface.
+- `source_id`
+- `section`
+- `equation_labels`
+- `figure_ids`
+- `notes`
 
-The newer human-projection fields exist for a different but related reason: a typed unit may be retrieval-ready yet still be confusing when mirrored directly for study. `human_projection_profile: "learning-note"` marks the units that must carry enough context to read as standalone learning pages rather than anonymous graph nodes.
+This is the key bridge between human reading and machine retrieval.
 
-`canonical_family` is the first explicit multi-source fusion field. It groups source-specific presentations that belong to the same reusable theorem or derivation family.
+## Derivation Granularity
 
-The newer family and fusion objects make that grouping auditable:
+Derivation-heavy knowledge should be modeled at the finest granularity that still remains reusable.
 
-- `theorem_family`, `definition_family`, and `notation_family` collect the reusable members;
-- `source_fusion_record` explains why the grouping is legitimate;
-- `conflict_record` preserves unresolved differences instead of hiding them.
+That means:
 
-`gap_kind`, `recovery_source_type`, `task_status`, and `reentry_targets` make the `open_gap` and `followup_source_task` lifecycle explicit instead of leaving recovery routing implicit in prose.
-
-The runtime-gap bridge fields finish the loop:
-
-- `runtime_gap_kinds` says which AITP follow-up gap kinds should map back to this topic object;
-- `runtime_return_to_stages` records the recovery stage expected by the runtime gap contract;
-- `topic_queue_ids` records which durable queue surfaces should carry the gap on the topic side.
-
-## Queue And Regression Surfaces
-
-`queues/` stores durable topic-level work routing:
-
-- unresolved queues
-- prerequisite queues
-- promotion-candidate queues
-- future-research buffers
-
-`regressions/` stores:
-
-- suite manifests
-- latest or historical run logs
-
-Regression suites may also expose benchmark-governance metadata:
-
-- `benchmark_contamination`
-- `benchmark_use`
-- `contamination_notes`
-
-The queue and regression layers are canonical because downstream automation needs stable failure writeback targets.
-
-Topic-level regression is now first-class, not only paper-local regression. A topic suite may span several source manifests if the regression surface represents a fused canonical family rather than one paper.
+- if a proof or derivation has several nontrivial intermediate moves, prefer a chain of `derivation_step`, `proof_fragment`, `equivalence`, and `theorem` units over a single compressed summary object;
+- each derivation-bearing unit should ideally expose the start formula, the nontrivial transformation or argument, and the resulting formula;
+- when a source supplies a recognizable equation chain, `math_expressions` should preserve that chain rather than only the endpoint;
+- if the source omits a step, record the omission honestly instead of inventing it.
 
 ## Edge Layer
 
-Edges remain separate from units.
+Edges are stored separately from units so the graph can be rebuilt, audited, or re-indexed without rewriting unit files.
 
-The current relation vocabulary includes the original semantic relations plus workflow-facing relations:
+Current relation vocabulary:
 
-- `tests`
-- `oracles`
-- `blocked_by`
-- `resolves`
-- `routes_to`
-
-These relations are intentionally limited. They exist only because proof-grade regression and gap routing became part of the canonical design.
+- `depends_on`
+- `defines`
+- `uses`
+- `explains`
+- `motivates`
+- `specializes`
+- `generalizes`
+- `contrasts_with`
+- `derived_from`
+- `supports`
+- `warned_by`
+- `bridges_to`
+- `formalizes_toward`
+- `anchored_in_source`
 
 ## Projection Surfaces
 
 - `indexes/` are deterministic retrieval surfaces for agents and scripts.
-- `portal/` is the generated human-readable projection.
+- `portal/` is a zettelkasten-like human projection with dense links and summaries.
 
-The portal is intentionally secondary to the typed object store and the queue/regression state.
+The portal is intentionally secondary to the typed object store.

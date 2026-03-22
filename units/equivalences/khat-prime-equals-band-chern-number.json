@@ -1,0 +1,160 @@
+{
+  "id": "equivalence:khat-prime-equals-band-chern-number",
+  "type": "equivalence",
+  "title": "The Many-Body Integer hat k' Equals the Band Chern Number k'",
+  "summary": "Integrating over the little twist-angle torus while summing shifted momenta reorganizes the same calculation as integrating over the full Brillouin zone, so hat k' = k'; source anchor: Lecture Two / Proof Of The Equivalence (lines 1523-1537).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "equivalence",
+  "tags": [
+    "equivalence",
+    "equivalence_map",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: finite periodic sample whose discrete momentum sum reorganizes exactly as stated in the lecture."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:khat-prime-equals-band-chern-number after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the equivalence hat k' = k' ready to be stored as a reusable equivalence_map?",
+  "dependencies": [
+    "definition:many-body-twist-angle-chern-number",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-bundle",
+    "proof_fragment:twist-angle-torus-tiles-the-brillouin-zone-exactly-once",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number"
+  ],
+  "related_units": [
+    "theorem:hall-level-equals-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "AITP promoted candidate candidate:khat-prime-equals-band-chern-number from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    },
+    {
+      "source_id": "paper:quantized-hall-conductance-in-a-two-dimensional-periodic-potential-1982",
+      "section": "kubo-to-integer",
+      "notes": "Primary TKNN source for the band-side Brillouin-zone invariant."
+    },
+    {
+      "source_id": "paper:holonomy-the-quantum-adiabatic-theorem-and-berrys-phase-1983",
+      "section": "berry-holonomy",
+      "notes": "Geometric Berry-bundle interpretation of the same integer."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "equivalence:weyl-charge-equals-berry-flux",
+    "equivalence:first-chern-class-from-berry-curvature",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:weyl-boundary-hermiticity-condition",
+    "definition:many-band-filled-subspace-as-grassmannian-map"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:khat-prime-equals-band-chern-number."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-khat-prime-equals-band-chern-number/agent_consensus.json",
+    "candidate_id=candidate:khat-prime-equals-band-chern-number",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-khat-prime-equals-band-chern-number/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-khat-prime-equals-band-chern-number/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-khat-prime-equals-band-chern-number/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-khat-prime-equals-band-chern-number/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:khat-prime-equals-band-chern-number",
+    "candidate_type": "equivalence_map",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:31+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two many-body to band Chern-number equivalence audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:khat-prime-equals-band-chern-number",
+    "updated_at": "2026-03-18T12:26:31+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two many-body to band Chern-number equivalence audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:khat-prime-equals-band-chern-number",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\widehat{k}^{\\prime}=\\int_{\\widehat{\\mathcal{B}}}\\mathrm{d}\\alpha_1\\,\\mathrm{d}\\alpha_2\\,\\frac{\\widehat{\\mathcal{F}}}{2\\pi}",
+      "context": "Many-body Chern number defined over the twist-angle torus."
+    },
+    {
+      "latex": "k^{\\prime}=\\int_{\\mathcal{B}}\\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}",
+      "context": "Band-theory Chern number computed over the full Brillouin zone."
+    },
+    {
+      "latex": "\\widehat{k}^{\\prime}=k^{\\prime}",
+      "context": "The two integrals are the same calculation reorganized in different variables."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\widehat{k}^{\\prime}",
+      "meaning": "many-body Chern number from adiabatic twist-angle transport"
+    },
+    {
+      "symbol": "k^{\\prime}",
+      "meaning": "band-theory Chern number / TKNN invariant"
+    },
+    {
+      "symbol": "\\widehat{\\mathcal{B}}",
+      "meaning": "twist-angle torus of \\alpha_1, \\alpha_2"
+    },
+    {
+      "symbol": "\\mathcal{B}",
+      "meaning": "microscopic Brillouin zone of crystal momenta"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "regime:isolated-bad-point-regime-for-nielsen-ninomiya",
+  "type": "regime",
+  "title": "Isolated Bad-Point Regime for Nielsen-Ninomiya",
+  "summary": "The Nielsen-Ninomiya argument assumes the band Hamiltonian is gapped except at finitely many isolated bad points in the Brillouin zone; source anchor: Lecture One / The Nielsen-Ninomiya Theorem (lines 455-477).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "tags": [
+    "regime",
+    "regime_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: finitely many isolated crossings and a punctured Brillouin zone."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:isolated-bad-point-regime-for-nielsen-ninomiya after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the isolated-bad-point scope regime for Nielsen-Ninomiya ready to be stored as a reusable regime_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "notes": "AITP promoted candidate candidate:isolated-bad-point-regime-for-nielsen-ninomiya from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:chern-simons-functional-definition",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "equation:one-dimensional-linearized-fermi-crossing",
+    "proof_fragment:zero-total-winding-proof-via-stokes",
+    "bridge:bulk-boundary-correspondence-to-fermi-arc"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:isolated-bad-point-regime-for-nielsen-ninomiya."
+  ],
+  "created_at": "2026-03-17",
+  "updated_at": "2026-03-17",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-isolated-bad-point-regime-for-nielsen-ninomiya/agent_consensus.json",
+    "candidate_id=candidate:isolated-bad-point-regime-for-nielsen-ninomiya",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-isolated-bad-point-regime-for-nielsen-ninomiya/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-isolated-bad-point-regime-for-nielsen-ninomiya/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-isolated-bad-point-regime-for-nielsen-ninomiya/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-isolated-bad-point-regime-for-nielsen-ninomiya/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:isolated-bad-point-regime-for-nielsen-ninomiya",
+    "candidate_type": "regime_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-17T21:51:32+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture One regime-card audit for the isolated-bad-point scope used in the Nielsen-Ninomiya argument."
+  },
+  "consensus": {
+    "candidate_id": "candidate:isolated-bad-point-regime-for-nielsen-ninomiya",
+    "updated_at": "2026-03-17T21:51:32+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture One regime-card audit for the isolated-bad-point scope used in the Nielsen-Ninomiya argument."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:isolated-bad-point-regime-for-nielsen-ninomiya",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

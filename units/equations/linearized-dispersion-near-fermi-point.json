@@ -37,6 +37,13 @@
   "validation_status": "source-grounded",
   "maturity": "stable",
   "representation": "Taylor expansion of the energy band around a Fermi point.",
+  "math_expressions": [
+    {
+      "latex": "\\varepsilon = \\varepsilon(p_0) + v (p-p_0) + \\mathcal{O}((p-p_0)^2), \\qquad v = \\left.\\frac{\\partial \\varepsilon}{\\partial p}\\right|_{p=p_0}",
+      "label": "dolz",
+      "context": "Linearized band energy near an isolated one-dimensional Fermi point."
+    }
+  ],
   "equation_refs": [],
   "quantity_refs": [
     "quantity:fermi-velocity"
@@ -61,5 +68,5 @@
     "Use for low-energy continuum approximation near a 1D crossing."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-18"
 }

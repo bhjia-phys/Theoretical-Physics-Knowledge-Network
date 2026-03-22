@@ -1,0 +1,146 @@
+{
+  "id": "derivation_step:charge-pump-counts-edge-chirality",
+  "type": "derivation_step",
+  "title": "Charge Pumping Counts Edge Chirality",
+  "summary": "Under alpha -> alpha + 2pi, spectral flow along edge branches transfers one unit of charge per right-mover and minus one per left-mover, so k = n_+ - n_-; source anchor: Lecture Two / The Charge Pump and Joining Valence And Conduction Bands (lines 1635-1753; eqs. zimmo, trof).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
+  "tags": [
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: edge branches bridging valence and conduction sectors in an integer Hall system."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:charge-pump-counts-edge-chirality after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the charge-pump derivation of edge chirality counting ready to be stored as a reusable derivation_step?",
+  "dependencies": [
+    "theorem:hall-level-equals-many-body-chern-number",
+    "definition:one-plus-one-dimensional-chirality-operator"
+  ],
+  "related_units": [
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "proof_fragment:chern-simons-gauge-variation-is-a-boundary-term"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/joining-valence-and-conduction-bands",
+      "notes": "AITP promoted candidate candidate:charge-pump-counts-edge-chirality from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "zimmo",
+        "trof"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "derivation_step:hall-current-from-chern-simons-variation",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "equivalence:weyl-charge-equals-berry-flux"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:charge-pump-counts-edge-chirality."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-charge-pump-counts-edge-chirality/agent_consensus.json",
+    "candidate_id=candidate:charge-pump-counts-edge-chirality",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-charge-pump-counts-edge-chirality/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-charge-pump-counts-edge-chirality/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-charge-pump-counts-edge-chirality/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-charge-pump-counts-edge-chirality/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:charge-pump-counts-edge-chirality",
+    "candidate_type": "derivation_step",
+    "source_section_count": 2,
+    "covered_section_count": 2,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:38:39+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two charge-pump audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:charge-pump-counts-edge-chirality",
+    "updated_at": "2026-03-18T01:38:39+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two charge-pump audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:charge-pump-counts-edge-chirality",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\vec E = \\frac{\\partial \\vec A}{\\partial t}",
+      "label": "zimmo",
+      "context": "Adiabatically varying the flux parameter induces an electric field around the cylinder."
+    },
+    {
+      "latex": "k = n_{+} - n_{-}",
+      "label": "trof",
+      "context": "Net chirality of edge modes equals the Hall level."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "k",
+      "meaning": "integer Hall level of the bulk system"
+    },
+    {
+      "symbol": "n_{+}, n_{-}",
+      "meaning": "numbers of right-moving and left-moving edge modes"
+    },
+    {
+      "symbol": "\\vec A",
+      "meaning": "adiabatically varied background vector potential"
+    }
+  ]
+}

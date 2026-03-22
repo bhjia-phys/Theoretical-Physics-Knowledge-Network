@@ -1,0 +1,107 @@
+{
+  "id": "equivalence:forgetful-functor-real-to-complex-az-classes",
+  "type": "equivalence",
+  "title": "Forgetful Functor from Real to Complex AZ Classes",
+  "summary": "Forgetting the antiunitary symmetries maps the real classes AI, D, AII, and C to complex class A and the real classes BDI, DIII, CI, and CII to complex class AIII; the resulting complex normalization explains why the s - delta = 4 real entry is labeled 2Z relative to the corresponding complex Z classification; source anchor: Fully gapped free fermion systems and topological defects / Topological defects (lines 2024-2030).",
+  "domain": "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+  "subdomain": "equivalence",
+  "tags": [
+    "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+    "equivalence",
+    "equivalence_map"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the early Section III relation between real and complex defect classifications.",
+    "This child records the class mapping and normalization role only, not the full later K-theoretic functorial derivation."
+  ],
+  "regime": "Promoted from AITP topic chiu-classification-topological-quantum-matter-symmetries-1505-03535 via candidate candidate:forgetful-functor-real-to-complex-az-classes after passing the documented AI coverage and consensus gate.",
+  "scope": "Can the forgetful-functor relation from real to complex AZ classes be promoted as a reusable equivalence map?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535",
+      "section": "Fully gapped free fermion systems and topological defects / Topological defects",
+      "notes": "AITP promoted candidate candidate:forgetful-functor-real-to-complex-az-classes from topic chiu-classification-topological-quantum-matter-symmetries-1505-03535; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "equivalence:first-chern-class-from-berry-curvature",
+    "equivalence:khat-prime-equals-band-chern-number",
+    "equivalence:weyl-charge-equals-berry-flux",
+    "concept:wave-function-topology-beyond-symmetry-breaking",
+    "definition:symmetry-protected-topological-phase"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:forgetful-functor-real-to-complex-az-classes."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-forgetful-functor-real-to-complex-az-classes/agent_consensus.json",
+    "candidate_id=candidate:forgetful-functor-real-to-complex-az-classes",
+    "coverage_ledger_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-forgetful-functor-real-to-complex-az-classes/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-forgetful-functor-real-to-complex-az-classes/derivation_graph.json",
+    "notation_table_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-forgetful-functor-real-to-complex-az-classes/notation_table.json",
+    "promotion_gate_path=runtime/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/promotion_gate.json",
+    "structure_map_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-forgetful-functor-real-to-complex-az-classes/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:forgetful-functor-real-to-complex-az-classes",
+    "candidate_type": "equivalence_map",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:44:35+08:00",
+    "updated_by": "aitp-cli",
+    "notes": "Bounded equivalence audit for the forgetful-functor map from real to complex AZ classes."
+  },
+  "consensus": {
+    "candidate_id": "candidate:forgetful-functor-real-to-complex-az-classes",
+    "updated_at": "2026-03-18T12:44:35+08:00",
+    "updated_by": "aitp-cli",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded equivalence audit for the forgetful-functor map from real to complex AZ classes."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:forgetful-functor-real-to-complex-az-classes",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

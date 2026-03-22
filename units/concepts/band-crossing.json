@@ -43,6 +43,13 @@
     "Depends on symmetry class and dimension."
   ],
   "representation": "Degenerate point in a Bloch Hamiltonian family.",
+  "math_expressions": [
+    {
+      "latex": "H = a(p) + \\vec b(p) \\cdot \\vec \\sigma",
+      "label": "localexp",
+      "context": "Local two-band Hamiltonian whose degeneracy is controlled by the vanishing of the vector \\vec b(p)."
+    }
+  ],
   "model_refs": [
     "model:two-band-lattice-weyl-model"
   ],
@@ -51,6 +58,20 @@
   ],
   "quantity_refs": [
     "quantity:fermi-energy"
+  ],
+  "symbols": [
+    {
+      "symbol": "a(p)",
+      "meaning": "scalar energy shift in the local two-band Hamiltonian"
+    },
+    {
+      "symbol": "\\vec b(p)",
+      "meaning": "Pauli-vector coefficient whose zero marks the crossing"
+    },
+    {
+      "symbol": "\\vec \\sigma",
+      "meaning": "Pauli matrices acting on the two-band subspace"
+    }
   ],
   "failure_modes": [
     "Extended nodal lines or surfaces require different treatment.",
@@ -64,5 +85,5 @@
     "Use when a query asks what a Weyl or Dirac point is locally."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-18"
 }

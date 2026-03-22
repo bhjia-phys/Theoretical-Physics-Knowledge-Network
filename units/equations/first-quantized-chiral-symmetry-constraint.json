@@ -1,0 +1,144 @@
+{
+  "id": "equation:first-quantized-chiral-symmetry-constraint",
+  "type": "equation",
+  "title": "First-Quantized Chiral Symmetry Constraint",
+  "summary": "Chiral symmetry, obtained as the product of time-reversal and particle-hole symmetry, constrains a first-quantized Hamiltonian by U_S^dagger H U_S = -H and, after phase choice, {H,U_S} = 0 with U_S^2 = 1, yielding a block-off-diagonal form in the chiral basis; source anchor: Symmetries / Chiral symmetry (lines 775-850; Eq. chiral_Def_eq).",
+  "domain": "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+  "subdomain": "equation",
+  "tags": [
+    "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+    "equation",
+    "equation_card"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the generic chiral-symmetry subsection, where chiral symmetry is treated as the T*C combination.",
+    "The candidate records the formal constraint and canonical basis form, not later topological winding invariants that require later sections."
+  ],
+  "regime": "Promoted from AITP topic chiu-classification-topological-quantum-matter-symmetries-1505-03535 via candidate candidate:first-quantized-chiral-constraint after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the first-quantized chiral-symmetry constraint, together with its anti-commutator form and block-off-diagonal consequence, ready to be stored as a reusable equation card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535",
+      "section": "Symmetries / Chiral symmetry",
+      "equation_labels": [
+        "chiral_Def_eq"
+      ],
+      "notes": "AITP promoted candidate candidate:first-quantized-chiral-constraint from topic chiu-classification-topological-quantum-matter-symmetries-1505-03535; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "U_S^{\\dagger} H U_S = -H",
+      "label": "chiral_Def_eq",
+      "context": "First-quantized chiral symmetry constraint."
+    },
+    {
+      "latex": "U_S = U_C^{*} U_T^{*}",
+      "context": "Chiral symmetry written as the TRS-PHS product on the single-particle space."
+    },
+    {
+      "latex": "\\{H, U_S\\} = 0, \\qquad U_S^2 = U_S^{\\dagger} U_S = \\openone",
+      "context": "Canonical anticommutator form after fixing the overall phase of U_S."
+    }
+  ],
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "equation:first-quantized-particle-hole-symmetry-constraint",
+    "equation:first-quantized-time-reversal-symmetry-constraint",
+    "equation:one-dimensional-linearized-fermi-crossing",
+    "equation:wilson-loop-commutator-from-intersection-number",
+    "equation:winding-number-integral-for-two-band-node"
+  ],
+  "symbols": [
+    {
+      "symbol": "U_S",
+      "meaning": "unitary chiral operator on the single-particle Hilbert space"
+    },
+    {
+      "symbol": "U_T",
+      "meaning": "unitary part of time reversal"
+    },
+    {
+      "symbol": "U_C",
+      "meaning": "unitary part of particle-hole symmetry"
+    }
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:first-quantized-chiral-constraint."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-first-quantized-chiral-constraint/agent_consensus.json",
+    "candidate_id=candidate:first-quantized-chiral-constraint",
+    "coverage_ledger_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-first-quantized-chiral-constraint/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-first-quantized-chiral-constraint/derivation_graph.json",
+    "notation_table_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-first-quantized-chiral-constraint/notation_table.json",
+    "promotion_gate_path=runtime/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/promotion_gate.json",
+    "structure_map_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-first-quantized-chiral-constraint/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:first-quantized-chiral-constraint",
+    "candidate_type": "equation_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:09:07+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded chiral equation-card audit for the first-quantized symmetry constraint."
+  },
+  "consensus": {
+    "candidate_id": "candidate:first-quantized-chiral-constraint",
+    "updated_at": "2026-03-18T12:09:07+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded chiral equation-card audit for the first-quantized symmetry constraint."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:first-quantized-chiral-constraint",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

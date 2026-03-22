@@ -1,0 +1,151 @@
+{
+  "id": "equivalence:weyl-charge-equals-berry-flux",
+  "type": "equivalence",
+  "title": "Weyl Charge Equals Berry Flux",
+  "summary": "The local node charge equals the Berry-flux integral over a small sphere, and the Bianchi identity then re-derives zero net charge; source anchor: Lecture One / The Berry Connection (lines 603-609; eqs. zif, nna).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "equivalence",
+  "tags": [
+    "equivalence",
+    "equivalence_map",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: local spheres surrounding isolated crossings."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:weyl-charge-equals-berry-flux after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the equivalence between Weyl-node charge and Berry-flux integral ready to be stored as a reusable equivalence_map?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-one/the-berry-connection",
+      "notes": "AITP promoted candidate candidate:weyl-charge-equals-berry-flux from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "zif",
+        "wif",
+        "nna"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "equivalence:first-chern-class-from-berry-curvature",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "symbol_binding:bij-jacobian-determines-weyl-chirality",
+    "theorem:three-dimensional-two-band-crossing-codimension-three"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:weyl-charge-equals-berry-flux."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-weyl-charge-equals-berry-flux/agent_consensus.json",
+    "candidate_id=candidate:weyl-charge-equals-berry-flux",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-weyl-charge-equals-berry-flux/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-weyl-charge-equals-berry-flux/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-weyl-charge-equals-berry-flux/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-weyl-charge-equals-berry-flux/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:weyl-charge-equals-berry-flux",
+    "candidate_type": "equivalence_map",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:38:39+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture One Berry-flux equivalence audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:weyl-charge-equals-berry-flux",
+    "updated_at": "2026-03-18T01:38:39+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture One Berry-flux equivalence audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:weyl-charge-equals-berry-flux",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "w_{\\alpha}(S)=\\int_{S_{\\alpha}}\\frac{\\mathcal{F}}{2\\pi}",
+      "label": "zif",
+      "context": "Definition of the local Weyl charge as Berry flux through a small sphere."
+    },
+    {
+      "latex": "\\mathrm{d}\\mathcal{F}=0",
+      "label": "wif",
+      "context": "Bianchi identity for the abelian Berry curvature."
+    },
+    {
+      "latex": "0=\\int_{B^{\\prime}}\\frac{\\mathrm{d}\\mathcal{F}}{2\\pi}=\\sum_{\\alpha}\\int_{S_{\\alpha}}\\frac{\\mathcal{F}}{2\\pi}=\\sum_{\\alpha} w(S_{\\alpha})",
+      "label": "nna",
+      "context": "Global sum rule expressing zero net Weyl charge in the Brillouin zone."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "w_{\\alpha}(S)",
+      "meaning": "integer topological charge of the Weyl crossing enclosed by S_\\alpha"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "Berry curvature two-form of the filled-band line bundle"
+    },
+    {
+      "symbol": "S_{\\alpha}",
+      "meaning": "small sphere surrounding the \\alpha-th band crossing"
+    },
+    {
+      "symbol": "B^{\\prime}",
+      "meaning": "Brillouin zone with small neighborhoods of the bad points removed"
+    }
+  ]
+}

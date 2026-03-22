@@ -1,0 +1,26 @@
+{
+  "source_id": "paper:solitons-with-fermion-number-one-half-1976",
+  "title": "Solitons with Fermion Number 1/2",
+  "authors": [
+    "R. Jackiw",
+    "C. Rebbi"
+  ],
+  "version": "journal",
+  "submitted_date": "1975-12-01",
+  "updated_date": "1976-06-15",
+  "canonical_scope": "Primary Jackiw-Rebbi source for sign-changing Dirac masses, isolated zero modes, and fractionalized fermion number.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevD.13.3398",
+    "inspire": "https://inspirehep.net/literature/10.1103/physrevd.13.3398",
+    "journal": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.13.3398"
+  },
+  "section_map": [
+    {
+      "id": "isolated-zero-mode",
+      "title": "Isolated Zero Mode",
+      "summary": "A sign-changing mass profile produces a nondegenerate normalizable Dirac zero mode localized at the soliton interface."
+    }
+  ],
+  "equation_map": [],
+  "figure_map": []
+}

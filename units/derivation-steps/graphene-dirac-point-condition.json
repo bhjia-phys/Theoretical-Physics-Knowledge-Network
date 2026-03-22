@@ -2,75 +2,135 @@
   "id": "derivation_step:graphene-dirac-point-condition",
   "type": "derivation_step",
   "title": "Graphene Dirac Points Solve 1 + e^{i alpha} + e^{i beta} = 0",
-  "summary": "The graphene band crossings occur exactly when the off-diagonal entry of the nearest-neighbor Hamiltonian vanishes, so 1+e^{i alpha}+e^{i beta}=0 and the two symmetry-related Dirac points follow immediately.",
-  "domain": "topological-phases-of-matter",
-  "subdomain": "haldane-model",
-  "canonical_family": "topological-phases/hall-response-chern-number",
+  "summary": "Band crossings occur exactly when 1 + e^{i alpha} + e^{i beta} = 0, yielding the two honeycomb Dirac points; source anchor: Lecture Three / Haldane's Model Of Graphene (lines 2207-2213; eqs. theq, omeq).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
   "tags": [
-    "derivation-step",
-    "graphene",
-    "haldane",
-    "dirac-point"
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
   ],
   "aliases": [],
   "assumptions": [
-    "The starting point is the nearest-neighbor graphene Hamiltonian with no symmetry-breaking mass terms.",
-    "Band crossings are identified by the vanishing of the determinant of the traceless two-band Hamiltonian."
+    "Scope: ideal honeycomb nearest-neighbor model before symmetry-breaking perturbations are added."
   ],
-  "regime": "Honeycomb-lattice Dirac-point analysis prior to the Haldane perturbation.",
-  "scope": "Reusable derivation step that locates the two graphene Dirac points used in the Haldane bridge.",
-  "dependencies": [
-    "definition:graphene-nearest-neighbor-hamiltonian"
-  ],
-  "related_units": [
-    "theorem:graphene-symmetry-protects-dirac-nodes",
-    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
-    "source_map:witten-topological-phases-lecture-three"
-  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:graphene-dirac-point-condition after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the derivation of the two graphene Dirac points from the nearest-neighbor Hamiltonian ready to be stored as a reusable derivation_step?",
+  "dependencies": [],
+  "related_units": [],
   "source_anchors": [
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-three/haldanes-model-of-graphene",
+      "notes": "AITP promoted candidate candidate:graphene-dirac-point-condition from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
       "equation_labels": [
         "theq",
         "omeq"
-      ],
-      "notes": "Witten's explicit solution of the graphene band-touching condition."
+      ]
     }
   ],
   "formalization_status": "candidate",
-  "validation_status": "source-grounded",
-  "maturity": "working",
-  "representation": "Ordered lattice derivation step locating the two graphene Dirac points.",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "derivation_step:hall-current-from-chern-simons-variation"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:graphene-dirac-point-condition."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-dirac-point-condition/agent_consensus.json",
+    "candidate_id=candidate:graphene-dirac-point-condition",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-dirac-point-condition/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-dirac-point-condition/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-dirac-point-condition/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-dirac-point-condition/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:graphene-dirac-point-condition",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three graphene Dirac-point audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:graphene-dirac-point-condition",
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three graphene Dirac-point audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:graphene-dirac-point-condition",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
   "math_expressions": [
     {
       "latex": "1+e^{i\\alpha}+e^{i\\beta}=0",
-      "kind": "display",
-      "equation_label": "theq",
-      "notes": "Condition for the off-diagonal entry of the graphene Hamiltonian to vanish."
+      "label": "theq",
+      "context": "Zero-mode condition for the traceless nearest-neighbor graphene Hamiltonian."
     },
     {
-      "latex": "e^{i\\alpha}=\\frac{1}{2}\\left(-1\\pm\\sqrt{-3}\\right)=e^{-i\\beta}",
-      "kind": "display",
-      "equation_label": "omeq",
-      "notes": "The two symmetry-related solutions locating the Dirac points."
+      "latex": "e^{i\\alpha}=\\frac{1}{2}\\left(-1\\pm \\sqrt{-3}\\right)=e^{-i\\beta}",
+      "label": "omeq",
+      "context": "The two solutions that locate the graphene Dirac points in the Brillouin zone."
     }
   ],
-  "step_inputs": [
-    "definition:graphene-nearest-neighbor-hamiltonian"
-  ],
-  "step_justification": [
-    "For a traceless two-band Hamiltonian, a band crossing occurs exactly when the off-diagonal hopping amplitude vanishes.",
-    "Setting 1+e^{i alpha}+e^{i beta} to zero gives a quadratic equation for e^{i alpha}.",
-    "The two resulting roots are exchanged by the honeycomb lattice symmetries and define the two Dirac points."
-  ],
-  "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "retrieval_hints": [
-    "Use when the Haldane bridge needs the explicit derivation of where the graphene Dirac cones sit."
-  ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-20"
+  "symbols": [
+    {
+      "symbol": "\\alpha",
+      "meaning": "first Brillouin-zone angle used to parametrize the honeycomb Bloch Hamiltonian"
+    },
+    {
+      "symbol": "\\beta",
+      "meaning": "second Brillouin-zone angle in the same parametrization"
+    }
+  ]
 }

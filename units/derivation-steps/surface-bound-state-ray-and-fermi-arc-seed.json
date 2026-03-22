@@ -1,0 +1,148 @@
+{
+  "id": "derivation_step:surface-bound-state-ray-and-fermi-arc-seed",
+  "type": "derivation_step",
+  "title": "Surface Bound-State Ray as the Seed of a Fermi Arc",
+  "summary": "Solving the half-space Weyl equation gives exponentially localized surface modes along a momentum-space ray, providing the local seed of a Fermi arc; source anchor: Lecture One / Weyl Fermions And Fermi Arcs (lines 911-947; eqs. polk, formix, molt).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
+  "tags": [
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: local continuum analysis near a projected Weyl point."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:surface-bound-state-ray-and-fermi-arc-seed after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the explicit half-space derivation of the local surface-state ray ready to be stored as a reusable derivation_step?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "notes": "AITP promoted candidate candidate:surface-bound-state-ray-and-fermi-arc-seed from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "wolt",
+        "polk",
+        "folt",
+        "formix",
+        "molt"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:graphene-dirac-point-condition",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:surface-bound-state-ray-and-fermi-arc-seed."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-surface-bound-state-ray-and-fermi-arc-seed/agent_consensus.json",
+    "candidate_id=candidate:surface-bound-state-ray-and-fermi-arc-seed",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-surface-bound-state-ray-and-fermi-arc-seed/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-surface-bound-state-ray-and-fermi-arc-seed/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-surface-bound-state-ray-and-fermi-arc-seed/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-surface-bound-state-ray-and-fermi-arc-seed/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:surface-bound-state-ray-and-fermi-arc-seed",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:28+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture One local Fermi-arc seed derivation audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:surface-bound-state-ray-and-fermi-arc-seed",
+    "updated_at": "2026-03-18T12:26:28+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture One local Fermi-arc seed derivation audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:surface-bound-state-ray-and-fermi-arc-seed",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "H\\psi=-i\\left(\\sigma_1\\partial_1+\\sigma_2\\partial_2+\\sigma_3\\partial_3\\right)\\psi=-i\\sigma_1(\\partial_1-i\\partial_3)\\psi",
+      "label": "wolt",
+      "context": "Weyl equation after imposing the special boundary projector \\sigma_2\\psi=\\psi."
+    },
+    {
+      "latex": "\\psi=e^{i k_1 x_3+k_1 x_1}\\psi_0, \\qquad \\sigma_2\\psi_0=\\psi_0, \\qquad k_1<0",
+      "label": "formix",
+      "context": "Normalizable zero-energy boundary mode localized near the surface."
+    },
+    {
+      "latex": "\\psi=e^{i\\varepsilon x_2}e^{i k_1 x_3+k_1 x_1}\\psi_0",
+      "label": "molt",
+      "context": "Finite-energy continuation whose momentum-space support forms the local seed of a Fermi arc."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "k_1",
+      "meaning": "surface-momentum component whose sign controls normalizability into the half-space"
+    },
+    {
+      "symbol": "\\varepsilon",
+      "meaning": "energy and, in this special solution, the conserved momentum along x_2"
+    },
+    {
+      "symbol": "\\psi_0",
+      "meaning": "constant spinor satisfying the boundary projector condition"
+    }
+  ]
+}

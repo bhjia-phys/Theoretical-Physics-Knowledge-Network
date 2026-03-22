@@ -1,0 +1,25 @@
+{
+  "source_id": "paper:gauge-noninvariance-and-parity-violation-of-three-dimensional-fermions-1984",
+  "title": "Gauge Noninvariance and Parity Violation of Three-Dimensional Fermions",
+  "authors": [
+    "A. N. Redlich"
+  ],
+  "version": "journal",
+  "submitted_date": "1983-09-01",
+  "updated_date": "1984-01-02",
+  "canonical_scope": "Primary parity-anomaly source for the gauge-invariance versus parity tradeoff behind the induced half-level Chern-Simons term.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.52.18",
+    "inspire": "https://inspirehep.net/literature/10.1103/physrevlett.52.18",
+    "journal": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.52.18"
+  },
+  "section_map": [
+    {
+      "id": "main-result",
+      "title": "Parity Anomaly Main Result",
+      "summary": "For an odd number of three-dimensional fermions, gauge-invariant regularization induces a parity-odd topological term in the effective action."
+    }
+  ],
+  "equation_map": [],
+  "figure_map": []
+}

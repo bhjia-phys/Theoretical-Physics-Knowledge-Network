@@ -1,0 +1,112 @@
+{
+  "id": "definition:spatial-versus-nonspatial-symmetry",
+  "type": "definition",
+  "title": "Spatial Versus Nonspatial Symmetry Split",
+  "summary": "The paper distinguishes nonspatial symmetries as symmetries acting locally in position space and formalizes the split by calling a symmetry spatial when it acts on spatial indices and nonspatial when it does not; on-site symmetries are a special nonspatial case; source anchor: Introduction / Overview of topological materials and Symmetries / Spatial-vs-nonspatial split (lines 259-263, 534-545).",
+  "domain": "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+  "subdomain": "definition",
+  "tags": [
+    "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+    "definition",
+    "definition_card"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: fermionic systems regularized on a lattice with collective indices carrying spatial labels.",
+    "This batch records only the distinction itself, not the later crystalline-reflection classification."
+  ],
+  "regime": "Promoted from AITP topic chiu-classification-topological-quantum-matter-symmetries-1505-03535 via candidate candidate:spatial-versus-nonspatial-symmetry-split after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the paper's spatial-versus-nonspatial symmetry distinction reusable as a canonical definition card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535",
+      "section": "Symmetries / Spatial-vs-nonspatial split",
+      "notes": "AITP promoted candidate candidate:spatial-versus-nonspatial-symmetry-split from topic chiu-classification-topological-quantum-matter-symmetries-1505-03535; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:symmetry-protected-topological-phase",
+    "definition:chern-simons-functional-definition",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:fractional-hall-effective-action-with-emergent-u1",
+    "definition:graphene-nearest-neighbor-hamiltonian"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:spatial-versus-nonspatial-symmetry-split."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-spatial-versus-nonspatial-symmetry-split/agent_consensus.json",
+    "candidate_id=candidate:spatial-versus-nonspatial-symmetry-split",
+    "coverage_ledger_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-spatial-versus-nonspatial-symmetry-split/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-spatial-versus-nonspatial-symmetry-split/derivation_graph.json",
+    "notation_table_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-spatial-versus-nonspatial-symmetry-split/notation_table.json",
+    "promotion_gate_path=runtime/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/promotion_gate.json",
+    "structure_map_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-spatial-versus-nonspatial-symmetry-split/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:spatial-versus-nonspatial-symmetry-split",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:09:06+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded symmetry-definition audit for the spatial-versus-nonspatial split."
+  },
+  "consensus": {
+    "candidate_id": "candidate:spatial-versus-nonspatial-symmetry-split",
+    "updated_at": "2026-03-18T12:09:06+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded symmetry-definition audit for the spatial-versus-nonspatial split."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:spatial-versus-nonspatial-symmetry-split",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

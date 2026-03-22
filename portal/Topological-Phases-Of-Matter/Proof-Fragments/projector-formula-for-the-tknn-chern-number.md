@@ -1,101 +1,48 @@
-# Projector Formula For The TKNN Chern Number
+# Projector Formula for the TKNN Chern Number
 
 - ID: `proof_fragment:projector-formula-for-the-tknn-chern-number`
 - Type: `proof_fragment`
 - Domain: `topological-phases-of-matter`
-- Subdomain: `integer-quantum-hall-effect`
-- Canonical Family: `topological-phases/hall-response-chern-number`
-- Formalization: `candidate`
-- Validation: `cross-checked`
-- Maturity: `working`
+- Subdomain: `berry-geometry`
+- Formalization: `draft`
+- Validation: `source-grounded`
+- Maturity: `seed`
 
 ## Summary
-For the occupied-band projector P(p), the microscopic Hall integer k' is the Brillouin-zone integral of i Tr(P[\partial_{p_1}P,\partial_{p_2}P]) / 2\pi, which is the first Chern number of the filled-band bundle.
+For the occupied-band projector P(p), the Hall integer is the Brillouin-zone integral of i Tr P [dP, dP] / 2pi, which equals the first Chern class of the occupied bundle.
 
 ## Scope
-Source-grade TKNN fragment that upgrades the band-theory side of the Lecture Two theorem from a verbal bundle statement to an explicit formula.
+Background proof fragment that turns the bundle-theoretic TKNN definition into an explicit integrand.
 
 ## Regime
-Single-particle band-topology formulation of the integer quantum Hall invariant.
+Finite-rank occupied bundle over a two-dimensional Brillouin torus.
 
 ## Assumptions
-- `The occupied-band projector is smooth over the whole two-dimensional Brillouin torus.`
-- `The filled subspace remains gapped from the empty bands.`
-
-## Representation
-Explicit projector-level realization of the band Chern invariant used inside the Lecture Two Hall-response family.
-
-## Source Anchors
-- `paper/projector-curvature-identity | eqs: occupied-bundle-curvature-form | Original source of the quantized Hall invariant, rendered here through the traced-curvature identity and the occupied-projector formula.`
-- `lecture-two/relation-to-band-topology | Witten states the TKNN integer as the first Chern class of the filled-band bundle.`
-
-## Mathematical Content
-- `kind=display` | Projector onto the occupied Bloch subspace.
-$$
-P(p)=\sum_{a=1}^{n}|u_a(p)\rangle\langle u_a(p)|
-$$
-- `kind=display` | Local non-abelian Berry connection and curvature on the filled bundle.
-$$
-\mathcal A_{ab}=\langle u_a,\mathrm du_b\rangle,\qquad \mathcal F=\mathrm d\mathcal A+\mathcal A\wedge\mathcal A
-$$
-- `kind=display` | Projector formula for the TKNN invariant and its equality to the first Chern number.
-$$
-k'=\frac{i}{2\pi}\int_{\mathcal B}\operatorname{Tr}\!\left(P[\partial_{p_1}P,\partial_{p_2}P]\right)\,\mathrm d^2p=\int_{\mathcal B}\frac{\operatorname{Tr}\,\mathcal F}{2\pi}
-$$
-
-## Symbols
-| Symbol | Meaning |
-|---|---|
-| `P(p)` | spectral projector onto the filled bands at momentum p |
-| `\mathcal A` | Berry connection on a local occupied-state frame |
-| `\mathcal F` | Berry curvature two-form of the occupied-state bundle |
+- `The occupied subspace remains gapped from the empty bands over the whole two-dimensional Brillouin zone.`
+- `A smooth local orthonormal frame exists on each patch.`
 
 ## Dependencies
-- [TKNN Invariant As First Chern Class Of The Filled-Band Bundle](../Definitions/tknn-invariant-as-first-chern-class-of-filled-band-bundle.md)
-- [Berry Curvature](../Concepts/berry-curvature.md)
-- [Berry-Curvature Trace Equals Projector Commutator](berry-curvature-trace-equals-projector-commutator.md)
+- [TKNN Invariant as the First Chern Class of the Filled-Band Bundle](../Definitions/tknn-invariant-as-first-chern-class-of-filled-bundle.md)
+- [First Chern Class from Berry Curvature](../Equivalences/first-chern-class-from-berry-curvature.md)
 
 ## Related Units
-- [Hall-Response / Chern-Number Equivalence Family](../Theorem-Families/hall-response-chern-number-equivalence.md)
-- [Integer Quantum Hall Response Equals Band And Many-Body Chern Number](../Theorems/integer-quantum-hall-response-equals-band-and-many-body-chern-number.md)
-- [Lecture Two Hall-Response / Chern-Number Proof State](../Proof-States/lecture-two-hall-response-chern-number.md)
-- [Hall-Response / Chern-Number Cross-Source Fusion Record](../Source-Fusion-Records/hall-response-chern-number-cross-source-fusion.md)
+- [The Many-Body Integer hat k' Equals the Band Chern Number k'](../Equivalences/khat-prime-equals-band-chern-number.md)
+- [Hall Level Equals the Many-Body Chern Number](../Theorems/hall-level-equals-many-body-chern-number.md)
 
-## Step Justification
-- Differentiate P squared equals P to show that dP only mixes occupied and empty states.
-- Expand Tr(P[dP,dP]) in a local orthonormal occupied frame.
-- Recognize the resulting expression as the trace of the non-abelian Berry curvature.
-
-## Formal Targets
-- `aitp-l2`
-- `lean`
-
-## Lean Formalization Plan
-
-- Namespace: `TopologicalPhases.IntegerHall.HallResponseChernNumber`
-- Declaration: `projector_formula_for_tknn_chern_number`
-- Statement kind: `lemma`
-
-### Admissible assumptions
-
-- Work with a smooth finite-rank occupied projector over the two-dimensional Brillouin torus.
-- Treat Brillouin-zone orientation and measure conventions as fixed global background data.
-
-### Lean prerequisites
-
-- [TKNN Invariant As First Chern Class Of The Filled-Band Bundle](../Definitions/tknn-invariant-as-first-chern-class-of-filled-band-bundle.md)
-- [Berry-Curvature Trace Equals Projector Commutator](berry-curvature-trace-equals-projector-commutator.md)
-
-### Formalization blockers
-
-- A reusable Lean representation of the Brillouin torus as an oriented compact two-manifold is still missing.
-- The integration layer needed to turn the local curvature density into a global integer invariant is not yet connected to the present bundle notes.
-
-## Retrieval Hints
-- `Use when the answer must show the actual TKNN integrand rather than only saying first Chern class.`
+## Source Anchors
+- `kubo-to-integer | Original TKNN quantization argument.`
+- `berry-holonomy | Berry holonomy as line-bundle connection.`
+- `band-touching-and-sum-rule | Hall integers are precisely the band Chern numbers and obey the band-touching sum rule.`
+- `lecture-two/relation-to-band-topology | Witten states the TKNN integer as the first Chern class of the occupied bundle.`
 
 ## Outgoing Edges
 - none
 
 ## Incoming Edges
 - none
+
+## Failure Modes
+- `If the gap closes, P(p) is not globally smooth and the Chern number can jump.`
+
+## Formal Targets
+- `aitp-l2`

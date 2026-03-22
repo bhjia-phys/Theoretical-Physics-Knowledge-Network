@@ -1,0 +1,68 @@
+{
+  "id": "proof_fragment:chern-simons-gauge-variation-is-a-boundary-term",
+  "type": "proof_fragment",
+  "title": "Chern-Simons Gauge Variation Is a Boundary Term",
+  "summary": "For abelian U(1) Chern-Simons theory, a gauge transformation A -> A + dLambda changes the action by a boundary integral, which is the anomaly-inflow term on manifolds with boundary.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "response-theory",
+  "tags": [
+    "proof_fragment",
+    "chern-simons",
+    "anomaly-inflow",
+    "boundary"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The bulk gauge field is abelian.",
+    "Boundary contributions are retained instead of discarded."
+  ],
+  "regime": "Abelian 2+1-dimensional Chern-Simons response on a manifold that may have boundary.",
+  "scope": "Minimal calculation behind the anomaly-inflow argument for chiral edge modes.",
+  "dependencies": [
+    "definition:chern-simons-functional-definition"
+  ],
+  "related_units": [
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:hall-level-equals-many-body-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "equation_labels": [
+        "facs"
+      ],
+      "notes": "Witten's anomaly-inflow calculation."
+    }
+  ],
+  "formalization_status": "draft",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "I_{\\mathrm{CS}}(A)=\\frac{1}{4\\pi}\\int_M A\\wedge \\mathrm{d}A",
+      "context": "Abelian Chern-Simons functional."
+    },
+    {
+      "latex": "\\delta_{\\Lambda} I_{\\mathrm{CS}} = \\frac{1}{4\\pi}\\int_M \\mathrm{d}\\Lambda \\wedge \\mathrm{d}A = \\frac{1}{4\\pi}\\int_{\\partial M} \\Lambda\\, \\mathrm{d}A",
+      "context": "Gauge variation reduces to a boundary term."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\Lambda",
+      "meaning": "gauge parameter in A -> A + d Lambda"
+    }
+  ],
+  "failure_modes": [
+    "On a closed manifold the same calculation gives zero, so no anomaly inflow follows."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when the user asks where the boundary anomaly literally comes from in the Chern-Simons variation."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18"
+}

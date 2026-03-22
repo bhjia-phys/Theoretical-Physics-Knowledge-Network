@@ -1,111 +1,153 @@
 {
   "id": "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
   "type": "derivation_step",
-  "title": "Boundary Dirac Mode From Negative Bulk Mass",
-  "summary": "For a Dirac fermion on a half-space, the separated ansatz psi=e^{m x_1} psi_parallel is normalizable only when m<0, yielding a boundary-localized lower-dimensional Dirac mode and giving a lecture-one precursor of the later Jackiw-Rebbi wall construction.",
-  "domain": "topological-phases-of-matter",
-  "subdomain": "edge-modes",
-  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "title": "Boundary Dirac Mode from Negative Bulk Mass",
+  "summary": "For a Dirac fermion in a half-space, psi = exp(m x_1) psi_parallel is normalizable only for m < 0 and yields a localized 2+1-dimensional boundary Dirac mode; source anchor: Lecture One / Gapless Boundary Modes From Dirac Fermions (lines 1020-1056; eqs. molof, ogg, pogg, zuffo).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
   "tags": [
-    "derivation-step",
-    "boundary-modes",
-    "dirac-fermion",
-    "lecture-one"
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
   ],
   "aliases": [],
   "assumptions": [
-    "The system occupies the half-space x_1 >= 0.",
-    "A Hermitian boundary condition is imposed on the bulk Dirac fermion."
+    "Scope: continuum half-space Dirac equation with time-reversal symmetry."
   ],
-  "regime": "Continuum half-space Dirac problem used as a precursor to the Lecture Three wall-mode construction.",
-  "scope": "Cross-lecture derivation step that links the Lecture One boundary-mode calculation to the later sign-changing-mass edge-mode family.",
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:boundary-dirac-mode-from-negative-bulk-mass after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the negative-mass half-space Dirac-mode derivation ready to be stored as a reusable derivation_step?",
   "dependencies": [
-    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass"
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "definition:one-plus-one-dimensional-chirality-operator"
   ],
   "related_units": [
-    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
-    "proof_state:lecture-three-domain-wall-edge-mode",
-    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go",
-    "source_map:witten-topological-phases-lecture-one",
-    "source_map:witten-topological-phases-lecture-three"
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+    "derivation_step:surface-bound-state-ray-and-fermi-arc-seed"
   ],
   "source_anchors": [
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "notes": "AITP promoted candidate candidate:boundary-dirac-mode-from-negative-bulk-mass from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
       "equation_labels": [
         "molof",
         "ogg",
         "pogg",
         "zuffo"
-      ],
-      "notes": "Lecture One boundary-mode derivation that serves as a precursor to the later domain-wall construction."
+      ]
     }
   ],
   "formalization_status": "candidate",
-  "validation_status": "source-grounded",
-  "maturity": "working",
-  "representation": "Cross-lecture boundary-mode derivation step highlighting the normalizability test for a half-space Dirac fermion.",
-  "human_projection_profile": "learning-note",
-  "motivation": "This note exists because Lecture Three's wall-mode derivation is easier to understand once one remembers the earlier half-space precursor. It shows in a simpler setting how the bulk mass sign already controls boundary-mode normalizability.",
-  "prerequisite_story": "Know the half-space Dirac equation, Hermitian boundary conditions, and the basic separation-of-variables ansatz that turns transverse localization into an exponential profile.",
-  "local_context_story": "In Witten Lecture One, this is the boundary-mode precursor calculation. In the current KB it is kept explicit because it makes the later Jackiw-Rebbi sign-changing-mass construction feel like a controlled generalization rather than a new trick.",
-  "forward_links_story": "The negative-mass half-space mode becomes, after folding, the sign-changing-mass domain-wall problem of Lecture Three, where the localized profile is normalizable on both sides of the interface.",
-  "canonical_questions": [
-    "Why is the boundary mode normalizable only when the bulk mass has the correct sign?",
-    "How does the half-space derivation anticipate the later Jackiw-Rebbi wall mode?",
-    "Why is this a precursor rather than the final edge-mode theorem?"
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:graphene-dirac-point-condition",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "derivation_step:surface-bound-state-ray-and-fermi-arc-seed"
   ],
-  "scope_boundaries": [
-    "This is a half-space precursor calculation, not yet the full folded sign-changing-mass domain-wall theorem.",
-    "The derivation is continuum and local; it does not establish the distinct lattice Nielsen-Ninomiya no-go statement."
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:boundary-dirac-mode-from-negative-bulk-mass."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-boundary-dirac-mode-from-negative-bulk-mass/agent_consensus.json",
+    "candidate_id=candidate:boundary-dirac-mode-from-negative-bulk-mass",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-boundary-dirac-mode-from-negative-bulk-mass/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-boundary-dirac-mode-from-negative-bulk-mass/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-boundary-dirac-mode-from-negative-bulk-mass/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-boundary-dirac-mode-from-negative-bulk-mass/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:boundary-dirac-mode-from-negative-bulk-mass",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:29+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture One boundary Dirac-mode derivation audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:boundary-dirac-mode-from-negative-bulk-mass",
+    "updated_at": "2026-03-18T12:26:29+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture One boundary Dirac-mode derivation audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:boundary-dirac-mode-from-negative-bulk-mass",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
   ],
   "math_expressions": [
     {
-      "latex": "\\gamma_1\\psi\\big|_{x_1=0}=\\pm\\psi\\big|_{x_1=0}",
-      "kind": "display",
-      "equation_label": "molof",
-      "notes": "Hermitian boundary condition on the bulk Dirac field."
+      "latex": "\\gamma_1\\psi\\big|_{x_1=0} = \\pm \\psi\\big|_{x_1=0}",
+      "label": "molof",
+      "context": "Hermitian boundary condition for the bulk Dirac fermion."
     },
     {
-      "latex": "\\psi=e^{m x_1}\\psi_{\\parallel}(x_{\\parallel}),\\qquad \\gamma_1\\psi_{\\parallel}=\\psi_{\\parallel},\\qquad \\gamma\\cdot\\partial^{\\parallel}\\psi_{\\parallel}=0",
-      "kind": "display",
-      "equation_label": "pogg",
-      "notes": "Boundary-localized mode obtained after separation of variables."
+      "latex": "\\psi = e^{m x_1}\\,\\psi_{\\parallel}(x_{\\parallel}), \\qquad \\gamma_1\\psi_{\\parallel}=\\psi_{\\parallel}, \\qquad \\gamma\\cdot\\partial^{\\parallel}\\psi_{\\parallel}=0",
+      "label": "pogg",
+      "context": "Boundary-localized massless Dirac mode appearing when the bulk mass is negative."
     },
     {
-      "latex": "\\left(\\sum_{\\mu=0}^{2}\\gamma^{\\mu}\\partial_{\\mu}-i\\begin{pmatrix}0&m\\\\-m&0\\end{pmatrix}\\right)\\begin{pmatrix}\\psi_1\\\\\\psi_2\\end{pmatrix}=0",
-      "kind": "display",
-      "equation_label": "zuffo",
-      "notes": "Doubled boundary Dirac equation in Witten's lecture-one presentation."
+      "latex": "\\left(\\sum_{\\mu=0}^{2}\\gamma^{\\mu}\\partial_{\\mu}- i\\begin{pmatrix}0 & m \\\\ -m & 0\\end{pmatrix}\\right)\\begin{pmatrix}\\psi_1 \\\\ \\psi_2\\end{pmatrix}=0",
+      "label": "zuffo",
+      "context": "Time-reversal-invariant doubled boundary Dirac equation."
     }
   ],
-  "step_justification": [
-    "The separated ansatz reduces the transverse dependence to an exponential factor whose exponent is fixed by the bulk mass.",
-    "Normalizability on x_1 >= 0 forces the exponent to decay, which requires m<0.",
-    "The remaining tangential equation is the lower-dimensional massless boundary Dirac equation."
-  ],
-  "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallPrelude",
-  "lean_declaration": "boundary_dirac_mode_from_negative_bulk_mass",
-  "lean_statement_kind": "lemma",
-  "admissible_assumptions": [
-    "Work in the continuum half-space Dirac problem with a fixed Hermitian boundary condition.",
-    "Treat the separation ansatz as the accepted local reduction of the boundary-mode problem."
-  ],
-  "lean_prerequisite_ids": [
-    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass"
-  ],
-  "formalization_blockers": [
-    "A reusable Lean-side library for boundary conditions on continuum Dirac operators is still missing.",
-    "The relation between this half-space precursor and the folded wall problem is still narrative rather than formalized as a bridge lemma."
-  ],
-  "retrieval_hints": [
-    "Use when the answer needs the lecture-one precursor that makes the later Jackiw-Rebbi wall mode feel less abrupt."
-  ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-21"
+  "symbols": [
+    {
+      "symbol": "\\psi_{\\parallel}",
+      "meaning": "boundary-localized 2+1-dimensional Dirac mode"
+    },
+    {
+      "symbol": "m",
+      "meaning": "bulk Dirac mass whose sign determines boundary localization"
+    },
+    {
+      "symbol": "\\gamma_1",
+      "meaning": "normal gamma matrix entering the boundary condition"
+    }
+  ]
 }

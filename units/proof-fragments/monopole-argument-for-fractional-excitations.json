@@ -1,0 +1,150 @@
+{
+  "id": "proof_fragment:monopole-argument-for-fractional-excitations",
+  "type": "proof_fragment",
+  "title": "Monopole Argument for Fractional Excitations",
+  "summary": "If the Hall coefficient were noninteger without additional excitations, a spherical Hall sample around a unit monopole would carry noninteger charge, so fractionally charged quasiparticles must appear; source anchor: Lecture Three / More On The Fractional Quantum Hall Effect (lines 1913-1944; eqs. groof, droof).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "proof-fragment",
+  "tags": [
+    "proof_fragment",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: coarse-grained charge accounting for a spherical Hall sample in the presence of one Dirac monopole quantum."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:monopole-argument-for-fractional-excitations after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the monopole thought-experiment argument for fractional excitations ready to be stored as a reusable proof_fragment?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "AITP promoted candidate candidate:monopole-argument-for-fractional-excitations from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "dfor",
+        "groof",
+        "droof"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "proof_fragment:large-gauge-transformation-shifts-ics-by-two-pi",
+    "proof_fragment:zero-total-winding-proof-via-stokes",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:weyl-boundary-hermiticity-condition",
+    "definition:many-band-filled-subspace-as-grassmannian-map"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:monopole-argument-for-fractional-excitations."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-monopole-argument-for-fractional-excitations/agent_consensus.json",
+    "candidate_id=candidate:monopole-argument-for-fractional-excitations",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-monopole-argument-for-fractional-excitations/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-monopole-argument-for-fractional-excitations/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-monopole-argument-for-fractional-excitations/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-monopole-argument-for-fractional-excitations/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:monopole-argument-for-fractional-excitations",
+    "candidate_type": "proof_fragment",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:33+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three monopole argument audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:monopole-argument-for-fractional-excitations",
+    "updated_at": "2026-03-18T12:26:33+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three monopole argument audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:monopole-argument-for-fractional-excitations",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "J_0=\\frac{\\delta I_{\\mathrm{eff}}}{\\delta A_0}=\\frac{kF_{12}}{2\\pi}",
+      "label": "dfor",
+      "context": "Charge density predicted by the Chern-Simons response in the integer Hall case."
+    },
+    {
+      "latex": "\\int \\frac{F_{12}}{2\\pi}=1",
+      "label": "groof",
+      "context": "Unit Dirac monopole flux piercing the spherical sample."
+    },
+    {
+      "latex": "Q=\\int_{M_2}J_0=\\int_{M_2}\\frac{kF_{12}}{2\\pi}=k",
+      "label": "droof",
+      "context": "Induced electric charge of the Hall material surrounding the monopole."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "J_0",
+      "meaning": "electric charge density induced on the Hall surface"
+    },
+    {
+      "symbol": "F_{12}",
+      "meaning": "magnetic flux density through the two-dimensional sample"
+    },
+    {
+      "symbol": "Q",
+      "meaning": "total induced electric charge of the spherical sample"
+    },
+    {
+      "symbol": "k",
+      "meaning": "Hall coefficient multiplying the Chern-Simons response"
+    }
+  ]
+}

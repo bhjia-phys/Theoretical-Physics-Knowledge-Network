@@ -1,128 +1,81 @@
 {
   "id": "proof_fragment:projector-formula-for-the-tknn-chern-number",
   "type": "proof_fragment",
-  "title": "Projector Formula For The TKNN Chern Number",
-  "summary": "For the occupied-band projector P(p), the microscopic Hall integer k' is the Brillouin-zone integral of i Tr(P[\\partial_{p_1}P,\\partial_{p_2}P]) / 2\\pi, which is the first Chern number of the filled-band bundle.",
+  "title": "Projector Formula for the TKNN Chern Number",
+  "summary": "For the occupied-band projector P(p), the Hall integer is the Brillouin-zone integral of i Tr P [dP, dP] / 2pi, which equals the first Chern class of the occupied bundle.",
   "domain": "topological-phases-of-matter",
-  "subdomain": "integer-quantum-hall-effect",
-  "canonical_family": "topological-phases/hall-response-chern-number",
+  "subdomain": "berry-geometry",
   "tags": [
-    "proof-fragment",
+    "proof_fragment",
     "tknn",
-    "berry-curvature",
+    "berry-geometry",
     "projector-formula"
   ],
-  "aliases": [
-    "projector formula for the filled-band Chern number"
-  ],
+  "aliases": [],
   "assumptions": [
-    "The occupied-band projector is smooth over the whole two-dimensional Brillouin torus.",
-    "The filled subspace remains gapped from the empty bands."
+    "The occupied subspace remains gapped from the empty bands over the whole two-dimensional Brillouin zone.",
+    "A smooth local orthonormal frame exists on each patch."
   ],
-  "regime": "Single-particle band-topology formulation of the integer quantum Hall invariant.",
-  "scope": "Source-grade TKNN fragment that upgrades the band-theory side of the Lecture Two theorem from a verbal bundle statement to an explicit formula.",
+  "regime": "Finite-rank occupied bundle over a two-dimensional Brillouin torus.",
+  "scope": "Background proof fragment that turns the bundle-theoretic TKNN definition into an explicit integrand.",
   "dependencies": [
-    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
-    "concept:berry-curvature",
-    "proof_fragment:berry-curvature-trace-equals-projector-commutator"
+    "definition:tknn-invariant-as-first-chern-class-of-filled-bundle",
+    "equivalence:first-chern-class-from-berry-curvature"
   ],
   "related_units": [
-    "theorem_family:hall-response-chern-number-equivalence",
-    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
-    "proof_state:lecture-two-hall-response-chern-number",
-    "source_fusion_record:hall-response-chern-number-cross-source-fusion"
+    "equivalence:khat-prime-equals-band-chern-number",
+    "theorem:hall-level-equals-many-body-chern-number"
   ],
   "source_anchors": [
     {
-      "source_id": "paper:tknn-quantized-hall-conductance-1982",
-      "section": "paper/projector-curvature-identity",
-      "equation_labels": [
-        "occupied-bundle-curvature-form"
-      ],
-      "notes": "Original source of the quantized Hall invariant, rendered here through the traced-curvature identity and the occupied-projector formula."
+      "source_id": "paper:quantized-hall-conductance-in-a-two-dimensional-periodic-potential-1982",
+      "section": "kubo-to-integer",
+      "notes": "Original TKNN quantization argument."
     },
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:holonomy-the-quantum-adiabatic-theorem-and-berrys-phase-1983",
+      "section": "berry-holonomy",
+      "notes": "Berry holonomy as line-bundle connection."
+    },
+    {
+      "source_id": "paper:homotopy-and-quantization-in-condensed-matter-physics-1983",
+      "section": "band-touching-and-sum-rule",
+      "notes": "Hall integers are precisely the band Chern numbers and obey the band-touching sum rule."
+    },
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-two/relation-to-band-topology",
-      "notes": "Witten states the TKNN integer as the first Chern class of the filled-band bundle."
+      "notes": "Witten states the TKNN integer as the first Chern class of the occupied bundle."
     }
   ],
-  "formalization_status": "candidate",
-  "validation_status": "cross-checked",
-  "maturity": "working",
-  "representation": "Explicit projector-level realization of the band Chern invariant used inside the Lecture Two Hall-response family.",
-  "human_projection_profile": "learning-note",
-  "motivation": "This note exists because a reusable Hall-response knowledge base cannot stop at saying 'first Chern class'. It needs the explicit integrand that one can actually compute from Bloch projectors.",
-  "prerequisite_story": "Know the occupied-state bundle definition of the TKNN invariant and the local lemma equating the traced Berry curvature with the projector commutator density.",
-  "local_context_story": "In the Hall-response theorem branch, this fragment is the microscopic band-theory side of the equivalence. It upgrades the bundle statement into the explicit Brillouin-zone integral used by TKNN.",
-  "forward_links_story": "After this step, the band invariant k' can be compared directly with the many-body twist-angle invariant and then with the macroscopic Hall-response coefficient k.",
-  "canonical_questions": [
-    "Why does the projector formula compute the same integer as the bundle Chern number?",
-    "What role does the smooth occupied projector play in making the integral topological?",
-    "How does this formula avoid choosing one global Bloch gauge?"
-  ],
-  "scope_boundaries": [
-    "This formula assumes a smooth gapped occupied projector over the whole Brillouin torus.",
-    "The formula computes the band invariant; the equality with the measured Hall response is a further theorem."
-  ],
+  "formalization_status": "draft",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
   "math_expressions": [
     {
-      "latex": "P(p)=\\sum_{a=1}^{n}|u_a(p)\\rangle\\langle u_a(p)|",
-      "kind": "display",
-      "notes": "Projector onto the occupied Bloch subspace."
+      "latex": "P(p)=\\sum_{a=1}^{n} |u_a(p)\\rangle\\langle u_a(p)|",
+      "context": "Occupied-band projector built from a local orthonormal frame."
     },
     {
-      "latex": "\\mathcal A_{ab}=\\langle u_a,\\mathrm du_b\\rangle,\\qquad \\mathcal F=\\mathrm d\\mathcal A+\\mathcal A\\wedge\\mathcal A",
-      "kind": "display",
-      "notes": "Local non-abelian Berry connection and curvature on the filled bundle."
-    },
-    {
-      "latex": "k'=\\frac{i}{2\\pi}\\int_{\\mathcal B}\\operatorname{Tr}\\!\\left(P[\\partial_{p_1}P,\\partial_{p_2}P]\\right)\\,\\mathrm d^2p=\\int_{\\mathcal B}\\frac{\\operatorname{Tr}\\,\\mathcal F}{2\\pi}",
-      "kind": "display",
-      "notes": "Projector formula for the TKNN invariant and its equality to the first Chern number."
+      "latex": "k' = \\frac{i}{2\\pi}\\int_{\\mathcal{B}} \\operatorname{Tr}\\!\\left(P\\,[\\partial_{p_1}P,\\partial_{p_2}P]\\right)\\,\\mathrm{d}^2p = \\int_{\\mathcal{B}} \\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}",
+      "context": "Projector formula equal to the first Chern number of the occupied bundle."
     }
   ],
   "symbols": [
     {
       "symbol": "P(p)",
-      "meaning": "spectral projector onto the filled bands at momentum p"
-    },
-    {
-      "symbol": "\\mathcal A",
-      "meaning": "Berry connection on a local occupied-state frame"
-    },
-    {
-      "symbol": "\\mathcal F",
-      "meaning": "Berry curvature two-form of the occupied-state bundle"
+      "meaning": "spectral projector onto the filled subspace at momentum p"
     }
   ],
-  "step_justification": [
-    "Differentiate P squared equals P to show that dP only mixes occupied and empty states.",
-    "Expand Tr(P[dP,dP]) in a local orthonormal occupied frame.",
-    "Recognize the resulting expression as the trace of the non-abelian Berry curvature."
+  "failure_modes": [
+    "If the gap closes, P(p) is not globally smooth and the Chern number can jump."
   ],
   "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "lean_namespace": "TopologicalPhases.IntegerHall.HallResponseChernNumber",
-  "lean_declaration": "projector_formula_for_tknn_chern_number",
-  "lean_statement_kind": "lemma",
-  "admissible_assumptions": [
-    "Work with a smooth finite-rank occupied projector over the two-dimensional Brillouin torus.",
-    "Treat Brillouin-zone orientation and measure conventions as fixed global background data."
-  ],
-  "lean_prerequisite_ids": [
-    "definition:tknn-invariant-as-first-chern-class-of-filled-band-bundle",
-    "proof_fragment:berry-curvature-trace-equals-projector-commutator"
-  ],
-  "formalization_blockers": [
-    "A reusable Lean representation of the Brillouin torus as an oriented compact two-manifold is still missing.",
-    "The integration layer needed to turn the local curvature density into a global integer invariant is not yet connected to the present bundle notes."
+    "aitp-l2"
   ],
   "retrieval_hints": [
-    "Use when the answer must show the actual TKNN integrand rather than only saying first Chern class."
+    "Use when the user asks for an explicit formula rather than a purely verbal Chern-class definition."
   ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-21"
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18"
 }

@@ -1,0 +1,132 @@
+{
+  "id": "equation:winding-number-integral-for-two-band-node",
+  "type": "equation",
+  "title": "Winding-Number Integral for a Two-Band Node",
+  "summary": "The node winding number is given by the sphere integral of n dot (partial n x partial n); source anchor: Lecture One / The Nielsen-Ninomiya Theorem (lines 516-525; eqs. wn, nwn).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "topological-charge",
+  "tags": [
+    "equation",
+    "equation_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: two-band Hamiltonian reduced to a unit vector n on a sphere around one bad point."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:winding-number-integral-for-two-band-node after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the winding-number sphere integral ready to be stored as a reusable equation_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "equation_labels": [
+        "wn",
+        "nwn"
+      ],
+      "notes": "AITP promoted candidate candidate:winding-number-integral-for-two-band-node from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "w(S) = \\frac{1}{4\\pi}\\int_S \\mathrm{d}^2 p\\, \\epsilon^{\\mu\\nu}\\, \\epsilon^{abc} n_a \\frac{\\partial n_b}{\\partial p^{\\mu}} \\frac{\\partial n_c}{\\partial p^{\\nu}}",
+      "label": "nwn",
+      "context": "Winding-number integral for an isolated two-band node."
+    }
+  ],
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "equation:one-dimensional-linearized-fermi-crossing",
+    "equation:berry-flux-topological-charge",
+    "equation:continuum-1d-chiral-fermion-hamiltonian",
+    "equation:linearized-dispersion-near-fermi-point",
+    "equation:two-band-hamiltonian-d-dot-sigma"
+  ],
+  "symbols": [
+    {
+      "symbol": "w(S)",
+      "meaning": "winding number on the enclosing sphere S"
+    },
+    {
+      "symbol": "n_a",
+      "meaning": "components of the normalized two-band Bloch vector"
+    }
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:winding-number-integral-for-two-band-node."
+  ],
+  "created_at": "2026-03-17",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-winding-number-integral-for-two-band-node/agent_consensus.json",
+    "candidate_id=candidate:winding-number-integral-for-two-band-node",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-winding-number-integral-for-two-band-node/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-winding-number-integral-for-two-band-node/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-winding-number-integral-for-two-band-node/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-winding-number-integral-for-two-band-node/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:winding-number-integral-for-two-band-node",
+    "candidate_type": "equation_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-17T21:51:32+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture One equation-card audit for the winding-number integral around an isolated two-band node."
+  },
+  "consensus": {
+    "candidate_id": "candidate:winding-number-integral-for-two-band-node",
+    "updated_at": "2026-03-17T21:51:32+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture One equation-card audit for the winding-number integral around an isolated two-band node."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:winding-number-integral-for-two-band-node",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

@@ -22,6 +22,17 @@ UNIT_TYPE_TO_DIR = {
     "warning": "units/warnings",
     "bridge": "units/bridges",
     "source_map": "units/source-maps",
+    "notation": "units/notations",
+    "assumption": "units/assumptions",
+    "regime": "units/regimes",
+    "theorem": "units/theorems",
+    "proof_fragment": "units/proof-fragments",
+    "derivation_step": "units/derivation-steps",
+    "definition": "units/definitions",
+    "example": "units/examples",
+    "caveat": "units/caveats",
+    "equivalence": "units/equivalences",
+    "symbol_binding": "units/symbol-bindings",
 }
 
 PORTAL_DIR_BY_TYPE = {
@@ -35,6 +46,17 @@ PORTAL_DIR_BY_TYPE = {
     "warning": "Warnings",
     "bridge": "Bridges",
     "source_map": "Source-Maps",
+    "notation": "Notations",
+    "assumption": "Assumptions",
+    "regime": "Regimes",
+    "theorem": "Theorems",
+    "proof_fragment": "Proof-Fragments",
+    "derivation_step": "Derivation-Steps",
+    "definition": "Definitions",
+    "example": "Examples",
+    "caveat": "Caveats",
+    "equivalence": "Equivalences",
+    "symbol_binding": "Symbol-Bindings",
 }
 
 EDGE_RELATIONS = {
@@ -83,6 +105,10 @@ LIST_FIELDS = [
     "dependencies",
     "related_units",
     "source_anchors",
+    "review_artifacts",
+    "merge_lineage",
+    "conflict_refs",
+    "equivalence_refs",
 ]
 REF_LIST_FIELDS = [
     "dependencies",
@@ -90,6 +116,8 @@ REF_LIST_FIELDS = [
     "model_refs",
     "equation_refs",
     "quantity_refs",
+    "conflict_refs",
+    "equivalence_refs",
 ]
 PREFIX_BY_FIELD = {
     "model_refs": "model:",
@@ -203,6 +231,22 @@ def manifest_equation_map(manifest: dict) -> Dict[str, dict]:
 
 def manifest_figure_map(manifest: dict) -> Dict[str, dict]:
     return {entry["id"]: entry for entry in manifest.get("figure_map", [])}
+
+
+def primary_manifest_url(manifest: dict) -> Tuple[str, str]:
+    urls = manifest.get("urls", {})
+    for key, label in (
+        ("abs", "arXiv"),
+        ("pdf", "PDF"),
+        ("doi", "DOI"),
+        ("journal", "Journal"),
+        ("inspire", "InspireHEP"),
+        ("source_archive", "Source"),
+    ):
+        value = urls.get(key)
+        if value:
+            return label, value
+    return "Source", ""
 
 
 def anchor_summary(anchor: dict) -> str:
@@ -421,13 +465,17 @@ def render_index_page(units: dict, manifests: dict) -> str:
             lines.append(f"- {unit_link(ROOT / 'portal' / 'Topological-Phases-Of-Matter' / 'Index.md', units[entry_id])}")
     if manifests:
         manifest = next(iter(manifests.values()))
-        lines.extend(["", "## Source", f"- `{manifest['source_id']}`", f"- `{manifest['urls']['abs']}`"])
+        source_label, source_url = primary_manifest_url(manifest)
+        lines.extend(["", "## Source", f"- `{manifest['source_id']}`"])
+        if source_url:
+            lines.append(f"- {source_label}: `{source_url}`")
     lines.append("")
     return "\n".join(lines)
 
 
 def render_lecture_page(units: dict, manifests: dict) -> str:
     manifest = next(iter(manifests.values()))
+    source_label, source_url = primary_manifest_url(manifest)
     page_path = ROOT / "portal" / "Topological-Phases-Of-Matter" / "Lecture-One.md"
     section_to_units = defaultdict(set)
     for unit in sorted_units(units):
@@ -440,10 +488,11 @@ def render_lecture_page(units: dict, manifests: dict) -> str:
         "",
         f"- Source ID: `{manifest['source_id']}`",
         f"- Title: {manifest['title']}",
-        f"- arXiv: `{manifest['urls']['abs']}`",
         "",
         "## Coverage By Section",
     ]
+    if source_url:
+        lines.insert(4, f"- {source_label}: `{source_url}`")
     for section in manifest["section_map"]:
         lines.extend(["", f"## {section['title']}", section["summary"], ""])
         unit_ids = sorted(section_to_units.get(section["id"], set()))
@@ -510,6 +559,15 @@ def command_build() -> int:
                 "validation_status": unit["validation_status"],
                 "maturity": unit["maturity"],
                 "source_anchor_count": len(unit.get("source_anchors", [])),
+                "canonical_layer": unit.get("canonical_layer", ""),
+                "review_mode": unit.get("review_mode", ""),
+                "review_artifacts": unit.get("review_artifacts", []),
+                "coverage": unit.get("coverage", {}),
+                "consensus": unit.get("consensus", {}),
+                "merge_lineage": unit.get("merge_lineage", []),
+                "conflict_status": unit.get("conflict_status", ""),
+                "conflict_refs": unit.get("conflict_refs", []),
+                "equivalence_refs": unit.get("equivalence_refs", []),
             }
         )
         formal_rows.append(
@@ -521,6 +579,15 @@ def command_build() -> int:
                 "formal_targets": unit.get("formal_targets", []),
                 "dependencies": unit.get("dependencies", []),
                 "maturity": unit["maturity"],
+                "canonical_layer": unit.get("canonical_layer", ""),
+                "review_mode": unit.get("review_mode", ""),
+                "review_artifacts": unit.get("review_artifacts", []),
+                "coverage": unit.get("coverage", {}),
+                "consensus": unit.get("consensus", {}),
+                "merge_lineage": unit.get("merge_lineage", []),
+                "conflict_status": unit.get("conflict_status", ""),
+                "conflict_refs": unit.get("conflict_refs", []),
+                "equivalence_refs": unit.get("equivalence_refs", []),
             }
         )
         bucket = domain_index[unit["domain"]]

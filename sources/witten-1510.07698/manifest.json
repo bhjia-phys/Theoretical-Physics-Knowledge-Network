@@ -7,7 +7,7 @@
   "version": "v2",
   "submitted_date": "2015-10-26",
   "updated_date": "2015-11-17",
-  "canonical_scope": "Lecture One proof-grade exemplar, with promoted Lecture Two and Lecture Three flagship theorem families, explicit cited-paper recovery routes, and a topic-level future buffer.",
+  "canonical_scope": "Lecture One plus selected Lecture Two and Lecture Three anchors required by the present repository version.",
   "urls": {
     "abs": "https://arxiv.org/abs/1510.07698v2",
     "pdf": "https://arxiv.org/pdf/1510.07698v2",
@@ -84,79 +84,29 @@
     {
       "id": "lecture-two/chern-simons-effective-action",
       "title": "Chern-Simons Effective Action",
-      "summary": "Lecture Two begins from the effective Chern-Simons description of the integer quantum Hall effect."
-    },
-    {
-      "id": "lecture-two/quantization-of-the-chern-simons-coupling",
-      "title": "Quantization Of The Chern-Simons Coupling",
-      "summary": "Gauge invariance on closed spacetime forces the Chern-Simons level to be integral."
-    },
-    {
-      "id": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Quantization Of The Hall Conductivity",
-      "summary": "The Hall response coefficient is tied to the quantized Chern-Simons level."
-    },
-    {
-      "id": "lecture-two/relation-to-band-topology",
-      "title": "Relation To Band Topology",
-      "summary": "The macroscopic Hall coefficient is related to the TKNN invariant of the filled-state bundle."
-    },
-    {
-      "id": "lecture-two/proof-of-the-equivalence",
-      "title": "Proof Of The Equivalence",
-      "summary": "Witten sketches why the many-body twisted-boundary Berry curvature agrees with the band-theory Chern number."
-    },
-    {
-      "id": "lecture-two/edge-states-and-anomaly-inflow",
-      "title": "Edge States And Anomaly Inflow",
-      "summary": "Boundary chiral modes cancel the gauge variation of the bulk Chern-Simons term."
-    },
-    {
-      "id": "lecture-two/the-charge-pump",
-      "title": "The Charge Pump",
-      "summary": "The Laughlin-Thouless pump interpretation explains boundary spectral flow and charge transport."
-    },
-    {
-      "id": "lecture-two/joining-valence-and-conduction-bands",
-      "title": "Joining Valence And Conduction Bands",
-      "summary": "Edge-localized modes must interpolate continuously between valence and conduction bands."
-    },
-    {
-      "id": "lecture-two/more-on-the-fractional-quantum-hall-effect",
-      "title": "More On The Fractional Quantum Hall Effect",
-      "summary": "A first pass at fractional Hall response introduces emergent gauge fields and non-return after a $2\\pi$ pump."
-    },
-    {
-      "id": "lecture-two/more-on-fermi-arcs",
-      "title": "More On Fermi Arcs",
-      "summary": "Fermi arcs are revisited via auxiliary quantum Hall systems and projected momentum-space topology."
+      "summary": "In 2+1 dimensions the abelian Chern-Simons functional is the distinguished gauge-invariant-up-to-boundary response term for the electromagnetic field."
     },
     {
       "id": "lecture-three/more-on-the-fractional-quantum-hall-effect",
       "title": "More On The Fractional Quantum Hall Effect",
-      "summary": "Lecture Three develops fractionally charged quasiparticles, Wilson loops, and topological ground-state degeneracy."
+      "summary": "An emergent U(1) Chern-Simons field coupled to electromagnetism explains quasiparticles with fractional electric charge q/r."
     },
     {
-      "id": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "More On Edge States Of The Integer Quantum Hall Effect",
-      "summary": "A continuum parity-anomaly picture and the Jackiw-Rebbi domain-wall mode supply a conceptual edge-mode proof."
+      "id": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "title": "Quantization Of The Chern-Simons Coupling",
+      "summary": "On S^2 x S^1 with one unit of flux and temporal holonomy parameter s, a large gauge transformation sends s to s + 2pi and shifts I_CS accordingly; source anchor: Lecture Two / Quantization Of The Chern-Simons Coupling (lines 1314-1360; eqs. unitf, nif, nifty, prif)."
     },
     {
-      "id": "lecture-three/haldanes-model-of-graphene",
-      "title": "Haldane's Model Of Graphene",
-      "summary": "Graphene Dirac points, symmetry protection, and Haldane masses realize anomalous Hall physics on the lattice."
+      "id": "lecture-two/quantization-of-the-hall-conductivity",
+      "title": "Quantization Of The Hall Conductivity",
+      "summary": "Varying the effective action gives J_2 = - delta I_eff / delta A_1 = k E_1 / 2pi, the quantized Hall current; source anchor: Lecture Two / Quantization Of The Hall Conductivity (lines 1367-1386; eqs. curr, zurr, murr)."
     }
   ],
   "equation_map": [
     {
-      "label": "dolz",
-      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
-      "title": "Linearized dispersion near a 1D Fermi point"
-    },
-    {
-      "label": "continuum",
-      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
-      "title": "Continuum Hamiltonian near a 1D Fermi point"
+      "label": "perf",
+      "section": "lecture-one/discrete-lattice-symmetries-and-massless-dirac-fermions",
+      "title": "Nonchiral massless Dirac Hamiltonian in block form"
     },
     {
       "label": "constantshift",
@@ -164,69 +114,24 @@
       "title": "Constant density shift at the crossing point"
     },
     {
-      "label": "localexp",
-      "section": "lecture-one/three-dimensions",
-      "title": "Generic two-band Hamiltonian near a crossing"
+      "label": "continuum",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Continuum Hamiltonian near a 1D Fermi point"
     },
     {
-      "label": "xpa",
-      "section": "lecture-one/three-dimensions",
-      "title": "Linearized two-band Weyl Hamiltonian"
+      "label": "dolz",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Linearized dispersion near a 1D Fermi point"
     },
     {
-      "label": "perd",
-      "section": "lecture-one/three-dimensions",
-      "title": "Chirality from the Jacobian determinant"
+      "label": "ollof",
+      "section": "lecture-one/simple-examples-of-band-hamiltonians",
+      "title": "Periodic Dirac-like lattice regularization"
     },
     {
-      "label": "wn",
-      "section": "lecture-one/the-nielsen-ninomiya-theorem",
-      "title": "Notation for the winding number attached to a surrounding sphere"
-    },
-    {
-      "label": "nwn",
-      "section": "lecture-one/the-nielsen-ninomiya-theorem",
-      "title": "Integral formula for winding number"
-    },
-    {
-      "label": "weta",
-      "section": "lecture-one/the-nielsen-ninomiya-theorem",
-      "title": "Closed normalized area form on the target sphere"
-    },
-    {
-      "label": "wnn",
-      "section": "lecture-one/the-nielsen-ninomiya-theorem",
-      "title": "Winding number as a degree integral"
-    },
-    {
-      "label": "cl",
-      "section": "lecture-one/the-nielsen-ninomiya-theorem",
-      "title": "Stokes-theorem sum rule for total node charge"
-    },
-    {
-      "label": "zb",
-      "section": "lecture-one/the-berry-connection",
-      "title": "Berry parallel-transport condition along a path"
-    },
-    {
-      "label": "fc",
-      "section": "lecture-one/the-berry-connection",
-      "title": "First Chern class matched with Berry curvature"
-    },
-    {
-      "label": "zif",
-      "section": "lecture-one/the-berry-connection",
-      "title": "Topological charge as Berry-flux integral"
-    },
-    {
-      "label": "wif",
-      "section": "lecture-one/the-berry-connection",
-      "title": "Closedness of Berry curvature away from singularities"
-    },
-    {
-      "label": "nna",
-      "section": "lecture-one/the-berry-connection",
-      "title": "Nielsen-Ninomiya from Berry curvature"
+      "label": "twof",
+      "section": "lecture-one/simple-examples-of-band-hamiltonians",
+      "title": "Simple periodic Weyl Hamiltonian on a lattice"
     },
     {
       "label": "terf",
@@ -239,224 +144,99 @@
       "title": "Pair creation and annihilation via f(p3)=p3^2-a"
     },
     {
+      "label": "fc",
+      "section": "lecture-one/the-berry-connection",
+      "title": "First Chern class matched with Berry curvature"
+    },
+    {
+      "label": "nna",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Nielsen-Ninomiya from Berry curvature"
+    },
+    {
+      "label": "wif",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Closedness of Berry curvature away from singularities"
+    },
+    {
+      "label": "zb",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Berry parallel-transport condition along a path"
+    },
+    {
+      "label": "zif",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Topological charge as Berry-flux integral"
+    },
+    {
+      "label": "cl",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Stokes-theorem sum rule for total node charge"
+    },
+    {
+      "label": "nwn",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Integral formula for winding number"
+    },
+    {
+      "label": "weta",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Closed normalized area form on the target sphere"
+    },
+    {
+      "label": "wn",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Notation for the winding number attached to a surrounding sphere"
+    },
+    {
+      "label": "wnn",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Winding number as a degree integral"
+    },
+    {
+      "label": "zolf",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "title": "Closedness identity for the winding-number density"
+    },
+    {
+      "label": "localexp",
+      "section": "lecture-one/three-dimensions",
+      "title": "Generic two-band Hamiltonian near a crossing"
+    },
+    {
+      "label": "perd",
+      "section": "lecture-one/three-dimensions",
+      "title": "Chirality from the Jacobian determinant"
+    },
+    {
+      "label": "xpa",
+      "section": "lecture-one/three-dimensions",
+      "title": "Linearized two-band Weyl Hamiltonian"
+    },
+    {
       "label": "twod",
       "section": "lecture-one/two-dimensions",
       "title": "Generic two-dimensional crossing discussion"
     },
     {
-      "label": "perf",
-      "section": "lecture-one/discrete-lattice-symmetries-and-massless-dirac-fermions",
-      "title": "Nonchiral massless Dirac Hamiltonian in block form"
+      "label": "pefr",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Physical electric charge density of the quasiparticle"
     },
     {
-      "label": "twof",
-      "section": "lecture-one/simple-examples-of-band-hamiltonians",
-      "title": "Simple periodic Weyl Hamiltonian on a lattice"
+      "label": "pelf",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Gauss-law constraint with a quasiparticle source"
     },
     {
-      "label": "ollof",
-      "section": "lecture-one/simple-examples-of-band-hamiltonians",
-      "title": "Periodic Dirac-like lattice regularization"
+      "label": "qof",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Emergent flux sourced by a quasiparticle"
     },
     {
       "label": "worf",
       "section": "lecture-two/chern-simons-effective-action",
-      "title": "Chern-Simons effective action in 2+1 dimensions"
-    },
-    {
-      "label": "unitf",
-      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
-      "title": "Unit magnetic flux through the spatial two-sphere"
-    },
-    {
-      "label": "nifty",
-      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
-      "title": "Chern-Simons action on S2 times S1 equals the holonomy angle"
-    },
-    {
-      "label": "prif",
-      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
-      "title": "Large gauge transformation shifts the holonomy angle by 2pi"
-    },
-    {
-      "label": "curr",
-      "section": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Induced current from the effective action"
-    },
-    {
-      "label": "zurr",
-      "section": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Hall-response effective action with integer level k"
-    },
-    {
-      "label": "murr",
-      "section": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Hall current induced by the Chern-Simons response"
-    },
-    {
-      "label": "urr",
-      "section": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Emergent-gauge-field effective action for the fractional Hall effect"
-    },
-    {
-      "label": "yre",
-      "section": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Equation of motion relating emergent and background field strengths"
-    },
-    {
-      "label": "zyre",
-      "section": "lecture-two/quantization-of-the-hall-conductivity",
-      "title": "Locally integrated-out fractional Hall Chern-Simons response"
-    },
-    {
-      "label": "zudo",
-      "section": "lecture-two/relation-to-band-topology",
-      "title": "Discrete finite-volume lattice momenta"
-    },
-    {
-      "label": "merrof",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "Generic adiabatic action with Berry connection term"
-    },
-    {
-      "label": "wonkey",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "One-derivative Berry-phase term in the adiabatic action"
-    },
-    {
-      "label": "elfi",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "Bulk Maxwell plus boundary Chern-Simons action"
-    },
-    {
-      "label": "mizz",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "Reduced action for the twist-angle Berry phase"
-    },
-    {
-      "label": "roff",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "Berry connection on the twist-angle torus"
-    },
-    {
-      "label": "coff",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "Berry curvature on the twist-angle torus"
-    },
-    {
-      "label": "plizz",
-      "section": "lecture-two/proof-of-the-equivalence",
-      "title": "Many-body Chern number equals the Hall-response level"
-    },
-    {
-      "label": "molof",
-      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
-      "title": "Hermitian boundary condition for the half-space Dirac fermion"
-    },
-    {
-      "label": "zogg",
-      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
-      "title": "Tangential Dirac operator along the boundary"
-    },
-    {
-      "label": "ogg",
-      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
-      "title": "Exponentially localized half-space boundary-mode ansatz"
-    },
-    {
-      "label": "pogg",
-      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
-      "title": "Boundary chirality projector and tangential Dirac equation"
-    },
-    {
-      "label": "zuffo",
-      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
-      "title": "Doubled boundary Dirac equation in the time-reversal-symmetric presentation"
-    },
-    {
-      "label": "facs",
-      "section": "lecture-two/edge-states-and-anomaly-inflow",
-      "title": "Boundary-variant Chern-Simons action"
-    },
-    {
-      "label": "plof",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Bulk Chern-Simons action for the edge-mode consistency discussion"
-    },
-    {
-      "label": "utof",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Massive 2+1-dimensional Dirac action"
-    },
-    {
-      "label": "uftof",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Parity-anomaly half-level effective action"
-    },
-    {
-      "label": "puft",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Massive 2+1-dimensional Dirac Hamiltonian"
-    },
-    {
-      "label": "PPP",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Momentum-space map to a hemisphere controlled by the Dirac mass"
-    },
-    {
-      "label": "quft",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Two opposite masses give zero total Chern-Simons level"
-    },
-    {
-      "label": "plift",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Boundary condition gluing two opposite-mass fermions"
-    },
-    {
-      "label": "ulift",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Opposite-mass Dirac equations before the sign flip"
-    },
-    {
-      "label": "nuft",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Folded fermion on all of R3"
-    },
-    {
-      "label": "obeys",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Trivial folded Dirac equation before the sign flip"
-    },
-    {
-      "label": "gift",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Dirac equation with sign-changing mass"
-    },
-    {
-      "label": "zoggg",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Exponentially localized domain-wall edge-mode ansatz"
-    },
-    {
-      "label": "trogg",
-      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
-      "title": "Boundary chirality condition and reduced Dirac equation"
-    },
-    {
-      "label": "hham",
-      "section": "lecture-three/haldanes-model-of-graphene",
-      "title": "Nearest-neighbor graphene Hamiltonian in the A/B sublattice basis"
-    },
-    {
-      "label": "theq",
-      "section": "lecture-three/haldanes-model-of-graphene",
-      "title": "Graphene band-touching condition at the Dirac points"
-    },
-    {
-      "label": "omeq",
-      "section": "lecture-three/haldanes-model-of-graphene",
-      "title": "The two symmetry-related solutions locating the graphene Dirac points"
+      "title": "Abelian Chern-Simons functional on the 2+1-dimensional worldvolume"
     }
   ],
   "figure_map": [

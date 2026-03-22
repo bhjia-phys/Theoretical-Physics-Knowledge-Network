@@ -1,0 +1,128 @@
+{
+  "id": "notation:bloch-bdg-eigenfunction-notation-for-topological-invariants",
+  "type": "notation",
+  "title": "Bloch-BdG Eigenfunction Notation for Topological Invariants",
+  "summary": "The Topological invariants subsection introduces the invariant discussion in terms of Bloch-BdG eigenfunctions |u^a(k,r)> and energies epsilon^a(k,r) defined by H(k,r)|u^a(k,r)> = epsilon^a(k,r)|u^a(k,r)>; source anchor: Topological invariants / Bloch-BdG eigenfunction setup (lines 2041-2068).",
+  "domain": "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+  "subdomain": "notation",
+  "tags": [
+    "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+    "notation",
+    "notation_card"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: only the setup notation for the invariant subsection.",
+    "This unit does not claim any specific Chern, winding, or Z_2 formula beyond the eigenvalue notation that the subsection introduces."
+  ],
+  "regime": "Promoted from AITP topic chiu-classification-topological-quantum-matter-symmetries-1505-03535 via candidate candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants after passing the documented AI coverage and consensus gate.",
+  "scope": "Can the Bloch-BdG eigenfunction notation that underlies the invariant discussion be promoted as a reusable notation card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535",
+      "section": "Topological invariants / Bloch-BdG eigenfunction setup",
+      "notes": "AITP promoted candidate candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants from topic chiu-classification-topological-quantum-matter-symmetries-1505-03535; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "H(\\mathsf{k},\\mathsf{r}) \\, |u^{a}(\\mathsf{k},\\mathsf{r})\\rangle = \\varepsilon^{a}(\\mathsf{k},\\mathsf{r}) \\, |u^{a}(\\mathsf{k},\\mathsf{r})\\rangle",
+      "context": "Bloch-BdG eigenvalue problem used to set up the invariant formulas."
+    }
+  ],
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "notation:emergent-u1-field-a-and-field-strength-f",
+    "notation:filled-line-bundle-and-berry-connection",
+    "concept:wave-function-topology-beyond-symmetry-breaking",
+    "definition:symmetry-protected-topological-phase",
+    "definition:spatial-versus-nonspatial-symmetry"
+  ],
+  "symbols": [
+    {
+      "symbol": "H(\\mathsf{k},\\mathsf{r})",
+      "meaning": "Bloch-BdG Hamiltonian depending on momentum and defect or adiabatic parameters"
+    },
+    {
+      "symbol": "|u^{a}(\\mathsf{k},\\mathsf{r})\\rangle",
+      "meaning": "a-th Bloch-BdG eigenfunction"
+    },
+    {
+      "symbol": "\\varepsilon^{a}(\\mathsf{k},\\mathsf{r})",
+      "meaning": "energy eigenvalue of the a-th Bloch-BdG eigenfunction"
+    }
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-bloch-bdg-eigenfunction-notation-for-topological-invariants/agent_consensus.json",
+    "candidate_id=candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants",
+    "coverage_ledger_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-bloch-bdg-eigenfunction-notation-for-topological-invariants/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-bloch-bdg-eigenfunction-notation-for-topological-invariants/derivation_graph.json",
+    "merge_report_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-bloch-bdg-eigenfunction-notation-for-topological-invariants/merge_report.json",
+    "notation_table_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-bloch-bdg-eigenfunction-notation-for-topological-invariants/notation_table.json",
+    "promotion_gate_path=runtime/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/promotion_gate.json",
+    "structure_map_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-bloch-bdg-eigenfunction-notation-for-topological-invariants/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants",
+    "candidate_type": "notation_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:44:35+08:00",
+    "updated_by": "aitp-cli",
+    "notes": "Bounded notation audit for the eigenfunction setup that underlies the invariant formulas."
+  },
+  "consensus": {
+    "candidate_id": "candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants",
+    "updated_at": "2026-03-18T12:44:35+08:00",
+    "updated_by": "aitp-cli",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded notation audit for the eigenfunction setup that underlies the invariant formulas."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:bloch-bdg-eigenfunction-notation-for-topological-invariants",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

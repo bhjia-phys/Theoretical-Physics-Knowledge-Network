@@ -26,12 +26,10 @@
     "quantity:chirality-sign"
   ],
   "related_units": [
-    "definition:weyl-node-as-isolated-three-dimensional-two-band-crossing",
     "concept:chirality-of-weyl-node",
     "concept:berry-curvature",
     "bridge:weyl-node-to-berry-monopole",
-    "warning:local-weyl-description-does-not-fix-global-lattice-consistency",
-    "notation_map:three-dimensional-two-band-crossing-symbols"
+    "warning:local-weyl-description-does-not-fix-global-lattice-consistency"
   ],
   "source_anchors": [
     {
@@ -53,16 +51,14 @@
   "representation": "Local 2x2 Bloch Hamiltonian with linearized Pauli-matrix coefficients.",
   "math_expressions": [
     {
-      "latex": "H(\\vec p)=a(\\vec p)+\\sum_i b_i(\\vec p)\\sigma^i",
-      "kind": "display",
-      "equation_label": "localexp",
-      "notes": "Generic local 2x2 Hamiltonian near the crossing."
+      "latex": "H' = \\sum_{i,j} \\sigma_i \\, b_{ij} (p-p_{*})_j",
+      "label": "xpa",
+      "context": "Linearized two-band Hamiltonian near an isolated three-dimensional crossing."
     },
     {
-      "latex": "\\chi=\\operatorname{sign}\\det\\bigl((\\partial_j b_i)_{\\vec p_*}\\bigr)",
-      "kind": "display",
-      "equation_label": "perd",
-      "notes": "Local chirality of the Weyl node."
+      "latex": "\\chi = \\operatorname{sign} \\det(b_{ij})",
+      "label": "perd",
+      "context": "Local chirality attached to the Weyl node."
     }
   ],
   "model_refs": [
@@ -76,6 +72,20 @@
     "quantity:chirality-sign",
     "quantity:winding-number"
   ],
+  "symbols": [
+    {
+      "symbol": "\\sigma_i",
+      "meaning": "Pauli matrices acting on the local two-band space"
+    },
+    {
+      "symbol": "b_{ij}",
+      "meaning": "Jacobian matrix controlling the linearized Weyl cone"
+    },
+    {
+      "symbol": "\\chi",
+      "meaning": "chirality of the Weyl node"
+    }
+  ],
   "failure_modes": [
     "If the determinant of the linearization vanishes, the simple Weyl description can fail.",
     "Global lattice consistency is not fixed by the local cone alone."
@@ -88,5 +98,5 @@
     "Primary entry point for Weyl semimetal queries."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-19"
+  "updated_at": "2026-03-18"
 }

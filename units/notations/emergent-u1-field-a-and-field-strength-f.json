@@ -1,0 +1,111 @@
+{
+  "id": "notation:emergent-u1-field-a-and-field-strength-f",
+  "type": "notation",
+  "title": "Emergent U(1) Field a and Its Field Strength f",
+  "summary": "The fractional Hall discussion introduces an emergent compact U(1) gauge field a with field strength f_ij = partial_i a_j - partial_j a_i and the same 2pi flux quantum normalization as A; source anchor: Lecture Two / Quantization Of The Hall Conductivity (lines 1392-1407; eq. urr and adjoining discussion).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "fractional-quantum-hall-effect",
+  "tags": [
+    "notation",
+    "notation_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: fractional Hall effective theory with a compact emergent U(1) field."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:emergent-u1-field-a-and-field-strength-f after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the emergent-field notation for a and f ready to be stored as a reusable notation_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "notes": "AITP promoted candidate candidate:emergent-u1-field-a-and-field-strength-f from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "notation:filled-line-bundle-and-berry-connection",
+    "definition:chern-simons-functional-definition",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "derivation_step:hall-current-from-chern-simons-variation",
+    "equation:one-dimensional-linearized-fermi-crossing"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:emergent-u1-field-a-and-field-strength-f."
+  ],
+  "created_at": "2026-03-17",
+  "updated_at": "2026-03-17",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-emergent-u1-field-a-and-field-strength-f/agent_consensus.json",
+    "candidate_id=candidate:emergent-u1-field-a-and-field-strength-f",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-emergent-u1-field-a-and-field-strength-f/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-emergent-u1-field-a-and-field-strength-f/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-emergent-u1-field-a-and-field-strength-f/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-emergent-u1-field-a-and-field-strength-f/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:emergent-u1-field-a-and-field-strength-f",
+    "candidate_type": "notation_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-17T21:54:23+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two notation-card audit for the emergent gauge field a and its field strength f."
+  },
+  "consensus": {
+    "candidate_id": "candidate:emergent-u1-field-a-and-field-strength-f",
+    "updated_at": "2026-03-17T21:54:23+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two notation-card audit for the emergent gauge field a and its field strength f."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:emergent-u1-field-a-and-field-strength-f",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

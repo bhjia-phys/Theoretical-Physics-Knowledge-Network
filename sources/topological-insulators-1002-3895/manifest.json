@@ -1,0 +1,53 @@
+{
+  "source_id": "paper:topological-insulators-1002-3895",
+  "title": "Topological Insulators",
+  "authors": [
+    "M. Z. Hasan",
+    "C. L. Kane"
+  ],
+  "version": "1002.3895v2",
+  "submitted_date": "2010-02-20",
+  "updated_date": "2010-11-09",
+  "canonical_scope": "AITP source-onboarding bridge for paper:topological-insulators-1002-3895.",
+  "urls": {
+    "abs": "http://arxiv.org/abs/1002.3895v2",
+    "pdf": "https://arxiv.org/pdf/1002.3895v2",
+    "doi": "",
+    "source_archive": "https://arxiv.org/e-print/1002.3895v2"
+  },
+  "section_map": [
+    {
+      "id": "Introduction / Early topological-insulator definition",
+      "title": "Introduction / Early topological-insulator definition",
+      "summary": "A topological insulator has a bulk energy gap separating occupied and empty bands, but its edge or surface necessarily carries gapless states protected by time-reversal symmetry; source anchor: Introduction (lines 83-90)."
+    },
+    {
+      "id": "Topological Band Theory / Bloch-state setup for insulating crystals",
+      "title": "Topological Band Theory / Bloch-state setup for insulating crystals",
+      "summary": "Band theory describes crystal states by crystal momentum k in the Brillouin zone, with Bloch states |u_m(k)> defined in a unit cell as eigenstates of the Bloch Hamiltonian H(k), and eigenvalues E_m(k) defining the energy bands; source anchor: Topological Band Theory / The insulating state (lines 161-168)."
+    },
+    {
+      "id": "Topological Band Theory / Gap-preserving interpolation defines equivalence",
+      "title": "Topological Band Theory / Gap-preserving interpolation defines equivalence",
+      "summary": "Two insulating states are topologically equivalent when the Hamiltonian can be tuned continuously between them without closing the energy gap; source anchor: Topological Band Theory / The insulating state (lines 174-177)."
+    },
+    {
+      "id": "Topological Band Theory / Stable equivalence of conventional insulators to the vacuum",
+      "title": "Topological Band Theory / Stable equivalence of conventional insulators to the vacuum",
+      "summary": "Under the paper's stable classification that identifies states differing only by trivial core bands, all conventional insulators are equivalent to one another and to the vacuum; source anchor: Topological Band Theory / The insulating state (lines 178-187)."
+    },
+    {
+      "id": "Quantum Hall state / Integer Hall conductivity equation",
+      "title": "Quantum Hall state / Integer Hall conductivity equation",
+      "summary": "If N Landau levels are filled and the rest are empty, the Hall conductivity is sigma_xy = N e^2 / h; source anchor: Topological Band Theory / The quantum Hall state (lines 217-224, Eq. qhall)."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "qhall",
+      "section": "Quantum Hall state / Integer Hall conductivity equation",
+      "title": "Integer quantum Hall conductivity"
+    }
+  ],
+  "figure_map": []
+}

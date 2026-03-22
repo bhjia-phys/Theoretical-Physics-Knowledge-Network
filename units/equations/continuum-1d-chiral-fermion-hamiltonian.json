@@ -37,6 +37,18 @@
   "validation_status": "source-grounded",
   "maturity": "stable",
   "representation": "Effective continuum Hamiltonian for a single chiral branch.",
+  "math_expressions": [
+    {
+      "latex": "H = v \\int_{-\\infty}^{\\infty} \\mathrm{d}x\\, \\psi^{*}\\!\\left(-i\\frac{\\partial}{\\partial x}\\right)\\psi",
+      "label": "continuum",
+      "context": "Continuum Hamiltonian obtained from the linearized one-dimensional crossing."
+    },
+    {
+      "latex": "\\varepsilon(p_0) \\int_{-\\infty}^{\\infty} \\mathrm{d}x\\, \\psi^{*}\\psi",
+      "label": "constantshift",
+      "context": "Removable constant density shift in the low-energy Hamiltonian."
+    }
+  ],
   "equation_refs": [],
   "quantity_refs": [
     "quantity:fermi-velocity"
@@ -61,5 +73,5 @@
     "Use when connecting a Fermi crossing to a chiral field theory."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-18"
 }

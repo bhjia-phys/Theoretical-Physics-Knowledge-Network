@@ -1,0 +1,135 @@
+{
+  "id": "notation:bloch-states-as-eigenstates-of-bloch-hamiltonian",
+  "type": "notation",
+  "title": "Bloch States as Eigenstates of the Bloch Hamiltonian",
+  "summary": "Band theory describes crystal states by crystal momentum k in the Brillouin zone, with Bloch states |u_m(k)> defined in a unit cell as eigenstates of the Bloch Hamiltonian H(k), and eigenvalues E_m(k) defining the energy bands; source anchor: Topological Band Theory / The insulating state (lines 161-168).",
+  "domain": "hasan-kane-topological-insulators-1002-3895",
+  "subdomain": "notation",
+  "tags": [
+    "hasan-kane-topological-insulators-1002-3895",
+    "notation",
+    "notation_card"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the band-theory setup of the review before any TKNN or Z2 invariant formulas are introduced.",
+    "This unit records only the notation and role of Bloch states, Hamiltonian, and band energies."
+  ],
+  "regime": "Promoted from AITP topic hasan-kane-topological-insulators-1002-3895 via candidate candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian after passing the documented AI coverage and consensus gate.",
+  "scope": "Can the Bloch-state and Bloch-Hamiltonian setup be promoted as a reusable notation card for later topological-band-theory arguments?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:topological-insulators-1002-3895",
+      "section": "Topological Band Theory / Bloch-state setup for insulating crystals",
+      "notes": "AITP promoted candidate candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian from topic hasan-kane-topological-insulators-1002-3895; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "\\mathcal{H}(\\mathbf{k}) \\, |u_m(\\mathbf{k})\\rangle = E_m(\\mathbf{k}) \\, |u_m(\\mathbf{k})\\rangle",
+      "context": "Bloch eigenvalue problem for crystal momentum k."
+    }
+  ],
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "notation:bloch-bdg-eigenfunction-notation-for-topological-invariants",
+    "notation:emergent-u1-field-a-and-field-strength-f",
+    "notation:filled-line-bundle-and-berry-connection",
+    "definition:topological-insulator-as-bulk-gap-with-protected-boundary-states"
+  ],
+  "symbols": [
+    {
+      "symbol": "\\mathbf{k}",
+      "meaning": "crystal momentum in the Brillouin zone"
+    },
+    {
+      "symbol": "|u_m(\\mathbf{k})\\rangle",
+      "meaning": "Bloch state in a single unit cell for band m"
+    },
+    {
+      "symbol": "\\mathcal{H}(\\mathbf{k})",
+      "meaning": "Bloch Hamiltonian"
+    },
+    {
+      "symbol": "E_m(\\mathbf{k})",
+      "meaning": "energy eigenvalue of band m"
+    }
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-bloch-states-as-eigenstates-of-bloch-hamiltonian/agent_consensus.json",
+    "candidate_id=candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian",
+    "coverage_ledger_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-bloch-states-as-eigenstates-of-bloch-hamiltonian/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-bloch-states-as-eigenstates-of-bloch-hamiltonian/derivation_graph.json",
+    "notation_table_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-bloch-states-as-eigenstates-of-bloch-hamiltonian/notation_table.json",
+    "promotion_gate_path=runtime/topics/hasan-kane-topological-insulators-1002-3895/promotion_gate.json",
+    "structure_map_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-bloch-states-as-eigenstates-of-bloch-hamiltonian/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian",
+    "candidate_type": "notation_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:59:55+08:00",
+    "updated_by": "aitp-mcp",
+    "notes": "Bounded notation audit for the Bloch-state setup that Hasan-Kane uses before introducing topological invariants."
+  },
+  "consensus": {
+    "candidate_id": "candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian",
+    "updated_at": "2026-03-18T12:59:55+08:00",
+    "updated_by": "aitp-mcp",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded notation audit for the Bloch-state setup that Hasan-Kane uses before introducing topological invariants."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:bloch-states-as-eigenstates-of-bloch-hamiltonian",
+    "collision_scan_count=4",
+    "strategy=created_with_neighbors"
+  ]
+}

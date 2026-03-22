@@ -1,0 +1,157 @@
+{
+  "id": "theorem:chern-simons-level-is-integer",
+  "type": "theorem",
+  "title": "Chern-Simons Level Must Be an Integer",
+  "summary": "Because the path-integral phase only requires the action mod 2pi, the coefficient of I_CS must be integral in a microscopic theory with properly quantized charge; source anchor: Lecture Two / Quantization Of The Chern-Simons Coupling (lines 1352-1367).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
+  "tags": [
+    "theorem",
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: microscopic gauge invariance with properly quantized electric charge."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:chern-simons-level-is-integer after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the integer-level quantization statement for the abelian Chern-Simons response ready to be stored as a reusable theorem_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "notes": "AITP promoted candidate candidate:chern-simons-level-is-integer from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "unitf",
+        "nif",
+        "nifty",
+        "prif"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "theorem:torus-ground-state-degeneracy-r"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:chern-simons-level-is-integer."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-chern-simons-level-is-integer/agent_consensus.json",
+    "candidate_id=candidate:chern-simons-level-is-integer",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-chern-simons-level-is-integer/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-chern-simons-level-is-integer/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-chern-simons-level-is-integer/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-chern-simons-level-is-integer/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:chern-simons-level-is-integer",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:29+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two abelian Chern-Simons level quantization audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:chern-simons-level-is-integer",
+    "updated_at": "2026-03-18T12:26:29+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two abelian Chern-Simons level quantization audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:chern-simons-level-is-integer",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\int_{S^2} \\frac{F}{2\\pi} = 1",
+      "label": "unitf",
+      "context": "Unit Dirac flux through the spatial two-sphere."
+    },
+    {
+      "latex": "A_0 = \\frac{s}{\\beta}",
+      "label": "nif",
+      "context": "Constant gauge field along the Euclidean time circle."
+    },
+    {
+      "latex": "I_{\\mathrm{CS}} = \\frac{1}{4\\pi}\\int_{M_3=S^2\\times S^1} \\mathrm{d}^3x\\, \\epsilon^{ijk}A_i\\partial_j A_k = s",
+      "label": "nifty",
+      "context": "Chern-Simons action evaluated on the flux-holonomy background."
+    },
+    {
+      "latex": "s \\to s+2\\pi",
+      "label": "prif",
+      "context": "Large gauge transformation shifting the holonomy variable."
+    },
+    {
+      "latex": "k \\in \\mathbb{Z}",
+      "context": "Gauge invariance of e^{ik I_{\\mathrm{CS}}} under the large gauge shift forces integrality of the level."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "k",
+      "meaning": "Chern-Simons level multiplying the action"
+    },
+    {
+      "symbol": "s",
+      "meaning": "holonomy parameter around the Euclidean time circle"
+    },
+    {
+      "symbol": "I_{\\mathrm{CS}}",
+      "meaning": "Chern-Simons functional of the background gauge field"
+    }
+  ]
+}

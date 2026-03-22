@@ -1,0 +1,154 @@
+{
+  "id": "theorem:torus-ground-state-degeneracy-r",
+  "type": "theorem",
+  "title": "Level-r U(1) Chern-Simons Theory Has r Torus Ground States",
+  "summary": "The irreducible representation of the torus Wilson-loop algebra has dimension r, giving r ground states in the large-system limit; source anchor: Lecture Three / More On The Fractional Quantum Hall Effect (lines 2036-2052; eq. woof and following discussion).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
+  "tags": [
+    "theorem",
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: large-system limit of level-r U(1) Chern-Simons theory on a torus."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:torus-ground-state-degeneracy-r after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the torus ground-state degeneracy theorem ready to be stored as a reusable theorem_card?",
+  "dependencies": [
+    "definition:wilson-loop-operator-in-level-r-u1-cs",
+    "equation:wilson-loop-commutator-from-intersection-number",
+    "proof_fragment:clock-shift-algebra-has-r-dimensional-irrep"
+  ],
+  "related_units": [
+    "proof_fragment:clock-shift-algebra-has-r-dimensional-irrep",
+    "proof_fragment:monopole-argument-for-fractional-excitations"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "AITP promoted candidate candidate:torus-ground-state-degeneracy-r from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "grooff",
+        "woof",
+        "oof"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:wilson-loop-operator-in-level-r-u1-cs",
+    "derivation_step:charge-pump-counts-edge-chirality"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:torus-ground-state-degeneracy-r."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-torus-ground-state-degeneracy-r/agent_consensus.json",
+    "candidate_id=candidate:torus-ground-state-degeneracy-r",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-torus-ground-state-degeneracy-r/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-torus-ground-state-degeneracy-r/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-torus-ground-state-degeneracy-r/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-torus-ground-state-degeneracy-r/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:torus-ground-state-degeneracy-r",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:40:44+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three torus-degeneracy audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:torus-ground-state-degeneracy-r",
+    "updated_at": "2026-03-18T01:40:44+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three torus-degeneracy audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:torus-ground-state-degeneracy-r",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "W_s(\\ell)W_{s^{\\prime}}(\\ell^{\\prime})=\\exp\\!\\left(2\\pi i\\, s s^{\\prime}\\, \\ell\\cap \\ell^{\\prime}/r\\right)W_{s^{\\prime}}(\\ell^{\\prime})W_s(\\ell)",
+      "label": "grooff",
+      "context": "Wilson-loop algebra for two noncontractible loops with nonzero intersection number."
+    },
+    {
+      "latex": "AB=\\exp(2\\pi i/r)BA",
+      "label": "woof",
+      "context": "Basic torus algebra after setting A=W_1(\\ell), B=W_1(\\ell^{\\prime}) and \\ell\\cap\\ell^{\\prime}=1."
+    },
+    {
+      "latex": "B\\mapsto ABA^{-1}=\\exp(2\\pi i/r)B",
+      "label": "oof",
+      "context": "Conjugation by A cycles the eigenvalues of B through all r-th roots of unity."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "A,B",
+      "meaning": "Wilson-loop generators associated to the two basic noncontractible torus cycles"
+    },
+    {
+      "symbol": "r",
+      "meaning": "Chern-Simons level determining the size of the irreducible representation"
+    },
+    {
+      "symbol": "\\ell\\cap\\ell^{\\prime}",
+      "meaning": "intersection number of the two loops on the torus"
+    }
+  ]
+}

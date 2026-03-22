@@ -1,0 +1,153 @@
+{
+  "id": "theorem:many-band-zero-total-winding-via-trace-curvature",
+  "type": "theorem",
+  "title": "Many-Band Zero Total Winding via Traced Curvature",
+  "summary": "In the many-band case, the traced U(k) Berry curvature satisfies sum_alpha w_alpha = 0 by the Bianchi identity and Stokes's theorem; source anchor: Lecture One / A System With Many Bands (lines 766-779; eqs. zomo, mpf).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
+  "tags": [
+    "theorem",
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: occupied rank-k bundle over the punctured Brillouin zone."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:many-band-zero-total-winding-via-trace-curvature after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the many-band zero-total-winding statement ready to be stored as a reusable theorem_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-one/a-system-with-many-bands",
+      "notes": "AITP promoted candidate candidate:many-band-zero-total-winding-via-trace-curvature from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "zomo",
+        "mpf"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "theorem:graphene-symmetry-protects-dirac-nodes",
+    "theorem:torus-ground-state-degeneracy-r"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:many-band-zero-total-winding-via-trace-curvature."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-band-zero-total-winding-via-trace-curvature/agent_consensus.json",
+    "candidate_id=candidate:many-band-zero-total-winding-via-trace-curvature",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-band-zero-total-winding-via-trace-curvature/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-band-zero-total-winding-via-trace-curvature/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-band-zero-total-winding-via-trace-curvature/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-band-zero-total-winding-via-trace-curvature/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:many-band-zero-total-winding-via-trace-curvature",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:27+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture One many-band zero-total-winding audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:many-band-zero-total-winding-via-trace-curvature",
+    "updated_at": "2026-03-18T12:26:27+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture One many-band zero-total-winding audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:many-band-zero-total-winding-via-trace-curvature",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\langle \\psi^{\\prime}|\\frac{\\mathrm{d}}{\\mathrm{d}s}|\\psi\\rangle=0, \\qquad \\text{for all }\\psi^{\\prime}\\in \\mathcal{H}_p^{\\prime}",
+      "label": "zomo",
+      "context": "Parallel-transport rule defining the U(k) Berry connection on the filled subbundle."
+    },
+    {
+      "latex": "w(S_{\\alpha})=\\int_{S_{\\alpha}} \\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}",
+      "context": "Many-band winding number obtained from traced Berry curvature."
+    },
+    {
+      "latex": "0=\\int_{B^{\\prime}}\\mathrm{d}\\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}=\\sum_{\\alpha}\\int_{S_{\\alpha}}\\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}=\\sum_{\\alpha}w(S_{\\alpha})",
+      "label": "mpf",
+      "context": "Bianchi identity plus Stokes theorem imply zero net winding in the many-band case."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\mathcal{H}_p^{\\prime}",
+      "meaning": "filled k-dimensional subspace of the N-band Bloch space"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "U(k) Berry-curvature two-form of the filled subbundle"
+    },
+    {
+      "symbol": "\\operatorname{Tr}\\,\\mathcal{F}",
+      "meaning": "trace of the nonabelian Berry curvature entering the first Chern class"
+    },
+    {
+      "symbol": "w(S_{\\alpha})",
+      "meaning": "integer winding / charge attached to the \\alpha-th bad point"
+    },
+    {
+      "symbol": "B^{\\prime}",
+      "meaning": "Brillouin zone with small neighborhoods of all bad points removed"
+    }
+  ]
+}

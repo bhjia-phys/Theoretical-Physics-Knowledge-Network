@@ -1,0 +1,156 @@
+{
+  "id": "derivation_step:adiabatic-first-order-action-equals-berry-connection",
+  "type": "derivation_step",
+  "title": "The First-Order Adiabatic Action Equals the Berry Connection",
+  "summary": "In the adiabatic limit only the one-derivative term survives, so the classical connection A_i(x) dx^i becomes the Berry connection for the ground-state transport problem; source anchor: Lecture Two / Proof Of The Equivalence (lines 1540-1569; eqs. merrof, monkey, wonkey).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
+  "tags": [
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: semiclassical adiabatic transport in the zero-energy configuration space."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:adiabatic-first-order-action-equals-berry-connection after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the one-derivative adiabatic-action argument for the Berry connection ready to be stored as a reusable derivation_step?",
+  "dependencies": [
+    "notation:filled-line-bundle-and-berry-connection",
+    "definition:many-body-twist-angle-chern-number"
+  ],
+  "related_units": [
+    "theorem:hall-level-equals-many-body-chern-number",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "AITP promoted candidate candidate:adiabatic-first-order-action-equals-berry-connection from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "merrof",
+        "monkey",
+        "wonkey"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:graphene-dirac-point-condition",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:adiabatic-first-order-action-equals-berry-connection."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-adiabatic-first-order-action-equals-berry-connection/agent_consensus.json",
+    "candidate_id=candidate:adiabatic-first-order-action-equals-berry-connection",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-adiabatic-first-order-action-equals-berry-connection/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-adiabatic-first-order-action-equals-berry-connection/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-adiabatic-first-order-action-equals-berry-connection/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-adiabatic-first-order-action-equals-berry-connection/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:adiabatic-first-order-action-equals-berry-connection",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:31+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two adiabatic Berry-connection derivation audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:adiabatic-first-order-action-equals-berry-connection",
+    "updated_at": "2026-03-18T12:26:31+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two adiabatic Berry-connection derivation audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:adiabatic-first-order-action-equals-berry-connection",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "I=\\frac{1}{2}\\int \\mathrm{d}t\\, g_{ij}(x)\\frac{\\mathrm{d}x^i}{\\mathrm{d}t}\\frac{\\mathrm{d}x^j}{\\mathrm{d}t}+\\int \\mathrm{d}t\\, \\mathcal{A}_i(x)\\frac{\\mathrm{d}x^i}{\\mathrm{d}t}-\\int \\mathrm{d}t\\, V(x)+\\dots",
+      "label": "merrof",
+      "context": "General semiclassical action before taking the adiabatic limit."
+    },
+    {
+      "latex": "I_{\\mathrm{kin}}=\\frac{1}{2}\\int \\mathrm{d}t\\, g_{ij}(x)\\frac{\\mathrm{d}x^i}{\\mathrm{d}t}\\frac{\\mathrm{d}x^j}{\\mathrm{d}t}",
+      "label": "monkey",
+      "context": "Two-derivative kinetic term that vanishes in the strict adiabatic limit."
+    },
+    {
+      "latex": "I^{\\prime}=\\int \\mathrm{d}t\\, \\mathcal{A}_i(x)\\frac{\\mathrm{d}x^i}{\\mathrm{d}t}=\\int_p^{p^{\\prime}} \\mathcal{A}_i(x)\\,\\mathrm{d}x^i",
+      "label": "wonkey",
+      "context": "Surviving first-order term whose holonomy is the Berry phase."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "x^i",
+      "meaning": "adiabatically varying classical configuration-space coordinates"
+    },
+    {
+      "symbol": "g_{ij}(x)",
+      "meaning": "effective metric governing the kinetic term"
+    },
+    {
+      "symbol": "\\mathcal{A}_i(x)",
+      "meaning": "classical one-form that becomes the Berry connection"
+    },
+    {
+      "symbol": "V(x)",
+      "meaning": "potential whose zero set labels classical ground states"
+    }
+  ]
+}

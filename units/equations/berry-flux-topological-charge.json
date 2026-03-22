@@ -24,8 +24,7 @@
   "related_units": [
     "bridge:weyl-node-to-berry-monopole",
     "derivation:berry-flux-gives-node-charge",
-    "concept:chirality-of-weyl-node",
-    "theorem:nielsen-ninomiya-charge-cancellation"
+    "concept:chirality-of-weyl-node"
   ],
   "source_anchors": [
     {
@@ -43,36 +42,16 @@
   "validation_status": "source-grounded",
   "maturity": "working",
   "representation": "Surface-flux formula for node charge in terms of Berry curvature.",
-  "human_projection_profile": "learning-note",
-  "motivation": "This note exists because it is the first explicit bridge from local Berry geometry to an integer topological invariant. It rewrites the Weyl-node charge as a curvature flux, so topology becomes something one can integrate instead of only define abstractly by degree.",
-  "prerequisite_story": "Know the Berry-curvature two-form F on the punctured sphere around an isolated bad point and the fact that F over 2pi represents the first Chern class of the occupied-state line bundle. The sphere must not cross any other singularity.",
-  "local_context_story": "In Witten Lecture One, this equation is the Berry-geometric restatement of the local Weyl-node charge. It is then combined with dF = 0 on the punctured Brillouin zone to recover the same zero-total-charge law as the Nielsen-Ninomiya theorem.",
-  "forward_links_story": "This local flux formula feeds the punctured-zone Stokes argument for total charge cancellation and serves as the model for the later TKNN statement that a Chern number is a Berry-curvature integral over the whole Brillouin torus.",
-  "canonical_questions": [
-    "Why is the flux integral over a small sphere integer-valued rather than continuously variable?",
-    "Why does this flux reproduce the same local charge as the degree-theory definition of a Weyl node?",
-    "How does dF = 0 turn the local flux formula into the global zero-sum law?",
-    "What assumptions fail if the sphere encloses more than one singular point or if the occupied subspace is not rank one?"
-  ],
-  "scope_boundaries": [
-    "This formula is written in the abelian rank-one setting around an isolated node. A multi-band occupied space requires the appropriate non-abelian generalization before taking gauge-invariant traces.",
-    "The enclosing sphere must lie in the regular region of the Brillouin zone and isolate the chosen singularity from all others."
-  ],
   "math_expressions": [
     {
-      "latex": "w_\\alpha = \\int_{S^2_\\alpha}\\frac{F}{2\\pi}",
-      "equation_label": "zif",
-      "notes": "Berry-flux formula for the local node charge."
+      "latex": "w_{\\alpha}(S) = \\int_{S_{\\alpha}} \\frac{\\mathcal{F}}{2\\pi}",
+      "label": "zif",
+      "context": "Berry-flux expression for the charge of an isolated node."
     },
     {
-      "latex": "\\mathrm dF = 0",
-      "equation_label": "wif",
-      "notes": "Berry curvature is closed away from the bad points."
-    },
-    {
-      "latex": "\\sum_{\\alpha}\\int_{S^2_\\alpha}\\frac{F}{2\\pi}=0",
-      "equation_label": "nna",
-      "notes": "Global charge-cancellation law obtained by summing the local fluxes on a compact punctured Brillouin zone."
+      "latex": "\\mathrm{d}\\mathcal{F} = 0",
+      "label": "wif",
+      "context": "Abelian Bianchi identity for the Berry curvature."
     }
   ],
   "equation_refs": [],
@@ -86,11 +65,7 @@
       "meaning": "Berry curvature two-form"
     },
     {
-      "symbol": "S^2_\\alpha",
-      "meaning": "small sphere surrounding the isolated node labeled by alpha"
-    },
-    {
-      "symbol": "w_\\alpha",
+      "symbol": "w_alpha",
       "meaning": "integer charge of the bad point"
     }
   ],
@@ -105,5 +80,5 @@
     "Use when translating geometric Berry data into topological charge."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-21"
+  "updated_at": "2026-03-18"
 }

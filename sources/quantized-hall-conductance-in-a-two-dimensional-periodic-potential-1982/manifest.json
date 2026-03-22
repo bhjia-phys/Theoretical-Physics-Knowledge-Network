@@ -1,0 +1,28 @@
+{
+  "source_id": "paper:quantized-hall-conductance-in-a-two-dimensional-periodic-potential-1982",
+  "title": "Quantized Hall Conductance in a Two-Dimensional Periodic Potential",
+  "authors": [
+    "D. J. Thouless",
+    "M. Kohmoto",
+    "M. P. Nightingale",
+    "M. den Nijs"
+  ],
+  "version": "journal",
+  "submitted_date": "1982-08-01",
+  "updated_date": "1982-08-01",
+  "canonical_scope": "Primary TKNN source for the quantized Hall conductance and the integer Chern invariant of filled bands.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.49.405",
+    "inspire": "https://inspirehep.net/literature/10.1103/physrevlett.49.405",
+    "journal": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.49.405"
+  },
+  "section_map": [
+    {
+      "id": "kubo-to-integer",
+      "title": "Kubo Formula to Integer Hall Conductance",
+      "summary": "The Hall conductance is rewritten as a Brillouin-zone integral whose value is an integer when the Fermi energy lies in a gap."
+    }
+  ],
+  "equation_map": [],
+  "figure_map": []
+}

@@ -1,0 +1,110 @@
+{
+  "id": "proof_fragment:zero-total-winding-proof-via-stokes",
+  "type": "proof_fragment",
+  "title": "Zero Total Winding via Stokes on the Punctured Brillouin Zone",
+  "summary": "Using the closed-form identity for n and Stokes's theorem on the punctured Brillouin zone gives sum_alpha w(S_alpha) = 0; source anchor: Lecture One / The Nielsen-Ninomiya Theorem (lines 527-556; eqs. zolf, cl).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "lattice-topology",
+  "tags": [
+    "proof_fragment",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the source proves the theorem on the punctured Brillouin zone with isolated bad points."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:zero-total-winding-proof-via-stokes after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the Stokes-theorem proof fragment for zero total winding ready to be stored as a reusable proof_fragment?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-one/the-nielsen-ninomiya-theorem",
+      "notes": "AITP promoted candidate candidate:zero-total-winding-proof-via-stokes from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:chern-simons-functional-definition",
+    "bridge:bulk-boundary-correspondence-to-fermi-arc",
+    "bridge:continuum-anomaly-to-lattice-no-go",
+    "bridge:weyl-node-to-berry-monopole",
+    "claim:fermi-arcs-terminate-at-projected-weyl-nodes"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:zero-total-winding-proof-via-stokes."
+  ],
+  "created_at": "2026-03-17",
+  "updated_at": "2026-03-17",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-zero-total-winding-proof-via-stokes/agent_consensus.json",
+    "candidate_id=candidate:zero-total-winding-proof-via-stokes",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-zero-total-winding-proof-via-stokes/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-zero-total-winding-proof-via-stokes/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-zero-total-winding-proof-via-stokes/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-zero-total-winding-proof-via-stokes/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:zero-total-winding-proof-via-stokes",
+    "candidate_type": "proof_fragment",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-17T16:52:00+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded proof-fragment audit for the Nielsen-Ninomiya Stokes argument."
+  },
+  "consensus": {
+    "candidate_id": "candidate:zero-total-winding-proof-via-stokes",
+    "updated_at": "2026-03-17T16:52:00+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded proof-fragment audit for the Nielsen-Ninomiya Stokes argument."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:zero-total-winding-proof-via-stokes",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

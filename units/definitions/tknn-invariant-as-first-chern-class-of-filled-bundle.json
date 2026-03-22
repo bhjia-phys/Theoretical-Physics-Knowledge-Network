@@ -1,0 +1,157 @@
+{
+  "id": "definition:tknn-invariant-as-first-chern-class-of-filled-bundle",
+  "type": "definition",
+  "title": "TKNN Invariant as the First Chern Class of the Filled-Band Bundle",
+  "summary": "For a gapped two-dimensional band insulator, the integer k' is the first Chern class of the filled-band bundle, equivalently the integral of Tr F / 2pi over the Brillouin zone; source anchor: Lecture Two / Relation To Band Topology (lines 1429-1451).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "definition",
+  "tags": [
+    "definition",
+    "definition_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: free-electron band description with a full bulk gap."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:tknn-invariant-as-first-chern-class-of-filled-bundle after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the bundle-theoretic definition of the TKNN invariant ready to be stored as a reusable definition_card?",
+  "dependencies": [
+    "definition:many-band-filled-subspace-as-grassmannian-map",
+    "notation:filled-line-bundle-and-berry-connection",
+    "equivalence:first-chern-class-from-berry-curvature",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number"
+  ],
+  "related_units": [
+    "definition:many-body-twist-angle-chern-number",
+    "equivalence:khat-prime-equals-band-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "AITP promoted candidate candidate:tknn-invariant-as-first-chern-class-of-filled-bundle from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    },
+    {
+      "source_id": "paper:quantized-hall-conductance-in-a-two-dimensional-periodic-potential-1982",
+      "section": "kubo-to-integer",
+      "notes": "Original TKNN quantization source."
+    },
+    {
+      "source_id": "paper:holonomy-the-quantum-adiabatic-theorem-and-berrys-phase-1983",
+      "section": "berry-holonomy",
+      "notes": "Berry-phase geometry source."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:weyl-boundary-hermiticity-condition",
+    "definition:many-band-filled-subspace-as-grassmannian-map",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "definition:wilson-loop-operator-in-level-r-u1-cs"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:tknn-invariant-as-first-chern-class-of-filled-bundle."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-tknn-invariant-as-first-chern-class-of-filled-bundle/agent_consensus.json",
+    "candidate_id=candidate:tknn-invariant-as-first-chern-class-of-filled-bundle",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-tknn-invariant-as-first-chern-class-of-filled-bundle/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-tknn-invariant-as-first-chern-class-of-filled-bundle/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-tknn-invariant-as-first-chern-class-of-filled-bundle/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-tknn-invariant-as-first-chern-class-of-filled-bundle/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:tknn-invariant-as-first-chern-class-of-filled-bundle",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:30+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two TKNN-as-Chern-class audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:tknn-invariant-as-first-chern-class-of-filled-bundle",
+    "updated_at": "2026-03-18T12:26:30+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two TKNN-as-Chern-class audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:tknn-invariant-as-first-chern-class-of-filled-bundle",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\mathcal{H}_p \\cong \\mathbb{C}^N, \\qquad \\mathcal{H}_p^{\\prime}\\subset \\mathcal{H}_p",
+      "context": "Filled Bloch states define a rank-n subbundle over the Brillouin zone."
+    },
+    {
+      "latex": "k^{\\prime}=c_1\\!\\left(\\mathcal{H}_p^{\\prime}\\right)=\\int_{\\mathcal{B}} \\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}",
+      "context": "TKNN invariant as the first Chern class of the filled-band bundle."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\mathcal{B}",
+      "meaning": "two-dimensional Brillouin zone of the gapped crystal"
+    },
+    {
+      "symbol": "\\mathcal{H}_p^{\\prime}",
+      "meaning": "filled-band subspace at momentum p"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "Berry curvature of the Berry connection on the filled-band bundle"
+    },
+    {
+      "symbol": "k^{\\prime}",
+      "meaning": "integer TKNN invariant / first Chern number of the occupied bands"
+    }
+  ]
+}

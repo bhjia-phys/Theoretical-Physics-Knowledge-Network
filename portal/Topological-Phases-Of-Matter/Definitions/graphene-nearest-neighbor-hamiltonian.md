@@ -2,65 +2,41 @@
 
 - ID: `definition:graphene-nearest-neighbor-hamiltonian`
 - Type: `definition`
-- Domain: `topological-phases-of-matter`
-- Subdomain: `haldane-model`
-- Canonical Family: `topological-phases/hall-response-chern-number`
+- Domain: `witten-topological-phases-1510-07698-full-paper`
+- Subdomain: `definition`
 - Formalization: `candidate`
-- Validation: `source-grounded`
-- Maturity: `working`
+- Validation: `validated`
+- Maturity: `seed`
 
 ## Summary
-The spinless nearest-neighbor honeycomb model has Bloch Hamiltonian H=t[[0,1+e^{-i alpha}+e^{-i beta}],[1+e^{i alpha}+e^{i beta},0]], which is the lattice starting point for Witten's Haldane-model bridge to quantized Hall response.
+The honeycomb nearest-neighbor hopping model gives H = t [[0, 1 + e^{-i alpha} + e^{-i beta}], [1 + e^{i alpha} + e^{i beta}, 0]] in the A/B basis; source anchor: Lecture Three / Haldane's Model Of Graphene (lines 2192-2203; eq. hham).
 
 ## Scope
-Reusable lattice starting point for the Haldane realization of the integer Hall family.
+Is the nearest-neighbor graphene Hamiltonian ready to be stored as a reusable definition_card?
 
 ## Regime
-Honeycomb-lattice band theory before the Haldane mass is turned on.
+Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:graphene-nearest-neighbor-hamiltonian after passing the documented AI coverage and consensus gate.
 
 ## Assumptions
-- `The model is the spinless nearest-neighbor tight-binding problem on the honeycomb lattice.`
-- `No symmetry-breaking mass term has yet been added.`
-
-## Representation
-Definition of the unperturbed graphene Bloch Hamiltonian in the A/B sublattice basis.
-
-## Source Anchors
-- `lecture-three/haldanes-model-of-graphene | eqs: hham | Witten's explicit graphene Hamiltonian used to motivate the Haldane branch.`
-- `paper/main-result | Original lattice realization of anomalous Hall response without Landau levels.`
-
-## Mathematical Content
-- `kind=display` | `label=hham` | Nearest-neighbor graphene Hamiltonian in the A/B sublattice basis.
-$$
-H=t\begin{pmatrix} 0 & 1+e^{-i\alpha}+e^{-i\beta} \\ 1+e^{i\alpha}+e^{i\beta} & 0 \end{pmatrix}
-$$
-
-## Symbols
-| Symbol | Meaning |
-|---|---|
-| `H` | single-particle Bloch Hamiltonian of the spinless nearest-neighbor graphene model |
-| `t` | nearest-neighbor hopping amplitude |
-| `\alpha` | first Brillouin-zone angle controlling one relative hopping phase |
-| `\beta` | second Brillouin-zone angle controlling the second relative hopping phase |
+- `Scope: spinless nearest-neighbor tight-binding model used as the entry point to graphene band topology.`
 
 ## Dependencies
 - none
 
 ## Related Units
-- [Graphene Dirac Points Solve 1 + e^{i alpha} + e^{i beta} = 0](../Derivation-Steps/graphene-dirac-point-condition.md)
-- [Graphene Lattice Symmetries Protect The Dirac Nodes](../Theorems/graphene-symmetry-protects-dirac-nodes.md)
-- [Lecture Two TKNN / Haldane Archival Enrichment Remains To Be Curated](../Open-Gaps/lecture-two-tknn-equivalence-proof-not-yet-curated.md)
-- [Witten Topological Phases Lecture Three Source Map](../Source-Maps/witten-topological-phases-lecture-three.md)
+- none
 
-## Formal Targets
-- `aitp-l2`
-- `lean`
-
-## Retrieval Hints
-- `Use when the Haldane branch needs the explicit lattice Hamiltonian rather than only the words 'graphene model'.`
+## Source Anchors
+- `lecture-three/haldanes-model-of-graphene | eqs: hham | AITP promoted candidate candidate:graphene-nearest-neighbor-hamiltonian from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.`
 
 ## Outgoing Edges
 - none
 
 ## Incoming Edges
 - none
+
+## Failure Modes
+- `Review the regime and assumptions before treating this promoted unit as stable.`
+
+## Formal Targets
+- `aitp-l2-auto`

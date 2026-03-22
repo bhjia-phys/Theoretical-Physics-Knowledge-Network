@@ -1,0 +1,112 @@
+{
+  "id": "definition:topological-insulator-as-bulk-gap-with-protected-boundary-states",
+  "type": "definition",
+  "title": "Topological Insulator as a Bulk Gap with Protected Boundary States",
+  "summary": "A topological insulator has a bulk energy gap separating occupied and empty bands, but its edge or surface necessarily carries gapless states protected by time-reversal symmetry; source anchor: Introduction (lines 83-90).",
+  "domain": "hasan-kane-topological-insulators-1002-3895",
+  "subdomain": "definition",
+  "tags": [
+    "definition",
+    "definition_card",
+    "hasan-kane-topological-insulators-1002-3895"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the early Hasan-Kane review-level setup for non-interacting electronic topological insulators.",
+    "This unit records the bulk-gap plus protected-boundary characterization only, not later Z2 formulas or experimental realizations."
+  ],
+  "regime": "Promoted from AITP topic hasan-kane-topological-insulators-1002-3895 via candidate candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states after passing the documented AI coverage and consensus gate.",
+  "scope": "Can the paper's introductory characterization of a topological insulator be promoted as a reusable definition card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:topological-insulators-1002-3895",
+      "section": "Introduction / Early topological-insulator definition",
+      "notes": "AITP promoted candidate candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states from topic hasan-kane-topological-insulators-1002-3895; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:chern-simons-functional-definition",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:fractional-hall-effective-action-with-emergent-u1",
+    "definition:weyl-boundary-hermiticity-condition",
+    "definition:symmetry-protected-topological-phase"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-topological-insulator-as-bulk-gap-with-protected-boundary-states/agent_consensus.json",
+    "candidate_id=candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states",
+    "coverage_ledger_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-topological-insulator-as-bulk-gap-with-protected-boundary-states/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-topological-insulator-as-bulk-gap-with-protected-boundary-states/derivation_graph.json",
+    "notation_table_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-topological-insulator-as-bulk-gap-with-protected-boundary-states/notation_table.json",
+    "promotion_gate_path=runtime/topics/hasan-kane-topological-insulators-1002-3895/promotion_gate.json",
+    "structure_map_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-topological-insulator-as-bulk-gap-with-protected-boundary-states/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:59:46+08:00",
+    "updated_by": "aitp-mcp",
+    "notes": "Bounded introduction audit for the early Hasan-Kane definition of a topological insulator as a bulk-gapped state with symmetry-protected boundary modes."
+  },
+  "consensus": {
+    "candidate_id": "candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states",
+    "updated_at": "2026-03-18T12:59:46+08:00",
+    "updated_by": "aitp-mcp",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded introduction audit for the early Hasan-Kane definition of a topological insulator as a bulk-gapped state with symmetry-protected boundary modes."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:topological-insulator-as-bulk-gap-with-protected-boundary-states",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

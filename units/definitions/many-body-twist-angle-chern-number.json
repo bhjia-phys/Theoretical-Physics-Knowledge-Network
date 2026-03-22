@@ -1,0 +1,154 @@
+{
+  "id": "definition:many-body-twist-angle-chern-number",
+  "type": "definition",
+  "title": "Many-Body Twist-Angle Chern Number",
+  "summary": "Twisted boundary phases alpha_1 and alpha_2 define a torus of adiabatic parameters with Berry curvature hat F whose integral gives the many-body integer hat k'; source anchor: Lecture Two / Relation To Band Topology (lines 1468-1500).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "definition",
+  "tags": [
+    "definition",
+    "definition_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the ground state stays nondegenerate as the twist angles vary."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:many-body-twist-angle-chern-number after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the many-body twist-angle Chern-number construction ready to be stored as a reusable definition_card?",
+  "dependencies": [
+    "notation:filled-line-bundle-and-berry-connection",
+    "derivation_step:adiabatic-first-order-action-equals-berry-connection"
+  ],
+  "related_units": [
+    "proof_fragment:twist-angle-torus-tiles-the-brillouin-zone-exactly-once",
+    "theorem:hall-level-equals-many-body-chern-number",
+    "equivalence:khat-prime-equals-band-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/relation-to-band-topology",
+      "notes": "AITP promoted candidate candidate:many-body-twist-angle-chern-number from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:weyl-boundary-hermiticity-condition",
+    "definition:many-band-filled-subspace-as-grassmannian-map",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-bundle"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:many-body-twist-angle-chern-number."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-body-twist-angle-chern-number/agent_consensus.json",
+    "candidate_id=candidate:many-body-twist-angle-chern-number",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-body-twist-angle-chern-number/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-body-twist-angle-chern-number/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-body-twist-angle-chern-number/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-many-body-twist-angle-chern-number/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:many-body-twist-angle-chern-number",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:30+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two many-body twist-angle Chern-number audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:many-body-twist-angle-chern-number",
+    "updated_at": "2026-03-18T12:26:30+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two many-body twist-angle Chern-number audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:many-body-twist-angle-chern-number",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "A_1=\\frac{\\alpha_1}{L_1}, \\qquad A_2=\\frac{\\alpha_2}{L_2}",
+      "context": "Flat background gauge field that implements twisted boundary conditions on the finite sample."
+    },
+    {
+      "latex": "p_1=\\frac{2\\pi s_1+\\alpha_1}{L_1}, \\qquad p_2=\\frac{2\\pi s_2+\\alpha_2}{L_2}",
+      "context": "Twist angles shift the allowed crystal momenta of the finite periodic system."
+    },
+    {
+      "latex": "\\widehat{k}^{\\prime}=\\int_{\\widehat{\\mathcal{B}}} \\mathrm{d}\\alpha_1\\,\\mathrm{d}\\alpha_2\\,\\frac{\\widehat{\\mathcal{F}}}{2\\pi}",
+      "context": "Definition of the many-body Chern number from Berry curvature over the twist-angle torus."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\alpha_1,\\alpha_2",
+      "meaning": "twist angles for transport around the two cycles of the finite sample"
+    },
+    {
+      "symbol": "L_1,L_2",
+      "meaning": "linear periods of the sample in the two lattice directions"
+    },
+    {
+      "symbol": "\\widehat{\\mathcal{B}}",
+      "meaning": "twist-angle torus parametrized by \\alpha_1 and \\alpha_2 modulo 2\\pi"
+    },
+    {
+      "symbol": "\\widehat{\\mathcal{F}}",
+      "meaning": "Berry curvature of the many-body ground state over the twist-angle torus"
+    },
+    {
+      "symbol": "\\widehat{k}^{\\prime}",
+      "meaning": "integer many-body Chern number defined from the twist-angle Berry curvature"
+    }
+  ]
+}

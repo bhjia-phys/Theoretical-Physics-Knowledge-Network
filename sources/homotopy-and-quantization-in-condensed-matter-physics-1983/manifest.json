@@ -1,0 +1,27 @@
+{
+  "source_id": "paper:homotopy-and-quantization-in-condensed-matter-physics-1983",
+  "title": "Homotopy and Quantization in Condensed Matter Physics",
+  "authors": [
+    "J. E. Avron",
+    "R. Seiler",
+    "B. Simon"
+  ],
+  "version": "journal",
+  "submitted_date": "1983-07-01",
+  "updated_date": "1983-07-01",
+  "canonical_scope": "Primary geometry follow-up source for the uniqueness and deformation properties of Hall-band Chern numbers.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.51.51",
+    "inspire": "https://inspirehep.net/literature/10.1103/physrevlett.51.51",
+    "journal": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.51.51"
+  },
+  "section_map": [
+    {
+      "id": "band-touching-and-sum-rule",
+      "title": "Band Touching and Sum Rule",
+      "summary": "Band Chern numbers are the only quantized band invariants, and when two bands touch only the sum of their integers is protected."
+    }
+  ],
+  "equation_map": [],
+  "figure_map": []
+}

@@ -1,0 +1,80 @@
+{
+  "source_id": "paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535",
+  "title": "Classification of topological quantum matter with symmetries",
+  "authors": [
+    "Ching-Kai Chiu",
+    "Jeffrey C. Y. Teo",
+    "Andreas P. Schnyder",
+    "Shinsei Ryu"
+  ],
+  "version": "1505.03535v2",
+  "submitted_date": "2015-05-13",
+  "updated_date": "2016-04-14",
+  "canonical_scope": "AITP source-onboarding bridge for paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535.",
+  "urls": {
+    "abs": "http://arxiv.org/abs/1505.03535v2",
+    "pdf": "https://arxiv.org/pdf/1505.03535v2",
+    "doi": "",
+    "source_archive": "https://arxiv.org/e-print/1505.03535v2"
+  },
+  "section_map": [
+    {
+      "id": "Introduction / Opening motivation and topology-symmetry contrast",
+      "title": "Introduction / Opening motivation and topology-symmetry contrast",
+      "summary": "The review introduces topological insulators as symmetry-protected topological phases: short-range-entangled gapped phases whose topological properties rely on symmetry, since without time-reversal symmetry they can be adiabatically deformed to trivial insulators without closing the bulk gap; source anchor: Introduction / Opening motivation and topology-symmetry contrast (lines 220-229)."
+    },
+    {
+      "id": "Symmetries / Spatial-vs-nonspatial split",
+      "title": "Symmetries / Spatial-vs-nonspatial split",
+      "summary": "The paper distinguishes nonspatial symmetries as symmetries acting locally in position space and formalizes the split by calling a symmetry spatial when it acts on spatial indices and nonspatial when it does not; on-site symmetries are a special nonspatial case; source anchor: Introduction / Overview of topological materials and Symmetries / Spatial-vs-nonspatial split (lines 259-263, 534-545)."
+    },
+    {
+      "id": "Symmetries / Time-reversal symmetry",
+      "title": "Symmetries / Time-reversal symmetry",
+      "summary": "For a noninteracting first-quantized Hamiltonian, time-reversal symmetry imposes U_T^dagger H^* U_T = H, and the generic symmetry-class analysis yields U_T^* U_T = +/- 1, determining whether T^2 acts as identity or fermion parity; source anchor: Symmetries / Time-reversal symmetry (lines 553-669; Eq. DEFTimeReversal)."
+    },
+    {
+      "id": "Symmetries / Particle-hole symmetry",
+      "title": "Symmetries / Particle-hole symmetry",
+      "summary": "For a noninteracting first-quantized Hamiltonian, particle-hole symmetry imposes U_C^dagger H^T U_C = -H, equivalently -U_C^dagger H^* U_C = H, and the generic symmetry-class analysis yields U_C^* U_C = +/- 1; source anchor: Symmetries / Particle-hole symmetry (lines 675-724; Eq. DEFChargeConjugation)."
+    },
+    {
+      "id": "Symmetries / Chiral symmetry",
+      "title": "Symmetries / Chiral symmetry",
+      "summary": "Chiral symmetry, obtained as the product of time-reversal and particle-hole symmetry, constrains a first-quantized Hamiltonian by U_S^dagger H U_S = -H and, after phase choice, {H,U_S} = 0 with U_S^2 = 1, yielding a block-off-diagonal form in the chiral basis; source anchor: Symmetries / Chiral symmetry (lines 775-850; Eq. chiral_Def_eq)."
+    },
+    {
+      "id": "introduction/opening-motivation-and-topology-symmetry-contrast",
+      "title": "Introduction / Opening motivation and topology-symmetry contrast",
+      "summary": "Topological quantum matter is framed as phases distinguished by topologically nontrivial quantum-mechanical wave functions rather than by spontaneous symmetry breaking or local order parameters; source anchor: Introduction / Opening motivation and topology-symmetry contrast and Introduction / Scope and organization of the review (lines 187-230, 331-335)."
+    },
+    {
+      "id": "Topological invariants / Bloch-BdG eigenfunction setup",
+      "title": "Bloch-BdG Eigenfunction Notation for Topological Invariants",
+      "summary": "The Topological invariants subsection introduces the invariant discussion in terms of Bloch-BdG eigenfunctions |u^a(k,r)> and energies epsilon^a(k,r) defined by H(k,r)|u^a(k,r)> = epsilon^a(k,r)|u^a(k,r)>; source anchor: Topological invariants / Bloch-BdG eigenfunction setup (lines 2041-2068)."
+    },
+    {
+      "id": "Fully gapped free fermion systems and topological defects / Topological defects",
+      "title": "Real AZ Classification by s minus Delta",
+      "summary": "For real Altland-Zirnbauer symmetry classes, the classification of topological defects depends only on the single congruence class s - delta = s - d + D modulo 8; source anchor: Fully gapped free fermion systems and topological defects / Topological defects (lines 1997-2013)."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "chiral_Def_eq",
+      "section": "Symmetries / Chiral symmetry",
+      "title": "First-quantized chiral symmetry constraint"
+    },
+    {
+      "label": "DEFChargeConjugation",
+      "section": "Symmetries / Particle-hole symmetry",
+      "title": "First-quantized particle-hole symmetry constraint"
+    },
+    {
+      "label": "DEFTimeReversal",
+      "section": "Symmetries / Time-reversal symmetry",
+      "title": "First-quantized time-reversal symmetry constraint"
+    }
+  ],
+  "figure_map": []
+}

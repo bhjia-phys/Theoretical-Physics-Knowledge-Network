@@ -1,0 +1,81 @@
+{
+  "id": "concept:parity-anomaly-of-a-single-two-plus-one-dimensional-dirac-fermion",
+  "type": "concept",
+  "title": "Parity Anomaly of a Single Two Plus One Dimensional Dirac Fermion",
+  "summary": "A single 2+1-dimensional Dirac fermion cannot be regulated so as to preserve both large-gauge invariance and parity; choosing gauge invariance leaves a parity-odd Chern-Simons term whose coefficient is half-integer modulo integers.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "parity-anomaly",
+  "tags": [
+    "concept",
+    "parity-anomaly",
+    "chern-simons",
+    "topological-phases"
+  ],
+  "aliases": [
+    "single-cone parity anomaly"
+  ],
+  "assumptions": [
+    "A single charged Dirac fermion in 2+1 dimensions is coupled to a background U(1) gauge field.",
+    "The low-energy theory is considered modulo integer counterterms in the Chern-Simons level."
+  ],
+  "regime": "Continuum odd-dimensional fermion effective action with large-gauge transformations included.",
+  "scope": "Background concept needed to interpret the half-level Chern-Simons response of a massive Dirac cone.",
+  "dependencies": [
+    "definition:chern-simons-functional-definition"
+  ],
+  "related_units": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:gauge-noninvariance-and-parity-violation-of-three-dimensional-fermions-1984",
+      "section": "main-result",
+      "notes": "Redlich states the gauge-invariance versus parity tradeoff explicitly."
+    },
+    {
+      "source_id": "paper:axial-anomaly-induced-fermion-fractionization-and-effective-gauge-theory-actions-in-odd-dimensional-space-times-1983",
+      "section": "effective-action-link",
+      "notes": "Niemi-Semenoff tie odd-dimensional effective actions to anomaly data."
+    },
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "equation_labels": [
+        "utof",
+        "uftof"
+      ],
+      "notes": "Witten uses the parity-anomaly logic as the physical explanation for the half-level term."
+    }
+  ],
+  "formalization_status": "draft",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "\\Gamma_{\\mathrm{odd}}[A]=\\left(\\frac{\\operatorname{sign}m}{2}+n\\right)I_{\\mathrm{CS}}(A), \\qquad n\\in \\mathbb{Z}",
+      "context": "The parity-odd part of the regulated effective action is only defined modulo integer Chern-Simons counterterms."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\Gamma_{\\mathrm{odd}}[A]",
+      "meaning": "parity-odd part of the effective action after integrating out the Dirac fermion"
+    },
+    {
+      "symbol": "n",
+      "meaning": "integer counterterm ambiguity allowed by large-gauge invariance"
+    }
+  ],
+  "failure_modes": [
+    "On a lattice or in a doubled continuum theory the half-integer contribution can combine with other cones to give an integer total level."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when explaining why a single Dirac cone produces a half-level term but a complete microscopic theory must have integer total level."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18"
+}

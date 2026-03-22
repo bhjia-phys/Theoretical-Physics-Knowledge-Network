@@ -1,0 +1,65 @@
+{
+  "id": "proof_fragment:twist-angle-torus-tiles-the-brillouin-zone-exactly-once",
+  "type": "proof_fragment",
+  "title": "Twist-Angle Torus Tiles the Brillouin Zone Exactly Once",
+  "summary": "Summing over discrete crystal momenta and integrating the twist angles over 0 <= alpha_i < 2pi is exactly the same as integrating over the full Brillouin zone.",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "many-body-band-equivalence",
+  "tags": [
+    "proof_fragment",
+    "twist-angles",
+    "brillouin-zone",
+    "tknn"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "The finite system has periodicities L_1 and L_2 with discrete momenta p_i = (2 pi s_i + alpha_i)/L_i.",
+    "The integrand is periodic in the Brillouin zone."
+  ],
+  "regime": "Finite periodic sample used in the many-body to band-theory equivalence argument.",
+  "scope": "Key counting step in Witten's proof that the twist-angle Chern number equals the band Chern number.",
+  "dependencies": [
+    "definition:many-body-twist-angle-chern-number",
+    "definition:tknn-invariant-as-first-chern-class-of-filled-bundle"
+  ],
+  "related_units": [
+    "equivalence:khat-prime-equals-band-chern-number"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "notes": "Witten's finite-size reorganization argument."
+    }
+  ],
+  "formalization_status": "draft",
+  "validation_status": "source-grounded",
+  "maturity": "seed",
+  "math_expressions": [
+    {
+      "latex": "p_i = \\frac{2\\pi s_i + \\alpha_i}{L_i}, \\qquad 0 \\le \\alpha_i < 2\\pi",
+      "context": "Allowed momenta in the finite periodic system with twists."
+    },
+    {
+      "latex": "\\sum_{s_1,s_2}\\int_0^{2\\pi}\\!\\mathrm{d}\\alpha_1\\,\\mathrm{d}\\alpha_2\\, f\\!\\left(\\frac{2\\pi s_1 + \\alpha_1}{L_1},\\frac{2\\pi s_2 + \\alpha_2}{L_2}\\right) = L_1L_2\\int_{\\mathcal{B}} \\mathrm{d}^2p\\, f(p)",
+      "context": "Twist-angle integration plus discrete summation gives the Brillouin-zone integral."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "s_i",
+      "meaning": "integers labeling the discrete momenta of the finite periodic system"
+    }
+  ],
+  "failure_modes": [
+    "If the finite-size momentum set does not uniformly sample the Brillouin zone, the reorganization identity fails."
+  ],
+  "formal_targets": [
+    "aitp-l2"
+  ],
+  "retrieval_hints": [
+    "Use when proving hat k' = k' without skipping the finite-size tiling step."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18"
+}

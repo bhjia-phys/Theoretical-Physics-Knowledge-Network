@@ -1,0 +1,112 @@
+{
+  "id": "definition:symmetry-protected-topological-phase",
+  "type": "definition",
+  "title": "Introduction-Level Definition of a Symmetry-Protected Topological Phase",
+  "summary": "The review introduces topological insulators as symmetry-protected topological phases: short-range-entangled gapped phases whose topological properties rely on symmetry, since without time-reversal symmetry they can be adiabatically deformed to trivial insulators without closing the bulk gap; source anchor: Introduction / Opening motivation and topology-symmetry contrast (lines 220-229).",
+  "domain": "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+  "subdomain": "definition",
+  "tags": [
+    "chiu-classification-topological-quantum-matter-symmetries-1505-03535",
+    "definition",
+    "definition_card"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the definition is exactly the introduction-level TI-centered characterization given here.",
+    "The source explicitly presents this description as rough and does not yet supply a full interacting-SPT taxonomy."
+  ],
+  "regime": "Promoted from AITP topic chiu-classification-topological-quantum-matter-symmetries-1505-03535 via candidate candidate:symmetry-protected-topological-phase-intro-definition after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the paper's rough Introduction-level notion of an SPT phase reusable as a scoped definition card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:classification-of-topological-quantum-matter-with-symmetries-1505-03535",
+      "section": "Introduction / Opening motivation and topology-symmetry contrast",
+      "notes": "AITP promoted candidate candidate:symmetry-protected-topological-phase-intro-definition from topic chiu-classification-topological-quantum-matter-symmetries-1505-03535; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:chern-simons-functional-definition",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:fractional-hall-effective-action-with-emergent-u1",
+    "definition:graphene-nearest-neighbor-hamiltonian",
+    "definition:wilson-loop-operator-in-level-r-u1-cs"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:symmetry-protected-topological-phase-intro-definition."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-symmetry-protected-topological-phase-intro-definition/agent_consensus.json",
+    "candidate_id=candidate:symmetry-protected-topological-phase-intro-definition",
+    "coverage_ledger_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-symmetry-protected-topological-phase-intro-definition/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-symmetry-protected-topological-phase-intro-definition/derivation_graph.json",
+    "notation_table_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-symmetry-protected-topological-phase-intro-definition/notation_table.json",
+    "promotion_gate_path=runtime/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/promotion_gate.json",
+    "structure_map_path=validation/topics/chiu-classification-topological-quantum-matter-symmetries-1505-03535/runs/2026-03-18-115309-bootstrap/theory-packets/candidate-symmetry-protected-topological-phase-intro-definition/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:symmetry-protected-topological-phase-intro-definition",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:08:01+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Introduction definition audit for the rough SPT-phase characterization."
+  },
+  "consensus": {
+    "candidate_id": "candidate:symmetry-protected-topological-phase-intro-definition",
+    "updated_at": "2026-03-18T12:08:01+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Introduction definition audit for the rough SPT-phase characterization."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:symmetry-protected-topological-phase-intro-definition",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

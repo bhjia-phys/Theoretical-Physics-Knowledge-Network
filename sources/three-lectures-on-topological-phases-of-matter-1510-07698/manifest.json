@@ -1,0 +1,407 @@
+{
+  "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+  "title": "Three Lectures On Topological Phases Of Matter",
+  "authors": [
+    "Edward Witten"
+  ],
+  "version": "1510.07698v2",
+  "submitted_date": "2015-10-26",
+  "updated_date": "2016-06-13",
+  "canonical_scope": "AITP source-onboarding bridge for paper:three-lectures-on-topological-phases-of-matter-1510-07698.",
+  "urls": {
+    "abs": "http://arxiv.org/abs/1510.07698v2",
+    "pdf": "https://arxiv.org/pdf/1510.07698v2",
+    "doi": "",
+    "source_archive": "https://arxiv.org/e-print/1510.07698v2"
+  },
+  "section_map": [
+    {
+      "id": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Relativistic Dispersion In One Space Dimension",
+      "summary": "In 1+1 dimensions, gamma_0 gamma_1 is the chirality operator and its eigenvalue distinguishes right-moving from left-moving gapless modes; source anchor: Lecture One / Relativistic Dispersion In One Space Dimension (lines 328-350; eqs. Dirac, gamma, hamdir)."
+    },
+    {
+      "id": "lecture-one/three-dimensions",
+      "title": "Three Dimensions",
+      "summary": "For a generic 2x2 Hermitian Hamiltonian, equal eigenvalues impose three real conditions, so isolated crossings are natural in three momentum dimensions; source anchor: Lecture One / Three Dimensions (lines 360-394; eqs. generic, specil, ecial)."
+    },
+    {
+      "id": "lecture-one/the-berry-connection",
+      "title": "The Berry Connection",
+      "summary": "The local node charge equals the Berry-flux integral over a small sphere, and the Bianchi identity then re-derives zero net charge; source anchor: Lecture One / The Berry Connection (lines 603-609; eqs. zif, nna)."
+    },
+    {
+      "id": "lecture-two/edge-states-and-anomaly-inflow",
+      "title": "Edge States And Anomaly Inflow",
+      "summary": "On a manifold with boundary, the variation of the bulk Chern-Simons term cannot be canceled by a local boundary counterterm and therefore requires anomalous gapless boundary modes; source anchor: Lecture Two / Edge States And Anomaly Inflow (lines 1600-1629; eqs. facs, trytry)."
+    },
+    {
+      "id": "lecture-two/joining-valence-and-conduction-bands",
+      "title": "Joining Valence And Conduction Bands",
+      "summary": "Under alpha -> alpha + 2pi, spectral flow along edge branches transfers one unit of charge per right-mover and minus one per left-mover, so k = n_+ - n_-; source anchor: Lecture Two / The Charge Pump and Joining Valence And Conduction Bands (lines 1635-1753; eqs. zimmo, trof)."
+    },
+    {
+      "id": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "More On The Fractional Quantum Hall Effect",
+      "summary": "Because the classical equation sets f = 0, the relevant gauge-invariant observables are Wilson loops W_s(l) = exp(i s integral_l a) rather than local fields; source anchor: Lecture Three / More On The Fractional Quantum Hall Effect (lines 1976-1989; eqs. doof, ooff)."
+    },
+    {
+      "id": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "More On Edge States Of The Integer Quantum Hall Effect",
+      "summary": "Integrating out a massive 2+1-dimensional Dirac fermion yields (sign m / 2) I_CS(A), with the half-integer coefficient explained by the hemisphere Berry-winding argument; source anchor: Lecture Three / More On Edge States Of The Integer Quantum Hall Effect (lines 2064-2091; eqs. utof, uftof, puft, PPP)."
+    },
+    {
+      "id": "lecture-three/haldanes-model-of-graphene",
+      "title": "Haldane's Model Of Graphene",
+      "summary": "The honeycomb nearest-neighbor hopping model gives H = t [[0, 1 + e^{-i alpha} + e^{-i beta}], [1 + e^{i alpha} + e^{i beta}, 0]] in the A/B basis; source anchor: Lecture Three / Haldane's Model Of Graphene (lines 2192-2203; eq. hham)."
+    },
+    {
+      "id": "lecture-one/a-system-with-many-bands",
+      "title": "A System With Many Bands",
+      "summary": "For an N-band system with k filled bands, the occupied subspace H'_p defines a map into Gr(k,N) away from crossings of the k-th and k+1-th bands; source anchor: Lecture One / A System With Many Bands (lines 742-766)."
+    },
+    {
+      "id": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Weyl Fermions And Fermi Arcs",
+      "summary": "A half-space Weyl fermion admits boundary data M psi = psi with M = sigma_2 cos alpha + sigma_3 sin alpha, chosen so that H remains Hermitian; source anchor: Lecture One / Weyl Fermions And Fermi Arcs (lines 883-899; eqs. goodbc, mis, zeff)."
+    },
+    {
+      "id": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "title": "Gapless Boundary Modes From Dirac Fermions",
+      "summary": "For a Dirac fermion in a half-space, psi = exp(m x_1) psi_parallel is normalizable only for m < 0 and yields a localized 2+1-dimensional boundary Dirac mode; source anchor: Lecture One / Gapless Boundary Modes From Dirac Fermions (lines 1020-1056; eqs. molof, ogg, pogg, zuffo)."
+    },
+    {
+      "id": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "title": "Quantization Of The Chern-Simons Coupling",
+      "summary": "Because the path-integral phase only requires the action mod 2pi, the coefficient of I_CS must be integral in a microscopic theory with properly quantized charge; source anchor: Lecture Two / Quantization Of The Chern-Simons Coupling (lines 1352-1367)."
+    },
+    {
+      "id": "lecture-two/relation-to-band-topology",
+      "title": "Relation To Band Topology",
+      "summary": "For a gapped two-dimensional band insulator, the integer k' is the first Chern class of the filled-band bundle, equivalently the integral of Tr F / 2pi over the Brillouin zone; source anchor: Lecture Two / Relation To Band Topology (lines 1429-1451)."
+    },
+    {
+      "id": "lecture-two/proof-of-the-equivalence",
+      "title": "Proof Of The Equivalence",
+      "summary": "Integrating over the little twist-angle torus while summing shifted momenta reorganizes the same calculation as integrating over the full Brillouin zone, so hat k' = k'; source anchor: Lecture Two / Proof Of The Equivalence (lines 1523-1537)."
+    },
+    {
+      "id": "lecture-two/more-on-fermi-arcs",
+      "title": "More On Fermi Arcs",
+      "summary": "The product U x U' around a projected Weyl point defines a gapped auxiliary 2D system whose Chern number k* forces edge states and hence Fermi arcs in the original 3D problem; source anchor: Lecture Two / More On Fermi Arcs (lines 1788-1846)."
+    }
+  ],
+  "equation_map": [
+    {
+      "label": "mpf",
+      "section": "lecture-one/a-system-with-many-bands",
+      "title": "Equation mpf"
+    },
+    {
+      "label": "zomo",
+      "section": "lecture-one/a-system-with-many-bands",
+      "title": "Equation zomo"
+    },
+    {
+      "label": "molof",
+      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "title": "Hermitian boundary condition for the half-space Dirac fermion"
+    },
+    {
+      "label": "ogg",
+      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "title": "Exponentially localized half-space boundary-mode ansatz"
+    },
+    {
+      "label": "pogg",
+      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "title": "Boundary chirality projector and tangential Dirac equation"
+    },
+    {
+      "label": "zuffo",
+      "section": "lecture-one/gapless-boundary-modes-from-dirac-fermions",
+      "title": "Doubled boundary Dirac equation in the time-reversal-symmetric presentation"
+    },
+    {
+      "label": "Dirac",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Equation Dirac"
+    },
+    {
+      "label": "gamma",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Equation gamma"
+    },
+    {
+      "label": "hamdir",
+      "section": "lecture-one/relativistic-dispersion-in-one-space-dimension",
+      "title": "Equation hamdir"
+    },
+    {
+      "label": "nna",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Nielsen-Ninomiya from Berry curvature"
+    },
+    {
+      "label": "wif",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Closedness of Berry curvature away from singularities"
+    },
+    {
+      "label": "zif",
+      "section": "lecture-one/the-berry-connection",
+      "title": "Topological charge as Berry-flux integral"
+    },
+    {
+      "label": "ecial",
+      "section": "lecture-one/three-dimensions",
+      "title": "Equation ecial"
+    },
+    {
+      "label": "expa",
+      "section": "lecture-one/three-dimensions",
+      "title": "Equation expa"
+    },
+    {
+      "label": "generic",
+      "section": "lecture-one/three-dimensions",
+      "title": "Equation generic"
+    },
+    {
+      "label": "localexp",
+      "section": "lecture-one/three-dimensions",
+      "title": "Generic two-band Hamiltonian near a crossing"
+    },
+    {
+      "label": "perd",
+      "section": "lecture-one/three-dimensions",
+      "title": "Chirality from the Jacobian determinant"
+    },
+    {
+      "label": "specil",
+      "section": "lecture-one/three-dimensions",
+      "title": "Equation specil"
+    },
+    {
+      "label": "xpa",
+      "section": "lecture-one/three-dimensions",
+      "title": "Linearized two-band Weyl Hamiltonian"
+    },
+    {
+      "label": "folt",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation folt"
+    },
+    {
+      "label": "formix",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation formix"
+    },
+    {
+      "label": "goodbc",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation goodbc"
+    },
+    {
+      "label": "mis",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation mis"
+    },
+    {
+      "label": "molt",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation molt"
+    },
+    {
+      "label": "polk",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation polk"
+    },
+    {
+      "label": "wolt",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation wolt"
+    },
+    {
+      "label": "zeff",
+      "section": "lecture-one/weyl-fermions-and-fermi-arcs",
+      "title": "Equation zeff"
+    },
+    {
+      "label": "hham",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "title": "Nearest-neighbor graphene Hamiltonian in the A/B sublattice basis"
+    },
+    {
+      "label": "omeq",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "title": "The two symmetry-related solutions locating the graphene Dirac points"
+    },
+    {
+      "label": "theq",
+      "section": "lecture-three/haldanes-model-of-graphene",
+      "title": "Graphene band-touching condition at the Dirac points"
+    },
+    {
+      "label": "PPP",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Momentum-space map to a hemisphere controlled by the Dirac mass"
+    },
+    {
+      "label": "gift",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Dirac equation with sign-changing mass"
+    },
+    {
+      "label": "nuft",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Folded fermion on all of R3"
+    },
+    {
+      "label": "plift",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Boundary condition gluing two opposite-mass fermions"
+    },
+    {
+      "label": "puft",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Massive 2+1-dimensional Dirac Hamiltonian"
+    },
+    {
+      "label": "trogg",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Boundary chirality condition and reduced Dirac equation"
+    },
+    {
+      "label": "uftof",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Parity-anomaly half-level effective action"
+    },
+    {
+      "label": "utof",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Massive 2+1-dimensional Dirac action"
+    },
+    {
+      "label": "zoggg",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "title": "Exponentially localized domain-wall edge-mode ansatz"
+    },
+    {
+      "label": "dfor",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation dfor"
+    },
+    {
+      "label": "doof",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation doof"
+    },
+    {
+      "label": "droof",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation droof"
+    },
+    {
+      "label": "groof",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation groof"
+    },
+    {
+      "label": "grooff",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation grooff"
+    },
+    {
+      "label": "oof",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation oof"
+    },
+    {
+      "label": "ooff",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation ooff"
+    },
+    {
+      "label": "woof",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "title": "Equation woof"
+    },
+    {
+      "label": "facs",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "title": "Boundary-variant Chern-Simons action"
+    },
+    {
+      "label": "trytry",
+      "section": "lecture-two/edge-states-and-anomaly-inflow",
+      "title": "Equation trytry"
+    },
+    {
+      "label": "trof",
+      "section": "lecture-two/joining-valence-and-conduction-bands",
+      "title": "Equation trof"
+    },
+    {
+      "label": "zimmo",
+      "section": "lecture-two/joining-valence-and-conduction-bands",
+      "title": "Equation zimmo"
+    },
+    {
+      "label": "coff",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "Berry curvature on the twist-angle torus"
+    },
+    {
+      "label": "merrof",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "Generic adiabatic action with Berry connection term"
+    },
+    {
+      "label": "mizz",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "Reduced action for the twist-angle Berry phase"
+    },
+    {
+      "label": "monkey",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "Equation monkey"
+    },
+    {
+      "label": "plizz",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "Many-body Chern number equals the Hall-response level"
+    },
+    {
+      "label": "roff",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "Berry connection on the twist-angle torus"
+    },
+    {
+      "label": "wonkey",
+      "section": "lecture-two/proof-of-the-equivalence",
+      "title": "One-derivative Berry-phase term in the adiabatic action"
+    },
+    {
+      "label": "nif",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "title": "Equation nif"
+    },
+    {
+      "label": "nifty",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "title": "Chern-Simons action on S2 times S1 equals the holonomy angle"
+    },
+    {
+      "label": "prif",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "title": "Large gauge transformation shifts the holonomy angle by 2pi"
+    },
+    {
+      "label": "unitf",
+      "section": "lecture-two/quantization-of-the-chern-simons-coupling",
+      "title": "Unit magnetic flux through the spatial two-sphere"
+    }
+  ],
+  "figure_map": []
+}

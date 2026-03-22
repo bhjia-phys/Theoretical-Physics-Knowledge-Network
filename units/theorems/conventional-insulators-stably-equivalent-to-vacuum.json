@@ -1,0 +1,112 @@
+{
+  "id": "theorem:conventional-insulators-stably-equivalent-to-vacuum",
+  "type": "theorem",
+  "title": "Conventional Insulators Are Stably Equivalent to the Vacuum",
+  "summary": "Under the paper's stable classification that identifies states differing only by trivial core bands, all conventional insulators are equivalent to one another and to the vacuum; source anchor: Topological Band Theory / The insulating state (lines 178-187).",
+  "domain": "hasan-kane-topological-insulators-1002-3895",
+  "subdomain": "theorem",
+  "tags": [
+    "hasan-kane-topological-insulators-1002-3895",
+    "theorem",
+    "theorem_card"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: the stable topological classification described explicitly in the early band-theory setup.",
+    "This unit keeps the paper's coarse classification convention explicit and does not claim a stronger interacting equivalence statement."
+  ],
+  "regime": "Promoted from AITP topic hasan-kane-topological-insulators-1002-3895 via candidate candidate:conventional-insulators-stably-equivalent-to-vacuum after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the stable-equivalence statement for conventional insulators and the vacuum reusable as a theorem card in the paper's chosen classification scheme?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:topological-insulators-1002-3895",
+      "section": "Topological Band Theory / Stable equivalence of conventional insulators to the vacuum",
+      "notes": "AITP promoted candidate candidate:conventional-insulators-stably-equivalent-to-vacuum from topic hasan-kane-topological-insulators-1002-3895; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:chern-simons-level-is-integer",
+    "theorem:complex-az-defect-classification-by-delta-parity",
+    "theorem:three-dimensional-two-band-crossing-codimension-three"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:conventional-insulators-stably-equivalent-to-vacuum."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-conventional-insulators-stably-equivalent-to-vacuum/agent_consensus.json",
+    "candidate_id=candidate:conventional-insulators-stably-equivalent-to-vacuum",
+    "coverage_ledger_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-conventional-insulators-stably-equivalent-to-vacuum/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-conventional-insulators-stably-equivalent-to-vacuum/derivation_graph.json",
+    "notation_table_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-conventional-insulators-stably-equivalent-to-vacuum/notation_table.json",
+    "promotion_gate_path=runtime/topics/hasan-kane-topological-insulators-1002-3895/promotion_gate.json",
+    "structure_map_path=validation/topics/hasan-kane-topological-insulators-1002-3895/runs/2026-03-18-125150-bootstrap/theory-packets/candidate-conventional-insulators-stably-equivalent-to-vacuum/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:conventional-insulators-stably-equivalent-to-vacuum",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T13:00:11+08:00",
+    "updated_by": "aitp-mcp",
+    "notes": "Bounded theorem audit for Hasan-Kane's coarse stable classification statement that conventional insulators are equivalent to one another and to the vacuum after trivial core bands are ignored."
+  },
+  "consensus": {
+    "candidate_id": "candidate:conventional-insulators-stably-equivalent-to-vacuum",
+    "updated_at": "2026-03-18T13:00:11+08:00",
+    "updated_by": "aitp-mcp",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded theorem audit for Hasan-Kane's coarse stable classification statement that conventional insulators are equivalent to one another and to the vacuum after trivial core bands are ignored."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:conventional-insulators-stably-equivalent-to-vacuum",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

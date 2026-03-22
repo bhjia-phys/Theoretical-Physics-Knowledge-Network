@@ -1,0 +1,110 @@
+{
+  "id": "derivation_step:hall-current-from-chern-simons-variation",
+  "type": "derivation_step",
+  "title": "Hall Current from Functional Variation of k I_CS",
+  "summary": "Varying the effective action gives J_2 = - delta I_eff / delta A_1 = k E_1 / 2pi, the quantized Hall current; source anchor: Lecture Two / Quantization Of The Hall Conductivity (lines 1367-1386; eqs. curr, zurr, murr).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "response-theory",
+  "tags": [
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: integer Hall response described by A alone."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:hall-current-from-chern-simons-variation after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the functional-variation derivation of the Hall current ready to be stored as a reusable derivation_step?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "notes": "AITP promoted candidate candidate:hall-current-from-chern-simons-variation from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "definition:chern-simons-functional-definition",
+    "equation:one-dimensional-linearized-fermi-crossing",
+    "equation:winding-number-integral-for-two-band-node",
+    "equivalence:first-chern-class-from-berry-curvature"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:hall-current-from-chern-simons-variation."
+  ],
+  "created_at": "2026-03-17",
+  "updated_at": "2026-03-17",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-current-from-chern-simons-variation/agent_consensus.json",
+    "candidate_id=candidate:hall-current-from-chern-simons-variation",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-current-from-chern-simons-variation/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-current-from-chern-simons-variation/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-current-from-chern-simons-variation/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-hall-current-from-chern-simons-variation/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:hall-current-from-chern-simons-variation",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-17T21:54:23+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two derivation-step audit for the Hall current obtained from varying k I_CS."
+  },
+  "consensus": {
+    "candidate_id": "candidate:hall-current-from-chern-simons-variation",
+    "updated_at": "2026-03-17T21:54:23+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two derivation-step audit for the Hall current obtained from varying k I_CS."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:hall-current-from-chern-simons-variation",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

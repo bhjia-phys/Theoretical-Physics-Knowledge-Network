@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "title": "Open Physics KB Unit",
+  "title": "Theoretical Physics Knowledge Network Unit",
   "type": "object",
   "required": [
     "id",
@@ -31,39 +31,26 @@
       "type": "string",
       "enum": [
         "concept",
-        "definition",
-        "theorem",
-        "lemma",
-        "equivalence",
-        "conjecture",
-        "theorem_family",
-        "definition_family",
-        "notation_family",
-        "feasibility_question",
-        "dependency_request",
-        "proof_search_request",
         "equation",
-        "equation_context",
         "quantity",
         "claim",
         "derivation",
-        "proof_fragment",
-        "proof_obligation",
-        "proof_state",
-        "derivation_step",
-        "dependency_graph_snapshot",
         "method",
         "model",
         "warning",
         "bridge",
-        "notation_map",
-        "source_fusion_record",
-        "conflict_record",
-        "open_gap",
-        "question_oracle",
-        "regression_question",
-        "followup_source_task",
-        "source_map"
+        "source_map",
+        "notation",
+        "assumption",
+        "regime",
+        "theorem",
+        "proof_fragment",
+        "derivation_step",
+        "definition",
+        "example",
+        "caveat",
+        "equivalence",
+        "symbol_binding"
       ]
     },
     "title": {
@@ -76,9 +63,6 @@
       "type": "string"
     },
     "subdomain": {
-      "type": "string"
-    },
-    "canonical_family": {
       "type": "string"
     },
     "tags": {
@@ -162,37 +146,6 @@
     "representation": {
       "type": "string"
     },
-    "human_projection_profile": {
-      "type": "string",
-      "enum": [
-        "card",
-        "learning-note"
-      ]
-    },
-    "motivation": {
-      "type": "string"
-    },
-    "prerequisite_story": {
-      "type": "string"
-    },
-    "local_context_story": {
-      "type": "string"
-    },
-    "forward_links_story": {
-      "type": "string"
-    },
-    "canonical_questions": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "scope_boundaries": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
     "math_expressions": {
       "type": "array",
       "items": {
@@ -229,394 +182,53 @@
         "type": "string"
       }
     },
-    "formal_theory_role": {
-      "type": "string",
-      "enum": [
-        "trusted_target",
-        "intermediate_theory",
-        "supporting_context"
-      ]
-    },
-    "definition_trust_tier": {
-      "type": "string",
-      "enum": [
-        "trusted",
-        "reviewed_translation",
-        "provisional",
-        "scaffold_only"
-      ]
-    },
-    "statement_graph_role": {
-      "type": "string",
-      "enum": [
-        "target_statement",
-        "prerequisite",
-        "intermediate_lemma",
-        "temporary_scaffold",
-        "explanatory_bridge"
-      ]
-    },
-    "statement_graph_parents": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "statement_graph_children": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "target_statement_id": {
-      "type": "string",
-      "pattern": "^[a-z_]+:[a-z0-9-]+$"
-    },
-    "faithfulness_status": {
-      "type": "string",
-      "enum": [
-        "not_applicable",
-        "pending",
-        "bounded",
-        "reviewed"
-      ]
-    },
-    "faithfulness_strategy": {
-      "type": "string"
-    },
-    "faithfulness_notes": {
-      "type": "string"
-    },
-    "comparator_audit_status": {
-      "type": "string",
-      "enum": [
-        "not_applicable",
-        "pending",
-        "passed",
-        "failed"
-      ]
-    },
-    "comparator_risks": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "provenance_kind": {
-      "type": "string",
-      "enum": [
-        "source_derived",
-        "retrieved_existing_formalization",
-        "adapted_existing_formalization",
-        "generated_from_scratch",
-        "mixed"
-      ]
-    },
-    "attribution_requirements": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "prerequisite_closure_status": {
-      "type": "string",
-      "enum": [
-        "not_needed",
-        "pending",
-        "partial",
-        "closed"
-      ]
-    },
-    "lean_namespace": {
-      "type": "string"
-    },
-    "lean_declaration": {
-      "type": "string"
-    },
-    "lean_statement_kind": {
-      "type": "string"
-    },
-    "admissible_assumptions": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "lean_prerequisite_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "formalization_blockers": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
     "retrieval_hints": {
       "type": "array",
       "items": {
         "type": "string"
       }
     },
+    "canonical_layer": {
+      "type": "string"
+    },
+    "review_mode": {
+      "type": "string"
+    },
+    "review_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coverage": {},
+    "consensus": {},
+    "merge_lineage": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "conflict_status": {
+      "type": "string"
+    },
+    "conflict_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+:[a-z0-9-]+$"
+      }
+    },
+    "equivalence_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z_]+:[a-z0-9-]+$"
+      }
+    },
     "symbols": {
       "type": "array",
       "items": {
         "$ref": "#/$defs/symbol_entry"
-      }
-    },
-    "step_inputs": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "step_output": {
-      "type": "string",
-      "pattern": "^[a-z_]+:[a-z0-9-]+$"
-    },
-    "step_justification": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "source_omission_flag": {
-      "type": "boolean"
-    },
-    "followup_required": {
-      "type": "boolean"
-    },
-    "gap_kind": {
-      "type": "string"
-    },
-    "recovery_source_type": {
-      "type": "string"
-    },
-    "task_status": {
-      "type": "string"
-    },
-    "reentry_targets": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "future_buffered": {
-      "type": "boolean"
-    },
-    "runtime_gap_kinds": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "runtime_return_to_stages": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "topic_queue_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^queue:[a-z0-9-]+$"
-      }
-    },
-    "topic_completion_status": {
-      "type": "string",
-      "enum": [
-        "not_assessed",
-        "gap-aware",
-        "regression-seeded",
-        "regression-stable",
-        "promotion-blocked",
-        "promotion-ready"
-      ]
-    },
-    "supporting_regression_question_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^regression_question:[a-z0-9-]+$"
-      }
-    },
-    "supporting_oracle_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^question_oracle:[a-z0-9-]+$"
-      }
-    },
-    "supporting_regression_run_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^regression_run:[a-z0-9-]+$"
-      }
-    },
-    "promotion_blockers": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "split_required": {
-      "type": "boolean"
-    },
-    "recovery_source_refs": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "prompt": {
-      "type": "string"
-    },
-    "question_family": {
-      "type": "string"
-    },
-    "primary_retrieval_paths": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "pass_conditions": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "mandatory_unit_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "mandatory_equation_labels": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "obligation_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^proof_obligation:[a-z0-9-]+$"
-      }
-    },
-    "supporting_obligation_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^proof_obligation:[a-z0-9-]+$"
-      }
-    },
-    "equation_context_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^equation_context:[a-z0-9-]+$"
-      }
-    },
-    "dependency_graph_snapshot_id": {
-      "type": "string",
-      "pattern": "^dependency_graph_snapshot:[a-z0-9-]+$"
-    },
-    "family_member_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "fusion_member_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "conflict_unit_ids": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "derivation_spine": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "mandatory_logical_moves": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "common_failure_patterns": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "grading_rubric": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "failure_triggers": {
-      "type": "array",
-      "items": {
-        "type": "string"
-      }
-    },
-    "blocking_units": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "resolution_targets": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "resolves_gaps": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^open_gap:[a-z0-9-]+$"
-      }
-    },
-    "routes_back_to": {
-      "type": "array",
-      "items": {
-        "type": "string",
-        "pattern": "^[a-z_]+:[a-z0-9-]+$"
-      }
-    },
-    "candidate_sources": {
-      "type": "array",
-      "items": {
-        "$ref": "#/$defs/candidate_source"
       }
     },
     "created_at": {
@@ -685,34 +297,10 @@
         "latex": {
           "type": "string"
         },
-        "kind": {
-          "type": "string"
-        },
         "label": {
           "type": "string"
         },
-        "equation_label": {
-          "type": "string"
-        },
         "context": {
-          "type": "string"
-        },
-        "notes": {
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
-    "candidate_source": {
-      "type": "object",
-      "required": [
-        "citation"
-      ],
-      "properties": {
-        "citation": {
-          "type": "string"
-        },
-        "why": {
           "type": "string"
         }
       },

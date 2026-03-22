@@ -1,87 +1,151 @@
 {
   "id": "theorem:half-level-cs-term-from-massive-dirac-fermion",
   "type": "theorem",
-  "title": "A Massive Two Plus One Dimensional Dirac Fermion Induces A Half-Level Chern-Simons Term",
-  "summary": "Integrating out a single massive 2+1-dimensional Dirac fermion produces the parity-odd response (sign m / 2) I_CS(A); the half-integer coefficient is fixed by the hemisphere Berry-flux calculation of the occupied Dirac band.",
-  "domain": "topological-phases-of-matter",
-  "subdomain": "parity-anomaly",
-  "canonical_family": "topological-phases/domain-wall-edge-mode",
+  "title": "A Massive Two Plus One Dimensional Dirac Fermion Induces a Half-Level Chern-Simons Term",
+  "summary": "Integrating out a massive 2+1-dimensional Dirac fermion yields (sign m / 2) I_CS(A), with the half-integer coefficient explained by the hemisphere Berry-winding argument; source anchor: Lecture Three / More On Edge States Of The Integer Quantum Hall Effect (lines 2064-2091; eqs. utof, uftof, puft, PPP).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
   "tags": [
     "theorem",
-    "parity-anomaly",
-    "chern-simons",
-    "dirac-fermion"
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
   ],
   "aliases": [],
   "assumptions": [
-    "A single massive charged Dirac fermion is integrated out in 2+1 dimensions.",
-    "The statement is continuum and low-energy; microscopic lattice completion is treated separately."
+    "Scope: source-grounded conceptual derivation using Berry winding and low-energy effective response."
   ],
-  "regime": "Continuum parity-anomaly analysis of one massive Dirac cone.",
-  "scope": "Reusable theorem-level statement of the half-level response that feeds the Lecture Three edge-mode story and the Haldane bridge.",
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:half-level-cs-term-from-massive-dirac-fermion after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the half-level Chern-Simons response statement ready to be stored as a reusable theorem_card?",
   "dependencies": [
-    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number"
+    "concept:parity-anomaly-of-a-single-two-plus-one-dimensional-dirac-fermion",
+    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number",
+    "proof_fragment:projector-formula-for-the-tknn-chern-number"
   ],
   "related_units": [
-    "proof_fragment:parity-anomaly-half-level-from-massive-dirac-fermion",
     "theorem:anomaly-inflow-requires-chiral-edge-modes",
-    "theorem:sign-changing-dirac-mass-supports-chiral-edge-mode",
-    "open_gap:parity-anomaly-motivates-but-does-not-prove-lattice-no-go"
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode"
   ],
   "source_anchors": [
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "AITP promoted candidate candidate:half-level-cs-term-from-massive-dirac-fermion from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
       "equation_labels": [
         "utof",
         "uftof",
         "puft",
         "PPP"
-      ],
-      "notes": "Witten's continuum response-theory statement and Berry-geometric justification of the half level."
+      ]
     },
     {
-      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
-      "section": "paper/main-result",
-      "notes": "The lattice realization that turns the continuum half-level logic into an integer Hall phase."
+      "source_id": "paper:gauge-noninvariance-and-parity-violation-of-three-dimensional-fermions-1984",
+      "section": "main-result",
+      "notes": "Primary parity-anomaly source for the gauge-versus-parity tradeoff."
+    },
+    {
+      "source_id": "paper:axial-anomaly-induced-fermion-fractionization-and-effective-gauge-theory-actions-in-odd-dimensional-space-times-1983",
+      "section": "effective-action-link",
+      "notes": "Odd-dimensional effective-action source complementing Redlich."
     }
   ],
   "formalization_status": "candidate",
-  "validation_status": "source-grounded",
-  "maturity": "working",
-  "representation": "Theorem-level parity-anomaly response statement for one massive Dirac fermion.",
-  "human_projection_profile": "learning-note",
-  "motivation": "This note exists because Lecture Three repeatedly uses the half-level response of a single massive Dirac fermion. The parity anomaly should therefore appear as an explicit theorem-level statement rather than only as motivational prose.",
-  "prerequisite_story": "Know the massive 2+1-dimensional Dirac Hamiltonian, the Chern-Simons response functional, and the Berry-flux picture in which the occupied Dirac band covers only a hemisphere of the Bloch sphere.",
-  "local_context_story": "In Witten Lecture Three, this theorem provides the continuum response ingredient that later gets doubled, folded, and combined with boundary modes. It is also the local response statement mirrored by Haldane's lattice realization.",
-  "forward_links_story": "After the half-level statement is established, doubling with opposite masses removes the anomaly in the bulk, while a boundary sign flip forces the missing chiral edge mode to reappear.",
-  "canonical_questions": [
-    "Why does a single massive Dirac cone contribute only a half-level Chern-Simons term?",
-    "How is the one-half factor seen from the Berry-flux hemisphere picture?",
-    "Why is this not yet a fully gauge-invariant lattice Hall response?"
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "theorem:torus-ground-state-degeneracy-r",
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:wilson-loop-operator-in-level-r-u1-cs"
   ],
-  "scope_boundaries": [
-    "This is a continuum low-energy statement for one massive Dirac fermion, not the full response theorem of a gauge-invariant lattice model.",
-    "The half-level coefficient becomes physically acceptable only after the missing boundary or doubling contribution is accounted for."
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:half-level-cs-term-from-massive-dirac-fermion."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-half-level-cs-term-from-massive-dirac-fermion/agent_consensus.json",
+    "candidate_id=candidate:half-level-cs-term-from-massive-dirac-fermion",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-half-level-cs-term-from-massive-dirac-fermion/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-half-level-cs-term-from-massive-dirac-fermion/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-half-level-cs-term-from-massive-dirac-fermion/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-half-level-cs-term-from-massive-dirac-fermion/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:half-level-cs-term-from-massive-dirac-fermion",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:40:44+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three half-level Chern-Simons audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:half-level-cs-term-from-massive-dirac-fermion",
+    "updated_at": "2026-03-18T01:40:44+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three half-level Chern-Simons audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:half-level-cs-term-from-massive-dirac-fermion",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
   ],
   "math_expressions": [
     {
-      "latex": "I_{\\psi}=\\int \\mathrm d^3x\\,\\bar\\psi(\\slashed D-m)\\psi",
-      "kind": "display",
-      "equation_label": "utof",
-      "notes": "Massive charged Dirac fermion coupled to the background gauge field."
+      "latex": "I_{\\psi} = \\int \\mathrm{d}^3x\\, \\bar\\psi\\left(\\slashed{D}-m\\right)\\psi",
+      "label": "utof",
+      "context": "Massive charged Dirac fermion coupled to the background gauge field."
     },
     {
-      "latex": "\\Gamma_{\\mathrm{odd}}[A]=\\frac{\\operatorname{sign}m}{2}\\,I_{\\mathrm{CS}}(A)=\\frac{\\operatorname{sign}m}{2}\\,\\frac{1}{4\\pi}\\int \\epsilon^{ijk}A_i\\partial_jA_k\\,\\mathrm d^3x",
-      "kind": "display",
-      "equation_label": "uftof",
-      "notes": "Parity-odd low-energy response generated by integrating out the gapped fermion."
+      "latex": "\\frac{\\operatorname{sign} m}{2}\\, I_{\\mathrm{CS}}(A) = \\frac{\\operatorname{sign} m}{2}\\,\\frac{1}{4\\pi}\\int \\mathrm{d}^3x\\, \\epsilon^{ijk} A_i \\partial_j A_k",
+      "label": "uftof",
+      "context": "Induced low-energy Chern-Simons term after integrating out the gapped fermion."
     },
     {
-      "latex": "H=\\sigma_x p_x+\\sigma_y p_y+m\\sigma_z",
-      "kind": "display",
-      "equation_label": "puft",
-      "notes": "Single-particle Hamiltonian whose occupied-band topology fixes the sign and one-half factor."
+      "latex": "H = \\sigma_x p_x + \\sigma_y p_y + m\\sigma_z",
+      "label": "puft",
+      "context": "Single-particle Hamiltonian whose topology gives the half-level response."
     }
   ],
   "symbols": [
@@ -91,37 +155,11 @@
     },
     {
       "symbol": "m",
-      "meaning": "Dirac mass controlling the sign of the parity-odd response"
+      "meaning": "Dirac mass controlling the sign of the induced response"
+    },
+    {
+      "symbol": "\\psi",
+      "meaning": "massive 2+1-dimensional Dirac fermion of charge one"
     }
-  ],
-  "failure_modes": [
-    "The half-integer coefficient is not by itself the Hall conductance of a fully gauge-invariant 2D lattice model.",
-    "The lattice completion or bulk inflow must still restore an integer total level."
-  ],
-  "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "lean_namespace": "TopologicalPhases.IntegerHall.DomainWallEdgeMode",
-  "lean_declaration": "half_level_cs_term_from_massive_dirac_fermion",
-  "lean_statement_kind": "theorem",
-  "admissible_assumptions": [
-    "Work in the continuum low-energy theory of one massive charged 2+1-dimensional Dirac fermion.",
-    "Use the Berry-flux hemisphere computation as the accepted route to the one-half coefficient."
-  ],
-  "lean_prerequisite_ids": [
-    "proof_fragment:hemisphere-berry-flux-of-massive-dirac-hamiltonian-gives-half-chern-number"
-  ],
-  "formalization_blockers": [
-    "A reusable Lean-side interface connecting the occupied Dirac band to the parity-odd effective action is still missing.",
-    "The half-integer response is presently treated as a continuum theorem and not yet linked to a formal gauge-anomaly wrapper."
-  ],
-  "retrieval_hints": [
-    "Use when the answer must state the half-level response explicitly, not merely allude to the parity anomaly."
-  ],
-  "supporting_regression_run_ids": [
-    "regression_run:topological-phases-core-2026-03-21-leaf-formalization-audit"
-  ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-21"
+  ]
 }

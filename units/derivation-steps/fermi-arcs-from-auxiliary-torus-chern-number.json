@@ -1,0 +1,134 @@
+{
+  "id": "derivation_step:fermi-arcs-from-auxiliary-torus-chern-number",
+  "type": "derivation_step",
+  "title": "Fermi Arcs from an Auxiliary Two-Torus Chern Number",
+  "summary": "The product U x U' around a projected Weyl point defines a gapped auxiliary 2D system whose Chern number k* forces edge states and hence Fermi arcs in the original 3D problem; source anchor: Lecture Two / More On Fermi Arcs (lines 1788-1846).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
+  "tags": [
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: topological counting argument, not a direct microscopic reduction of the 3D semimetal."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:fermi-arcs-from-auxiliary-torus-chern-number after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the auxiliary-torus Chern-number argument for Fermi arcs ready to be stored as a reusable derivation_step?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-two/more-on-fermi-arcs",
+      "notes": "AITP promoted candidate candidate:fermi-arcs-from-auxiliary-torus-chern-number from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:graphene-dirac-point-condition",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:fermi-arcs-from-auxiliary-torus-chern-number."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fermi-arcs-from-auxiliary-torus-chern-number/agent_consensus.json",
+    "candidate_id=candidate:fermi-arcs-from-auxiliary-torus-chern-number",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fermi-arcs-from-auxiliary-torus-chern-number/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fermi-arcs-from-auxiliary-torus-chern-number/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fermi-arcs-from-auxiliary-torus-chern-number/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fermi-arcs-from-auxiliary-torus-chern-number/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:fermi-arcs-from-auxiliary-torus-chern-number",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T12:26:32+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two auxiliary-torus Fermi-arc argument audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:fermi-arcs-from-auxiliary-torus-chern-number",
+    "updated_at": "2026-03-18T12:26:32+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two auxiliary-torus Fermi-arc argument audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:fermi-arcs-from-auxiliary-torus-chern-number",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "k^{*}=\\int_{U\\times U^{\\prime}} \\mathrm{d}^{2}p\\,\\frac{\\operatorname{Tr}\\,\\mathcal{F}}{2\\pi}",
+      "context": "Auxiliary two-torus Chern number built from the projected Brillouin-zone geometry."
+    },
+    {
+      "latex": "k^{*}\\in\\{-1,0,1\\}",
+      "context": "The enclosed Weyl-node chirality determines the auxiliary Hall level."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "U\\times U^{\\prime}",
+      "meaning": "auxiliary two-torus formed from the forgotten momentum circle and a loop around a projected Weyl node"
+    },
+    {
+      "symbol": "k^{*}",
+      "meaning": "auxiliary Hall Chern number controlling the existence of edge crossings"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "Berry curvature of the restricted gapped Hamiltonian on U×U'"
+    }
+  ]
+}

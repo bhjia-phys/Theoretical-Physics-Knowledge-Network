@@ -1,0 +1,26 @@
+{
+  "source_id": "paper:axial-anomaly-induced-fermion-fractionization-and-effective-gauge-theory-actions-in-odd-dimensional-space-times-1983",
+  "title": "Axial Anomaly Induced Fermion Fractionization and Effective Gauge Theory Actions in Odd Dimensional Space-Times",
+  "authors": [
+    "A. J. Niemi",
+    "G. W. Semenoff"
+  ],
+  "version": "journal",
+  "submitted_date": "1983-11-01",
+  "updated_date": "1983-11-01",
+  "canonical_scope": "Primary parity-anomaly source linking odd-dimensional effective actions, anomaly inflow, and fractionalized fermion number.",
+  "urls": {
+    "doi": "https://doi.org/10.1103/PhysRevLett.51.2077",
+    "inspire": "https://inspirehep.net/literature/10.1103/physrevlett.51.2077",
+    "journal": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.51.2077"
+  },
+  "section_map": [
+    {
+      "id": "effective-action-link",
+      "title": "Odd-Dimensional Effective Action",
+      "summary": "Odd-dimensional effective gauge actions inherit quantized anomaly data from even-dimensional index-theoretic structure."
+    }
+  ],
+  "equation_map": [],
+  "figure_map": []
+}

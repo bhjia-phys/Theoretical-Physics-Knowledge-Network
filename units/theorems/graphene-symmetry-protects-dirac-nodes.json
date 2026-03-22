@@ -1,73 +1,133 @@
 {
   "id": "theorem:graphene-symmetry-protects-dirac-nodes",
   "type": "theorem",
-  "title": "Graphene Lattice Symmetries Protect The Dirac Nodes",
-  "summary": "Reflection and rotational symmetries of the honeycomb lattice keep the two graphene Dirac nodes pinned and at the same energy; only symmetry-breaking perturbations can turn them into masses and open the Haldane route to quantized Hall response.",
-  "domain": "topological-phases-of-matter",
-  "subdomain": "haldane-model",
-  "canonical_family": "topological-phases/hall-response-chern-number",
+  "title": "Graphene Lattice Symmetries Protect the Dirac Nodes",
+  "summary": "Reflection and rotational symmetries of the honeycomb lattice protect the Dirac nodes and keep them at the same energy until suitable symmetry breaking introduces masses; source anchor: Lecture Three / Haldane's Model Of Graphene (lines 2215-2244).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "theorem",
   "tags": [
     "theorem",
-    "graphene",
-    "haldane",
-    "dirac-nodes"
+    "theorem_card",
+    "witten-topological-phases-1510-07698-full-paper"
   ],
   "aliases": [],
   "assumptions": [
-    "The starting model is the nearest-neighbor honeycomb Hamiltonian.",
-    "Perturbations preserve the lattice symmetries until the Haldane mass mechanism is discussed explicitly."
+    "Scope: the source explains node protection and equal-energy pairing, not the full explicit Haldane perturbation."
   ],
-  "regime": "Honeycomb-lattice symmetry analysis prior to opening a topological gap.",
-  "scope": "Reusable theorem-level statement of why graphene has protected Dirac points before the Haldane mass is introduced.",
-  "dependencies": [
-    "definition:graphene-nearest-neighbor-hamiltonian",
-    "derivation_step:graphene-dirac-point-condition"
-  ],
-  "related_units": [
-    "theorem:integer-quantum-hall-response-equals-band-and-many-body-chern-number",
-    "source_fusion_record:hall-response-chern-number-cross-source-fusion",
-    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
-    "source_map:witten-topological-phases-lecture-three"
-  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:graphene-symmetry-protects-dirac-nodes after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the symmetry-protection statement for graphene Dirac nodes ready to be stored as a reusable theorem_card?",
+  "dependencies": [],
+  "related_units": [],
   "source_anchors": [
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-three/haldanes-model-of-graphene",
+      "notes": "AITP promoted candidate candidate:graphene-symmetry-protects-dirac-nodes from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
       "equation_labels": [
         "hham",
         "theq",
         "omeq"
-      ],
-      "notes": "Witten's symmetry-based explanation of why the two Dirac nodes persist before the Haldane perturbation."
-    },
-    {
-      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
-      "section": "paper/main-result",
-      "notes": "Original condensed-matter realization in which suitable symmetry breaking gaps the paired Dirac cones into a Chern insulator."
+      ]
     }
   ],
   "formalization_status": "candidate",
-  "validation_status": "source-grounded",
-  "maturity": "working",
-  "representation": "Theorem-level symmetry statement for the graphene precursor of the Haldane model.",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion",
+    "theorem:anomaly-inflow-requires-chiral-edge-modes",
+    "theorem:three-dimensional-two-band-crossing-codimension-three",
+    "theorem:torus-ground-state-degeneracy-r",
+    "definition:one-plus-one-dimensional-chirality-operator"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:graphene-symmetry-protects-dirac-nodes."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-symmetry-protects-dirac-nodes/agent_consensus.json",
+    "candidate_id=candidate:graphene-symmetry-protects-dirac-nodes",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-symmetry-protects-dirac-nodes/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-symmetry-protects-dirac-nodes/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-symmetry-protects-dirac-nodes/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-symmetry-protects-dirac-nodes/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:graphene-symmetry-protects-dirac-nodes",
+    "candidate_type": "theorem_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three graphene symmetry-protection audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:graphene-symmetry-protects-dirac-nodes",
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three graphene symmetry-protection audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:graphene-symmetry-protects-dirac-nodes",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
   "math_expressions": [
     {
       "latex": "H=t\\begin{pmatrix} 0 & 1+e^{-i\\alpha}+e^{-i\\beta} \\\\ 1+e^{i\\alpha}+e^{i\\beta} & 0 \\end{pmatrix}",
-      "kind": "display",
-      "equation_label": "hham",
-      "notes": "Symmetry-constrained nearest-neighbor graphene Hamiltonian."
+      "label": "hham",
+      "context": "Symmetry-constrained nearest-neighbor graphene Hamiltonian whose Dirac nodes are being protected."
     },
     {
       "latex": "1+e^{i\\alpha}+e^{i\\beta}=0",
-      "kind": "display",
-      "equation_label": "theq",
-      "notes": "Band-touching condition selecting the Dirac nodes."
+      "label": "theq",
+      "context": "Condition selecting the Dirac nodes that survive symmetry-preserving perturbations."
     },
     {
       "latex": "e^{i\\alpha}=\\frac{1}{2}\\left(-1\\pm\\sqrt{-3}\\right)=e^{-i\\beta}",
-      "kind": "display",
-      "equation_label": "omeq",
-      "notes": "The two symmetry-related Dirac-point locations."
+      "label": "omeq",
+      "context": "The two symmetry-related node locations in the Brillouin zone."
     }
   ],
   "symbols": [
@@ -76,20 +136,12 @@
       "meaning": "graphene Bloch Hamiltonian near half filling"
     },
     {
+      "symbol": "t",
+      "meaning": "nearest-neighbor hopping amplitude"
+    },
+    {
       "symbol": "\\alpha,\\beta",
-      "meaning": "Brillouin-zone angles locating the two graphene Dirac points"
+      "meaning": "Brillouin-zone angles locating the two Dirac points"
     }
-  ],
-  "failure_modes": [
-    "This theorem by itself does not yet give the explicit Haldane mass term or the full lattice Chern-number calculation."
-  ],
-  "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "retrieval_hints": [
-    "Use when the Haldane branch needs the explicit statement of what protects the ungapped graphene cones and what must be broken to gap them."
-  ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-20"
+  ]
 }

@@ -52,6 +52,18 @@
   "maturity": "seed",
   "symmetries": [],
   "representation": "Orientation sign of the local Weyl map.",
+  "math_expressions": [
+    {
+      "latex": "\\chi = \\operatorname{sign} \\det(b_{ij}) = \\operatorname{sign} \\det\\!\\left.\\left(\\frac{\\partial b_i}{\\partial p_j}\\right)\\right|_{p=p_*}",
+      "label": "perd",
+      "context": "Local Hamiltonian formula for the chirality of an isolated Weyl node."
+    },
+    {
+      "latex": "\\chi = w_{\\alpha}(S) = \\int_{S_{\\alpha}} \\frac{\\mathcal{F}}{2\\pi}",
+      "label": "zif",
+      "context": "Equivalent Berry-flux definition of the same chirality sign."
+    }
+  ],
   "model_refs": [
     "model:two-band-lattice-weyl-model"
   ],
@@ -61,6 +73,20 @@
   "quantity_refs": [
     "quantity:chirality-sign",
     "quantity:winding-number"
+  ],
+  "symbols": [
+    {
+      "symbol": "\\chi",
+      "meaning": "chirality or handedness of the Weyl node"
+    },
+    {
+      "symbol": "b_{ij}",
+      "meaning": "Jacobian matrix of the linearized Pauli-vector coefficients"
+    },
+    {
+      "symbol": "\\mathcal{F}",
+      "meaning": "Berry curvature two-form"
+    }
   ],
   "failure_modes": [
     "Mixed sign conventions can flip the reported chirality without changing the physics."
@@ -73,5 +99,5 @@
     "Use when a query asks how chirality is computed or interpreted."
   ],
   "created_at": "2026-03-16",
-  "updated_at": "2026-03-16"
+  "updated_at": "2026-03-18"
 }

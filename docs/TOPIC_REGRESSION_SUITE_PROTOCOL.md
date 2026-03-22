@@ -11,131 +11,132 @@ It complements:
 
 Paper ingestion alone is not enough.
 
-Once a branch becomes reusable, the system needs a stable way to ask:
+Once a branch becomes a reusable topic, the system needs a stable way to ask:
 
-- can the topic define its core objects precisely
-- can it reconstruct flagship derivations
-- can it expose dependencies between those results
-- can it connect nearby concepts and neighboring papers
-- can it honestly identify what still requires `L0` follow-up
+- can the topic define its core objects precisely;
+- can it reconstruct its flagship derivations;
+- can it expose dependencies between those results;
+- can it connect nearby concepts and neighboring papers;
+- can it honestly identify what still requires `L0` follow-up?
 
 That stable question set is the topic regression suite.
 
 ## R1. Required Topic Surfaces
 
-Every reusable topic should maintain:
+Every topic that aims to be reusable should maintain:
 
-1. a topic charter or source-map backbone
-2. a regression suite manifest
-3. stable `regression_question` units
-4. stable `question_oracle` units
-5. recent run logs with `pass`, `partial`, or `fail`
-6. queue writeback from non-pass results into `open_gap` and `followup_source_task` routing
-
-`unsafe-pass` is also allowed for runs where the local derivation surface is
-strong enough to answer the question, but the surrounding theorem family still
-carries explicit cited-source or fusion risk that the answer must not hide.
+1. a topic charter that states the completeness target;
+2. topic source maps that expose the local argument structure;
+3. a topic regression suite with stable question ids;
+4. a detailed regression oracle or answer key that states what each question requires in proof, notation, and dependency terms;
+5. regression pass logs that record pass/partial/fail outcomes;
+6. unresolved-queue writeback that turns failures into concrete next actions.
 
 ## R2. Question Families
 
-A good suite should cover at least:
+A good suite should cover at least these families.
 
-- `definition`
-- `derivation`
-- `dependency`
-- `bridge`
-- `gap`
+### R2.1 Definition questions
 
-The point is not to reach a slogan like "100 questions."
+These test whether the topic can state its basic objects, symbols, regimes, and scope conditions precisely.
 
-The point is to reach enough stable questions that the topic's real weak points can no longer hide.
+### R2.2 Derivation questions
 
-## R3. Question Contract
+These test whether the topic can reconstruct a flagship proof or calculation with explicit intermediate steps, not only the endpoint formula.
 
-Each `regression_question` should carry:
+### R2.3 Dependency questions
 
-- a stable question id
-- a family label
-- a natural-language prompt
-- primary retrieval paths
-- pass conditions
+These test whether the topic knows which earlier notes, lemmas, constructions, or background theorems are required before a result can be used responsibly.
 
-Each `question_oracle` should carry:
+### R2.4 Bridge questions
 
-- the exact units that should be traversed first
-- mandatory formulas, symbols, or equation labels when relevant
-- supporting proof obligations and dependency snapshots when relevant
-- mandatory logical moves when the proof order itself matters
-- an explicit derivation spine or dependency spine
-- common failure patterns
-- grading rubric
-- failure triggers
+These test whether the topic can explain how one cluster of notes connects to another cluster, or how one paper's formal object relates to another paper's formal object.
 
-These are not optional decoration for a proof-grade topic.
-They are the minimum machine-visible surface needed to keep a regression bank
-from collapsing back into slogan checking.
+### R2.5 Gap questions
 
-## R3.5 Research-Grade Oracle Density
+These test whether the topic can identify missing background, skipped derivations, and source-compressed arguments honestly enough to route back through `L0 -> L1 -> L3 -> L2`.
 
-For a mature topic, each flagship theorem family should have a dense enough
-question/oracle bank that a reviewer can probe any critical turn of the proof.
+## R3. Question Record Contract
 
-That usually means covering:
+Each regression question should carry:
 
-- the strict definition surface,
-- the main derivation spine,
-- prerequisite and dependency identification,
-- cited-versus-local scope boundaries,
-- and the failure modes that most often masquerade as understanding.
+- a stable question id;
+- a family label such as `definition`, `derivation`, `dependency`, `bridge`, or `gap`;
+- a natural-language prompt;
+- a primary retrieval path such as canonical notes or source maps;
+- a pass condition describing what a good answer must make visible.
 
-If an oracle cannot say what counts as a partial answer, what the common proof
-collapse looks like, and what exact artifacts should be traversed first, that
-oracle is still too weak.
+In addition, every stable question should have a linked detailed oracle record that carries:
+
+- the exact local notes that should be traversed first;
+- the mandatory formulas, symbols, and assumptions that must appear in the answer when the question is formal;
+- an explicit derivation spine, dependency spine, or bridge spine;
+- any required external `L0` source anchors if the local notes are not sufficient by themselves;
+- failure triggers that explain what would force the grade down to `partial` or `fail`.
+
+Question count is coverage-driven, not fixed.
+
+The target is not “100 questions” as a slogan.
+
+The target is “enough stable questions that the topic's real weak points can no longer hide.”
 
 ## R4. Grading Contract
 
-Each evaluated question receives one of:
+Each evaluated question should receive one of:
 
 - `pass`
-- `unsafe-pass`
 - `partial`
 - `fail`
 
-Use `pass` only when the current notes satisfy the oracle in substance, not only in theme.
+### R4.1 Pass
 
-Use `unsafe-pass` when the immediate answer can be reconstructed faithfully from
-the current network, but the surrounding family still has an explicit external
-recovery or fusion risk that must remain visible.
+Use `pass` only when the current topic notes can answer the question with:
 
-Use `partial` when the answer is mostly present but still hides a derivation step, prerequisite edge, or gap classification.
+- precise definitions;
+- visible formulas when the source contains them;
+- explicit derivation steps when the question is derivation-heavy;
+- explicit assumptions and scope;
+- satisfaction of the detailed oracle for that question rather than only a vague topic-level resemblance;
+- honest handling of any remaining source-local caveat.
 
-Use `fail` when the current topic cannot answer honestly from the existing network.
+### R4.2 Partial
+
+Use `partial` when the topic can mostly answer the question but still lacks one or more of:
+
+- explicit intermediate steps;
+- explicit prerequisite edges;
+- explicit bridge notes;
+- explicit local gap classification.
+
+### R4.3 Fail
+
+Use `fail` when the current topic cannot answer the question honestly from the existing note network, or when even the missing-background route is not clearly encoded.
 
 ## R5. Failure Handling
 
 A regression pass must not stop at scoring.
 
-Each `partial` or `fail` should trigger one or more of:
+Each `partial` or `fail` should trigger one of:
 
-- expand an existing note locally
-- split a wide note into derivation-step or proof-fragment neighbors
-- add missing dependency or bridge edges
-- create or update an `open_gap`
-- create or update a `followup_source_task`
-- enqueue the result in a queue manifest
+- expand the existing note locally;
+- split a too-wide note into derivation-step or proof-fragment neighbors;
+- add missing dependency edges or bridge notes;
+- refine the detailed oracle if the question itself was underspecified;
+- return to `L0` for a cited/background source;
+- keep the object explicit in `L3` if the gap is still unresolved.
 
 ## R6. Script Boundary
 
 Scripts may:
 
-- persist suite manifests
-- build regression indexes
-- aggregate run logs
-- diff pass matrices over time
+- persist question manifests;
+- collect result matrices;
+- diff pass logs over time;
+- build summary projections.
 
 Scripts must not decide whether an answer is mathematically clear enough.
 
-That remains an agent task under the paper-ingestion quality gates.
+That judgment remains an agent task under the paper-ingestion quality gates.
 
 ## R7. Stability Criterion
 
@@ -143,28 +144,14 @@ A topic should not be treated as regression-stable merely because it has many no
 
 It becomes regression-stable only when:
 
-- flagship definition questions pass
-- flagship derivation questions pass without hidden proof gaps
-- dependency paths are encoded for major theorems
-- bridge questions are answered explicitly rather than ad hoc
-- gap questions correctly identify what still needs `L0` follow-up
-
-Regression stability is still not identical to promotion readiness.
-
-Topic completion and blocking metadata live in `docs/TOPIC_COMPLETION_PROTOCOL.md`.
+- flagship definition questions pass;
+- flagship derivation questions pass without hidden proof gaps;
+- dependency paths are encoded for major theorems;
+- bridge questions are answered explicitly rather than by ad hoc improvisation;
+- gap questions correctly identify what still needs `L0` follow-up.
 
 ## R8. First Exemplar
 
-The first explicit exemplar is the topological-phases branch seeded by Witten's `Three Lectures On Topological Phases Of Matter`.
+The first explicit exemplar for this protocol is the topological-phases branch seeded by Witten's `Three Lectures On Topological Phases Of Matter`.
 
-Stage-one target:
-
-- Lecture One proof-grade regression suite
-- Lecture Two and Lecture Three source maps with explicit queues and follow-up tasks, even before their flagship theorem chains are promoted
-
-Stage-two target:
-
-- a topic-level `Topological Phases` regression suite that fuses Witten with the TKNN, Haldane, Jackiw-Rebbi, and Callan-Harvey branches
-- family-aware regression questions that test canonical objects rather than only one paper presentation
-- research-grade oracles with explicit grading rubrics and failure patterns for every flagship branch
-- a future-research buffer queue for broad branches such as fractional Hall topological order that are known but not yet proof-grade
+Its suite should remain the first serious benchmark for whether the protocol is working in practice.

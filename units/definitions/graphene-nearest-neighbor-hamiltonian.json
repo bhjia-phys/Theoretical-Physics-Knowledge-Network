@@ -2,55 +2,120 @@
   "id": "definition:graphene-nearest-neighbor-hamiltonian",
   "type": "definition",
   "title": "Nearest-Neighbor Graphene Hamiltonian",
-  "summary": "The spinless nearest-neighbor honeycomb model has Bloch Hamiltonian H=t[[0,1+e^{-i alpha}+e^{-i beta}],[1+e^{i alpha}+e^{i beta},0]], which is the lattice starting point for Witten's Haldane-model bridge to quantized Hall response.",
-  "domain": "topological-phases-of-matter",
-  "subdomain": "haldane-model",
-  "canonical_family": "topological-phases/hall-response-chern-number",
+  "summary": "The honeycomb nearest-neighbor hopping model gives H = t [[0, 1 + e^{-i alpha} + e^{-i beta}], [1 + e^{i alpha} + e^{i beta}, 0]] in the A/B basis; source anchor: Lecture Three / Haldane's Model Of Graphene (lines 2192-2203; eq. hham).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "definition",
   "tags": [
     "definition",
-    "graphene",
-    "haldane",
-    "tight-binding"
+    "definition_card",
+    "witten-topological-phases-1510-07698-full-paper"
   ],
   "aliases": [],
   "assumptions": [
-    "The model is the spinless nearest-neighbor tight-binding problem on the honeycomb lattice.",
-    "No symmetry-breaking mass term has yet been added."
+    "Scope: spinless nearest-neighbor tight-binding model used as the entry point to graphene band topology."
   ],
-  "regime": "Honeycomb-lattice band theory before the Haldane mass is turned on.",
-  "scope": "Reusable lattice starting point for the Haldane realization of the integer Hall family.",
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:graphene-nearest-neighbor-hamiltonian after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the nearest-neighbor graphene Hamiltonian ready to be stored as a reusable definition_card?",
   "dependencies": [],
-  "related_units": [
-    "derivation_step:graphene-dirac-point-condition",
-    "theorem:graphene-symmetry-protects-dirac-nodes",
-    "open_gap:lecture-two-tknn-equivalence-proof-not-yet-curated",
-    "source_map:witten-topological-phases-lecture-three"
-  ],
+  "related_units": [],
   "source_anchors": [
     {
-      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
       "section": "lecture-three/haldanes-model-of-graphene",
+      "notes": "AITP promoted candidate candidate:graphene-nearest-neighbor-hamiltonian from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
       "equation_labels": [
         "hham"
-      ],
-      "notes": "Witten's explicit graphene Hamiltonian used to motivate the Haldane branch."
-    },
-    {
-      "source_id": "paper:haldane-quantum-hall-without-landau-levels-1988",
-      "section": "paper/main-result",
-      "notes": "Original lattice realization of anomalous Hall response without Landau levels."
+      ]
     }
   ],
   "formalization_status": "candidate",
-  "validation_status": "source-grounded",
-  "maturity": "working",
-  "representation": "Definition of the unperturbed graphene Bloch Hamiltonian in the A/B sublattice basis.",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:wilson-loop-operator-in-level-r-u1-cs",
+    "definition:chern-simons-functional-definition",
+    "definition:fractional-hall-effective-action-with-emergent-u1",
+    "derivation_step:domain-wall-mass-yields-chiral-edge-mode"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:graphene-nearest-neighbor-hamiltonian."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-nearest-neighbor-hamiltonian/agent_consensus.json",
+    "candidate_id=candidate:graphene-nearest-neighbor-hamiltonian",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-nearest-neighbor-hamiltonian/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-nearest-neighbor-hamiltonian/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-nearest-neighbor-hamiltonian/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-graphene-nearest-neighbor-hamiltonian/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:graphene-nearest-neighbor-hamiltonian",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three graphene Hamiltonian audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:graphene-nearest-neighbor-hamiltonian",
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three graphene Hamiltonian audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:graphene-nearest-neighbor-hamiltonian",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
   "math_expressions": [
     {
       "latex": "H=t\\begin{pmatrix} 0 & 1+e^{-i\\alpha}+e^{-i\\beta} \\\\ 1+e^{i\\alpha}+e^{i\\beta} & 0 \\end{pmatrix}",
-      "kind": "display",
-      "equation_label": "hham",
-      "notes": "Nearest-neighbor graphene Hamiltonian in the A/B sublattice basis."
+      "label": "hham",
+      "context": "Nearest-neighbor graphene Hamiltonian in the A/B sublattice basis."
     }
   ],
   "symbols": [
@@ -64,20 +129,11 @@
     },
     {
       "symbol": "\\alpha",
-      "meaning": "first Brillouin-zone angle controlling one relative hopping phase"
+      "meaning": "Brillouin-zone angle controlling one relative hopping phase"
     },
     {
       "symbol": "\\beta",
-      "meaning": "second Brillouin-zone angle controlling the second relative hopping phase"
+      "meaning": "Brillouin-zone angle controlling the second relative hopping phase"
     }
-  ],
-  "formal_targets": [
-    "aitp-l2",
-    "lean"
-  ],
-  "retrieval_hints": [
-    "Use when the Haldane branch needs the explicit lattice Hamiltonian rather than only the words 'graphene model'."
-  ],
-  "created_at": "2026-03-20",
-  "updated_at": "2026-03-20"
+  ]
 }

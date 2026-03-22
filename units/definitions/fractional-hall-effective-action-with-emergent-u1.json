@@ -1,0 +1,111 @@
+{
+  "id": "definition:fractional-hall-effective-action-with-emergent-u1",
+  "type": "definition",
+  "title": "Fractional Hall Effective Action with an Emergent U(1) Field",
+  "summary": "The macroscopic fractional Hall response is described by a mixed A da term together with a level-r Chern-Simons term for a; source anchor: Lecture Two / Quantization Of The Hall Conductivity (lines 1398-1407; eq. urr).",
+  "domain": "topological-phases-of-matter",
+  "subdomain": "fractional-quantum-hall-effect",
+  "tags": [
+    "definition",
+    "definition_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: coarse-grained low-energy effective field theory for the fractional Hall phase."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:fractional-hall-effective-action-with-emergent-u1 after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the emergent-U(1) fractional Hall action ready to be stored as a reusable definition_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:witten-topological-phases-1510.07698v2",
+      "section": "lecture-two/quantization-of-the-hall-conductivity",
+      "notes": "AITP promoted candidate candidate:fractional-hall-effective-action-with-emergent-u1 from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance."
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:chern-simons-functional-definition",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "derivation_step:hall-current-from-chern-simons-variation",
+    "equation:one-dimensional-linearized-fermi-crossing",
+    "equation:winding-number-integral-for-two-band-node"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:fractional-hall-effective-action-with-emergent-u1."
+  ],
+  "created_at": "2026-03-17",
+  "updated_at": "2026-03-17",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fractional-hall-effective-action-with-emergent-u1/agent_consensus.json",
+    "candidate_id=candidate:fractional-hall-effective-action-with-emergent-u1",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fractional-hall-effective-action-with-emergent-u1/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fractional-hall-effective-action-with-emergent-u1/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fractional-hall-effective-action-with-emergent-u1/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-fractional-hall-effective-action-with-emergent-u1/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:fractional-hall-effective-action-with-emergent-u1",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-17T21:54:23+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Two definition-card audit for the fractional Hall effective action with an emergent U(1) field."
+  },
+  "consensus": {
+    "candidate_id": "candidate:fractional-hall-effective-action-with-emergent-u1",
+    "updated_at": "2026-03-17T21:54:23+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Two definition-card audit for the fractional Hall effective action with an emergent U(1) field."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:fractional-hall-effective-action-with-emergent-u1",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ]
+}

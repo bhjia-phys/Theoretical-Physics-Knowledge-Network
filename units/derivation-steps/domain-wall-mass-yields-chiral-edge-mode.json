@@ -1,0 +1,153 @@
+{
+  "id": "derivation_step:domain-wall-mass-yields-chiral-edge-mode",
+  "type": "derivation_step",
+  "title": "A Domain-Wall Mass Yields a Chiral Edge Mode",
+  "summary": "After flipping one fermion mass so that the doubled system has m sign(x_1), the Jackiw-Rebbi solution localizes a chiral mode at the interface; source anchor: Lecture Three / More On Edge States Of The Integer Quantum Hall Effect (lines 2106-2151; eqs. plift, nuft, gift, zoggg, trogg).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "derivation-step",
+  "tags": [
+    "derivation_step",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: doubled continuum construction used to realize an anomaly-free integer Hall boundary."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:domain-wall-mass-yields-chiral-edge-mode after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the domain-wall mass derivation of the chiral edge mode ready to be stored as a reusable derivation_step?",
+  "dependencies": [
+    "theorem:jackiw-rebbi-zero-mode-for-sign-changing-dirac-mass",
+    "derivation_step:boundary-dirac-mode-from-negative-bulk-mass"
+  ],
+  "related_units": [
+    "theorem:half-level-cs-term-from-massive-dirac-fermion"
+  ],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-three/more-on-edge-states-of-the-integer-quantum-hall-effect",
+      "notes": "AITP promoted candidate candidate:domain-wall-mass-yields-chiral-edge-mode from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "plift",
+        "nuft",
+        "gift",
+        "zoggg",
+        "trogg"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing",
+    "derivation_step:fractional-quasiparticle-charge-q-over-r",
+    "derivation_step:hall-current-from-chern-simons-variation",
+    "definition:one-plus-one-dimensional-chirality-operator"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:domain-wall-mass-yields-chiral-edge-mode."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-domain-wall-mass-yields-chiral-edge-mode/agent_consensus.json",
+    "candidate_id=candidate:domain-wall-mass-yields-chiral-edge-mode",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-domain-wall-mass-yields-chiral-edge-mode/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-domain-wall-mass-yields-chiral-edge-mode/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-domain-wall-mass-yields-chiral-edge-mode/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-domain-wall-mass-yields-chiral-edge-mode/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:domain-wall-mass-yields-chiral-edge-mode",
+    "candidate_type": "derivation_step",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three domain-wall edge-mode audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:domain-wall-mass-yields-chiral-edge-mode",
+    "updated_at": "2026-03-18T01:41:10+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three domain-wall edge-mode audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:domain-wall-mass-yields-chiral-edge-mode",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "\\left.\\psi'\\right|_{x_1=0} = \\gamma_1 \\left.\\psi\\right|_{x_1=0}",
+      "label": "plift",
+      "context": "Boundary gluing condition that turns the reflected pair into a single domain-wall problem."
+    },
+    {
+      "latex": "\\left(\\slashed{\\partial} - m\\,\\operatorname{sign}(x_1)\\right)\\hat\\psi = 0",
+      "label": "gift",
+      "context": "Dirac equation with a sign-changing mass profile across the interface."
+    },
+    {
+      "latex": "\\psi = e^{-m|x_1|}\\,\\psi_{\\parallel}, \\qquad \\gamma_1\\psi_{\\parallel} = -\\psi_{\\parallel}, \\qquad \\slashed{\\partial}^{\\parallel}\\psi_{\\parallel}=0",
+      "label": "trogg",
+      "context": "Localized chiral edge mode supported on the domain wall."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "\\hat\\psi",
+      "meaning": "single Dirac field obtained by gluing the two half-space fermions"
+    },
+    {
+      "symbol": "m\\,\\operatorname{sign}(x_1)",
+      "meaning": "domain-wall mass profile that changes sign at the boundary"
+    },
+    {
+      "symbol": "\\psi_{\\parallel}",
+      "meaning": "gapless boundary mode propagating along the interface"
+    }
+  ]
+}

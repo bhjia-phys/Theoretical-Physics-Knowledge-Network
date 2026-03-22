@@ -1,0 +1,149 @@
+{
+  "id": "definition:wilson-loop-operator-in-level-r-u1-cs",
+  "type": "definition",
+  "title": "Wilson Loop Operator in Level-r U(1) Chern-Simons Theory",
+  "summary": "Because the classical equation sets f = 0, the relevant gauge-invariant observables are Wilson loops W_s(l) = exp(i s integral_l a) rather than local fields; source anchor: Lecture Three / More On The Fractional Quantum Hall Effect (lines 1976-1989; eqs. doof, ooff).",
+  "domain": "witten-topological-phases-1510-07698-full-paper",
+  "subdomain": "definition",
+  "tags": [
+    "definition",
+    "definition_card",
+    "witten-topological-phases-1510-07698-full-paper"
+  ],
+  "aliases": [],
+  "assumptions": [
+    "Scope: pure U(1) level-r Chern-Simons sector on a compact spatial manifold."
+  ],
+  "regime": "Promoted from AITP topic witten-topological-phases-1510-07698-full-paper via candidate candidate:wilson-loop-operator-in-level-r-u1-cs after passing the documented AI coverage and consensus gate.",
+  "scope": "Is the Wilson-loop observable definition ready to be stored as a reusable definition_card?",
+  "dependencies": [],
+  "related_units": [],
+  "source_anchors": [
+    {
+      "source_id": "paper:three-lectures-on-topological-phases-of-matter-1510-07698",
+      "section": "lecture-three/more-on-the-fractional-quantum-hall-effect",
+      "notes": "AITP promoted candidate candidate:wilson-loop-operator-in-level-r-u1-cs from topic witten-topological-phases-1510-07698-full-paper; keep upstream auto-adjudication artifacts for full provenance.",
+      "equation_labels": [
+        "doof",
+        "ooff"
+      ]
+    }
+  ],
+  "formalization_status": "candidate",
+  "validation_status": "validated",
+  "maturity": "seed",
+  "canonical_layer": "L2_auto",
+  "review_mode": "ai_auto",
+  "promotion_route": "L3->L4_auto->L2_auto",
+  "conflict_status": "none",
+  "conflict_refs": [],
+  "equivalence_refs": [
+    "definition:one-plus-one-dimensional-chirality-operator",
+    "definition:chern-simons-functional-definition",
+    "definition:fractional-hall-effective-action-with-emergent-u1",
+    "derivation_step:charge-pump-counts-edge-chirality",
+    "derivation_step:local-weyl-hamiltonian-near-isolated-crossing"
+  ],
+  "failure_modes": [
+    "Review the regime and assumptions before treating this promoted unit as stable."
+  ],
+  "formal_targets": [
+    "aitp-l2-auto"
+  ],
+  "retrieval_hints": [
+    "Promoted from AITP candidate candidate:wilson-loop-operator-in-level-r-u1-cs."
+  ],
+  "created_at": "2026-03-18",
+  "updated_at": "2026-03-18",
+  "review_artifacts": [
+    "agent_consensus_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-wilson-loop-operator-in-level-r-u1-cs/agent_consensus.json",
+    "candidate_id=candidate:wilson-loop-operator-in-level-r-u1-cs",
+    "coverage_ledger_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-wilson-loop-operator-in-level-r-u1-cs/coverage_ledger.json",
+    "derivation_graph_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-wilson-loop-operator-in-level-r-u1-cs/derivation_graph.json",
+    "notation_table_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-wilson-loop-operator-in-level-r-u1-cs/notation_table.json",
+    "promotion_gate_path=runtime/topics/witten-topological-phases-1510-07698-full-paper/promotion_gate.json",
+    "structure_map_path=validation/topics/witten-topological-phases-1510-07698-full-paper/runs/2026-03-17-formal-reread/theory-packets/candidate-wilson-loop-operator-in-level-r-u1-cs/structure_map.json"
+  ],
+  "coverage": {
+    "candidate_id": "candidate:wilson-loop-operator-in-level-r-u1-cs",
+    "candidate_type": "definition_card",
+    "source_section_count": 1,
+    "covered_section_count": 1,
+    "missing_section_count": 0,
+    "missing_anchor_count": 0,
+    "critical_unit_recall": 1.0,
+    "skeptic_major_gap_count": 0,
+    "consensus_status": "unanimous",
+    "coverage_score": 1.0,
+    "status": "pass",
+    "ready_for_auto_promotion": true,
+    "updated_at": "2026-03-18T01:40:44+08:00",
+    "updated_by": "codex",
+    "notes": "Bounded Lecture Three Wilson-loop definition audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "consensus": {
+    "candidate_id": "candidate:wilson-loop-operator-in-level-r-u1-cs",
+    "updated_at": "2026-03-18T01:40:44+08:00",
+    "updated_by": "codex",
+    "consensus_status": "unanimous",
+    "status": "ready",
+    "agents": [
+      {
+        "role": "structure",
+        "verdict": "covered",
+        "notes": ""
+      },
+      {
+        "role": "skeptic",
+        "verdict": "no_major_gap",
+        "notes": ""
+      },
+      {
+        "role": "adjudicator",
+        "verdict": "unanimous",
+        "notes": ""
+      }
+    ],
+    "skeptic_major_gap_count": 0,
+    "notes": "Bounded Lecture Three Wilson-loop definition audit from the fine-grained Witten 1510.07698 reread."
+  },
+  "merge_lineage": [
+    "candidate_id=candidate:wilson-loop-operator-in-level-r-u1-cs",
+    "collision_scan_count=5",
+    "strategy=created_with_neighbors"
+  ],
+  "math_expressions": [
+    {
+      "latex": "f=0",
+      "label": "doof",
+      "context": "Classical field equation of the emergent gauge field in the pure topological sector."
+    },
+    {
+      "latex": "W_s(\\ell)=\\exp\\!\\left(i s\\oint_{\\ell} a\\right), \\qquad s\\in \\mathbb{Z}",
+      "label": "ooff",
+      "context": "Gauge-invariant Wilson-loop observable associated to a closed curve on the spatial manifold."
+    }
+  ],
+  "symbols": [
+    {
+      "symbol": "f",
+      "meaning": "field strength \\mathrm{d}a of the emergent gauge field"
+    },
+    {
+      "symbol": "a",
+      "meaning": "U(1) Chern-Simons gauge field"
+    },
+    {
+      "symbol": "\\ell",
+      "meaning": "closed spatial loop along which a quasiparticle is transported"
+    },
+    {
+      "symbol": "W_s(\\ell)",
+      "meaning": "Wilson-loop operator for a quasiparticle of charge s"
+    },
+    {
+      "symbol": "s",
+      "meaning": "integer emergent charge labeling the quasiparticle sector"
+    }
+  ]
+}
