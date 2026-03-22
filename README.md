@@ -17,6 +17,26 @@ This repository is intended to be publishable as a standalone open-source projec
 - graph structure via explicit edges;
 - a human-readable mirror that follows the same object boundaries.
 
+## Relationship To AITP
+
+This repository is the public knowledge backend, not the AITP runtime kernel.
+
+In the current stack:
+
+- `AITP-Research-Protocol` owns the research protocol, runtime state, gap recovery, validation flow, and promotion logic.
+- `theoretical-physics-knowledge-network` owns the typed long-term knowledge surface that AITP can target as an `L2`-compatible backend.
+- `Theoretical-Physics` is the active private workspace where mirror notes, staging logic, and developer handoff material can evolve before selected content is published here.
+
+The intended lifecycle is:
+
+`source work in AITP/workspace -> validation/promotion -> write into TPKN`
+
+That separation is deliberate:
+
+- the runtime should not be forced into the public backend repo;
+- the public backend should not become a dumping ground for raw runtime notes;
+- the private workspace can remain productive without corrupting the public backend history.
+
 The current exemplar source is:
 
 - Edward Witten, *Three Lectures On Topological Phases Of Matter*, arXiv:1510.07698v2
@@ -74,6 +94,23 @@ python3 scripts/build.py
 ```
 
 `python3 scripts/build.py` runs the protocol check before rebuilding generated outputs.
+
+## Windows Development Handoff
+
+If you continue development on Windows, treat this repository as the clean
+publish target, not the only place where active note-writing happens.
+
+Recommended setup:
+
+- clone this repo as a sibling of `AITP-Research-Protocol` and `Theoretical-Physics`;
+- do runtime-heavy work under `WSL2 Ubuntu`;
+- keep publication into this repo as an explicit, clean-repo step.
+
+In other words:
+
+- use `AITP-Research-Protocol` to run the protocol;
+- use `Theoretical-Physics` for active workspace editing and mirror work;
+- use `theoretical-physics-knowledge-network` when you are ready to publish typed backend state.
 
 ## What The Public Skeleton Includes
 
